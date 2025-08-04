@@ -36,7 +36,6 @@ The Regular Backups mitigation strategy is applicable to mitigating the risk of 
 | :------------------ | ------------------ |
 | Targeted:           | `<TARGET-LEVEL>`   |
 | Currently Assessed: | `<ASSESSED-LEVEL>` |
-|                     |                    |
 
 ### Implementation
 
@@ -94,7 +93,6 @@ Required hardening for backups is determined by the following table:
 |                                                                | Cannot access their own backups:                                             |  -  |  -  | Yes |
 |                                                                |                                                                              |     |     |     |
 | Backup administrator accounts:                                 | Prevented from modifying and deleting backups during their retention period: |  -  |  -  | Yes |
-|                                                                |                                                                              |     |     |     |
 
 </div>
 

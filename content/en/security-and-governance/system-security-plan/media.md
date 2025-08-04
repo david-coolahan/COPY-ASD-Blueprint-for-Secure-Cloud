@@ -33,7 +33,7 @@ The use, sanitisation, destruction, and disposal of media used with `<SYSTEM-NAM
 
 `<INSERT ADDITIONAL INFORMATION AS APPROPRIATE>`
 
-#### Technical Controls Implemented
+#### Technical controls implemented
 
 Technical controls for `<SYSTEM-NAME>`'s implementation relating to to the use, sanitisation, destruction, and disposal of media are configured with reference to ASD's [*Blueprint for Secure Cloud*](https://blueprint.asd.gov.au) and includes the following technical configurations:
 
@@ -41,7 +41,7 @@ Technical controls for `<SYSTEM-NAME>`'s implementation relating to to the use, 
 
 `<INSERT ADDITIONAL INFORMATION AS APPROPRIATE>`
 
-### Related Information
+### Related information
 
 #### Security & Governance
 

@@ -34,7 +34,6 @@ The Restrict Administrative Privileges mitigation strategy is applicable to rest
 | :------------------ | ------------------ |
 | Targeted:           | `<TARGET-LEVEL>`   |
 | Currently Assessed: | `<ASSESSED-LEVEL>` |
-|                     |                    |
 
 ### Implementation
 
@@ -44,13 +43,12 @@ The Restrict Administrative Privileges mitigation strategy is applicable to rest
 
 | Privileged Access to:         | What                                         | ML1 | ML2 | ML3 |
 | :---------------------------- | :------------------------------------------- | :-: | :-: | :-: |
-| **Systems and Applications:** | Validated when first requested:              | Yes | Yes | Yes |
+| Systems and Applications: | Validated when first requested:              | Yes | Yes | Yes |
 |                               | Disabled after 12 months unless revalidated: |  -  | Yes | Yes |
 |                               | Disabled after 45 days of inactivity:        |  -  | Yes | Yes |
 |                               |                                              |     |     |     |
 | Data Repositories:            | Validated when first requested:              | Yes | Yes | Yes |
 |                               | Disabled after 12 months unless revalidate:  |  -  | Yes | Yes |
-|                               |                                              |     |     |     |
 
 {{% /alert %}}
 
@@ -71,7 +69,6 @@ All maturity levels require that privileged users use separate privileged and un
 | For Unprivileged Operating Environments:                                                      | ML1 | ML2 | ML3 |
 | --------------------------------------------------------------------------------------------- | --- | --- | --- |
 | Privileged accounts (excluding local administrator accounts) cannot logon to the environment. | Yes | Yes | Yes |
-|                                                                                               |     |     |     |
 
 | For Privileged Operating Environments:                                           | ML1 | ML2 | ML3 |
 | :------------------------------------------------------------------------------- | :-: | :-: | :-: |
@@ -79,7 +76,6 @@ All maturity levels require that privileged users use separate privileged and un
 | The environment is not virtualised within an unprivileged operating environment: |  -  | Yes | Yes |
 | Administrative activities are conducted through jump servers:                    |  -  | Yes | Yes |
 | Administrative activities are conducted on Secure Admin Workstations:            |  -  |  -  | Yes |
-|                                                                                  |     |     |     |
 
 {{% /alert %}}
 
@@ -118,7 +114,6 @@ The following restrictions are required for privileged accounts:
 | Other privileged accounts                                           | Prevented from accessing the internet, email and web services                                        | Yes | Yes | Yes |
 |                                                                     | Access is strictly limited to only what is required for users and services to undertake their duties |  -  |  -  | Yes |
 |                                                                     | Just-in-time administration is used                                                                  |  -  |  -  | Yes |
-|                                                                     |                                                                                                      |     |     |     |
 
 {{% /alert %}}
 
@@ -172,7 +167,6 @@ Maturity Level Three Requires the following functionality to be enabled for prot
 | Local Security Authority protection | `<YES>`    |
 | Credential Guard                    | `<YES>`    |
 | Remote Credential Guard             | `<N/A>`    |
-|                                     |            |
 
 `<INSERT ADDITIONAL INFORMATION AS APPROPRIATE>`
 
@@ -193,7 +187,6 @@ The collection of event logs for monitoring of `<SYSTEM-NAME>` is performed in a
 | Privileged access:             |          `<YES>`           |
 | Privileged account management: |          `<YES>`           |
 | Privileged group management:   |          `<YES>`           |
-|                                |                            |
 
 | System / Service                 | Event                   | Forwarded to Log Analytics |
 | -------------------------------- | ----------------------- | :------------------------: |
@@ -202,7 +195,6 @@ The collection of event logs for monitoring of `<SYSTEM-NAME>` is performed in a
 | `<Internet-facing servers>`:     | Privileged access event |          `<YES>`           |
 | `<Non-Internet-facing servers>`: | Privileged access event |          `<YES>`           |
 | `<OTHER-SERVICE-1>`:             | Privileged access event |          `<YES>`           |
-|                                  |                         |                            |
 
 `<INSERT ADDITIONAL INFORMATION AS APPROPRIATE>`
 
@@ -210,7 +202,7 @@ The collection of event logs for monitoring of `<SYSTEM-NAME>` is performed in a
 
 {{% alert title="Essential Eight guidance" color="success" %}}
 
-Maturity Levels Two and Three require all Privileged access, privileged account, and group management event logs from the following systems to be analysed in a timely manner to detect cybersecurity events:
+Maturity Levels Two and Three require all Privileged access, privileged account, and group management event logs from the following systems to be analysed in a timely manner to detect cyber security events:
 
 | System                       | ML2 | ML3 |
 | :--------------------------- | :-: | :-: |
@@ -219,9 +211,9 @@ Maturity Levels Two and Three require all Privileged access, privileged account,
 | Workstations:                |  -  | Yes |
 
 Both Maturity Levels Two and Three also require the following:
-* cybersecurity events are analysed in a timely manner to identify cybersecurity incidents
-* as soon as possible after a cybersecurity incident occurs or is discovered the:
-* cybersecurity incident response plan is enacted
+* cyber security events are analysed in a timely manner to identify cyber security incidents
+* as soon as possible after a cyber security incident occurs or is discovered the:
+* cyber security incident response plan is enacted
 * incident is reported to the Chief Information Security Officer, or one of their delegates
 * incident is reported to ASD. 
 
@@ -229,11 +221,11 @@ Both Maturity Levels Two and Three also require the following:
 
 {{% alert title="Blueprint guidance" color="info" %}}
 
-While the Blueprint provides limited guidance to support organisations in developing an approach for the response to cybersecurity incidents, the section below is provided for organisations to describe the measures implemented within their system. Effective implementation of these controls is generally built on a combination of system-specific and whole of organisation processes, and may include the coordination of a number of teams and staff across an organisation.
+While the Blueprint provides limited guidance to support organisations in developing an approach for the response to cyber security incidents, the section below is provided for organisations to describe the measures implemented within their system. Effective implementation of these controls is generally built on a combination of system-specific and whole of organisation processes, and may include the coordination of a number of teams and staff across an organisation.
 
 {{% /alert %}}
 
-`<SYSTEM-NAME>` utilises the Microsoft 365 Defender portal and `<SIEM-PRODUCT>` to assist in the identification of cybersecurity incidents. 
+`<SYSTEM-NAME>` utilises the Microsoft 365 Defender portal and `<SIEM-PRODUCT>` to assist in the identification of cyber security incidents. 
 
 This includes the processing, analysis, and response to the following event logs in a timely manner:
 
@@ -242,9 +234,8 @@ This includes the processing, analysis, and response to the following event logs
 | Privileged access:  |    `Yes`     | `<Detail implementation>` |
 | Privileged account: |    `Yes`     | `<Detail implementation>` |
 | Group management:   |    `Yes`     | `<Detail implementation>` |
-|                     |              |                           |
 
-`<ORGANISATION-NAME>` has established a Security Operations Centre (SOC) to analyse cybersecurity events in a timely manner, and a [Cyber Security Incident Register]({{<ref "security-and-governance/general-documentation">}}), and [Incident Response Plan]({{<ref "security-and-governance/general-documentation">}}) to facilitate the response to detected cybersecurity events in a timely and appropriate manner. This plan includes reporting all incidents to the `<ORGANISATION-NAME>` CISO and to ASD in a timely manner.
+`<ORGANISATION-NAME>` has established a Security Operations Centre (SOC) to analyse cyber security events in a timely manner, and a [Cyber Security Incident Register]({{<ref "security-and-governance/general-documentation">}}), and [Incident Response Plan]({{<ref "security-and-governance/general-documentation">}}) to facilitate the response to detected cyber security events in a timely and appropriate manner. This plan includes reporting all incidents to the `<ORGANISATION-NAME>` CISO and to ASD in a timely manner.
 
 `<INSERT ADDITIONAL INFORMATION AS APPROPRIATE>`
 

@@ -4,7 +4,7 @@ weight: 35
 description: "This section describes the design decisions associated with Outlook on the Web Policies for system(s) built using ASD's Blueprint for Secure Cloud."
 ---
 
-Formerly known as Outlook Web App or Outlook Web Access, Outlook on the Web (OWA) policies, are used to control the availability of features and settings in Outlook on the Web. There are no security concerns with enabling OWA however organisations may wish to consider internal organisation policies to inform decisions. A decision to disable OWA will not alter an organisation's cybersecurity posture.
+Formerly known as Outlook Web App or Outlook Web Access, Outlook on the Web (OWA) policies, are used to control the availability of features and settings in Outlook on the Web. There are no security concerns with enabling OWA however organisations may wish to consider internal organisation policies to inform decisions. A decision to disable OWA will not alter an organisation's cyber security posture.
 
 A mailbox can only be assigned one OWA policy and every mailbox must have a policy assigned.
 

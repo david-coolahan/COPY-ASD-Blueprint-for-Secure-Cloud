@@ -10,9 +10,11 @@ description: This page provides a template and guidance to assist organisations 
 
 This System Security Plan (SSP) template provides a guide and resource to assist organisations in preparing a SSP describing organisational policies and processes relating to, and technical controls implemented within, system(s) built on ASD's *Blueprint for Secure Cloud*. It provides guidance to facilitate decision-making, rather than prescriptive statements or measures, allowing organisations to tailor this document according to the controls implemented and the organisation's context.
 
-When using this template, organisations should insert and update the required information to ensure it accurately represents all relevant organisational policies, processes and technical controls. This may include organisational controls or policies that are outside of the scope of the Blueprint, but are still relevant to the system — placeholders are included where relevant throughout this template. 
+When using this template, organisations should insert and update the required information to ensure it accurately represents all relevant organisational policies, processes and technical controls. This may include organisational controls or policies that are outside of the scope of the Blueprint, but are still relevant to the system — placeholders are included where relevant throughout this template.
 
 Text included in the guidance boxes throughout this template should be deleted from an organisation's final SSP.
+
+{{% download file="/content/files/Blueprint System Security Plan Template.docx" %}} Download the Blueprint System Security Plan Template (.docx) {{% /download %}}
 
 {{% /alert %}}
 
@@ -20,10 +22,9 @@ Text included in the guidance boxes throughout this template should be deleted f
 
 This System Security Plan (SSP) describes the organisational policies and processes relevant to, and technical controls implemented within the core `<SYSTEM-NAME>` or network that includes `<ORGANISATION-NAME>`’s Microsoft Workloads (Cloud and Software as a Service), endpoints and `<OTHER SYSTEM COMPONENTS IN SCOPE>`.
 
-|                   |            |
-| ----------------- | ---------- |
-| ISM Version used: | March 2025 |
-|                   |            |
+|                   |           |
+| ----------------- | --------- |
+| ISM Version used: | June 2025 |
 
 ### Purpose of this System Security Plan
 

@@ -67,7 +67,7 @@ The following design components apply to the hardening of Microsoft Windows 10 2
   * Turn off picture password sign-in: Enabled
   * Turn on convenience PIN sign-in: Disabled
   * Maximum password age: 365 days
-  * Minimum password length: 14 characters
+  * Minimum password length: 15 characters
   * Password must meet complexity requirements: Enabled
   * Store passwords using reversible encryption: Disabled
   * Accounts: Limit local account use of blank passwords to console logon only: Enabled

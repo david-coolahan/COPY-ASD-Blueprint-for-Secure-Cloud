@@ -12,7 +12,7 @@ To manage the risks presented using cloud services, Microsoft has defined a [clo
 
 * **Discover and control the use of Shadow IT** – Shadow IT includes cloud services that are in use by users but not assessed and approved by security, including Software-as-a-Service (SaaS), Platform-as-a-Service (PaaS), and Infrastructure-as-a-Service (IaaS) offerings. To protect users and their data these services must be identified so that their risk can be determined and management controls can be implemented. Microsoft Defender for Cloud Apps enables administrators to assess an extensive library of apps against a wide range of risks.
 * **Protect sensitive information anywhere in the cloud** – Once data is uploaded to a cloud service it is harder to control and manage compared to traditional on-premises storage. Microsoft Defender for Cloud Apps enables controls to be applied to data regardless of where it is stored, leveraging automated processes and inbuilt policies to both classify and protect information.
-* **Protect against cyberthreats and anomalies** – Due to the public nature of cloud apps they are exposed to potential malicious activity from external actors. Microsoft Defender for Cloud Apps monitors both user behaviour and app activity to identify anomalies and perform automatic remediation to ensure the confidentiality of data stored in the cloud. This includes identifying indications that a user's account credentials have been compromised.
+* **Protect against cyber threats and anomalies** – Due to the public nature of cloud apps they are exposed to potential malicious activity from external actors. Microsoft Defender for Cloud Apps monitors both user behaviour and app activity to identify anomalies and perform automatic remediation to ensure the confidentiality of data stored in the cloud. This includes identifying indications that a user's account credentials have been compromised.
 * **Assess the compliance of cloud apps** – Performing security assessments of cloud apps and services is both complex and expensive. Microsoft Defender for Cloud Apps provides an overview of the industry and regulatory standards that each identified cloud app has been assessed against to simplify the approval process.
 
 ### Product architecture
@@ -236,7 +236,7 @@ In addition to the policy types listed above, Microsoft Defender for Cloud Apps 
 
 | Decision point  | Design decision                                                                                                | Justification                                                                            |
 | --------------- | -------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------- |
-| Use of policies | Use of policies is organisation-specific and would need further development with internal Cybersecurity Teams. | Provides visibility within the organisation of suspicious behaviour and application use. |
+| Use of policies | Use of policies is organisation-specific and would need further development with internal Cyber security Teams. | Provides visibility within the organisation of suspicious behaviour and application use. |
 
 {{% /alert %}}
 
@@ -334,8 +334,8 @@ Note, to use Conditional Access App Control an Entra ID Premium P1 license is re
 
 | Decision point           | Design decision                                                                                               | Justification                                                          |
 | ------------------------ | ------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------- |
-| Access control policies  | Use of policies is organisation-specific and would need further development with internal cybersecurity team. | Provides a greater security posture for the organisation applications. |
-| Session control policies | Use of policies is organisation-specific and would need further development with internal cybersecurity team. | Provides a greater security posture for users within the organisation. |
+| Access control policies  | Use of policies is organisation-specific and would need further development with internal cyber security team. | Provides a greater security posture for the organisation applications. |
+| Session control policies | Use of policies is organisation-specific and would need further development with internal cyber security team. | Provides a greater security posture for users within the organisation. |
 
 {{% /alert %}}
 
@@ -363,7 +363,7 @@ If user notifications are enabled administrators can either use a Microsoft-prov
 
 | Decision point                | Design decision | Justification                                                                                                                                                                                             |
 | ----------------------------- | --------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| User monitoring notifications | Not enabled     | There is no default requirement to notify users. Organisations can enable User Monitoring as appropriate to meet operational requirements without impacting the cybersecurity posture of the environment. |
+| User monitoring notifications | Not enabled     | There is no default requirement to notify users. Organisations can enable User Monitoring as appropriate to meet operational requirements without impacting the cyber security posture of the environment. |
 
 {{% /alert %}}
 

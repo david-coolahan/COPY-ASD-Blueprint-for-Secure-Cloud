@@ -38,7 +38,6 @@ In particular, this is applicable to the configuration of Microsoft Entra ID `AN
 | :------------------ | ------------------ |
 | Targeted:           | `<TARGET-LEVEL>`   |
 | Currently Assessed: | `<ASSESSED-LEVEL>` |
-|                     |                    |
 
 ### Implementation
 
@@ -59,7 +58,6 @@ Applicability to online services is determined by the following table:
 | Third-party Online Customer Services:    |   Users   | Sensitive Customer Data:            | Any |  Phishing Resistant<br>*Only*  | Phishing Resistant<br>*Only* |
 | Organisation’s Online Customer Services: |   Users   | Sensitive Customer Data:            | Any |  Phishing Resistant<br>*Only*  | Phishing Resistant<br>*Only* |
 | Online Customer Services:                | Customers | Sensitive Customer Data:            | Any | Phishing Resistant<br>*Option* | Phishing Resistant<br>*Only* |
-|                                          |           |                                     |     |                                |                              |
 
 Applicability to other systems and services is determined by the following table:
 
@@ -69,7 +67,6 @@ Applicability to other systems and services is determined by the following table
 |                    | Unprivileged Users: |  -  | Phishing Resistant<br>*Only* | Phishing Resistant<br>*Only* |
 | Data Repositories: |  Privileged Users:  |  -  |              -               | Phishing Resistant<br>*Only* |
 |                    | Unprivileged Users: |  -  |              -               | Phishing Resistant<br>*Only* |
-|                    |                     |     |                              |                              |
 
 {{% /alert %}}
 
@@ -90,7 +87,6 @@ Microsoft Entra ID is configured to utilise the following authentication methods
 | Unprivileged users: | `<Authentication method-1>` |       |
 |                     | `<Authentication method-2>` |       |
 | Privileged users:   | `<Authentication method-1>` |       |
-|                     |                             |       |
 
 `<INSERT ADDITIONAL INFORMATION AS APPROPRIATE>`
 
@@ -110,31 +106,26 @@ The collection of event logs for monitoring of `<SYSTEM-NAME>` is performed in a
 | ---------------------------------- | :------------------------: |
 | Successful MFA:                    |          `<YES>`           |
 | Unsuccessful MFA:                  |          `<YES>`           |
-|                                    |                            |
 
 | MFA Event  (Workstations) | Forwarded to Log Analytics |
 | ------------------------- | :------------------------: |
 | Successful MFA:           |          `<YES>`           |
 | Unsuccessful MFA:         |          `<YES>`           |
-|                           |                            |
 
 | MFA Event (`<Internet-facing servers>`) | Forwarded to Log Analytics |
 | --------------------------------------- | :------------------------: |
 | Successful MFA:                         |          `<YES>`           |
 | Unsuccessful MFA:                       |          `<YES>`           |
-|                                         |                            |
 
 | MFA Event (`<Non-internet-facing servers>`) | Forwarded to Log Analytics |
 | ------------------------------------------- | :------------------------: |
 | Successful MFA:                             |          `<YES>`           |
 | Unsuccessful MFA:                           |          `<YES>`           |
-|                                             |                            |
 
 | MFA Event (`<OTHER-SERVICE-1>`) | Forwarded to Log Analytics |
 | ------------------------------- | :------------------------: |
 | Successful MFA:                 |          `<YES>`           |
 | Unsuccessful MFA:               |          `<YES>`           |
-|                                 |                            |
 
 
 `<INSERT ADDITIONAL INFORMATION AS APPROPRIATE>`
@@ -143,20 +134,19 @@ The collection of event logs for monitoring of `<SYSTEM-NAME>` is performed in a
 
 {{% alert title="Essential Eight guidance" color="success" %}}
 
-Maturity Levels 2 and 3 require all successful and unsuccessful MFA event logs from the following systems to be analysed in a timely manner to detect cybersecurity events:
+Maturity Levels 2 and 3 require all successful and unsuccessful MFA event logs from the following systems to be analysed in a timely manner to detect cyber security events:
 
 | System                       | ML2 | ML3 |
 | ---------------------------- | :-: | :-: |
 | Internet-facing servers:     | Yes | Yes |
 | Non-internet-facing servers: |  -  | Yes |
 | Workstations:                |  -  | Yes |
-|                              |     |     |
 
 
 Both Maturity Levels 2 and 3 also require the following:
-* cybersecurity events are analysed in a timely manner to identify cybersecurity incidents
-* as soon as possible after a cybersecurity incident occurs or is discovered the:
-* cybersecurity incident response plan is enacted.
+* cyber security events are analysed in a timely manner to identify cyber security incidents
+* as soon as possible after a cyber security incident occurs or is discovered the:
+* cyber security incident response plan is enacted.
 * incident is reported to the CISO, or one of their delegates
 * incident is reported to ASD. 
 
@@ -164,13 +154,13 @@ Both Maturity Levels 2 and 3 also require the following:
 
 {{% alert title="Blueprint guidance" color="info" %}}
 
-The Blueprint provides limited guidance to support organisations in developing an approach for the response to cybersecurity incidents. However, the section below is provided for organisations to describe the measures implemented within their system. 
+The Blueprint provides limited guidance to support organisations in developing an approach for the response to cyber security incidents. However, the section below is provided for organisations to describe the measures implemented within their system. 
 
 Effective implementation of these controls is generally built on a combination of system-specific and whole of organisation processes, and may include the coordination of a number of teams and staff across an organisation.
 
 {{% /alert %}}
 
-`<SYSTEM-NAME>` utilises the Microsoft 365 Defender portal and `<SIEM-PRODUCT>` to assist in the identification of cybersecurity incidents. 
+`<SYSTEM-NAME>` utilises the Microsoft 365 Defender portal and `<SIEM-PRODUCT>` to assist in the identification of cyber security incidents. 
 
 This includes the processing, analysis, and response to the following event logs in a timely manner:
 
@@ -178,9 +168,8 @@ This includes the processing, analysis, and response to the following event logs
 | ----------------- | :--------------------: | :----------: | :-------------------------: | :-----------------------------: | :----------------: |
 | Successful MFA:   |        `<YES>`         |   `<YES>`    |     `<IMPLEMENTATION>`      |       `<IMPLEMENTATION>`        | `<IMPLEMENTATION>` |
 | Unsuccessful MFA: |        `<YES>`         |   `<YES>`    |     `<IMPLEMENTATION>`      |       `<IMPLEMENTATION>`        | `<IMPLEMENTATION>` |
-|                   |                        |              |                             |                                 |                    |
 
-`<ORGANISATION-NAME>` has established a Security Operations Centre (SOC) to analyse cybersecurity events in a timely manner, a [Cyber Security Incident Register]({{<ref "security-and-governance/general-documentation">}}) and [Incident Response Plan]({{<ref "security-and-governance/general-documentation">}}) to facilitate the response to detected cybersecurity events in a timely and appropriate manner. This plan includes reporting all incidents to the `<ORGANISATION-NAME>` CISO and to ASD in a timely manner.
+`<ORGANISATION-NAME>` has established a Security Operations Centre (SOC) to analyse cyber security events in a timely manner, a [Cyber Security Incident Register]({{<ref "security-and-governance/general-documentation">}}) and [Incident Response Plan]({{<ref "security-and-governance/general-documentation">}}) to facilitate the response to detected cyber security events in a timely and appropriate manner. This plan includes reporting all incidents to the `<ORGANISATION-NAME>` CISO and to ASD in a timely manner.
 
 `<INSERT ADDITIONAL INFORMATION AS APPROPRIATE>`
 

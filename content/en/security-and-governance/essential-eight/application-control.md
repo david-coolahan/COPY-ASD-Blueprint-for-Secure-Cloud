@@ -39,7 +39,6 @@ The application control mitigation strategy is applicable to the management of a
 | :------------------ | ------------------ |
 | Targeted:           | `<TARGET-LEVEL>`   |
 | Currently Assessed: | `<ASSESSED-LEVEL>` |
-|                     |                    |
 
 ### Implementation
 
@@ -54,7 +53,6 @@ Application control on workstations is required to apply to the following profil
 | User profiles                                                               | Yes | Yes | Yes |
 | Temporary folders used by operating systems, web browsers and email clients | Yes | Yes | Yes |
 | All other locations                                                         |  -  | Yes | Yes |
-|                                                                             |     |     |     |
 
 Application control on workstations is required to restrict the following filetypes:
 
@@ -68,7 +66,6 @@ Application control on workstations is required to restrict the following filety
 | HTML applications                                                           | Yes | Yes | Yes |
 | Control panel applets                                                       | Yes | Yes | Yes |
 | Drivers                                                                     |  -  |  -  | Yes |
-|                                                                             |     |     |     |
 
 In addition, the following Microsoft blocklists should be implemented:
 
@@ -76,7 +73,6 @@ In addition, the following Microsoft blocklists should be implemented:
 | --------------------------------------------------------------------------- | :-: | :-: | :-: |
 | Microsoft’s recommended application blocklist                               |  -  | Yes | Yes |
 | Microsoft’s vulnerable driver blocklist                                     |  -  |  -  | Yes |
-|                                                                             |     |     |     |
 
 **Validation of rule-set**
 
@@ -114,7 +110,6 @@ Application control on internet-facing servers is required to apply to the follo
 | User profiles                                                               |  -  | Yes | Yes |
 | Temporary folders used by operating systems, web browsers and email clients |  -  | Yes | Yes |
 | All other locations                                                         |  -  | Yes | Yes |
-|                                                                             |     |     |     |
 
 Application control on internet-facing servers is required to restrict the following filetypes:
 
@@ -128,7 +123,6 @@ Application control on internet-facing servers is required to restrict the follo
 | HTML applications     |  -  | Yes | Yes |
 | Control panel applets |  -  | Yes | Yes |
 | Drivers               |  -  |  -  | Yes |
-|                       |     |     |     |
 
 In addition, the following Microsoft blocklists should be implemented
 
@@ -136,7 +130,6 @@ In addition, the following Microsoft blocklists should be implemented
 | --------------------------------------------- | :-: | :-: | :-: |
 | Microsoft’s recommended application blocklist |  -  | Yes | Yes |
 | Microsoft’s vulnerable driver blocklist       |  -  |  -  | Yes |
-|                                               |     |     |     |
 
 **Validation of rule-set**
 
@@ -178,7 +171,6 @@ Application control on non-internet-facing servers is required to restrict the f
 | HTML applications:     |  -  |  -  | Yes |
 | Control panel applets: |  -  |  -  | Yes |
 | Drivers:               |  -  |  -  | Yes |
-|                        |     |     |     |
 
 In addition, the following Microsoft blocklists should be implemented:
 
@@ -186,9 +178,8 @@ In addition, the following Microsoft blocklists should be implemented:
 | ---------------------------------------------- | :-: | :-: | :-: |
 | Microsoft’s recommended application blocklist: |  -  |  -  | Yes |
 | Microsoft’s vulnerable driver blocklist:       |  -  |  -  | Yes |
-|                                                |     |     |     |
 
-*Validation of rule-set*
+**Validation of rule-set**
 
 Maturity Levels 2 and 3 additionally require that application control rule-sets on non-internet-facing servers are validated on an annual basis (if not more frequently).
 
@@ -231,7 +222,6 @@ The collection of event logs for monitoring of `<SYSTEM-NAME>` is performed in a
 | :------------------------------------------------------ | :------------------------: |
 | Allowed application execution:                          |          `<YES>`           |
 | Blocked application execution:                          |          `<YES>`           |
-|                                                         |                            |
 
 `<INSERT ADDITIONAL INFORMATION AS APPROPRIATE>`
 
@@ -239,7 +229,6 @@ The collection of event logs for monitoring of `<SYSTEM-NAME>` is performed in a
 | :---------------------------------------------------------- | :------------------------: |
 | Allowed application execution:                              |          `<YES>`           |
 | Blocked application execution:                              |          `<YES>`           |
-|                                                             |                            |
 
 `<INSERT ADDITIONAL INFORMATION AS APPROPRIATE>`
 
@@ -247,7 +236,7 @@ The collection of event logs for monitoring of `<SYSTEM-NAME>` is performed in a
 
 {{% alert title="Essential Eight guidance" color="success" %}}
 
-Maturity Levels 2 and 3 require all allowed and blocked application control event logs from the following systems to be analysed in a timely manner to detect cybersecurity events:
+Maturity Levels 2 and 3 require all allowed and blocked application control event logs from the following systems to be analysed in a timely manner to detect cyber security events:
 
 | System                       | ML2 | ML3 |
 | ---------------------------- | :-: | :-: |
@@ -257,9 +246,9 @@ Maturity Levels 2 and 3 require all allowed and blocked application control even
 
 Both Maturity Levels 2 and 3 also require the following:
 
-* cybersecurity events are analysed in a timely manner to identify cybersecurity incidents
-* as soon as possible after a cybersecurity incident occurs or is discovered the:
-* cybersecurity incident response plan is enacted
+* cyber security events are analysed in a timely manner to identify cyber security incidents
+* as soon as possible after a cyber security incident occurs or is discovered the:
+* cyber security incident response plan is enacted
 * incident is reported to the Chief Information Security Officer (CISO), or one of their delegates
 * incident is reported to ASD.
 
@@ -267,13 +256,13 @@ Both Maturity Levels 2 and 3 also require the following:
 
 {{% alert title="Blueprint guidance" color="info" %}}
 
-The Blueprint provides limited guidance on developing an approach for response to cybersecurity incidents. However, the section below is provided for organisations to describe the measures implemented within their system(s) built on the Blueprint.
+The Blueprint provides limited guidance on developing an approach for response to cyber security incidents. However, the section below is provided for organisations to describe the measures implemented within their system(s) built on the Blueprint.
 
 Effective implementation of these controls is generally built on a combination of system-specific and whole of organisation processes, and may include the coordination of a number of teams and staff across an organisation.
 
 {{% /alert %}}
 
-`<SYSTEM-NAME>` utilises the Microsoft 365 Defender portal and `<SIEM-PRODUCT>` to assist in the identification of cybersecurity incidents.
+`<SYSTEM-NAME>` utilises the Microsoft 365 Defender portal and `<SIEM-PRODUCT>` to assist in the identification of cyber security incidents.
 
 This includes the processing, analysis, and response to the following event logs in a timely manner:
 
@@ -281,9 +270,8 @@ This includes the processing, analysis, and response to the following event logs
 | ------------------------------ | :----------: | :----------------: |
 | Allowed application execution: |    `YES`     | `<IMPLEMENTATION>` |
 | Blocked application execution: |    `YES`     | `<IMPLEMENTATION>` |
-|                                |              |                    |
 
-`<ORGANISATION-NAME>` has established a Security Operations Centre (SOC) to analyse cybersecurity events in a timely manner, a [Cyber Security Incident Register]({{<ref "security-and-governance/general-documentation">}}) and [Incident Response Plan]({{<ref "security-and-governance/general-documentation">}}) to facilitate the response to detected cybersecurity events in a timely and appropriate manner. This plan includes reporting all incidents to `<ORGANISATION-NAME>`'s Chief Information Security Officer (CISO) and to ASD in a timely manner.
+`<ORGANISATION-NAME>` has established a Security Operations Centre (SOC) to analyse cyber security events in a timely manner, a [Cyber Security Incident Register]({{<ref "security-and-governance/general-documentation">}}) and [Incident Response Plan]({{<ref "security-and-governance/general-documentation">}}) to facilitate the response to detected cyber security events in a timely and appropriate manner. This plan includes reporting all incidents to `<ORGANISATION-NAME>`'s Chief Information Security Officer (CISO) and to ASD in a timely manner.
 
 `<INSERT ADDITIONAL INFORMATION AS APPROPRIATE>`
 
@@ -314,4 +302,4 @@ This includes the processing, analysis, and response to the following event logs
 
 * ASD's [*Essential Eight*](https://www.cyber.gov.au/resources-business-and-government/essential-cyber-security/essential-eight)
 * Microsoft's [Service Trust Portal](https://servicetrust.microsoft.com/)
-* Microsoft's [*Guidance for meeting ASD's Essential Eight - Application Control*](https://learn.microsoft.com/compliance/essential-eight/e8-app-control)
+* Microsoft's [*Guidance for meeting ASD's Essential Eight - Application Control*](https://learn.microsoft.com/en-au/compliance/anz/e8-app-control)

@@ -8,11 +8,13 @@ description: This page provides a template and guidance to assist organisations 
 
 {{% alert title="Instruction" color="dark" %}}
 
-The Essential Eight sections of a System Security Plan (SSP) should document the Essential Eight Maturity levels associated with implementation of a system. As with other sections of the SSP, information in this section should be documented according to the relevant controls outlined in ASD's ISM and the SSP Annex. 
+The Essential Eight sections of a System Security Plan (SSP) should document the Essential Eight Maturity levels associated with implementation of a system. As with other sections of the SSP, information in this section should be documented according to the relevant controls outlined in ASD's ISM and the SSP Annex.
 
 All template text refers to a typical implementation of a system built using the Blueprint, and includes reference to organisational policies, processes and technical configurations to be implemented in addition to the technical controls that may be configured using guidance from the Blueprint. Any implementation implied by the below text should not be considered as prescriptive of how the organisation must scope, build, document, or assess its system.
 
-When completing the below template, organisations should insert and update information where relevant to ensure it accurately represents the Essential Eight Maturity levels associated with implementation of their system. When complete, remove any instructional boxes throughout. 
+When completing the below template, organisations should insert and update information where relevant to ensure it accurately represents the Essential Eight Maturity levels associated with implementation of their system. When complete, remove any instructional boxes throughout.
+
+{{% download file="/content/files/Blueprint Essential Eight Template.docx" %}} Download the Blueprint Essential Eight Template (.docx) {{% /download %}}
 
 {{% /alert %}}
 
@@ -34,4 +36,3 @@ As with implementation of ISM controls, the Blueprint does not itself *achieve* 
 | Restrict Microsoft Office macros   | `<TARGET-LEVEL>`        | `<ASSESSED-LEVEL>`              |
 | User application hardening         | `<TARGET-LEVEL>`        | `<ASSESSED-LEVEL>`              |
 | Regular backups                    | `<TARGET-LEVEL>`        | `<ASSESSED-LEVEL>`              |
-|                                    |                         |                                 |

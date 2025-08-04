@@ -39,7 +39,6 @@ The Patch Operating Systems mitigation strategy is applicable to the appropriate
 | :------------------ | ------------------ |
 | Targeted:           | `<TARGET-LEVEL>`   |
 | Currently Assessed: | `<ASSESSED-LEVEL>` |
-|                     |                    |
 
 ### Implementation
 
@@ -74,7 +73,6 @@ All maturity levels require that a vulnerability scanner is used to identify mis
 | Other (including workstations):          | Operating System | Fortnightly | Fortnightly |
 |                                          |     Drivers      | Fortnightly | Fortnightly |
 |                                          |     Firmware     | Fortnightly | Fortnightly |
-|                                          |                  |             |             |
 
 {{% /alert %}}
 
@@ -116,20 +114,19 @@ The below table outlines the time-frames for different application types, as wel
 
 Internet-facing servers/network devices
 
-| Asset Type                               | Layer             | Critical Vulnerability<br>or Exploit Available | ML1 & ML2 |   ML3    |
-| :--------------------------------------- | :---------------- | :--------------------------------------------: | :-------: | :------: |
-| Internet-facing servers/network devices: | Operating System: |                      Yes                       | 48 Hours  | 48 Hours |
-|                                          |                   |                       No                       |  2 Weeks  | 2 Weeks  |
-|                                          | Drivers:          |                      Yes                       |     -     | 48 Hours |
-|                                          |                   |                       No                       |     -     | 1 Month  |
-|                                          | Firmware:         |                      Yes                       |     -     | 48 Hours |
-|                                          |                   |                       No                       |     -     | 1 Month  |
-| Other (including workstations):          | Operating System: |                      Yes                       |  1 Month  | 48 Hours |
-|                                          |                   |                       No                       |  1 Month  | 1 Month  |
-|                                          | Drivers:          |                      Yes                       |     -     | 48 Hours |
-|                                          |                   |                       No                       |     -     | 1 Month  |
-|                                          | Firmware:         |                      Yes                       |     -     | 48 Hours |
-|                                          |                   |                                                |           |          |
+| Asset Type                               | Layer             | Critical Vulnerability <br> or Exploit Available | ML1 & ML2 |   ML3    |
+| :--------------------------------------- | :---------------- | :----------------------------------------------: | :-------: | :------: |
+| Internet-facing servers/network devices: | Operating System: |                       Yes                        | 48 Hours  | 48 Hours |
+|                                          |                   |                        No                        |  2 Weeks  | 2 Weeks  |
+|                                          | Drivers:          |                       Yes                        |     -     | 48 Hours |
+|                                          |                   |                        No                        |     -     | 1 Month  |
+|                                          | Firmware:         |                       Yes                        |     -     | 48 Hours |
+|                                          |                   |                        No                        |     -     | 1 Month  |
+| Other (including workstations):          | Operating System: |                       Yes                        |  1 Month  | 48 Hours |
+|                                          |                   |                        No                        |  1 Month  | 1 Month  |
+|                                          | Drivers:          |                       Yes                        |     -     | 48 Hours |
+|                                          |                   |                        No                        |     -     | 1 Month  |
+|                                          | Firmware:         |                       Yes                        |     -     | 48 Hours |
 
 {{% /alert %}}
 

@@ -161,7 +161,7 @@ None
 | Block simple passwords                                        |          Yes |
 | Required password type                                        | Alphanumeric |
 | Number of non-alphanumeric characters in password             |            1 |
-| Minimum password length                                       |           14 |
+| Minimum password length                                       |           15 |
 | Number of sign-in failures before wiping device               |           11 |
 | Maximum minutes after screen lock before password is required |  Immediately |
 | Maximum minutes of inactivity until screen locks              |     1 Minute |

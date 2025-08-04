@@ -39,7 +39,6 @@ The Patch Applications mitigation strategy is applicable to the appropriate patc
 | :------------------ | ------------------ |
 | Targeted:           | `<TARGET-LEVEL>`   |
 | Currently Assessed: | `<ASSESSED-LEVEL>` |
-|                     |                    |
 
 ### Implementation
 
@@ -74,7 +73,6 @@ All maturity levels require that a vulnerability scanner is used to identify mis
 | Online services:    | Daily  |    Daily    |    Daily    |
 | Core applications:* | Weekly |   Weekly    |   Weekly    |
 | Other applications: |   -    | Fortnightly | Fortnightly |
-|                     |        |             |             |
 
 **For the purposes of the above table, "Core Applications" are defined as office productivity suites, web browsers and their extensions, email clients, PDF software and security products.*
 
@@ -126,7 +124,6 @@ The below table outlines the time-frames for different application types, as wel
 |                     |                                                |          |          |          |
 | Other applications: |                      Yes                       |    -     | 1 Month  | 1 Month  |
 |                     |                       No                       |    -     | 1 Month  | 1 Month  |
-|                     |                                                |          |          |          |
 
 **For the purposes of the above table, "Core Applications" are defined as office productivity suites, web browsers and their extensions, email clients, PDF software and security products.*
 

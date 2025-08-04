@@ -75,7 +75,6 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 | Calendar                    | Checked |
 | Tasks                       | Checked |
 | Reminders and notifications | Checked |
-|                             |         |
 
 #### File access
 

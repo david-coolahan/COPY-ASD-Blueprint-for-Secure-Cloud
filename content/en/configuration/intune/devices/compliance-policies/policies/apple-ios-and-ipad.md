@@ -65,7 +65,7 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 | Require a password to unlock mobile devices           |         Require |
 | **Device enrollment and automated device enrollment** |                 |
 | Simple passwords                                      |           Block |
-| Minimum password length                               |              14 |
+| Minimum password length                               |              15 |
 | Required password type                                |    Alphanumeric |
 | Number of non-alphanumeric characters in password     |               1 |
 | Maximum minutes of inactivity until screen locks      |     Immediately |

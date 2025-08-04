@@ -25,7 +25,6 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 | Item                           |                                                                                                           Value |
 | ------------------------------ | --------------------------------------------------------------------------------------------------------------: |
 | Guest user access restrictions | Guest user access is restricted to properties and memberships of their own directory objects (most restrictive) |
-|                                |                                                                                                                 |
 
 ### Guest invite settings
 

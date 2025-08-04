@@ -67,7 +67,7 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 | Simple passwords                                                |                                                        Block |
 | Password type                                                   |                                                 Alphanumeric |
 | Password complexity                                             | Require digits, lowercase, uppercase, and special characters |
-| Minimum password length                                         |                                                           14 |
+| Minimum password length                                         |                                                           15 |
 | Maximum minutes of inactivity before password is required       |                                                   15 minutes |
 | Password expiration (days)                                      |                                                          365 |
 | Number of previous passwords to prevent reuse                   |                                                            5 |

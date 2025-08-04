@@ -31,10 +31,9 @@ The User Application Hardening mitigation strategy is applicable to hardening of
 ### Maturity Level
 
 |                     |                    |
-| ------------------: | ------------------ |
-|           Targeted: | `<TARGET-LEVEL>`   |
+| :------------------ | ------------------ |
+| Targeted:           | `<TARGET-LEVEL>`   |
 | Currently Assessed: | `<ASSESSED-LEVEL>` |
-|                     |                    |
 
 ### Implementation
 
@@ -87,14 +86,12 @@ The following web browsers are allowed to operate on `<SYSTEM-NAME>` workstation
 | Security settings cannot be changed by users:          | `YES - RESTRICTED VIA WDAC`                                                                                         |
 | Does not process Java from the internet:               | `YES - RESTRICTED VIA WDAC`                                                                                         |
 | Does not process web advertisements from the internet: | `Yes - RESTRICTED VIA WDAC USING BUILT IN EDGE FUNCTIONALITY, AND BLOCKED VIA <ORGANISATION-NAME> <GATEWAY-SYSTEM>` |
-|                                                        |                                                                                                                     |
 
 | `e.g. GOOGLE CHROME`                                   | Restriction Applied |
 | :----------------------------------------------------- | ------------------- |
 | Security settings cannot be changed by users:          | `<IMPLEMENTATION>`  |
 | Does not process Java from the internet:               | `<IMPLEMENTATION>`  |
 | Does not process web advertisements from the internet: | `<IMPLEMENTATION>`  |
-|                                                        |                     |
 
 **Office productivity suites**
 
@@ -108,7 +105,6 @@ The following web browsers are allowed to operate on `<SYSTEM-NAME>` workstation
 | Blocked from creating executable content:                                  | `YES - RESTRICTED VIA WDAC` |
 | Blocked from injecting code into other processes:                          | `YES - RESTRICTED VIA WDAC` |
 | Configured to prevent activation of Object Linking and Embedding packages: | `YES - RESTRICTED VIA WDAC` |
-|                                                                            |                             |
 
 **PDF software**
 
@@ -119,7 +115,6 @@ The following PDF software is allowed to operate on `<SYSTEM-NAME>` workstations
 | Security settings cannot be changed by users: | `YES - RESTRICTED VIA WDAC` |
 | Hardened using the following guides:          | `<GUIDES USED>`             |
 | Blocked from creating child processes:        | `YES - RESTRICTED VIA WDAC` |
-|                                               |                             |
 
 **Other software**
 
@@ -128,7 +123,6 @@ The following PDF software is allowed to operate on `<SYSTEM-NAME>` workstations
 | .NET Framework 3.5 (includes .NET 2.0 and 3.0:) | `<ENABLED>/<DISABLED>/<REMOVED>`            |
 | Windows PowerShell 2.0:                         | `<ENABLED>/<DISABLED>/<REMOVED>`            |
 | PowerShell:                                     | `<CONFIGURED TO USE CONFINED LANGUAGE MODE` |
-|                                                 |                                             |
 
 ##### Servers
 
@@ -145,14 +139,12 @@ The following web browsers are allowed to operate on `<SYSTEM-NAME>` servers:
 | Security settings cannot be changed by users:          | `YES - RESTRICTED VIA WDAC`                                                                                         |
 | Does not process Java from the internet:               | `YES - RESTRICTED VIA WDAC`                                                                                         |
 | Does not process web advertisements from the internet: | `Yes - RESTRICTED VIA WDAC USING BUILT IN EDGE FUNCTIONALITY, AND BLOCKED VIA <ORGANISATION-NAME> <GATEWAY-SYSTEM>` |
-|                                                        |                                                                                                                     |
 
 | `e.g. GOOGLE CHROME`                                   | Restriction Applied |
 | :----------------------------------------------------- | ------------------- |
 | Security settings cannot be changed by users:          | `<IMPLEMENTATION>`  |
 | Does not process Java from the internet:               | `<IMPLEMENTATION>`  |
 | Does not process web advertisements from the internet: | `<IMPLEMENTATION>`  |
-|                                                        |                     |
 
 **Office productivity suites**
 
@@ -169,7 +161,6 @@ PDF software is not installed on `<SYSTEM-NAME>` servers.
 | .NET Framework 3.5 (includes .NET 2.0 and 3.0:) | `<ENABLED>/<DISABLED>/<REMOVED>`            |
 | Windows PowerShell 2.0:                         | `<ENABLED>/<DISABLED>/<REMOVED>`            |
 | PowerShell:                                     | `<CONFIGURED TO USE CONFINED LANGUAGE MODE` |
-|                                                 |                                             |
 
 #### Logging
 
@@ -192,7 +183,6 @@ The collection of event logs for monitoring of `<SYSTEM-NAME>` is performed in a
 | PowerShell module logging:       |          `<YES>`           |
 | Script block logging:            |          `<YES>`           |
 | Transcription:                   |          `<YES>`           |
-|                                  |                            |
 
 | Application Event (`<Internet-Facing Servers>`) | Forwarded to Log Analytics |
 | :---------------------------------------------- | :------------------------: |
@@ -200,7 +190,6 @@ The collection of event logs for monitoring of `<SYSTEM-NAME>` is performed in a
 | PowerShell module logging:                      |          `<YES>`           |
 | Script block logging:                           |          `<YES>`           |
 | Transcription:                                  |          `<YES>`           |
-|                                                 |                            |
 
 | Application Event (`<Non-Internet-Facing Servers>`) | Forwarded to Log Analytics |
 | :-------------------------------------------------- | :------------------------: |
@@ -208,7 +197,6 @@ The collection of event logs for monitoring of `<SYSTEM-NAME>` is performed in a
 | PowerShell module logging:                          |          `<YES>`           |
 | Script block logging:                               |          `<YES>`           |
 | Transcription:                                      |          `<YES>`           |
-|                                                     |                            |
 
 #### Monitoring and response
 
@@ -223,9 +211,9 @@ Maturity Levels Two and Three require all command line process creation, PowerSh
 | Workstations:                |  -  | Yes |
 
 Both Maturity Levels Two and Three also require the following:
-* cybersecurity events are analysed in a timely manner to identify cybersecurity incidents
-* as soon as possible after a cybersecurity incident occurs or is discovered the:
-* cybersecurity incident response plan is enacted
+* cyber security events are analysed in a timely manner to identify cyber security incidents
+* as soon as possible after a cyber security incident occurs or is discovered the:
+* cyber security incident response plan is enacted
 * incident is reported to the Chief Information Security Officer, or one of their delegates
 * incident is reported to ASD.
 
@@ -233,11 +221,11 @@ Both Maturity Levels Two and Three also require the following:
 
 {{% alert title="Blueprint guidance" color="info" %}}
 
-While the Blueprint provides limited guidance to support organisations in developing an approach for the response to cybersecurity incidents, the section below is provided for organisations to describe the measures implemented within their system. Effective implementation of these controls is generally built on a combination of system-specific and whole of organisation processes, and may include the coordination of a number of teams and staff across an organisation.
+While the Blueprint provides limited guidance to support organisations in developing an approach for the response to cyber security incidents, the section below is provided for organisations to describe the measures implemented within their system. Effective implementation of these controls is generally built on a combination of system-specific and whole of organisation processes, and may include the coordination of a number of teams and staff across an organisation.
 
 {{% /alert %}}
 
-`<SYSTEM-NAME>` utilises the Microsoft 365 Defender portal and `<SIEM-PRODUCT>` to assist in the identification of cybersecurity incidents. 
+`<SYSTEM-NAME>` utilises the Microsoft 365 Defender portal and `<SIEM-PRODUCT>` to assist in the identification of cyber security incidents. 
 
 This includes the processing, analysis, and response to the following event logs in a timely manner:
 
@@ -247,9 +235,8 @@ This includes the processing, analysis, and response to the following event logs
 | PowerShell module logging:     |   `<YES>`    |      `<YES>`       |
 | Script block logging:          |   `<YES>`    |      `<YES>`       |
 | Transcription:                 |   `<YES>`    |      `<YES>`       |
-|                                |              |                    |
 
-`<ORGANISATION-NAME>` has established a Security Operations Centre (SOC) to analyse cybersecurity events in a timely manner, and a [Cyber Security Incident Register]({{<ref "security-and-governance/general-documentation">}}), and [Incident Response Plan]({{<ref "security-and-governance/general-documentation">}}) to facilitate the response to detected cybersecurity events in a timely and appropriate manner. This plan includes reporting all incidents to the `<ORGANISATION-NAME>` CISO and to ASD in a timely manner.
+`<ORGANISATION-NAME>` has established a Security Operations Centre (SOC) to analyse cyber security events in a timely manner, and a [Cyber Security Incident Register]({{<ref "security-and-governance/general-documentation">}}), and [Incident Response Plan]({{<ref "security-and-governance/general-documentation">}}) to facilitate the response to detected cyber security events in a timely and appropriate manner. This plan includes reporting all incidents to the `<ORGANISATION-NAME>` CISO and to ASD in a timely manner.
 
 `<INSERT ADDITIONAL INFORMATION AS APPROPRIATE>`
 

@@ -69,21 +69,21 @@ Technical controls for hardening of user applications and Microsoft Office macro
 
 <div class="no-band-table">
 
-|                                      |                                                                                               |     |     |     |
-| ------------------------------------ | --------------------------------------------------------------------------------------------- | --- | --- | --- |
-| **User Application Configurations:** | Microsoft and built-in web browsers hardening                                                 |     |     |     |
-|                                      | remove unnecessary functionality, such as Microsoft Access                                    |     |     |     |
-|                                      | restrict the use of add-ons to only those deployed via Intune                                 |     |     |     |
-|                                      | prevent the installation of Java                                                              |     |     |     |
-|                                      | enable native Microsoft Edge advertisement blocking                                           |     |     |     |
-|                                      | disable Internet Explorer 11                                                                  |     |     |     |
-|                                      | configure Attack Surface Reduction rules                                                      |     |     |     |
-|                                      | block Object Linking and Embedding (OLE)                                                      |     |     |     |
-| **Macros:**                          | only allow Microsoft macros that have been digitally signed by a trusted publisher to execute |     |     |     |
-|                                      | disable all macros downloaded from the internet                                               |     |     |     |
-|                                      | enable antivirus scanning of Microsoft macros                                                 |     |     |     |
-|                                      | prevent users from changing macro settings                                                    |     |     |     |
-|                                      | configure Defender for Endpoint to centrally store EDR logs and send these to Log Analytics   |     |     |     |
+|                                      |                                                                                               |
+| ------------------------------------ | --------------------------------------------------------------------------------------------- |
+| **User Application Configurations:** | Microsoft and built-in web browsers hardening                                                 |
+|                                      | remove unnecessary functionality, such as Microsoft Access                                    |
+|                                      | restrict the use of add-ons to only those deployed via Intune                                 |
+|                                      | prevent the installation of Java                                                              |
+|                                      | enable native Microsoft Edge advertisement blocking                                           |
+|                                      | disable Internet Explorer 11                                                                  |
+|                                      | configure Attack Surface Reduction rules                                                      |
+|                                      | block Object Linking and Embedding (OLE)                                                      |
+| **Macros:**                          | only allow Microsoft macros that have been digitally signed by a trusted publisher to execute |
+|                                      | disable all macros downloaded from the internet                                               |
+|                                      | enable antivirus scanning of Microsoft macros                                                 |
+|                                      | prevent users from changing macro settings                                                    |
+|                                      | configure Defender for Endpoint to centrally store EDR logs and send these to Log Analytics   |
 
 </div>
 

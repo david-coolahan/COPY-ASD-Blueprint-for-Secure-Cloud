@@ -55,7 +55,6 @@ The following suppliers are used to procure ICT equipment and software for `<SYS
 | `<HARDWARE-MANUFACTURER-4>` | `<PRINTERS>`                                      | `<NOTES>` |
 | `<HARDWARE-MANUFACTURER-5>` | `<FIDO2 HARDWARE KEYS>`                           | `<NOTES>` |
 |                             |                                                   |           |
-|                             |                                                   |           |
 
 #### Technical controls implemented
 

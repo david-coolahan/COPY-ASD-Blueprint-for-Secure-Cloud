@@ -35,7 +35,6 @@ The Restrict Microsoft Office Macros mitigation strategy is applicable to restri
 | :------------------ | ------------------ |
 | Targeted:           | `<TARGET-LEVEL>`   |
 | Currently Assessed: | `<ASSESSED-LEVEL>` |
-|                     |                    |
 
 ### Implementation
 
