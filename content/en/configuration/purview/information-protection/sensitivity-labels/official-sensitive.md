@@ -37,19 +37,18 @@ Prior to configuring sensitivity labels for groups and sites, an additional one-
 | Label Priority         |                                                                                                     3 in label group |
 | Description for Users  | Low to medium business impact. Limited damage to an individual, organisation or government generally if compromised. |
 | Description for admins |                                                                                                               *None* |
-| Label color            |                                                                                                      *None selected* |
+| Label color            |                                                                                                             Marigold |
 
 ### Scope
 
 #### Define the scope for this label
 
-| Item                                  |       Value |
-| ------------------------------------- | ----------: |
-| - Files & other data assets           |     Checked |
-| - Emails                              |     Checked |
-| - Meetings                            |     Checked |
-| **Groups & sites**                    |     Checked |
-| **Schematized data assets (preview)** | Not checked |
+| Item                      |   Value |
+| ------------------------- | ------: |
+| Files & other data assets | Checked |
+| Emails                    | Checked |
+| Meetings                  | Checked |
+| Groups & sites            | Checked |
 
 ### Items
 

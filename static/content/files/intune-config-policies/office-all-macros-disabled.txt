@@ -1,9 +1,9 @@
 ﻿{
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/configurationPolicies/$entity",
-    "createdDateTime": "2024-11-05T23:27:32.8629226Z",
+    "createdDateTime": "2025-06-17T04:16:34.61783Z",
     "creationSource": null,
     "description": "",
-    "lastModifiedDateTime": "2024-11-05T23:27:32.8629226Z",
+    "lastModifiedDateTime": "2025-08-07T22:26:56.0967733Z",
     "name": "ASD Office Hardening - All Macros Disabled",
     "platforms": "windows10",
     "priorityMetaData": null,
@@ -12,7 +12,7 @@
     ],
     "settingCount": 40,
     "technologies": "mdm",
-    "id": "67d788b2-bee3-4ede-b13f-576326f40477",
+    "id": "7b240d6b-c63a-430f-8605-eb8cb4ab7331",
     "templateReference": {
         "templateId": "",
         "templateFamily": "none",
@@ -88,7 +88,7 @@
                             "settingInstanceTemplateReference": null,
                             "choiceSettingValue": {
                                 "settingValueTemplateReference": null,
-                                "value": "user_vendor_msft_policy_config_access16v2~policy~l_microsoftofficeaccess~l_applicationsettings~l_security~l_trustcenter_l_vbawarningspolicy_l_empty_2",
+                                "value": "user_vendor_msft_policy_config_access16v2~policy~l_microsoftofficeaccess~l_applicationsettings~l_security~l_trustcenter_l_vbawarningspolicy_l_empty_4",
                                 "children": []
                             }
                         }
@@ -177,7 +177,7 @@
                             "settingInstanceTemplateReference": null,
                             "choiceSettingValue": {
                                 "settingValueTemplateReference": null,
-                                "value": "user_vendor_msft_policy_config_excel16v2~policy~l_microsoftofficeexcel~l_exceloptions~l_security~l_trustcenter_l_vbawarningspolicy_l_empty4_2",
+                                "value": "user_vendor_msft_policy_config_excel16v2~policy~l_microsoftofficeexcel~l_exceloptions~l_security~l_trustcenter_l_vbawarningspolicy_l_empty4_4",
                                 "children": []
                             }
                         }
@@ -256,8 +256,19 @@
                 "settingInstanceTemplateReference": null,
                 "choiceSettingValue": {
                     "settingValueTemplateReference": null,
-                    "value": "user_vendor_msft_policy_config_outlk16v2~policy~l_microsoftofficeoutlook~l_security~l_trustcenter_l_securityleveloutlook_0",
-                    "children": []
+                    "value": "user_vendor_msft_policy_config_outlk16v2~policy~l_microsoftofficeoutlook~l_security~l_trustcenter_l_securityleveloutlook_1",
+                    "children": [
+                        {
+                            "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                            "settingDefinitionId": "user_vendor_msft_policy_config_outlk16v2~policy~l_microsoftofficeoutlook~l_security~l_trustcenter_l_securityleveloutlook_l_securitylevel",
+                            "settingInstanceTemplateReference": null,
+                            "choiceSettingValue": {
+                                "settingValueTemplateReference": null,
+                                "value": "user_vendor_msft_policy_config_outlk16v2~policy~l_microsoftofficeoutlook~l_security~l_trustcenter_l_securityleveloutlook_l_securitylevel_4",
+                                "children": []
+                            }
+                        }
+                    ]
                 }
             }
         },
@@ -342,7 +353,7 @@
                             "settingInstanceTemplateReference": null,
                             "choiceSettingValue": {
                                 "settingValueTemplateReference": null,
-                                "value": "user_vendor_msft_policy_config_ppt16v2~policy~l_microsoftofficepowerpoint~l_powerpointoptions~l_security~l_trustcenter_l_vbawarningspolicy_l_empty3_2",
+                                "value": "user_vendor_msft_policy_config_ppt16v2~policy~l_microsoftofficepowerpoint~l_powerpointoptions~l_security~l_trustcenter_l_vbawarningspolicy_l_empty3_4",
                                 "children": []
                             }
                         }
@@ -392,7 +403,7 @@
                             "settingInstanceTemplateReference": null,
                             "choiceSettingValue": {
                                 "settingValueTemplateReference": null,
-                                "value": "user_vendor_msft_policy_config_proj16v2~policy~l_proj~l_projectoptions~l_security~l_trustcenter_l_vbawarningspolicy_l_empty_2",
+                                "value": "user_vendor_msft_policy_config_proj16v2~policy~l_proj~l_projectoptions~l_security~l_trustcenter_l_vbawarningspolicy_l_empty_4",
                                 "children": []
                             }
                         }
@@ -440,7 +451,7 @@
                             "settingInstanceTemplateReference": null,
                             "choiceSettingValue": {
                                 "settingValueTemplateReference": null,
-                                "value": "user_vendor_msft_policy_config_pub16v2~policy~l_microsoftofficepublisher~l_security~l_trustcenter_l_vbawarningspolicy_l_empty0_2",
+                                "value": "user_vendor_msft_policy_config_pub16v2~policy~l_microsoftofficepublisher~l_security~l_trustcenter_l_vbawarningspolicy_l_empty0_4",
                                 "children": []
                             }
                         }
@@ -542,7 +553,7 @@
                             "settingInstanceTemplateReference": null,
                             "choiceSettingValue": {
                                 "settingValueTemplateReference": null,
-                                "value": "user_vendor_msft_policy_config_visio16v2~policy~l_microsoftvisio~l_visiooptions~l_security~l_trustcenter_l_vbawarningspolicy_l_empty_2",
+                                "value": "user_vendor_msft_policy_config_visio16v2~policy~l_microsoftvisio~l_visiooptions~l_security~l_trustcenter_l_vbawarningspolicy_l_empty_4",
                                 "children": []
                             }
                         }
@@ -631,7 +642,7 @@
                             "settingInstanceTemplateReference": null,
                             "choiceSettingValue": {
                                 "settingValueTemplateReference": null,
-                                "value": "user_vendor_msft_policy_config_word16v2~policy~l_microsoftofficeword~l_wordoptions~l_security~l_trustcenter_l_vbawarningspolicy_l_empty19_2",
+                                "value": "user_vendor_msft_policy_config_word16v2~policy~l_microsoftofficeword~l_wordoptions~l_security~l_trustcenter_l_vbawarningspolicy_l_empty19_4",
                                 "children": []
                             }
                         }

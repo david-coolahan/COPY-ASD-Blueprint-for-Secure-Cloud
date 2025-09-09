@@ -7,7 +7,7 @@ description: "This section describes the design decisions associated with Exchan
 Mailbox Auditing provides visibility into the access and modification of user mailboxes by owners, delegates, and administrators.
 Once enabled on a user's mailbox, activities subject to audit appear within the Office 365 audit log. This information is then available for security teams to analyse. It is recommended that this audit log be exported to a centralised logging service.
 
-Once enabled on a user's mailbox, the activities subject to audit appear within the Office 365 audit log. This information is then available for security to review and run analysis. It is recommended that this audit log be exported to a centralised logging service. The Microsoft Purview Audit (Premium) service requires the "Microsoft 365 Advanced Auditing" license allocated to each user in the tenant.
+Once enabled on a user's mailbox, the activities subject to audit appear within the Office 365 audit log. This information is then available for security to review and run analysis. It is recommended that this audit log be exported to a centralised logging service. The Microsoft Purview Audit (Premium) service requires the "Microsoft 365 Advanced Auditing" licence allocated to each user in the tenant.
 
 Security Operations teams may have a requirement that all Exchange Online (EXO) mailboxes be audited and additionally have the ability to capture, store and audit all emails sent internally within the environment and additionally in and out of the organisations email environment.
 

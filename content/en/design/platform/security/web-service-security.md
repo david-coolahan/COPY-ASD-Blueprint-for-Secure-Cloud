@@ -328,7 +328,7 @@ Examples of the Conditional Access App Control policies that can be configured t
 * **Block access** – based on specific risk factors can prevent users and/or devices from accessing specific resources across one or all connected apps.
 * **Block custom activities** – application-specific events can be blocked if they increase the risk of data leakage or exfiltration.
 
-Note, to use Conditional Access App Control an Entra ID Premium P1 license is required in addition to the Microsoft Defender for Cloud Apps license.
+Note, to use Conditional Access App Control an Entra ID Premium P1 licence is required in addition to the Microsoft Defender for Cloud Apps licence.
 
 {{% alert title="Design decisions" color="warning" %}}
 
@@ -450,7 +450,7 @@ In addition to the SIEM agent, Microsoft Defender for Cloud Apps supports native
 | Decision point                 | Design decision | Justification                                                                                    |
 | ------------------------------ | --------------- | ------------------------------------------------------------------------------------------------ |
 | Microsoft Sentinel integration | Configured      | To support integration between Defender for Cloud Apps and Microsoft cloud native SIEM solution. |
-| Microsoft Sentinel license     | Yes             | To enable Microsoft Sentinel integration a Microsoft Sentinel license is required.               |
+| Microsoft Sentinel licence     | Yes             | To enable Microsoft Sentinel integration a Microsoft Sentinel licence is required.               |
 
 {{% /alert %}}
 

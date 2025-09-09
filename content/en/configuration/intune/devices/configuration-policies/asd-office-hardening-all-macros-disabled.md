@@ -92,11 +92,12 @@ None
 
 #### Microsoft Outlook 2016
 
-| Item                                                                           |    Value |
-| ------------------------------------------------------------------------------ | -------: |
-| **Security > Trust Center**                                                    |          |
-| Apply macro security settings to macros, add-ins and additional actions (User) |  Enabled |
-| Security setting for macros (User) (Deprecated)                                | Disabled |
+| Item                                                                           |                   Value |
+| ------------------------------------------------------------------------------ | ----------------------: |
+| **Security > Trust Center**                                                    |                         |
+| - Security Level (User) (Deprecated)                                           | Never warn, disable all |
+| Apply macro security settings to macros, add-ins and additional actions (User) |                 Enabled |
+| Security setting for macros (User) (Deprecated)                                |                 Enabled |
 
 #### Microsoft PowerPoint 2016
 
@@ -122,12 +123,12 @@ None
 
 #### Microsoft Publisher 2016
 
-| Item                                       |                                   Value |
-| ------------------------------------------ | --------------------------------------: |
-| **Security**                               |                         High (disabled) |
-| Publisher Automation Security Level (User) |                                 Enabled |
-| **Security > Trust Center**                | Visio Options > Security > Trust Center |
-| VBA Macro Notification Settings (User)     |                                 Enabled |
+| Item                                       |                            Value |
+| ------------------------------------------ | -------------------------------: |
+| **Security**                               |                  High (disabled) |
+| Publisher Automation Security Level (User) |                          Enabled |
+| **Security > Trust Center**                | Disable all without notification |
+| VBA Macro Notification Settings (User)     |                          Enabled |
 
 #### Microsoft Visio 2016
 

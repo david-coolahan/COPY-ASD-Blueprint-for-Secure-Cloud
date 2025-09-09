@@ -19,14 +19,6 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 
 {{% /alert %}}
 
-### Name
-
-| Item        |                                                                     Value |
-| ----------- | ------------------------------------------------------------------------: |
-| Name        |                                                     Users up to PROTECTED |
-| Description | Publishes labels for use with content up to PROTECTED to authorised users |
-| Priority    |                                                               1 - highest |
-
 ### Labels to publish
 
 #### Choose sensitivity labels to publish
@@ -77,12 +69,11 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 
 #### Default settings for meetings and calendar events
 
-| Item                                                                 |    Value |
-| -------------------------------------------------------------------- | -------: |
-| Default label                                                        |     None |
-| Require users to apply a label to their meetings and calendar events |  Checked |
-| Meeting inherits highest priority label from shared file             |  Checked |
-| Automatically apply label                                            | Selected |
+| Item                                                                 |                                      Value |
+| -------------------------------------------------------------------- | -----------------------------------------: |
+| Default label                                                        |                                       None |
+| Require users to apply a label to their meetings and calendar events |                                    Checked |
+| Inherit label from files shared to meetings                          | Automatically apply highest priority label |
 
 #### Default settings for sites and groups
 
@@ -96,6 +87,14 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 | Item          | Value |
 | ------------- | ----: |
 | Default label |  None |
+
+### Name
+
+| Item        |                                                                     Value |
+| ----------- | ------------------------------------------------------------------------: |
+| Name        |                                                     Users up to PROTECTED |
+| Description | Publishes labels for use with content up to PROTECTED to authorised users |
+| Priority    |                                                               1 - highest |
 
 ### Related information
 

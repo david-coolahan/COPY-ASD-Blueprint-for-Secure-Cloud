@@ -25,9 +25,9 @@ The following should be considered before using Purview Audit:
 
 #### Licensing
 
-Advanced auditing features are available with E5 equivalent licensing with the Audit (Premium) licensing add-on. To take advantage of these features, the *Advanced Auditing app* license must be applied per user. In mixed-license environments, activities will only be logged and searchable up to what the license permits for each user. Similarly, while it may be possible to create audit policies based on Audit (Premium) features, like ten year retention, only activities up to what the user license permits will be retained.
+Advanced auditing features are available with E5 equivalent licensing with the Audit (Premium) licensing add-on. To take advantage of these features, the *Advanced Auditing app* licence must be applied per user. In mixed-licence environments, activities will only be logged and searchable up to what the licence permits for each user. Similarly, while it may be possible to create audit policies based on Audit (Premium) features, like ten year retention, only activities up to what the user licence permits will be retained.
 
-Audit policies and licensing are not retroactive, logs generated before the application of a policy or license will not be retained according to the new policy.
+Audit policies and licensing are not retroactive, logs generated before the application of a policy or licence will not be retained according to the new policy.
 
 #### Activity lag
 

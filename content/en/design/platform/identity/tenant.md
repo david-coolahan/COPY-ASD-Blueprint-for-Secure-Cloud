@@ -47,7 +47,7 @@ Microsoft 365 authentication screens provide the ability to identify the organis
 
 ### Licences
 
-The Blueprint is built using Microsoft 365 E5 licences, which includes Microsoft Entra ID P2. The E5 license provides enhanced features such as self-service, enhanced monitoring, security reporting, and just in time access, which are required to meet maturity level 3 under ASD's [Essential Eight Maturity Model](https://www.cyber.gov.au/resources-business-and-government/essential-cyber-security/essential-eight/essential-eight-maturity-model). Additional feature comparisons and mapping of Essential Eight to Microsoft 365 features is available at [https://m365maps.com](https://m365maps.com/).
+The Blueprint is built using Microsoft 365 E5 licences, which includes Microsoft Entra ID P2. The E5 licence provides enhanced features such as self-service, enhanced monitoring, security reporting, and just in time access, which are required to meet maturity level 3 under ASD's [Essential Eight Maturity Model](https://www.cyber.gov.au/resources-business-and-government/essential-cyber-security/essential-eight/essential-eight-maturity-model). Additional feature comparisons and mapping of Essential Eight to Microsoft 365 features is available at [https://m365maps.com](https://m365maps.com/).
 
 {{% alert title="Design decisions" color="warning" %}}
 

@@ -177,7 +177,7 @@ MDI sensors should be installed on [all Domain Controllers](https://learn.micros
 
 ##### Licensing
 
-MDI is enabled at the tenant level requiring all users that benefit from the service to have an [E5 or equivalent license assigned](https://learn.microsoft.com/en-au/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-defender-for-identity).
+MDI is enabled at the tenant level requiring all users that benefit from the service to have an [E5 or equivalent licence assigned](https://learn.microsoft.com/en-au/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-defender-for-identity).
 
 ##### Investigating deployment issues
 

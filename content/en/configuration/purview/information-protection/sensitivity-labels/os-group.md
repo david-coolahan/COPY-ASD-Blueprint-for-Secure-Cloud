@@ -25,6 +25,18 @@ Prior to configuring sensitivity labels for groups and sites, an additional one-
 
 {{% /alert %}}
 
+{{% alert title="Parent label deprecation" color="warning" %}}
+
+Microsoft is deprecating parent sensitivity labels in favour of label groups.
+
+During the migration process, sublabels may be automatically generated for each existing parent label. These newly created sublabels may be included in publishing policies, making them visible and selectable by end users.
+
+Organisations are encouraged to conduct a review of label configurations prior to migration, and to validate the post-migration labelling scheme and associated policy behaviours.
+
+For guidance on preparing for and mitigating potential impacts, please refer to [Microsoft's label migration documentation](https://learn.microsoft.com/en-au/purview/migrate-sensitivity-label-scheme).
+
+{{% /alert %}}
+
 ### Label details
 
 #### Provide basic details for this label
@@ -36,19 +48,18 @@ Prior to configuring sensitivity labels for groups and sites, an additional one-
 | Label Priority         |                                                            2 |
 | Description for Users  | OFFICIAL: Sensitive and Information Management Marker labels |
 | Description for admins |                                                       *None* |
-| Label color            |                                              *None selected* |
+| Label color            |                                                     Marigold |
 
 ### Scope
 
 #### Define the scope for this label
 
-| Item                                  |       Value |
-| ------------------------------------- | ----------: |
-| - Files & other data assets           |     Checked |
-| - Emails                              |     Checked |
-| - Meetings                            | Not checked |
-| **Groups & sites**                    |     Checked |
-| **Schematized data assets (preview)** | Not checked |
+| Item                      |       Value |
+| ------------------------- | ----------: |
+| Files & other data assets |     Checked |
+| Emails                    |     Checked |
+| Meetings                  | Not checked |
+| Groups & sites            |     Checked |
 
 ### Items
 
@@ -70,11 +81,14 @@ Prior to configuring sensitivity labels for groups and sites, an additional one-
 
 #### Define protection settings for groups and sites
 
-| Item                                                      |       Value |
-| --------------------------------------------------------- | ----------: |
-| Privacy and external user access                          | Not checked |
-| External sharing and Conditional Access                   | Not checked |
-| Private teams discoverability and shared channel settings | Not checked |
+| Item                                                      |            Value |
+| --------------------------------------------------------- | ---------------: |
+| Privacy and external user access                          |      Not checked |
+| External sharing and Conditional Access                   |      Not checked |
+| Private teams discoverability and shared channel settings |      Not checked |
+| Apply a label to channel meetings                         | None<sup>1</sup> |
+
+1: This setting may only be available when editing the label after creation.
 
 ### Related information
 
@@ -93,4 +107,5 @@ Prior to configuring sensitivity labels for groups and sites, an additional one-
 
 #### References
 
+* [Migrate parent sensitivity labels to label groups](https://learn.microsoft.com/en-au/purview/migrate-sensitivity-label-scheme)
 * [Sensitivity labels](https://learn.microsoft.com/en-gb/purview/sensitivity-labels)

@@ -21,7 +21,7 @@ The Azure Information Protection (AIP) service underpins [sensitivity label acce
 
 {{% alert title="Offline access and outages" color="warning" %}}
 
-Expiring offline access may have an impact on business continuity if the expiry timeframe is too short to cater for potential outages.
+Expiring offline access may have an impact on business continuity if the expiry time frame is too short to cater for potential outages.
 
 {{% /alert %}}
 
@@ -37,7 +37,7 @@ When a sensitivity label that uses Azure RMS is applied to a document or email, 
 
 #### Owner usage rights
 
-Owner usage rights permits any operation on a document or email, and includes the ability to remove protection and reprotect the document or email. When such rights are associated with a sensitivity label, a user is able to *reprotect* or apply a different label to already labelled information.
+Owner usage rights allow full control over a document or email, including the ability to remove existing protection and apply new protection. When these rights are granted through a sensitivity label, the user can *re-protect* the content or apply a different label to information that has already been labeled.
 
 #### Using other usage rights
 

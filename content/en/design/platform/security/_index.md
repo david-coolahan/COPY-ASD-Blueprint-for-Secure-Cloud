@@ -69,7 +69,7 @@ Defender XDR Unified RBAC roles are not available for activation within Entra Pr
 
 When provisioning Defender XDR and its services, the storage location equivalent to the Azure region hosting the service may be an option for selection. Australian regions should be selected, however if an incorrect region had been previously selected, it may be possible to have the service migrated or re-provisioned to the correct region by raising a support case. This process may also require reconfiguration or redeployment of remote software components if a new tenant ID or access key is generated.
 
-The data retention period for Defender XDR services is typically 180 days but can be less depending on the service, datatype, and end-user license used. Extending retention beyond 180 days is possible with Microsoft Sentinel, or other SIEM-SOAR or logging service integration.
+The data retention period for Defender XDR services is typically 180 days but can be less depending on the service, datatype, and end-user licence used. Extending retention beyond 180 days is possible with Microsoft Sentinel, or other SIEM-SOAR or logging service integration.
 
 Further information on Defender XDR's data location and retention can be found in Microsoft's [Data security and retention in Microsoft Defender XDR](https://learn.microsoft.com/en-au/defender-xdr/data-privacy) page.
 

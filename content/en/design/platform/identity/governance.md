@@ -44,13 +44,13 @@ Access reviews enable the audit and maintenance of group memberships, access to 
 
 1: While access reviews for Teams, groups and applications are performed via the Entra Identity Governance portal page, access reviews for roles are performed via the Entra PIM portal page.
 
-Access reviews for inactive users are subject to Microsoft Entra ID Governance license requirements and are not in implemented in the Blueprint.
+Access reviews for inactive users are subject to Microsoft Entra ID Governance licence requirements and are not in implemented in the Blueprint.
 
 ### Lifecycle workflows
 
 Lifecycle workflows provide automation for the onboarding, offboarding and moves of users, and can integrate with an organisation's other user management systems, like human resources and financial systems, to further streamline such processes.
 
-Lifecycle workflows are subject to Microsoft Entra ID Governance license requirements and are not in implemented in the Blueprint.
+Lifecycle workflows are subject to Microsoft Entra ID Governance licence requirements and are not in implemented in the Blueprint.
 
 ### Privileged Identity Management (PIM)
 

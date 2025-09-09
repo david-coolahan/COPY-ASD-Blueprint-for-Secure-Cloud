@@ -38,7 +38,7 @@ Purview has many specific requirements depending on which applications, services
 #### References
 
 * [Govern your data with Microsoft Purview](https://learn.microsoft.com/en-au/purview/manage-data-governance)
-* [Known issues with sensitivity labels in Office](https://support.microsoft.com/en-au/office/known-issues-with-sensitivity-labels-in-office-b169d687-2bbd-4e21-a440-7da1b2743edc) 
+* [Known issues with sensitivity labels in Office](https://support.microsoft.com/en-au/office/known-issues-with-sensitivity-labels-in-office-b169d687-2bbd-4e21-a440-7da1b2743edc)
 * [Learn about auditing solutions in Microsoft Purview](https://learn.microsoft.com/en-au/purview/audit-solutions-overview)
 * [Learn about data loss prevention](https://learn.microsoft.com/en-au/purview/dlp-learn-about-dlp)
 * [Microsoft Purview Compliance Manager](https://learn.microsoft.com/en-au/purview/compliance-manager)

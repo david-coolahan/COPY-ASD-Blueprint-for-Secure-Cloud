@@ -52,6 +52,14 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 - [TOP SECRET](#top-secret)
 - [TOP SECRET (paragraph)](#top-secret-paragraph)
 
+{{% alert title="Historical NATIONAL CABINET caveat" color="info" %}}
+
+The NATIONAL CABINET special handling marking has been formally retired.
+
+To manage historical information, the corresponding sensitive info types will be retained to allow for the continued identification and protection of such information.
+
+{{% /alert %}}
+
 ### Sensitive info types
 
 [//]: # (                                         * * * * * Note * * * * *                                                           )

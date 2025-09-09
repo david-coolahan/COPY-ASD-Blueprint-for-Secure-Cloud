@@ -19,6 +19,14 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 
 {{% /alert %}}
 
+### Data to protect
+
+#### Choose what type of data to protect
+
+| Item                             |    Value |
+| -------------------------------- | -------: |
+| Data stored in connected sources | Selected |
+
 ### Name
 
 #### Name your DLP policy
@@ -50,7 +58,7 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 | Instances                       | Not checked |
 | On-premises repositories        | Not checked |
 | Fabric and Power BI workspaces  | Not checked |
-| Microsoft 365 Copilot (preview) | Not checked |
+| Microsoft 365 Copilot           | Not checked |
 
 ### Policy settings
 
@@ -62,63 +70,67 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 
 ##### Block SECRET emails
 
-| Item                                                                                                                                |                                                                                                            Value |
-| ----------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------: |
-| Name                                                                                                                                |                                                                                              Block SECRET emails |
-| Description                                                                                                                         |                                                                                                           *None* |
-| **Conditions**                                                                                                                      |                                                                                                                  |
-| Header matches patterns                                                                                                             |                                                                             X-Protective-Marking<br>`SEC=SECRET` |
-| **OR**                                                                                                                              |                                                                                                                  |
-| Subject matches patterns                                                                                                            |                                                                                                   `\[SEC=SECRET` |
-| **Actions**                                                                                                                         |                                                                                                                  |
-| Restrict access or encrypt the content in Microsoft 365 locations                                                                   | Block users from receiving email, or accessing shared SharePoint, OneDrive, and Teams files, and Power BI items. |
-|                                                                                                                                     |                                                                                                  Block everyone. |
-| **User notifications**                                                                                                              |                                                                                                               On |
-| Email notifications                                                                                                                 |                                                                                                          Checked |
-| - Notify the user who sent, shared, or last modified the content.                                                                   |                                                                                                         Selected |
-| - Attach matching email message to the notification (applies only to Exchange)                                                      |                                                                                                      Not checked |
-| Policy tips                                                                                                                         |                                                                                                      Not checked |
-| **User overrides**                                                                                                                  |                                                                                                                  |
-| Allow overrides from M365 services                                                                                                  |                                                                                                      Not checked |
-| **Incident reports**                                                                                                                |                                                                                                                  |
-| Use this severity level in admin alerts and reports                                                                                 |                                                                                                           Medium |
-| Send an alert to admins when a rule match occurs.                                                                                   |                                                                                                               On |
-| Send alert every time an activity matches the rule                                                                                  |                                                                                                         Selected |
-| Use email incident reports to notify you when a policy match occurs.                                                                |                                                                                                              Off |
-| **Additional options**                                                                                                              |                                                                                                                  |
-| If there's a match for this rule, stop processing additional DLP policies and rules.                                                |                                                                                                          Checked |
-| Evaluate rule per component (Email body and each individual attachment will be considered an individual entity for rule evaluation) |                                                                                                              Off |
-| Priority                                                                                                                            |                                                                                                                0 |
+| Item                                                                                                                                |                                Value |
+| ----------------------------------------------------------------------------------------------------------------------------------- | -----------------------------------: |
+| Name                                                                                                                                |                  Block SECRET emails |
+| Description                                                                                                                         |                               *None* |
+| **Conditions**                                                                                                                      |                                      |
+| Header matches patterns                                                                                                             | X-Protective-Marking<br>`SEC=SECRET` |
+| **OR**                                                                                                                              |                                      |
+| Subject matches patterns                                                                                                            |                       `\[SEC=SECRET` |
+| **Actions**                                                                                                                         |                                      |
+| Restrict access or encrypt the content in Microsoft 365 locations                                                                   |                                      |
+| Block users from receiving email, or accessing shared SharePoint, OneDrive, and Teams files, and Power BI items.                    |                             Selected |
+| - Block everyone.                                                                                                                   |                             Selected |
+| **User notifications**                                                                                                              |                                      |
+| Use notifications to inform your users and help educate them on the proper use of sensitive info.                                   |                                   On |
+| Email notifications                                                                                                                 |                              Checked |
+| - Notify the user who sent, shared, or last modified the content.                                                                   |                             Selected |
+| - Attach matching email message to the notification (applies only to Exchange)                                                      |                          Not checked |
+| Policy tips                                                                                                                         |                          Not checked |
+| **User overrides**                                                                                                                  |                                      |
+| Allow overrides from M365 services                                                                                                  |                          Not checked |
+| **Incident reports**                                                                                                                |                                      |
+| Use this severity level in admin alerts and reports                                                                                 |                               Medium |
+| Send an alert to admins when a rule match occurs.                                                                                   |                                   On |
+| Send alert every time an activity matches the rule                                                                                  |                             Selected |
+| Use email incident reports to notify you when a policy match occurs.                                                                |                                  Off |
+| **Additional options**                                                                                                              |                                      |
+| If there's a match for this rule, stop processing additional DLP policies and rules.                                                |                              Checked |
+| Evaluate rule per component (Email body and each individual attachment will be considered an individual entity for rule evaluation) |                                  Off |
+| Priority                                                                                                                            |                                    0 |
 
 ##### Block TOP SECRET emails
 
-| Item                                                                                                                                |                                                                                                            Value |
-| ----------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------: |
-| Name                                                                                                                                |                                                                                          Block TOP SECRET emails |
-| Description                                                                                                                         |                                                                                                           *None* |
-| **Conditions**                                                                                                                      |                                                                                                                  |
-| Header matches patterns                                                                                                             |                                                                         X-Protective-Marking<br>`SEC=TOP SECRET` |
-| **OR**                                                                                                                              |                                                                                                                  |
-| Subject matches patterns                                                                                                            |                                                                                               `\[SEC=TOP SECRET` |
-| **Actions**                                                                                                                         |                                                                                                                  |
-| Restrict access or encrypt the content in Microsoft 365 locations                                                                   | Block users from receiving email, or accessing shared SharePoint, OneDrive, and Teams files, and Power BI items. |
-|                                                                                                                                     |                                                                                                  Block everyone. |
-| **User notifications**                                                                                                              |                                                                                                               On |
-| Email notifications                                                                                                                 |                                                                                                          Checked |
-| - Notify the user who sent, shared, or last modified the content.                                                                   |                                                                                                         Selected |
-| - Attach matching email message to the notification (applies only to Exchange)                                                      |                                                                                                      Not checked |
-| Policy tips                                                                                                                         |                                                                                                      Not checked |
-| **User overrides**                                                                                                                  |                                                                                                                  |
-| Allow overrides from M365 services                                                                                                  |                                                                                                      Not checked |
-| **Incident reports**                                                                                                                |                                                                                                                  |
-| Use this severity level in admin alerts and reports                                                                                 |                                                                                                           Medium |
-| Send an alert to admins when a rule match occurs.                                                                                   |                                                                                                               On |
-| Send alert every time an activity matches the rule                                                                                  |                                                                                                         Selected |
-| Use email incident reports to notify you when a policy match occurs.                                                                |                                                                                                              Off |
-| **Additional options**                                                                                                              |                                                                                                                  |
-| If there's a match for this rule, stop processing additional DLP policies and rules.                                                |                                                                                                          Checked |
-| Evaluate rule per component (Email body and each individual attachment will be considered an individual entity for rule evaluation) |                                                                                                              Off |
-| Priority                                                                                                                            |                                                                                                                0 |
+| Item                                                                                                                                |                                    Value |
+| ----------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------: |
+| Name                                                                                                                                |                  Block TOP SECRET emails |
+| Description                                                                                                                         |                                   *None* |
+| **Conditions**                                                                                                                      |                                          |
+| Header matches patterns                                                                                                             | X-Protective-Marking<br>`SEC=TOP SECRET` |
+| **OR**                                                                                                                              |                                          |
+| Subject matches patterns                                                                                                            |                       `\[SEC=TOP SECRET` |
+| **Actions**                                                                                                                         |                                          |
+| Restrict access or encrypt the content in Microsoft 365 locations                                                                   |                                          |
+| Block users from receiving email, or accessing shared SharePoint, OneDrive, and Teams files, and Power BI items.                    |                                 Selected |
+| - Block everyone.                                                                                                                   |                                 Selected |
+| **User notifications**                                                                                                              |                                          |
+| Use notifications to inform your users and help educate them on the proper use of sensitive info.                                   |                                       On |
+| Email notifications                                                                                                                 |                                  Checked |
+| - Notify the user who sent, shared, or last modified the content.                                                                   |                                 Selected |
+| - Attach matching email message to the notification (applies only to Exchange)                                                      |                              Not checked |
+| Policy tips                                                                                                                         |                              Not checked |
+| **User overrides**                                                                                                                  |                                          |
+| Allow overrides from M365 services                                                                                                  |                              Not checked |
+| **Incident reports**                                                                                                                |                                          |
+| Use this severity level in admin alerts and reports                                                                                 |                                   Medium |
+| Send an alert to admins when a rule match occurs.                                                                                   |                                       On |
+| Send alert every time an activity matches the rule                                                                                  |                                 Selected |
+| Use email incident reports to notify you when a policy match occurs.                                                                |                                      Off |
+| **Additional options**                                                                                                              |                                          |
+| If there's a match for this rule, stop processing additional DLP policies and rules.                                                |                                  Checked |
+| Evaluate rule per component (Email body and each individual attachment will be considered an individual entity for rule evaluation) |                                      Off |
+| Priority                                                                                                                            |                                        1 |
 
 ### Policy mode
 

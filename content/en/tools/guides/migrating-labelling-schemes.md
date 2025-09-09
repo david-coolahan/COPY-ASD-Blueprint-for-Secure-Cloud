@@ -17,7 +17,7 @@ The simplest approach can be to delete old sensitivity labels and all label-depe
 
 #### Duplicate label identifiers
 
-Sensitivity labels have several distinct identifiers including a GUID for programmatic use and service integration, a *name* which is used an administrative identifier, and a *display name* which is presented for selection by users in applications and workflows. Conflicts can arise when creating labels with the same name, or same display name:
+Sensitivity labels have several distinct identifiers including, a GUID for programmatic use and service integration, a *name* which is used an administrative identifier, and a *display name* which is presented for selection by users in applications and workflows. Conflicts can arise when creating labels with the same name, or same display name:
 
 * Purview will prevent the use of duplicate label names
 * Purview will only permit the use of duplicate label display names if the labels are created as sub-labels under different parent labels
@@ -99,18 +99,8 @@ In the example table below:
 | OFFICIAL Sensitive Legal Privilege     | Rename,<br>pending deletion | - Personal Privacy                          | Create           |
 | OFFICIAL Sensitive Legislative Secrecy | Rename,<br>pending deletion | - Legal Privilege                           | Create           |
 | PROTECTED                              | Rename,<br>pending deletion | - Legislative Secrecy                       | Create           |
-|                                        |                             | OFFICIAL Sensitive NATIONAL CABINET (group) | Create           |
-|                                        |                             | - OFFICIAL Sensitive NATIONAL CABINET       | Create           |
-|                                        |                             | - Personal Privacy                          | Create           |
-|                                        |                             | - Legal Privilege                           | Create           |
-|                                        |                             | - Legislative Secrecy                       | Create           |
 |                                        |                             | PROTECTED (group)                           | Create           |
 |                                        |                             | - PROTECTED                                 | Create           |
-|                                        |                             | - Personal Privacy                          | Create           |
-|                                        |                             | - Legal Privilege                           | Create           |
-|                                        |                             | - Legislative Secrecy                       | Create           |
-|                                        |                             | PROTECTED NATIONAL CABINET (group)          | Create           |
-|                                        |                             | - PROTECTED NATIONAL CABINET                | Create           |
 |                                        |                             | - Personal Privacy                          | Create           |
 |                                        |                             | - Legal Privilege                           | Create           |
 |                                        |                             | - Legislative Secrecy                       | Create           |

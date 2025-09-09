@@ -54,7 +54,7 @@ The policy has a large number of rules to cater for each different PSPF marking 
 * The X-header marking rules check if the sensitivity label applied to the email matches the current X-header marking, if the X-header marking doesn't exist (i.e. the email is new) or if the X-header marking is different (i.e. the email is a reply or forward and the label has been changed), the X-Protective-Marking X-header is overwritten with the correct marking. Checking if the X-header marking is different helps preserve any existing X-Protective-Marking values that were created with the original email which may include `ORIGIN=`, `EXPIRES= DOWNTO=`, or other special handling markings.
 * The subject marking rules overwrite any existing subject marking according to the sensitivity label applied to the email, irrespective of whether the label is the same or not. This is done to prevent the prevent repetitively appending the subject marking on replies and forwards, for example `Re: Re: subject [SEC=OFFICIAL] [SEC=OFFICIAL] [SEC=OFFICIAL]`.
 
-The applied markings adhere strictly to the Australian Government Email Protective Marking Standard with the exception of excluding the `ORIGIN=` marking. If the originator of an email needs to be obtained, the unified audit log can be searched with any organisation that uses Microsoft 365 services. DLP policy, auto-labelling policy, and sensitive information type configurations all use regular expressions which cater for any use of `EXPIRES= DOWNTO=` markings.
+The applied markings adhere strictly to the Australian Government Email Protective Marking Standard, including the `ORIGIN=` marking. If the specific sender of an email needs to be obtained, the unified audit log can be searched with any organisation that uses Microsoft 365 services. DLP policies and auto-labelling policies also use regular expressions which also cater for the use of `EXPIRES=` and `DOWNTO=` markings.
 
 #### Block PROTECTED emails except for approved domains
 
@@ -113,10 +113,10 @@ Each DLP policy rule defines user notifications in terms of policy tips displaye
 
 #### Configuration
 
-* [Auto-labeling policies]({{<ref "configuration/purview/information-protection/policies/auto-labeling-policies">}}))
+* [Auto-labeling policies]({{<ref "configuration/purview/information-protection/policies/auto-labeling-policies">}})
 * [Data Loss Prevention policies]({{<ref "configuration/purview/data-loss-prevention/policies">}})
 * [Sensitive info types]({{<ref "configuration/purview/information-protection/classifiers/sensitive-info-types">}})
-* [Sensitivity label publishing policies]({{<ref "configuration/purview/information-protection/policies/publishing-policies">}})).
+* [Sensitivity label publishing policies]({{<ref "configuration/purview/information-protection/policies/publishing-policies">}})
 
 #### References
 

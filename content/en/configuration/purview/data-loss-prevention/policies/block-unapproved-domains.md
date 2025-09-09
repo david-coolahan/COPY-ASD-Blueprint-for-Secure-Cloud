@@ -19,6 +19,14 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 
 {{% /alert %}}
 
+### Data to protect
+
+#### Choose what type of data to protect
+
+| Item                             |    Value |
+| -------------------------------- | -------: |
+| Data stored in connected sources | Selected |
+
 ### Name
 
 #### Name your DLP policy
@@ -50,7 +58,7 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 | Instances                       | Not checked |
 | On-premises repositories        | Not checked |
 | Fabric and Power BI workspaces  | Not checked |
-| Microsoft 365 Copilot (preview) | Not checked |
+| Microsoft 365 Copilot           | Not checked |
 
 ### Policy settings
 
@@ -77,9 +85,11 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 | **Conditions**                                                                                                                      |                                                                                                                                                          |
 | Recipient domain is                                                                                                                 |                                                     `<external organisation's domains used for email>`<br>`<your organisation's domains used for email>` |
 | **Actions**                                                                                                                         |                                                                                                                                                          |
-| Restrict access or encrypt the content in Microsoft 365 locations                                                                   |                                         Block users from receiving email, or accessing shared SharePoint, OneDrive, and Teams files, and Power BI items. |
-|                                                                                                                                     |                                                                                                                                          Block everyone. |
-| **User notifications**                                                                                                              |                                                                                                                                                       On |
+| Restrict access or encrypt the content in Microsoft 365 locations                                                                   |                                                                                                                                                          |
+| Block users from receiving email, or accessing shared SharePoint, OneDrive, and Teams files, and Power BI items.                    |                                                                                                                                                 Selected |
+| - Block everyone.                                                                                                                   |                                                                                                                                                 Selected |
+| **User notifications**                                                                                                              |                                                                                                                                                          |
+| Use notifications to inform your users and help educate them on the proper use of sensitive info.                                   |                                                                                                                                                       On |
 | Email notifications                                                                                                                 |                                                                                                                                                  Checked |
 | - Notify the user who sent, shared, or last modified the content.                                                                   |                                                                                                                                                 Selected |
 | - Attach matching email message to the notification (applies only to Exchange)                                                      |                                                                                                                                                  Checked |
@@ -117,9 +127,11 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 | **Conditions**                                                                                                                      |                                                                                                                                                          |
 | Sender domain is                                                                                                                    |                                                     `<external organisation's domains used for email>`<br>`<your organisation's domains used for email>` |
 | **Actions**                                                                                                                         |                                                                                                                                                          |
-| Restrict access or encrypt the content in Microsoft 365 locations                                                                   |                                         Block users from receiving email, or accessing shared SharePoint, OneDrive, and Teams files, and Power BI items. |
-|                                                                                                                                     |                                                                                                                                          Block everyone. |
-| **User notifications**                                                                                                              |                                                                                                                                                       On |
+| Restrict access or encrypt the content in Microsoft 365 locations                                                                   |                                                                                                                                                          |
+| Block users from receiving email, or accessing shared SharePoint, OneDrive, and Teams files, and Power BI items.                    |                                                                                                                                                 Selected |
+| - Block everyone.                                                                                                                   |                                                                                                                                                 Selected |
+| **User notifications**                                                                                                              |                                                                                                                                                          |
+| Use notifications to inform your users and help educate them on the proper use of sensitive info.                                   |                                                                                                                                                       On |
 | Email notifications                                                                                                                 |                                                                                                                                                  Checked |
 | - Notify the user who sent, shared, or last modified the content.                                                                   |                                                                                                                                                 Selected |
 | - Attach matching email message to the notification (applies only to Exchange)                                                      |                                                                                                                                                  Checked |

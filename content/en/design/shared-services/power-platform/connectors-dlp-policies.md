@@ -16,7 +16,7 @@ Power Apps and Power Automate are built with underlying connectors that enable a
 
 On-premises data connectors also require an [on-premises data gateway](https://learn.microsoft.com/data-integration/gateway/service-gateway-onprem).
 
-Additional Power Apps and / or Power Automate plan licenses are required to use premium connectors, which includes all custom connectors, on-premises connectors, some Azure services, and third party connectors.
+Additional Power Apps and / or Power Automate plan licences are required to use premium connectors, which includes all custom connectors, on-premises connectors, some Azure services, and third party connectors.
 
 {{% /alert %}}
 
