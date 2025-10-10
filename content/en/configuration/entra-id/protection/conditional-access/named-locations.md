@@ -1,6 +1,5 @@
 ---
-title: "Named Locations"
-linkTitle: "Named Locations"
+title: "Named locations"
 weight: 20
 type: docs
 description: "This page describes the configuration of named Locations within Microsoft Entra ID associated with systems built according to the guidance provided by ASD's Blueprint for Secure Cloud."
@@ -8,7 +7,7 @@ description: "This page describes the configuration of named Locations within Mi
 
 {{% alert title="Instruction" color="dark" %}}
 
-The below tables outline the *as built* configuration for ASD's *Blueprint for Secure Cloud* (the Blueprint) for the Microsoft Entra admin portal at the following URL:
+The below tables outline the _as built_ configuration for ASD's _Blueprint for Secure Cloud_ (the Blueprint) for the Microsoft Entra admin portal at the following URL:
 
 <https://entra.microsoft.com/#view/Microsoft_AAD_ConditionalAccess/ConditionalAccessBlade/~/NamedLocations/fromNav/>
 
@@ -35,25 +34,25 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 | ------------------------ | -----------------------------: |
 | **Name**                 |                    Trusted IPs |
 | Mark as trusted location |                        Checked |
-| IPv4 or IPv6 range       | *Relevant IPv4 or IPv6 ranges* |
+| IPv4 or IPv6 range       | _Relevant IPv4 or IPv6 ranges_ |
 
 ### Related information
 
-#### Security & Governance
+#### Security and governance
 
-* [Multi-factor Authentication]({{<ref "multi-factor-authentication">}})
-* [Authentication Hardening]({{<ref "system-hardening-authentication">}})
+- [Multi-factor authentication](/security-and-governance/essential-eight/multi-factor-authentication)
+- [Authentication hardening](/security-and-governance/system-security-plan/system-hardening-authentication)
 
 #### Design
 
-* [Conditional access]({{<ref "design/platform/identity/conditional-access">}})
-* [Purview labels]({{<ref "design/shared-services/purview/labelling-and-classification">}})
-* [Organisation Residency]({{<ref "design/shared-services/microsoft-365/residency.md">}})
+- [Conditional access](/design/platform/identity/conditional-access)
+- [Purview labels](/design/shared-services/purview/labelling-and-classification)
+- [Organisation Residency](/design/shared-services/microsoft-365/residency)
 
 #### Configuration
 
-* [Endpoint security policies]({{<ref "configuration/defender/endpoints/configuration-management/endpoint-security-policies.md">}})
+- [Endpoint security policies](/configuration/defender/endpoints/configuration-management/endpoint-security-policies)
 
 #### References
 
-* [Conditional Access: Target resources](https://learn.microsoft.com/entra/identity/conditional-access/concept-conditional-access-cloud-apps#authentication-context)
+- [Conditional Access: Target resources](https://learn.microsoft.com/entra/identity/conditional-access/concept-conditional-access-cloud-apps#authentication-context)

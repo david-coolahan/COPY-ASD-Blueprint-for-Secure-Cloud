@@ -1,6 +1,5 @@
 ---
 title: "Password protection"
-linkTitle: "Password protection"
 weight: 20
 type: docs
 description: "This page describes the configuration of password protection within Microsoft Entra ID associated with systems built according to the guidance provided by ASD's Blueprint for Secure Cloud."
@@ -8,7 +7,7 @@ description: "This page describes the configuration of password protection withi
 
 {{% alert title="Instruction" color="dark" %}}
 
-The below tables outline the *as built* configuration for ASD's *Blueprint for Secure Cloud* (the Blueprint) for the Microsoft Entra admin portal at the following URL:
+The below tables outline the _as built_ configuration for ASD's _Blueprint for Secure Cloud_ (the Blueprint) for the Microsoft Entra admin portal at the following URL:
 
 <https://entra.microsoft.com/#view/Microsoft_AAD_IAM/AuthenticationMethodsMenuBlade/~/PasswordProtection/>
 
@@ -25,35 +24,35 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 | Lockout threshold                                             |                                  5 |
 | Lockout duration in seconds                                   |                                 60 |
 | Enforce custom list                                           |                                Yes |
-| Custom banned password list                                   | *as per organisation requirements* |
+| Custom banned password list                                   | _as per organisation requirements_ |
 | Enable password protection on Windows Server Active Directory |                                Yes |
 | Mode                                                          |                           Enforced |
 
 ### Related information
 
-#### Security & Governance
+#### Security and governance
 
-* [System Management]({{<ref "system-management.md">}})
-* [Authentication Hardening]({{<ref "system-hardening-authentication">}})
-* [Essential Eight - Restrict Administrative Privileges]({{<ref "security-and-governance/essential-eight/restrict-administrative-privileges.md">}})
-* [Essential Eight: Multi-factor Authentication]({{<ref "security-and-governance/essential-eight/multi-factor-authentication.md">}})
-* [Essential Eight: Restrict Microsoft Office Macros]({{<ref "restrict-microsoft-office-macros.md">}})
+- [System management](/security-and-governance/system-security-plan/system-management)
+- [Authentication hardening](/security-and-governance/system-security-plan/system-hardening-authentication)
+- [Essential Eight - Restrict administrative privileges](/security-and-governance/essential-eight/restrict-administrative-privileges)
+- [Essential Eight - Multi-factor authentication](/security-and-governance/essential-eight/multi-factor-authentication)
+- [Essential Eight - Restrict Microsoft Office macros](/security-and-governance/essential-eight/restrict-microsoft-office-macros)
 
 #### Design
 
-* [Authentication]({{<ref "authentication">}})
-* [Identity]({{<ref "design/platform/identity">}})
-* [Identity security]({{<ref "identity-security">}})
+- [Authentication](/design/platform/identity/authentication)
+- [Identity](/design/platform/identity)
+- [Identity security](/design/platform/security/identity-security)
 
 #### Configuration
 
-* [Entra ID Protection]({{<ref "configuration/entra-id/protection">}})
-* [Intune Endpoint Security]({{<ref "configuration/intune/endpoint-security">}})
-* [Microsoft Intune - Profile Configurations]({{<ref "configuration/intune/devices/configuration-policies">}})
-* [Endpoint security policies]({{<ref "configuration/defender/endpoints/configuration-management/endpoint-security-policies.md">}})
-* [Cloud app Settings]({{<ref "configuration/defender/settings/cloud-apps/settings.md">}})
-* [Rules]({{<ref "configuration/defender/settings/endpoints/rules.md">}})
+- [Entra ID Protection](/configuration/entra-id/protection)
+- [Endpoint security](/configuration/intune/endpoint-security)
+- [Configuration policies](/configuration/intune/devices/configuration-policies)
+- [Endpoint security policies](/configuration/defender/endpoints/configuration-management/endpoint-security-policies)
+- [Cloud apps settings](/configuration/defender/settings/cloud-apps/settings)
+- [Rules](/configuration/defender/settings/endpoints/rules)
 
 #### References
 
-* [Password and account lockout policies](https://learn.microsoft.com/entra/identity/domain-services/password-policy)
+- [Password and account lockout policies](https://learn.microsoft.com/entra/identity/domain-services/password-policy)

@@ -1,16 +1,16 @@
 ---
-title: "Organisation Wide Configuration"
+title: "Organisation wide configuration"
 weight: 45
 description: "This section describes the design decisions associated with Teams Organisation Wide Configuration for system(s) built using ASD's Blueprint for Secure Cloud."
 ---
 
 Microsoft Teams is a collaboration platform that enables the organisation to work collaboratively with external organisations. This enables organisation users to collaborate internally, with trusted guest users and set up meetings with external users.
 
-The Australian Signals Directorate (ASD) Blueprint for Secure Cloud (The Blueprint) considers the following configurations:
+The Australian Signals Directorate's (ASD's) _Blueprint for Secure Cloud_ (The Blueprint) considers the following configurations:
 
-* External Access - configures allowable domains to connect to the organisation's instance of Microsoft Teams. This also configures Skype for Business integration.
-* Guest Access – when an external user is invited to be a member of the team. Once a team owner has granted someone guest access, they can access that team's resources, share files, and join a group chat with other team members.
-* Teams Settings – configure the default behaviour of all users in the Teams application.
+- External Access - configures allowable domains to connect to the organisation's instance of Microsoft Teams. This also configures Skype for Business integration.
+- Guest Access – when an external user is invited to be a member of the team. Once a team owner has granted someone guest access, they can access that team's resources, share files, and join a group chat with other team members.
+- Teams Settings – configure the default behaviour of all users in the Teams application.
 
 {{% alert title="Design decisions" color="warning" %}}
 
@@ -24,19 +24,19 @@ The Australian Signals Directorate (ASD) Blueprint for Secure Cloud (The Bluepri
 
 ### Related information
 
-#### Security & Governance
+#### Security and governance
 
-* None identified
+- None identified
 
 #### Design
 
-* None identified
+- None identified
 
 #### Configuration
 
-* [Guest access]({{<ref "configuration/microsoft-teams/Setting-&-policies/Global-(org-wide-default)-settings/external-collaboration/guest-access">}})
-* [External access]({{<ref "configuration/microsoft-teams/users/external-access">}})
+- [Guest access](/configuration/teams/setting-and-policies/global-settings/external-collaboration/guest-access)
+- [External access](/configuration/teams/users/external-access)
 
 #### References
 
-* None identified
+- None identified

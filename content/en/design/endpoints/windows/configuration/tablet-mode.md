@@ -11,25 +11,25 @@ Tablet Mode is a feature that switches a device experience from tablet mode to d
 {{% alert title="Design decisions" color="warning" %}}
 
 | Decision point | Design decision                                | Justification                                                                                             |
-|----------------|------------------------------------------------|-----------------------------------------------------------------------------------------------------------|
+| -------------- | ---------------------------------------------- | --------------------------------------------------------------------------------------------------------- |
 | Tablet Mode    | Enabled by default on devices that support it. | To provide the option to manipulate Tablet Mode behaviour through the Action Centre on supported devices. |
 
 {{% /alert %}}
 
 ### Related information
 
-#### Security & Governance
+#### Security and governance
 
-* None identified
+- None identified
 
 #### Design
 
-* None identified
+- None identified
 
 #### Configuration
 
-* None identified
+- None identified
 
 #### References
 
-* None identified
+- None identified

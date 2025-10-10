@@ -8,11 +8,11 @@ Registry settings are applied to the Windows registry to modify the underlying o
 
 There are several tools available to apply registry settings such as:
 
-* Group Policy
-* Microsoft Intune
-* Microsoft Endpoint Configuration Manager (MECM)
+- Group Policy
+- Microsoft Intune
+- Microsoft Endpoint Configuration Manager (MECM)
 
-ASD's [*Hardening Microsoft 365, Office 2021, Office 2019 and Office 2016*](https://www.cyber.gov.au/resources-business-and-government/maintaining-devices-and-systems/system-hardening-and-administration/system-hardening/hardening-microsoft-365-office-2021-office-2019-and-office-2016) guidance defines group policy settings along with other recommendations to significantly reduce the attack surface available to malicious attacks.
+ASD's [_Hardening Microsoft 365, Office 2021, Office 2019 and Office 2016_](https://www.cyber.gov.au/resources-business-and-government/maintaining-devices-and-systems/system-hardening-and-administration/system-hardening/hardening-microsoft-365-office-2021-office-2019-and-office-2016) guidance defines group policy settings along with other recommendations to significantly reduce the attack surface available to malicious attacks.
 
 ### Cloud native deployments
 
@@ -20,7 +20,7 @@ ASD's [*Hardening Microsoft 365, Office 2021, Office 2019 and Office 2016*](http
 
 | Decision point          | Design decision  | Justification                                                                                                                                                                                            |
 | ----------------------- | ---------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Registry Setting Method | Microsoft Intune | Organisations should use Microsoft Intune to implement and modify user and computer registry settings to comply with ASD's *Hardening Microsoft 365, Office 2021, Office 2019 and Office 2016* guidance. |
+| Registry Setting Method | Microsoft Intune | Organisations should use Microsoft Intune to implement and modify user and computer registry settings to comply with ASD's _Hardening Microsoft 365, Office 2021, Office 2019 and Office 2016_ guidance. |
 
 {{% /alert %}}
 
@@ -30,26 +30,25 @@ ASD's [*Hardening Microsoft 365, Office 2021, Office 2019 and Office 2016*](http
 
 | Decision point          | Design decision             | Justification                                                                                                                                                                                                                                       |
 | ----------------------- | --------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Registry Setting Method | Group Policy Objects & MECM | Organisations can utilise management solutions such as Group Policy Objects and MECM to implement and modify user and computer registry settings to comply with ASD's *Hardening Microsoft 365, Office 2021, Office 2019 and Office 2016* guidance. |
+| Registry Setting Method | Group Policy Objects & MECM | Organisations can utilise management solutions such as Group Policy Objects and MECM to implement and modify user and computer registry settings to comply with ASD's _Hardening Microsoft 365, Office 2021, Office 2019 and Office 2016_ guidance. |
 
 {{% /alert %}}
 
 ### Related information
 
-#### Security & Governance
+#### Security and governance
 
-* None identified
+- None identified
 
 #### Design
 
-* None identified
+- None identified
 
 #### Configuration
 
-* [ASD Windows Hardening Guidelines]({{<ref "configuration/intune/devices/configuration-policies/asd-windows-hardening-guidelines.md">}})
+- [ASD Windows hardening guidelines](/configuration/intune/devices/configuration-policies/asd-windows-hardening-guidelines)
 
 #### References
 
-* [Hardening Microsoft Windows 10](https://www.cyber.gov.au/acsc/view-all-content/publications/hardening-microsoft-windows-10-version-21h1-workstations)
-* [Hardening Microsoft 365, Office 2021, Office 2019 and Office 2016](https://www.cyber.gov.au/acsc/view-all-content/publications/hardening-microsoft-365-office-2021-office-2019-and-office-2016)
-
+- [Hardening Microsoft Windows 10](https://www.cyber.gov.au/acsc/view-all-content/publications/hardening-microsoft-windows-10-version-21h1-workstations)
+- [Hardening Microsoft 365, Office 2021, Office 2019 and Office 2016](https://www.cyber.gov.au/acsc/view-all-content/publications/hardening-microsoft-365-office-2021-office-2019-and-office-2016)

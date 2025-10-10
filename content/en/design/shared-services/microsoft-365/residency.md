@@ -1,5 +1,5 @@
 ---
-title: "Microsoft 365 Organisation Residency"
+title: "Microsoft 365 organisation residency"
 weight: 30
 description: "This section describes the design decisions associated with Microsoft 365 for system(s) built using ASD's Blueprint for Secure Cloud."
 ---
@@ -10,13 +10,13 @@ Microsoft 365 tenant data residency is critical to ensure the organisation's ten
 
 {{% alert title="Design decisions" color="warning" %}}
 
-| Decision point       | Design decision | Justification                                                                |
-|----------------------|-----------------|------------------------------------------------------------------------------|
+| Decision point       | Design decision | Justification                                                                 |
+| -------------------- | --------------- | ----------------------------------------------------------------------------- |
 | Microsoft 365 Region | Australia       | Aligns with ASD's guidance to utilise cloud services located within Australia |
 
 {{% /alert %}}
 
-### Microsoft 365 Service Locations 
+### Microsoft 365 Service Locations
 
 | Service                                                    | Location                          |
 | ---------------------------------------------------------- | --------------------------------- |
@@ -44,21 +44,22 @@ Microsoft 365 tenant data residency is critical to ensure the organisation's ten
 
 ### Related information
 
-#### Security & Governance
+#### Security and governance
 
-* None identified
+- None identified
 
 #### Design
 
-* None identified
+- None identified
 
 #### Configuration
 
-* None identified
+- None identified
+
 #### References
 
-* [Where your Microsoft 365 customer data is stored](https://docs.microsoft.com/microsoft-365/enterprise/o365-data-locations?view=o365-worldwide)
+- [Where your Microsoft 365 customer data is stored](https://docs.microsoft.com/microsoft-365/enterprise/o365-data-locations?view=o365-worldwide)
 
 #### Related design decisions
 
-* None identified
+- None identified

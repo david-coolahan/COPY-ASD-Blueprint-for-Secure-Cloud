@@ -1,6 +1,5 @@
 ---
 title: "Identity governance"
-linkTitle: "Identity governance"
 weight: 30
 description: "This section describes the design decisions associated with identity governance for system(s) built using ASD's Blueprint for Secure Cloud."
 ---
@@ -12,11 +11,11 @@ Identity governance encompasses:
 - Lifecycle workflows - the onboarding, offboarding and moves of users
 - Privileged Identity Management (PIM) - the just-in-time access management of privileged roles
 
-Identity governance has a significant role to play in implementing the principle of least privilege; enhancing security and mitigating risks by ensuring users are only accessing the resources relevant to their responsibilities, and nothing more. The Information Security Manual (ISM), [Guidelines for Personnel Security, Access to systems and their resources](https://www.cyber.gov.au/resources-business-and-government/essential-cyber-security/ism/cyber-security-guidelines/guidelines-personnel-security) has several controls relevant to identity governance.
+Identity governance has a significant role to play in implementing the principle of least privilege; enhancing security and mitigating risks by ensuring users are only accessing the resources relevant to their responsibilities, and nothing more. The _Information Security Manual_ (ISM), [Guidelines for Personnel Security, Access to systems and their resources](https://www.cyber.gov.au/resources-business-and-government/essential-cyber-security/ism/cyber-security-guidelines/guidelines-personnel-security) has several controls relevant to identity governance.
 
 ### Entitlement management
 
-Entitlement management is largely focussed on the use of *access packages*, where administrators create *catalogs* of resources (like SharePoint sites, Teams, groups or applications) that are presented to select users or guests, and then lifecycle-managed with expiration and access review workflows.
+Entitlement management is largely focussed on the use of _access packages_, where administrators create _catalogs_ of resources (like SharePoint sites, Teams, groups or applications) that are presented to select users or guests, and then lifecycle-managed with expiration and access review workflows.
 
 Access packages are particularly useful for managing access to the common resources associated with the various divisions and user-types within an organisation.
 
@@ -54,19 +53,19 @@ Lifecycle workflows are subject to Microsoft Entra ID Governance licence require
 
 ### Privileged Identity Management (PIM)
 
-The use of PIM is discussed in more detail in the [Role-Based Access Control design page]({{<ref "design/platform/identity/roles">}}).
+The use of PIM is discussed in more detail in the [Role-Based Access Control design page](/design/platform/identity/roles).
 
 ### Related information
 
-#### Security & Governance
+#### Security and governance
 
 - None identified
 
 #### Design
 
-- [Conditional Access]({{<ref "design/platform/identity/conditional-access">}})
-- [Groups]({{<ref "design/platform/identity/groups">}})
-- [Role-based access control]({{<ref "design/platform/identity/roles">}})
+- [Conditional access](/design/platform/identity/conditional-access)
+- [Groups](/design/platform/identity/groups)
+- [Role-based access control](/design/platform/identity/roles)
 
 #### Configuration
 
@@ -75,5 +74,5 @@ The use of PIM is discussed in more detail in the [Role-Based Access Control des
 #### References
 
 - [Create an access review of Azure resource and Microsoft Entra roles in PIM](https://learn.microsoft.com/en-au/entra/id-governance/privileged-identity-management/pim-create-roles-and-resource-roles-review)
-- [Identity Governance](https://learn.microsoft.com/entra/id-governance/identity-governance-overview)
+- [Identity governance](https://learn.microsoft.com/entra/id-governance/identity-governance-overview)
 - [Plan a Microsoft Entra access reviews deployment](https://learn.microsoft.com/en-au/entra/id-governance/deploy-access-reviews)

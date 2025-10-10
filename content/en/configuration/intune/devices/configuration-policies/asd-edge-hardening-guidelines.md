@@ -1,14 +1,14 @@
 ---
-title: "ASD Edge Hardening Guidelines"
+title: "ASD Edge hardening guidelines"
 weight: 30
 description: "This section describes the configuration of device configuration profiles within Microsoft Intune associated with systems built according to the guidance provided by ASD's Blueprint for Secure Cloud."
 ---
 
 {{% alert title="Instruction" color="dark" %}}
 
-The below tables outline the *as built* configuration for ASD's *Blueprint for Secure Cloud* (the Blueprint) for the Microsoft Intune portal at the following URL:
+The below tables outline the _as built_ configuration for ASD's _Blueprint for Secure Cloud_ (the Blueprint) for the Microsoft Intune portal at the following URL:
 
-https://intune.microsoft.com/#view/Microsoft_Intune_DeviceSettings/DevicesMenu/~/configuration
+<https://intune.microsoft.com/#view/Microsoft_Intune_DeviceSettings/DevicesMenu/~/configuration>
 
 The settings described on these pages provide a baseline implementation for a system configured using the Blueprint. Any implementation implied by these pages should not be considered as prescriptive as to how an organisation must scope, build, document, or assess a system.
 
@@ -22,7 +22,7 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 
 This configuration policy can be imported.
 
-Download the {{% download file="/content/files/intune-config-policies/edge-hardening.txt" %}} Edge Hardening Guidelines {{% /download %}} *.txt* file and change the extension to *.json*, then select **Create > Import Policy**.
+Download the {{% download file="/content/files/intune-config-policies/EdgeHardening.txt" %}} Edge Hardening Guidelines {{% /download %}} _.txt_ file and change the extension to _.json_, then select **Create > Import Policy**.
 
 {{% /alert %}}
 
@@ -30,7 +30,7 @@ Download the {{% download file="/content/files/intune-config-policies/edge-harde
 
 | Item        |                         Value |
 | ----------- | ----------------------------: |
-| Name        | ASD Edge Hardening Guidelines |
+| Name        | ASD Edge hardening guidelines |
 | Description |                               |
 | Platform    |          Windows 10 and later |
 
@@ -44,7 +44,9 @@ Download the {{% download file="/content/files/intune-config-policies/edge-harde
 
 #### Excluded groups
 
-None
+| Item   |              Value |
+| ------ | -----------------: |
+| Groups | No groups selected |
 
 ### Scope tags
 
@@ -86,32 +88,30 @@ None
 
 ### Related information
 
-#### Security & Governance
+#### Security and governance
 
-* [User Application Hardening]({{<ref "security-and-governance/system-security-plan/system-hardening-user-apps.md">}})
-* [Application Control]({{<ref "security-and-governance/essential-eight/application-control.md">}})
-* [Enterprise Mobility]({{<ref "security-and-governance/system-security-plan/enterprise-mobility.md">}})
-* [Essential Eight: Restrict Microsoft Office Macros]({{<ref "restrict-microsoft-office-macros.md">}})
-* [Essential Eight: Patch Applications]({{< ref "patch-applications.md">}})
-* [Essential Eight: Patch Operating Systems]({{< ref "patch-os.md">}})
-* [Essential Eight: Regular Backups]({{< ref "regular-backups.md">}})
-* [System Management]({{<ref "system-management.md">}})
-* [System Monitoring]({{<ref "system-monitoring.md">}})
-  
+- [User application hardening](/security-and-governance/system-security-plan/system-hardening-user-apps)
+- [Essential Eight - Application control](/security-and-governance/essential-eight/application-control)
+- [Enterprise mobility](/security-and-governance/system-security-plan/enterprise-mobility)
+- [Essential Eight - Restrict Microsoft Office macros](/security-and-governance/essential-eight/restrict-microsoft-office-macros)
+- [Essential Eight - Patch applications](/security-and-governance/essential-eight/patch-applications)
+- [Essential Eight - Patch operating systems](/security-and-governance/essential-eight/patch-os)
+- [Essential Eight - Regular backups](/security-and-governance/essential-eight/regular-backups)
+- [System management](/security-and-governance/system-security-plan/system-management)
+- [System monitoring](/security-and-governance/system-security-plan/system-monitoring)
+
 #### Design
 
-* [Microsoft Edge Hardening]({{<ref "design/endpoints/windows/security/edge-hardening.md">}})
+- [Microsoft Edge hardening](/design/endpoints/windows/security/edge-hardening)
 
-  
 #### Configuration
 
-* [Security Baseline for Microsoft Edge]({{<ref "configuration/intune/endpoint-security/security-baselines/security-baseline-for-microsoft-edge.md">}})
-* [Microsoft Intune - profile configurations]({{<ref "configuration/intune/devices/configuration-policies">}})
-* [Endpoint security policies]({{<ref "configuration/defender/endpoints/configuration-management/endpoint-security-policies.md">}})
-* [Permissions]({{<ref "configuration/defender/settings/endpoints/permissions.md">}})
-* [Rules]({{<ref "configuration/defender/settings/endpoints/rules.md">}})
-
+- [Security Baseline for Microsoft Edge](/configuration/intune/endpoint-security/security-baselines/security-baseline-for-microsoft-edge)
+- [Microsoft Intune - profile configurations](/configuration/intune/devices/configuration-policies)
+- [Endpoint security policies](/configuration/defender/endpoints/configuration-management/endpoint-security-policies)
+- [Permissions](/configuration/defender/settings/endpoints/permissions)
+- [Rules](/configuration/defender/settings/endpoints/rules)
 
 #### References
 
-* None identified
+- None identified

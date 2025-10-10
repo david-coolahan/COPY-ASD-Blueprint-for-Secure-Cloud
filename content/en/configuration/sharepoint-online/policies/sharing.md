@@ -1,13 +1,12 @@
 ---
 title: "Sharing"
-linkTitle: "Sharing"
 weight: 020
 description: "This section describes the configuration of SharePoint associated with systems built according to guidance in ASD's Blueprint for Secure Cloud."
 ---
 
 {{% alert title="Instruction" color="dark" %}}
 
-The below tables outline the *as built* configuration for ASD's *Blueprint for Secure Cloud* (the Blueprint) for the SharePoint admin portal at the following URL:
+The below tables outline the _as built_ configuration for ASD's _Blueprint for Secure Cloud_ (the Blueprint) for the SharePoint admin portal at the following URL:
 
 https://`<TENANT-NAME>`-admin.sharepoint.com/
 
@@ -46,19 +45,19 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 
 ### Related information
 
-#### Security & Governance
+#### Security and governance
 
-* None identified
+- None identified
 
 #### Design
 
-* [Sharing and Access Controls]({{<ref "design/shared-services/sharepoint-online/sharing">}})
-* [Sharing]({{<ref "design/shared-services/onedrive/sharing">}})
+- [Sharing and access controls](/design/shared-services/sharepoint-online/sharing)
+- [Sharing](/design/shared-services/onedrive/sharing)
 
 #### Configuration
 
-* [Services]({{<ref "configuration/microsoft-365/settings/services">}})
+- [Services](/configuration/microsoft-365/settings/services)
 
 #### References
 
-* None identified
+- None identified

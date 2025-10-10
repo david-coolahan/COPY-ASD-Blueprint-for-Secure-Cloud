@@ -1,6 +1,5 @@
 ---
 title: "Conditional Access"
-linkTitle: "Conditional Access"
 weight: 70
 description: "This section describes the design decisions associated with Conditional Access for system(s) built using ASD's Blueprint for Secure Cloud."
 ---
@@ -40,20 +39,20 @@ Policy names should give a clear indication of the scope, type, and purpose of t
 
 1: These policy names are not implemented in the Blueprint.
 
-See the [Conditional Access policies]({{<ref "configuration/entra-id/protection/conditional-access/policies">}}) configuration page for examples.
+See the [Conditional Access policies](/configuration/entra-id/protection/conditional-access/policies) configuration page for examples.
 
 Organisations may wish to implement numbering or other keyword standards within the policy name for versioning, to group policy types, or to substitute commonly used wording (abbreviating policy names). Consideration should be given to:
 
 - the resulting order of policy names in the Entra portal when selecting a prefix for policy names
 - the extensibility of names, including for deviations from existing policies and atypical scenarios
 - the use of special characters in policy names if using any automation or programmatic methods of management
-- marking changes to existing policies or the *pre-production* status of newly developed policies
+- marking changes to existing policies or the _pre-production_ status of newly developed policies
 
 #### Groups
 
 Groups can be used to ensure that policies are scoped to the correct subset of identities.
 
-The use of *exclude* groups is a common practice that allows groups of identities to be excluded from policy control, because of this the management and membership of exclude groups should be tightly controlled.
+The use of _exclude_ groups is a common practice that allows groups of identities to be excluded from policy control, because of this the management and membership of exclude groups should be tightly controlled.
 
 {{% alert title="Design decisions" color="warning" %}}
 
@@ -68,15 +67,15 @@ The use of *exclude* groups is a common practice that allows groups of identitie
 
 1: Using roles in Conditional Access policy assignments may need regular maintenance as roles are regularly updated by Microsoft. New role assignments to users may also require Conditional Access policies to be checked to ensure the role has also been selected within the policy assignment to be included or excluded.
 
-The use of exclude groups is also discussed in the [groups]({{<ref "design/platform/identity/groups">}}) design page.
+The use of exclude groups is also discussed in the [groups](/design/platform/identity/groups) design page.
 
-The use of access reviews is also discussed in the [groups]({{<ref "design/platform/identity/governance">}}) design page.
+The use of access reviews is also discussed in the [groups](/design/platform/identity/governance) design page.
 
-The use of PIM for exclude group changes is discussed in more detail in the [role-based access control]({{<ref "design/platform/identity/roles">}}) design page.
+The use of PIM for exclude group changes is discussed in more detail in the [role-based access control](/design/platform/identity/roles) design page.
 
 #### Emergency access
 
-Methods like *break glass* accounts and related exclude groups can be used to mitigate a tenant lockout.
+Methods like _break glass_ accounts and related exclude groups can be used to mitigate a tenant lockout.
 
 {{% alert title="Design decisions" color="warning" %}}
 
@@ -86,7 +85,7 @@ Methods like *break glass* accounts and related exclude groups can be used to mi
 
 {{% /alert %}}
 
-The use of break glass accounts is discussed in more detail in the [enterprise users]({{<ref "design/platform/identity/users">}}) design page.
+The use of break glass accounts is discussed in more detail in the [enterprise users](/design/platform/identity/users) design page.
 
 #### Policy complexity
 
@@ -117,7 +116,7 @@ Authentication contexts allow select applications to trigger policy control.
 | ----------------------- | ---------------------------------------------------------- | ----------------------------- |
 | Authentication contexts | Restrict access to PROTECTED information to employees only | Protect sensitive information |
 
-The use of authentication contexts is discussed in more detail in the [Purview labelling and classification]({{<ref "design/shared-services/purview/labelling-and-classification#conditional-access">}}) design page.
+The use of authentication contexts is discussed in more detail in the [Purview labelling and classification](/design/shared-services/purview/labelling-and-classification#conditional-access) design page.
 
 ### Authentication strengths
 
@@ -130,7 +129,7 @@ Authentication strengths allow customisation of the specific methods used to aut
 
 ### Conditional Access policies
 
-For policy details see the [Conditional Access policies]({{<ref "configuration/entra-id/protection/conditional-access/policies">}}) configuration page.
+For policy details see the [Conditional Access policies](/configuration/entra-id/protection/conditional-access/policies) configuration page.
 
 | Administrative user policies               | Description                                                 |
 | ------------------------------------------ | ----------------------------------------------------------- |
@@ -174,26 +173,26 @@ Organisations may wish to implement disabled policies that are activated in the 
 
 ### Related information
 
-#### Security & Governance
+#### Security and governance
 
-- [Authentication hardening]({{<ref "security-and-governance/system-security-plan/system-hardening-authentication">}})
-- [Enterprise mobility]({{<ref "security-and-governance/system-security-plan/enterprise-mobility">}})
-- [Essential Eight MFA guidance]({{<ref "security-and-governance/essential-eight/multi-factor-authentication">}})
+- [Authentication hardening](/security-and-governance/system-security-plan/system-hardening-authentication)
+- [Enterprise mobility](/security-and-governance/system-security-plan/enterprise-mobility)
+- [Essential Eight - Multi-factor authentication](/security-and-governance/essential-eight/multi-factor-authentication)
 
 #### Design
 
-- [Device enrolment]({{<ref "design/platform/client/device-enrolment">}})
-- [Entra ID Protection]({{<ref "design/platform/identity/protection">}})
-- [Multi-factor authentication]({{<ref "design/platform/identity/authentication/#multi-factor-authentication">}})
-- [Register device IDs]({{<ref "design/platform/client/device-enrolment/#windows-autopilot-overview">}})
+- [Device enrolment](/design/platform/client/device-enrolment)
+- [Entra ID Protection](/design/platform/identity/protection)
+- [Multi-factor authentication](/design/platform/identity/authentication/#multi-factor-authentication)
+- [Register device IDs](/design/platform/client/device-enrolment/#windows-autopilot-overview)
 
 #### Configuration
 
-- [Conditional Access policies]({{<ref "configuration/entra-id/protection/conditional-access/policies">}})
+- [Conditional Access policies](/configuration/entra-id/protection/conditional-access/policies)
 
 #### References
 
 - [Authentication strengths](https://learn.microsoft.com/en-au/entra/identity/authentication/concept-authentication-strengths)
-- [Conditional Access](https://learn.microsoft.com/en-au/entra/identity/conditional-access/)
+- [Conditional access](https://learn.microsoft.com/en-au/entra/identity/conditional-access)
 - [Network assignment](https://learn.microsoft.com/en-au/entra/identity/conditional-access/concept-assignment-network)
 - [Terms of use](https://learn.microsoft.com/en-au/entra/identity/conditional-access/terms-of-use)

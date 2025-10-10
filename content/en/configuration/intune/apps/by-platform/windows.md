@@ -1,13 +1,12 @@
 ---
 title: "Windows"
-linkTitle: "Windows"
 weight: 10
 description: "This section describes the configuration of Windows within Microsoft Intune associated with systems built according to the guidance provided by ASD's Blueprint for Secure Cloud."
 ---
 
 {{% alert title="Instruction" color="dark" %}}
 
-The below tables outline the *as built* configuration for ASD's *Blueprint for Secure Cloud* (the Blueprint) for the Microsoft Intune portal at the following URL:
+The below tables outline the _as built_ configuration for ASD's _Blueprint for Secure Cloud_ (the Blueprint) for the Microsoft Intune portal at the following URL:
 
 <https://intune.microsoft.com/#view/Microsoft_Intune_DeviceSettings/AppsWindowsMenu/~/windowsApps>
 
@@ -164,24 +163,24 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 
 ### Related information
 
-#### Security & Governance
+#### Security and governance
 
-* [Authentication Hardening]({{<ref "system-hardening-authentication">}})
-* [Application Control]({{<ref "security-and-governance/essential-eight/application-control.md">}})
-* [User Application Hardening]({{<ref "system-hardening-user-apps.md">}})
-* [Essential Eight: Patch Applications]({{< ref "patch-applications.md">}})
-  
+- [Authentication hardening](/security-and-governance/system-security-plan/system-hardening-authentication)
+- [Essential Eight - Application control](/security-and-governance/essential-eight/application-control)
+- [User application hardening](/security-and-governance/system-security-plan/system-hardening-user-apps)
+- [Essential Eight - Patch applications](/security-and-governance/essential-eight/patch-applications)
+
 #### Design
 
-* [Endpoint Management]({{<ref "design/platform/client">}})
+- [Endpoint Management](/design/platform/client)
 
 #### Configuration
 
-* [Microsoft Intune - Devices]({{<ref "configuration/intune/devices">}})
-* [Microsoft Entra ID - Devices]({{<ref "configuration/entra-id/devices">}})
-* [Windows]({{<ref "configuration/intune/apps/by-platform/windows.md">}})
-* [Permissions]({{<ref "configuration/defender/settings/endpoints/permissions.md">}})
+- [Microsoft Intune - Devices](/configuration/intune/devices)
+- [Microsoft Entra ID - Devices](/configuration/entra-id/devices)
+- [Windows](/configuration/intune/apps/by-platform/windows)
+- [Permissions](/configuration/defender/settings/endpoints/permissions)
 
 #### References
 
-* [Defender for Endpoint](https://learn.microsoft.com/microsoft-365/security/defender-endpoint)
+- [Defender for Endpoint](https://learn.microsoft.com/microsoft-365/security/defender-endpoint)

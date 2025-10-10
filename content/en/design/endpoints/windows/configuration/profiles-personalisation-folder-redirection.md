@@ -12,16 +12,16 @@ Microsoft includes several standard options for user profiles. Alternatively, te
 
 Microsoft provide the following profile management solutions:
 
-* **Local Profiles** – Local user profiles are stored on the workstation. When the user logs on for the first time, a local user profile is created for the user and stored by default in `C:\Users\%USERNAME%`. Whenever a user logs on to the workstation, the user's local user profile is loaded. When the user logs off the workstation, any configuration changes made to the user's profile are saved in the user's profile
-* **Mandatory Profiles** – Mandatory profiles are a profile that does not save profile changes and are enforced at each logon
-* **Roaming Profiles** – Roaming user profiles are stored in a central location on the network, which is generally a shared folder on a server. When the user logs on to a workstation, the roaming user profile is downloaded from the network location and loaded onto the workstation. When the user logs off the workstation, any profile changes are saved to the network share. In addition to maintaining a copy of the roaming profile on the network share, Windows also keeps a locally cached copy of the roaming profile on each workstation that the user logs on. 
+- **Local Profiles** – Local user profiles are stored on the workstation. When the user logs on for the first time, a local user profile is created for the user and stored by default in `C:\Users\%USERNAME%`. Whenever a user logs on to the workstation, the user's local user profile is loaded. When the user logs off the workstation, any configuration changes made to the user's profile are saved in the user's profile
+- **Mandatory Profiles** – Mandatory profiles are a profile that does not save profile changes and are enforced at each logon
+- **Roaming Profiles** – Roaming user profiles are stored in a central location on the network, which is generally a shared folder on a server. When the user logs on to a workstation, the roaming user profile is downloaded from the network location and loaded onto the workstation. When the user logs off the workstation, any profile changes are saved to the network share. In addition to maintaining a copy of the roaming profile on the network share, Windows also keeps a locally cached copy of the roaming profile on each workstation that the user logs on.
 
 Windows 10 and 11 provides two main roaming profile technologies in User Experience Virtualization (UE-V) and FSLogix. FSLogix is now the preferred Roaming Profile option as it provides a consistently higher performance than UE-V and can provide a cloud-based roaming profile when configured with suitable Azure cloud storage blobs.
 
 {{% alert title="Design decisions" color="warning" %}}
 
 | Decision point     | Design decision                | Justification                                                                                                                             |
-|--------------------|--------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------|
+| ------------------ | ------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------- |
 | Folder Redirection | Redirect Windows Known Folders | Users can continue using the folders they are familiar with. Files are automatically backed up to the users OneDrive folder in the cloud. |
 
 {{% /alert %}}
@@ -31,7 +31,7 @@ Windows 10 and 11 provides two main roaming profile technologies in User Experie
 {{% alert title="Design decisions" color="warning" %}}
 
 | Decision point                         | Design decision            | Justification                                                                                                                                                                                                                                             |
-|----------------------------------------|----------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| -------------------------------------- | -------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Profile Type                           | Local Profiles             | Local profiles will be configured to support end-user assigned devices. This configuration assumes that users will not share devices and do not require profile backups.<br>Enterprise State Roaming will be enabled for key backup of key user settings. |
 | Known Folder Redirection Configuration | Configured as listed below | To enable user personalisation and provide backup of essential user data.                                                                                                                                                                                 |
 
@@ -40,7 +40,7 @@ Windows 10 and 11 provides two main roaming profile technologies in User Experie
 Known Folder Redirection Configuration applicable to organisations leveraging a cloud native implementation.
 
 | Folder     | Path                                     |
-|------------|------------------------------------------|
+| ---------- | ---------------------------------------- |
 | AppData    | Not Configured                           |
 | Contacts   | Not Configured                           |
 | Desktop    | `C:\Users\%username%\OneDrive\Desktop`   |
@@ -58,7 +58,7 @@ Known Folder Redirection Configuration applicable to organisations leveraging a 
 {{% alert title="Design decisions" color="warning" %}}
 
 | Decision point                         | Design decision  | Justification                                                                                                                                                                                                       |
-|----------------------------------------|------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| -------------------------------------- | ---------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Profile Type                           | Roaming Profiles | Roaming profiles will be configured to support end-user assigned devices. A roaming profile management product is recommended by the vendor, Microsoft.<br>This configuration assumes that users can share devices. |
 | Known Folder Redirection Configuration | configured below | To enable user personalisation and backup of essential user data.                                                                                                                                                   |
 
@@ -67,7 +67,7 @@ Known Folder Redirection Configuration applicable to organisations leveraging a 
 Known Folder Redirection Configuration applicable to organisations leveraging a hybrid implementation.
 
 | Folder     | Path                                                   |
-|------------|--------------------------------------------------------|
+| ---------- | ------------------------------------------------------ |
 | AppData    | Not Configured                                         |
 | Contacts   | Not Configured                                         |
 | Desktop    | `\\\\server\share\Users\%username%\OneDrive\Desktop`   |
@@ -82,18 +82,18 @@ Known Folder Redirection Configuration applicable to organisations leveraging a 
 
 ### Related information
 
-#### Security & Governance
+#### Security and governance
 
-* None identified
+- None identified
 
 #### Design
 
-* None identified
+- None identified
 
 #### Configuration
 
-* None identified
+- None identified
 
 #### References
 
-* None identified
+- None identified

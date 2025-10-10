@@ -1,13 +1,12 @@
 ---
 title: "Device management"
-linkTitle: "Device management"
 weight: 40
 description: "This section describes the configuration of device management within Microsoft Defender associated with systems built according to the guidance provided by ASD's Blueprint for Secure Cloud."
 ---
 
 {{% alert title="Instruction" color="dark" %}}
 
-The below tables outline the *as built* configuration for ASD's *Blueprint for Secure Cloud* (the Blueprint) for the Microsoft Defender portal at the following URL:
+The below tables outline the _as built_ configuration for ASD's _Blueprint for Secure Cloud_ (the Blueprint) for the Microsoft Defender portal at the following URL:
 
 <https://security.microsoft.com/securitysettings/endpoints/onboarding>
 
@@ -29,29 +28,29 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 
 ### Offboarding
 
-| Item                                                 | Value                                       |
-| ---------------------------------------------------- | -------------------------------------------:|
-| Select operating system to start offboarding process | Windows 10 and 11                           |
+| Item                                                 |                                       Value |
+| ---------------------------------------------------- | ------------------------------------------: |
+| Select operating system to start offboarding process |                           Windows 10 and 11 |
 | Deployment method                                    | Mobile Device Management / Microsoft Intune |
 
 ### Related information
 
-#### Security & Governance
+#### Security and governance
 
-* [Essential Eight: Patch Applications]({{<ref "patch-applications.md">}})
-* [Essential Eight: Patch Operating Systems]({{<ref "patch-os.md">}})
-* [Essential Eight: Regular Backups]({{<ref "regular-backups.md">}})
-* [System Administration Process]({{<ref "security-and-governance/general-documentation">}})
-  
+- [Essential Eight - Patch applications](/security-and-governance/essential-eight/patch-applications)
+- [Essential Eight - Patch operating systems](/security-and-governance/essential-eight/patch-os)
+- [Essential Eight - Regular backups](/security-and-governance/essential-eight/regular-backups)
+- [System Administration Process](/security-and-governance/general-documentation)
+
 #### Design
 
-* [Endpoint Security - Devices]({{<ref "design/platform/security/endpoint-security">}})
-* [Web Filtering]({{<ref "web-filtering.md">}})
+- [Endpoints and devices](/design/platform/security/endpoint-security)
+- [Web filtering](/design/platform/security/web-filtering)
 
 #### Configuration
 
-* [Networking]({{<ref "configuration/networking">}})
+- [Networking](/configuration/networking)
 
 #### References
 
-* [Defender for Endpoint](https://learn.microsoft.com/microsoft-365/security/defender-endpoint)
+- [Defender for Endpoint](https://learn.microsoft.com/microsoft-365/security/defender-endpoint)

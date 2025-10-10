@@ -10,8 +10,8 @@ Entra ID Protection enables configuration of automated responses to suspicious a
 
 Entra ID Protection uses the following mechanisms to detect anomalous activity within the environment:
 
-* **Vulnerabilities** - Entra ID Protection analyses identity configuration and detects vulnerabilities that can have an impact on user identities. Vulnerabilities can include items such as unmanaged cloud applications.
-* **Risk Events** - Entra ID uses adaptive machine learning algorithms and heuristics to detect suspicious actions that are related to the user's identities. The system creates a record for each detected suspicious action. These records are also known as risk events and include activities such as sign-ins from anonymous IP addresses, sign-ins from IP addresses previously detected as exhibiting suspicious activity, or unfamiliar locations.
+- **Vulnerabilities** - Entra ID Protection analyses identity configuration and detects vulnerabilities that can have an impact on user identities. Vulnerabilities can include items such as unmanaged cloud applications.
+- **Risk Events** - Entra ID uses adaptive machine learning algorithms and heuristics to detect suspicious actions that are related to the user's identities. The system creates a record for each detected suspicious action. These records are also known as risk events and include activities such as sign-ins from anonymous IP addresses, sign-ins from IP addresses previously detected as exhibiting suspicious activity, or unfamiliar locations.
 
 Entra ID Protection provides mechanisms for logging and reporting functionality that simplify investigation activities.
 
@@ -52,21 +52,21 @@ Smart lockout duration automatically increases with subsequent lockouts.
 
 ### Related information
 
-#### Security & Governance
+#### Security and governance
 
-* [Essential Eight: Restrict Microsoft Office Macros]({{<ref "restrict-microsoft-office-macros.md">}})
+- [Essential Eight - Restrict Microsoft Office macros](/security-and-governance/essential-eight/restrict-microsoft-office-macros)
 
 #### Design
 
-* [Conditional Access]({{<ref "conditional-access">}})
+- [Conditional access](/design/platform/identity/conditional-access)
 
 #### Configuration
 
-* [Conditional Access policy]({{<ref "configuration/entra-id/protection/conditional-access" >}})
-* [Cloud app Settings]({{<ref "configuration/defender/settings/cloud-apps/settings.md">}})
+- [Conditional access](/configuration/entra-id/protection/conditional-access)
+- [Cloud apps settings](/configuration/defender/settings/cloud-apps/settings)
 
 #### References
 
-* [Identity Protection Overview](https://learn.microsoft.com/entra/id-protection/overview-identity-protection)
-* [API Reference](https://docs.microsoft.com/graph/api/resources/identityprotection-root?view=graph-rest-beta)
-* [Microsoft Entra smart lockout](https://learn.microsoft.com/entra/identity/authentication/howto-password-smart-lockout)
+- [Identity Protection Overview](https://learn.microsoft.com/entra/id-protection/overview-identity-protection)
+- [API Reference](https://docs.microsoft.com/graph/api/resources/identityprotection-root?view=graph-rest-beta)
+- [Microsoft Entra smart lockout](https://learn.microsoft.com/entra/identity/authentication/howto-password-smart-lockout)

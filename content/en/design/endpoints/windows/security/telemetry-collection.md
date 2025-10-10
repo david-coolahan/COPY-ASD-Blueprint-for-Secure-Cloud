@@ -1,5 +1,5 @@
 ---
-title: "Telemetry Collection"
+title: "Telemetry collection"
 weight: 35
 description: "This section describes the design decisions associated with telemetry collection on Windows 10 and 11 endpoints configured according to guidance in ASD's Blueprint for Secure Cloud."
 ---
@@ -10,37 +10,36 @@ Windows uses telemetry information to analyse and fix software problems. It also
 
 Telemetry level options are:
 
-* Off – Disable telemetry data collection.
-* Security – Information that is required to help keep Windows secure, including info about telemetry client settings, the Malicious Software Removal Tool, and Windows Defender. This level is available only on Windows 10/11 Enterprise and Windows 10/11 Education, and Windows 10/11 IoT Core.
-* Basic – Basic device info, including quality-related info, application compatibility, and info from the Security level.
-* Enhanced – Additional insights, including how Windows and Windows apps are used, how they perform, advanced reliability info, and info from both the Basic and the Security levels.
-* Full – All info necessary to identify and help to fix problems, plus info from the Security, Basic, and Enhanced levels.
-
+- Off – Disable telemetry data collection.
+- Security – Information that is required to help keep Windows secure, including info about telemetry client settings, the Malicious Software Removal Tool, and Windows Defender. This level is available only on Windows 10/11 Enterprise and Windows 10/11 Education, and Windows 10/11 IoT Core.
+- Basic – Basic device info, including quality-related info, application compatibility, and info from the Security level.
+- Enhanced – Additional insights, including how Windows and Windows apps are used, how they perform, advanced reliability info, and info from both the Basic and the Security levels.
+- Full – All info necessary to identify and help to fix problems, plus info from the Security, Basic, and Enhanced levels.
 
 {{% alert title="Design decisions" color="warning" %}}
 
-| Decision point  | Design decision | Justification                                                                                                             |
-|-----------------|-----------------|---------------------------------------------------------------------------------------------------------------------------|
+| Decision point  | Design decision | Justification                                                                                                              |
+| --------------- | --------------- | -------------------------------------------------------------------------------------------------------------------------- |
 | Allow Telemetry | Enabled         | In line with the ASD's hardening guideline policy recommendations and meets requirements for future Desktop Analytics use. |
-| Telemetry Level | 2 – Enhanced    | Microsoft recommend Enhanced Limited for Desktop Analytics.                                                               |
+| Telemetry Level | 2 – Enhanced    | Microsoft recommend Enhanced Limited for Desktop Analytics.                                                                |
 
 {{% /alert %}}
 
 ### Related information
 
-#### Security & Governance
+#### Security and governance
 
-* [Application Control]({{<ref "security-and-governance/essential-eight/application-control.md">}})
-* [Essential Eight: Restrict Microsoft Office Macros]({{<ref "restrict-microsoft-office-macros.md">}})
+- [Essential Eight - Application control](/security-and-governance/essential-eight/application-control)
+- [Essential Eight - Restrict Microsoft Office macros](/security-and-governance/essential-eight/restrict-microsoft-office-macros)
 
 #### Design
 
-* None identified
+- None identified
 
 #### Configuration
 
-* None identified
+- None identified
 
 #### References
 
-* None identified
+- None identified

@@ -1,6 +1,5 @@
 ---
 Title: "Information labelling and classification"
-linkTitle: "Information labelling and classification"
 weight: 10
 description: "This section describes the design decisions associated with the labelling and classification of information with Microsoft Purview for system(s) built using ASD's Blueprint for Secure Cloud."
 ---
@@ -9,8 +8,8 @@ description: "This section describes the design decisions associated with the la
 
 The labelling and classification of information are key capabilities within the Microsoft Purview suite:
 
-* Labels are logical tags, unique to each Purview tenant or organisation, that enable the control and categorisation of information in accordance with operational, security and privacy requirements.
-* Classifiers are patterns and rules that assist the identification of data types within information.
+- Labels are logical tags, unique to each Purview tenant or organisation, that enable the control and categorisation of information in accordance with operational, security and privacy requirements.
+- Classifiers are patterns and rules that assist the identification of data types within information.
 
 {{% alert title="Design decisions" color="warning" %}}
 
@@ -27,10 +26,10 @@ Sensitivity labels are applied or associated with certain types of emails, docum
 
 {{% alert title="Design decisions" color="warning" %}}
 
-| Decision point                  | Design decision              | Justification                                                                          |
-| ------------------------------- | ---------------------------- | -------------------------------------------------------------------------------------- |
-| Implementing sensitivity labels | Provide document marking     | Mark information in-line with Protective Security Policy Framework (PSPF) requirements |
-| Implementing sensitivity labels | Mitigate unauthorised access | Protect sensitive and security classified information                                  |
+| Decision point                  | Design decision              | Justification                                                                            |
+| ------------------------------- | ---------------------------- | ---------------------------------------------------------------------------------------- |
+| Implementing sensitivity labels | Provide document marking     | Mark information in-line with _Protective Security Policy Framework_ (PSPF) requirements |
+| Implementing sensitivity labels | Mitigate unauthorised access | Protect sensitive and security classified information                                    |
 
 {{% /alert %}}
 
@@ -46,14 +45,14 @@ Sensitive information types are pattern-based classifiers that can be developed 
 
 {{% /alert %}}
 
-Auto-labelling and data loss prevention policy configurations using sensitive information types have not been specified. However, organisations should use the provided [sensitive information type]({{<ref "configuration/purview/information-protection/classifiers/sensitive-info-types">}}) configurations as a starting point to develop their own, organisational specific policies. Such policies can be used in simulation mode to assess their effectiveness before being set to enforce. Example use cases include:
+Auto-labelling and data loss prevention policy configurations using sensitive information types have not been specified. However, organisations should use the provided [sensitive information type](/configuration/purview/information-protection/classifiers/sensitive-info-types) configurations as a starting point to develop their own, organisational specific policies. Such policies can be used in simulation mode to assess their effectiveness before being set to enforce. Example use cases include:
 
-* Detecting unlabelled information, or emails or documents with markings but without a label
-* Detecting mis-labelled information
-* Detecting malicious label downgrades
-* Mapping historical PSPF markings to current equivalents
-* Detecting sensitive personal, financial or technical information
-* Detecting SECRET or TOP SECRET information
+- Detecting unlabelled information, or emails or documents with markings but without a label
+- Detecting mis-labelled information
+- Detecting malicious label downgrades
+- Mapping historical PSPF markings to current equivalents
+- Detecting sensitive personal, financial or technical information
+- Detecting SECRET or TOP SECRET information
 
 #### Applying labels
 
@@ -61,18 +60,18 @@ Sensitivity labels can be applied by default, manually or automatically, with th
 
 Default labels are not able to be widely used in a security context without understanding the risks associated with mis-labelled information, and the potential lack of personal accountability for PSPF marking decisions. Default labels are discussed in the context of SharePoint Online [below](#labelling-microsoft-365-groups-and-sharepoint-online-document-libraries). Auto-labelling has similar risks which can be minimised by ensuring the trigger for an auto-labelling action is based on relatively deterministic conditions, like an email's X-Protective-Marking X-header value, for example. Residual risks can be mitigated to a degree by the use of sensitive information types (or other classifiers) to detect, alert and prompt the user to take action on mis-labelled or incorrectly marked information.
 
-Auto-labelling can be performed via client-side (end-user application) or service-side (Microsoft 365 service) mechanisms, with the latter offering more flexibility in choosing conditions for labelling triggers. Service-side auto-labelling polices are able to be used in conjunction with data loss prevention policies to apply email X-header and subject markings to incoming and outgoing emails, respectively, and are discussed in more detail in the [email handling]({{<ref "design/shared-services/purview/email-handling">}}) page.
+Auto-labelling can be performed via client-side (end-user application) or service-side (Microsoft 365 service) mechanisms, with the latter offering more flexibility in choosing conditions for labelling triggers. Service-side auto-labelling polices are able to be used in conjunction with data loss prevention policies to apply email X-header and subject markings to incoming and outgoing emails, respectively, and are discussed in more detail in the [email handling](/design/shared-services/purview/email-handling) page.
 
 {{% alert title="Design decisions" color="warning" %}}
 
-| Decision point                    | Design decision                                                                                             | Justification                                                                                                                                                                                |
-| --------------------------------- | ----------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Using default labels<sup>1</sup>  | Use default labels where practical                                                                          | Manage personal accountability for marking decisions and avoid the potential for incorrect and misleading PSPF markings being applied                                                        |
-| Manual labelling                  | Require users to apply a label to their emails, documents, groups, sites and related content                | Mark information in-line with PSPF requirements and protect sensitive and security classified information                                                                                    |
-| Using client-side auto-labelling  | Use client-side auto-labelling with sensitive information types to apply labels where practical<sup>2</sup> | Auto-labelling using sensitive information types can assist in meeting PSPF, Information Security Manual (ISM), and other requirements but need organisational specific context to implement |
-| Using service-side auto-labelling | Apply email X-header and subject marking to incoming emails                                                 | Mark information in-line with PSPF requirements                                                                                                                                              |
-| Using service-side auto-labelling | Apply [usage rights](#access-control) to PROTECTED<sup>3</sup> labelled incoming emails                     | Protect sensitive and security classified information                                                                                                                                        |
-| Using service-side auto-labelling | Use auto-labelling with sensitive information types to apply labels where practical                         | Auto-labelling using sensitive information types can assist in meeting PSPF, ISM, and other requirements but need organisational specific context to implement                               |
+| Decision point                    | Design decision                                                                                             | Justification                                                                                                                                                                                  |
+| --------------------------------- | ----------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Using default labels<sup>1</sup>  | Use default labels where practical                                                                          | Manage personal accountability for marking decisions and avoid the potential for incorrect and misleading PSPF markings being applied                                                          |
+| Manual labelling                  | Require users to apply a label to their emails, documents, groups, sites and related content                | Mark information in-line with PSPF requirements and protect sensitive and security classified information                                                                                      |
+| Using client-side auto-labelling  | Use client-side auto-labelling with sensitive information types to apply labels where practical<sup>2</sup> | Auto-labelling using sensitive information types can assist in meeting PSPF, _Information Security Manual_ (ISM), and other requirements but need organisational specific context to implement |
+| Using service-side auto-labelling | Apply email X-header and subject marking to incoming emails                                                 | Mark information in-line with PSPF requirements                                                                                                                                                |
+| Using service-side auto-labelling | Apply [usage rights](#access-control) to PROTECTED<sup>3</sup> labelled incoming emails                     | Protect sensitive and security classified information                                                                                                                                          |
+| Using service-side auto-labelling | Use auto-labelling with sensitive information types to apply labels where practical                         | Auto-labelling using sensitive information types can assist in meeting PSPF, ISM, and other requirements but need organisational specific context to implement                                 |
 
 1: Default labels are not the sensitivity labels configured out-of-the-box in a new Purview tenant, they are settings related to applying a label by default.
 
@@ -86,12 +85,12 @@ Auto-labelling can be performed via client-side (end-user application) or servic
 
 Sensitivity labels applied to containers such as Microsoft 365 Groups and SharePoint Online sites, differ in function from those applied to document libraries:
 
-* Applying a label to a container configures access controls, including privacy settings and external sharing restrictions, and enable use with Conditional Access.
-* Applying a label to a document library sets a default label that will be inherited by any new document uploaded without a label. This inheritance does not override a label that has already been applied to a document, regardless of its priority.
+- Applying a label to a container configures access controls, including privacy settings and external sharing restrictions, and enable use with Conditional Access.
+- Applying a label to a document library sets a default label that will be inherited by any new document uploaded without a label. This inheritance does not override a label that has already been applied to a document, regardless of its priority.
 
 {{% alert title="Labelling SharePoint Online sites and libraries" color="info" %}}
 
-Site sensitivity labels are visible in the group tag banner and may differ from the default labels applied to the site's document libraries. Default labels for document libraries are [configured in library settings](https://support.microsoft.com/en-au/office/add-a-sensitivity-label-to-sharepoint-document-library-54b1602b-db0a-4bcb-b9ac-5e20cbc28089) and are not externally visible.  
+Site sensitivity labels are visible in the group tag banner and may differ from the default labels applied to the site's document libraries. Default labels for document libraries are [configured in library settings](https://support.microsoft.com/en-au/office/add-a-sensitivity-label-to-sharepoint-document-library-54b1602b-db0a-4bcb-b9ac-5e20cbc28089) and are not externally visible.
 
 {{% /alert %}}
 
@@ -124,7 +123,7 @@ Similar to the initial application of a sensitivity label, a label can also be c
 
 {{% alert title="Label inheritance from email attachments" color="info" %}}
 
-The *email inherits highest priority label from attachments* feature applies a sensitivity label to an unlabelled email or overrides a lower-priority, automatically applied label. However, it does not override a label that a user has manually applied, such as when a user drafts an email and labels it before attaching a document. In such cases, the user's explicit action takes precedence over automatic inheritance.
+The _email inherits highest priority label from attachments_ feature applies a sensitivity label to an unlabelled email or overrides a lower-priority, automatically applied label. However, it does not override a label that a user has manually applied, such as when a user drafts an email and labels it before attaching a document. In such cases, the user's explicit action takes precedence over automatic inheritance.
 
 {{% /alert %}}
 
@@ -159,27 +158,27 @@ For guidance on preparing for and mitigating potential impacts, please refer to 
 
 The suggested sensitivity label naming, priority ordering and grouping is:
 
-* UNOFFICIAL
-* OFFICIAL
-* OFFICIAL Sensitive (group)
-  * OFFICIAL Sensitive
-  * Personal Privacy
-  * Legal Privilege
-  * Legislative Secrecy
-* PROTECTED (group)
-  * PROTECTED
-  * Personal Privacy
-  * Legal Privilege
-  * Legislative Secrecy
-* PROTECTED CABINET (group)
-  * PROTECTED CABINET
-  * Personal Privacy
-  * Legal Privilege
-  * Legislative Secrecy
+- UNOFFICIAL
+- OFFICIAL
+- OFFICIAL Sensitive (group)
+  - OFFICIAL Sensitive
+  - Personal Privacy
+  - Legal Privilege
+  - Legislative Secrecy
+- PROTECTED (group)
+  - PROTECTED
+  - Personal Privacy
+  - Legal Privilege
+  - Legislative Secrecy
+- PROTECTED CABINET (group)
+  - PROTECTED CABINET
+  - Personal Privacy
+  - Legal Privilege
+  - Legislative Secrecy
 
 {{% alert title="Migrating labelling schemes" color="info" %}}
 
-Organisations with existing labelling schemes may find the [migrating labelling schemes]({{<ref "tools/purview/migrating-labelling-schemes">}}) guidance useful when modifying sensitivity labels.
+Organisations with existing labelling schemes may find the [migrating labelling schemes](/tools/purview/migrating-labelling-schemes) guidance useful when modifying sensitivity labels.
 
 {{% /alert %}}
 
@@ -224,7 +223,7 @@ The access controls associated with sensitivity labels use Azure Rights Manageme
 
 {{% /alert %}}
 
-How label access controls are implemented is discussed in more detail in the [Azure Rights Management]({{<ref "design/shared-services/purview/azure-rights-management">}}) page.
+How label access controls are implemented is discussed in more detail in the [Azure Rights Management](/design/shared-services/purview/azure-rights-management) page.
 
 #### Privacy
 
@@ -270,37 +269,37 @@ By associating a sensitivity label with a Conditional Access Authentication Cont
 
 ### Related information
 
-#### Security & Governance
+#### Security and governance
 
-* [Guidelines for email]({{<ref "content\en\security-and-governance\system-security-plan\email">}})
+- [Email](/security-and-governance/system-security-plan/email)
 
 #### Design
 
-* [Azure Rights Management]({{<ref "design/shared-services/purview/azure-rights-management">}})
-* [Email handling]({{<ref "design/shared-services/purview/email-handling">}})
-* [Data Loss Prevention]({{<ref "design/shared-services/purview/data-loss-prevention">}})
+- [Azure Rights Management](/design/shared-services/purview/azure-rights-management)
+- [Email handling](/design/shared-services/purview/email-handling)
+- [Data Loss Prevention](/design/shared-services/purview/data-loss-prevention)
 
 #### Configuration
 
-* [Authentication Contexts]({{<ref "configuration/entra-id/protection/conditional-access/authentication-contexts">}})
-* [Data Loss Prevention]({{<ref "configuration/purview/data-loss-prevention">}})
-* [Information Protection]({{<ref "configuration/purview/information-protection">}})
-* [USR - B - Block access to PROTECTED information]({{<ref "configuration/entra-id/protection/conditional-access/policies/block-access-to-protected-info">}})
+- [Authentication Contexts](/configuration/entra-id/protection/conditional-access/authentication-contexts)
+- [Data Loss Prevention](/configuration/purview/data-loss-prevention)
+- [Information Protection](/configuration/purview/information-protection)
+- [USR - B - Block access to PROTECTED information](/configuration/entra-id/protection/conditional-access/policies/block-access-to-protected-info)
 
 #### Tools
 
-* [Migrating labelling schemes]({{<ref "tools/shared-services/purview/migrating-labelling-schemes">}})
+- [Migrating labelling schemes](/tools/guides/migrating-labelling-schemes)
 
 #### References
 
-* [Add a sensitivity label to SharePoint document library](https://support.microsoft.com/en-au/office/add-a-sensitivity-label-to-sharepoint-document-library-54b1602b-db0a-4bcb-b9ac-5e20cbc28089)
-* [Automatically apply a sensitivity label to Microsoft 365 data](https://learn.microsoft.com/en-au/purview/apply-sensitivity-label-automatically)
-* [Conditional access policy for SharePoint sites and OneDrive](https://learn.microsoft.com/en-au/sharepoint/authentication-context-example)
-* [Information Security Manual (ISM)](https://www.cyber.gov.au/resources-business-and-government/essential-cyber-security/ism)
-* [Learn about data loss prevention](https://learn.microsoft.com/en-au/purview/dlp-learn-about-dlp)
-* [Microsoft Purview Information Protection Guide for Australian Government compliance with PSPF](https://learn.microsoft.com/en-au/compliance/anz/pspf-overview)
-* [Migrate parent sensitivity labels to label groups](https://learn.microsoft.com/en-au/purview/migrate-sensitivity-label-scheme)
-* [Protect your sensitive data with Microsoft Purview](https://learn.microsoft.com/en-au/purview/information-protection)
-* [Protective Security Policy Framework Standards](https://www.protectivesecurity.gov.au/pspf-annual-release/pspf-standards)
-* [Restrict access to content by using sensitivity labels to apply encryption](https://learn.microsoft.com/en-au/purview/encryption-sensitivity-labels)
-* [What is Azure Information Protection?](https://learn.microsoft.com/en-au/azure/information-protection/what-is-information-protection)
+- [Add a sensitivity label to SharePoint document library](https://support.microsoft.com/en-au/office/add-a-sensitivity-label-to-sharepoint-document-library-54b1602b-db0a-4bcb-b9ac-5e20cbc28089)
+- [Automatically apply a sensitivity label to Microsoft 365 data](https://learn.microsoft.com/en-au/purview/apply-sensitivity-label-automatically)
+- [Conditional access policy for SharePoint sites and OneDrive](https://learn.microsoft.com/en-au/sharepoint/authentication-context-example)
+- [_Information Security Manual_ (ISM)](https://www.cyber.gov.au/resources-business-and-government/essential-cyber-security/ism)
+- [Learn about data loss prevention](https://learn.microsoft.com/en-au/purview/dlp-learn-about-dlp)
+- [Microsoft Purview Information Protection Guide for Australian Government compliance with PSPF](https://learn.microsoft.com/en-au/compliance/anz/pspf-overview)
+- [Migrate parent sensitivity labels to label groups](https://learn.microsoft.com/en-au/purview/migrate-sensitivity-label-scheme)
+- [Protect your sensitive data with Microsoft Purview](https://learn.microsoft.com/en-au/purview/information-protection)
+- [_Protective Security Policy Framework_ Standards](https://www.protectivesecurity.gov.au/pspf-annual-release/pspf-standards)
+- [Restrict access to content by using sensitivity labels to apply encryption](https://learn.microsoft.com/en-au/purview/encryption-sensitivity-labels)
+- [What is Azure Information Protection?](https://learn.microsoft.com/en-au/azure/information-protection/what-is-information-protection)

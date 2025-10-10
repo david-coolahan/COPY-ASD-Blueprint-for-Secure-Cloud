@@ -1,26 +1,25 @@
 ---
-title: "Patch Applications"
-linkTitle: "Patch Applications"
+title: "Patch applications"
 weight: 010
 type: docs
-description: This page provides a template and guidance to assist organisations in documenting their approach to patching applications, as per the Essential Eight Maturity Model, associated with their system(s) built on ASD's Blueprint for Secure Cloud.
+description: This page provides a template and guidance to assist organisations in documenting their approach to patching applications, as per the Essential Eight maturity model, associated with their system(s) built on ASD's Blueprint for Secure Cloud.
 ---
 
 {{% alert title="Instruction" color="dark" %}}
 
-The Essential Eight sections of a System Security Plan (SSP) should document the Essential Eight Maturity levels associated with implementation of a system. As with other sections of the SSP, information in this section should be documented according to the relevant controls outlined in ASD's ISM and the SSP Annex. 
+The Essential Eight sections of a System Security Plan (SSP) should document the Essential Eight maturity levels associated with implementation of a system. As with other sections of the SSP, information in this section should be documented according to the relevant controls outlined in ASD's ISM and the SSP Annex.
 
 All template text refers to a typical implementation of a system built using the Blueprint, and includes reference to organisational policies, processes and technical configurations to be implemented in addition to the technical controls that may be configured using guidance from the Blueprint. Any implementation implied by the below text should not be considered as prescriptive of how the organisation must scope, build, document, or assess its system.
 
-When completing the below template, organisations should insert and update information where relevant to ensure it accurately represents the Essential Eight Maturity levels associated with implementation of their system. When complete, remove any instructional boxes throughout. 
+When completing the below template, organisations should insert and update information where relevant to ensure it accurately represents the Essential Eight maturity levels associated with implementation of their system. When complete, remove any instructional boxes throughout.
 
 {{% /alert %}}
 
 {{% alert title="Blueprint guidance" color="info" %}}
 
-For applicable government organisations to meet the minimum requirements established under the [*Protective Security Policy Framework* (PSPF)](https://www.protectivesecurity.gov.au/publications-library/policy-10-safeguarding-data-cyber-threats) maturity model, these organisations must implement Maturity Level Two for each of the below components of ASD's [*Essential Eight Maturity Model*](https://www.cyber.gov.au/resources-business-and-government/essential-cyber-security/essential-eight).
+For applicable government organisations to meet the minimum requirements established under the [_Protective Security Policy Framework_ (PSPF)](https://www.protectivesecurity.gov.au) maturity model, these organisations must implement Maturity Level Two for each of the below components of ASD's [_Essential Eight maturity model_](https://www.cyber.gov.au/resources-business-and-government/essential-cyber-security/essential-eight).
 
-As with implementation of ISM controls, the Blueprint does not itself *achieve* any particular Essential Eight Maturity levels, but rather assists organisations in designing and building systems to achieve their desired maturity level based on their own operating context.
+As with implementation of ISM controls, the Blueprint does not itself _achieve_ any particular Essential Eight maturity levels, but rather assists organisations in designing and building systems to achieve their desired maturity level based on their own operating context.
 
 {{% /alert %}}
 
@@ -28,8 +27,8 @@ As with implementation of ISM controls, the Blueprint does not itself *achieve* 
 
 The Patch Applications mitigation strategy is applicable to the appropriate patching of applications for the following components of `<SYSTEM-NAME>`:
 
-* Endpoints (Windows laptops and desktops)
-* `<ON-PREMISES SERVERS>`
+- Endpoints (Windows laptops and desktops)
+- `<ON-PREMISES SERVERS>`
 
 `<INSERT ADDITIONAL INFORMATION AS APPROPRIATE>`
 
@@ -68,13 +67,13 @@ The Blueprint design does not provide guidance for direct management of asset di
 
 All maturity levels require that a vulnerability scanner is used to identify missing patches or updates for vulnerabilities in a variety of applications per the below table, that this vulnerability scanner uses an up-to-date vulnerability database.
 
-| Application Type    |  ML1   |     ML2     |     ML3     |
-| :------------------ | :----: | :---------: | :---------: |
-| Online services:    | Daily  |    Daily    |    Daily    |
-| Core applications:* | Weekly |   Weekly    |   Weekly    |
-| Other applications: |   -    | Fortnightly | Fortnightly |
+| Application Type     |  ML1   |     ML2     |     ML3     |
+| :------------------- | :----: | :---------: | :---------: |
+| Online services:     | Daily  |    Daily    |    Daily    |
+| Core applications:\* | Weekly |   Weekly    |   Weekly    |
+| Other applications:  |   -    | Fortnightly | Fortnightly |
 
-**For the purposes of the above table, "Core Applications" are defined as office productivity suites, web browsers and their extensions, email clients, PDF software and security products.*
+\*_For the purposes of the above table, "Core Applications" are defined as office productivity suites, web browsers and their extensions, email clients, PDF software and security products._
 
 {{% /alert %}}
 
@@ -82,7 +81,7 @@ All maturity levels require that a vulnerability scanner is used to identify mis
 
 The Blueprint design does not provide guidance for direct management of vulnerability scanning, though the below template serves as a guide of a typical implementation of this section for systems built using the Blueprint.
 
-Given that scanning is generally performed on an asset basis rather than an application basis, the below describes the scanning of all applications on endpoints on a weekly basis, while on-premise servers are described as being scanned on a daily basis (to account for the requirements outlined in *Patch Operating Systems*), particularly to account for internet facing servers including Exchange servers.
+Given that scanning is generally performed on an asset basis rather than an application basis, the below describes the scanning of all applications on endpoints on a weekly basis, while on-premise servers are described as being scanned on a daily basis (to account for the requirements outlined in _Patch Operating Systems_), particularly to account for internet facing servers including Exchange servers.
 
 It is assumed for the below that the system built using the Blueprint does not host online services.
 
@@ -114,18 +113,18 @@ It is assumed for the below that the system built using the Blueprint does not h
 
 The below table outlines the time-frames for different application types, as well as the criticality or exploitability of vulnerabilities in these applications.
 
-| Application Type    | Critical Vulnerability<br>or Exploit Available |   ML1    |   ML2    |   ML3    |
-| :------------------ | :--------------------------------------------: | :------: | :------: | :------: |
-| Online services:    |                      Yes                       | 48 Hours | 48 Hours | 48 Hours |
-|                     |                       No                       | 2 Weeks  | 2 Weeks  | 2 Weeks  |
-|                     |                                                |          |          |          |
-| Core applications:* |                      Yes                       | 2 Weeks  | 2 Weeks  | 48 Hours |
-|                     |                       No                       | 2 Weeks  | 2 Weeks  | 2 Weeks  |
-|                     |                                                |          |          |          |
-| Other applications: |                      Yes                       |    -     | 1 Month  | 1 Month  |
-|                     |                       No                       |    -     | 1 Month  | 1 Month  |
+| Application Type     | Critical Vulnerability<br>or Exploit Available |   ML1    |   ML2    |   ML3    |
+| :------------------- | :--------------------------------------------: | :------: | :------: | :------: |
+| Online services:     |                      Yes                       | 48 Hours | 48 Hours | 48 Hours |
+|                      |                       No                       | 2 Weeks  | 2 Weeks  | 2 Weeks  |
+|                      |                                                |          |          |          |
+| Core applications:\* |                      Yes                       | 2 Weeks  | 2 Weeks  | 48 Hours |
+|                      |                       No                       | 2 Weeks  | 2 Weeks  | 2 Weeks  |
+|                      |                                                |          |          |          |
+| Other applications:  |                      Yes                       |    -     | 1 Month  | 1 Month  |
+|                      |                       No                       |    -     | 1 Month  | 1 Month  |
 
-**For the purposes of the above table, "Core Applications" are defined as office productivity suites, web browsers and their extensions, email clients, PDF software and security products.*
+\*_For the purposes of the above table, "Core Applications" are defined as office productivity suites, web browsers and their extensions, email clients, PDF software and security products._
 
 {{% /alert %}}
 
@@ -139,7 +138,7 @@ The Blueprint provides guidance for using Microsoft Intune to deploy application
 
 Patches for all applications on windows endpoints are managed and deployed using Microsoft Intune, and applied using Microsoft Defender for Endpoint.
 
-In accordance with the [`<SYSTEM-NAME>` Vulnerability and Patch Management Process]({{<ref "security-and-governance/general-documentation">}}), vulnerabilities in office productivity suites, web browsers and their extensions, email clients, PDF software, Adobe Flash Player, and security products discovered by `<VULNERABILITY-SCANNING-TOOL>` are applied within `48 hours` where these vulnerabilities are assessed as critical by vendors or when working exploits exist, and applied within `2 weeks` otherwise.
+In accordance with the [`<SYSTEM-NAME>` Vulnerability and Patch Management Process](/security-and-governance/general-documentation), vulnerabilities in office productivity suites, web browsers and their extensions, email clients, PDF software, Adobe Flash Player, and security products discovered by `<VULNERABILITY-SCANNING-TOOL>` are applied within `48 hours` where these vulnerabilities are assessed as critical by vendors or when working exploits exist, and applied within `2 weeks` otherwise.
 
 Patches for vulnerabilities in all other applications on `<SYSTEM-NAME>` endpoints are applied within `1 month`.
 
@@ -149,7 +148,7 @@ Patches for vulnerabilities in all other applications on `<SYSTEM-NAME>` endpoin
 
 Patches for all applications on hybrid servers are applied using `<server patch deployment mechanism>`.
 
-In accordance with the [`<SYSTEM-NAME>` Vulnerability and Patch Management Process]({{<ref "security-and-governance/general-documentation">}}), vulnerabilities in web browsers and security products discovered by `<VULNERABILITY-SCANNING-TOOL>` are applied within `48 hours` where these vulnerabilities are assessed as critical by vendors or when working exploits exist, and applied within `2 weeks` otherwise.
+In accordance with the [`<SYSTEM-NAME>` Vulnerability and Patch Management Process](/security-and-governance/general-documentation), vulnerabilities in web browsers and security products discovered by `<VULNERABILITY-SCANNING-TOOL>` are applied within `48 hours` where these vulnerabilities are assessed as critical by vendors or when working exploits exist, and applied within `2 weeks` otherwise.
 
 `<SYSTEM-NAME>` hybrid servers do not have office productivity suites, web browser extensions, email clients, PDF software (other than web browsers), or Adobe Flash Player installed.
 
@@ -173,13 +172,13 @@ All maturity levels require that online services, as well as any office producti
 
 ##### Windows endpoints
 
-In accordance with the [`<SYSTEM-NAME>` Vulnerability and Patch Management Process]({{<ref "security-and-governance/general-documentation">}}), `<ORGANISATION-NAME>` will monitor vendor support of applications used for all `<SYSTEM-NAME>` components, and ensure that all unsupported applications are removed prior to this support ending.
+In accordance with the [`<SYSTEM-NAME>` Vulnerability and Patch Management Process](/security-and-governance/general-documentation), `<ORGANISATION-NAME>` will monitor vendor support of applications used for all `<SYSTEM-NAME>` components, and ensure that all unsupported applications are removed prior to this support ending.
 
 `<INSERT ADDITIONAL INFORMATION AS APPROPRIATE>`
 
 ##### Hybrid servers
 
-In accordance with the [`<SYSTEM-NAME>` Vulnerability and Patch Management Process]({{<ref "security-and-governance/general-documentation">}}), `<ORGANISATION-NAME>` will monitor vendor support of applications used for all `<SYSTEM-NAME>` components, and ensure that all unsupported applications are removed prior to this support ending.
+In accordance with the [`<SYSTEM-NAME>` Vulnerability and Patch Management Process](/security-and-governance/general-documentation), `<ORGANISATION-NAME>` will monitor vendor support of applications used for all `<SYSTEM-NAME>` components, and ensure that all unsupported applications are removed prior to this support ending.
 
 `<INSERT ADDITIONAL INFORMATION AS APPROPRIATE>`
 
@@ -191,29 +190,27 @@ In accordance with the [`<SYSTEM-NAME>` Vulnerability and Patch Management Proce
 
 ### Related information
 
-#### Security & Governance
+#### Security and governance
 
-* [System Management]({{<ref "system-management.md">}})
-* [`<SYSTEM-NAME>` Vulnerability and Patch Management Process]({{<ref "security-and-governance/general-documentation">}})
-* [Essential Eight: Regular Backups]({{<ref "regular-backups.md">}})
+- [System management](/security-and-governance/system-security-plan/system-management)
+- [`<SYSTEM-NAME>` Vulnerability and Patch Management Process](/security-and-governance/general-documentation)
+- [Essential Eight - Regular backups](/security-and-governance/essential-eight/regular-backups)
 
 #### Design
 
-* [Endpoint Device Updates]({{<ref "device-updates">}})
-* [Windows Update and Patching]({{<ref "design/endpoints/windows/configuration/windows-update-and-patching.md">}})
-
+- [Endpoint Device Updates](/design/platform/client/device-updates)
+- [Windows update and patching](/design/endpoints/windows/configuration/windows-update-and-patching)
 
 #### Configuration
 
-* [Microsoft Intune - Applications]({{<ref "configuration/intune/apps">}})
-* [Microsoft Entra ID - Applications]({{<ref "configuration/entra-id/applications">}})
-* [Microsoft Intune - Profile Configurations]({{<ref "configuration/intune/devices/configuration-policies">}})
-* [Endpoint security policies]({{<ref "configuration/defender/endpoints/configuration-management/endpoint-security-policies.md">}})
-* [Device Management]({{<ref "configuration/defender/settings/endpoints/device-management.md">}})
-
+- [Microsoft Intune - Applications](/configuration/intune/apps)
+- [Microsoft Entra ID - Applications](/configuration/entra-id/applications)
+- [Configuration policies](/configuration/intune/devices/configuration-policies)
+- [Endpoint security policies](/configuration/defender/endpoints/configuration-management/endpoint-security-policies)
+- [Device management](/configuration/defender/settings/endpoints/device-management)
 
 #### External links
 
-* ASD's [*Essential Eight*](https://www.cyber.gov.au/resources-business-and-government/essential-cyber-security/essential-eight)
-* Microsoft's [Service Trust Portal](https://servicetrust.microsoft.com/)
-* Microsoft's [*Guidance for meeting ASD's Essential Eight - Patch Applications*](https://learn.microsoft.com/compliance/essential-eight/e8-patch-app)
+- ASD's [Essential Eight](https://www.cyber.gov.au/resources-business-and-government/essential-cyber-security/essential-eight)
+- Microsoft's [Service Trust Portal](https://servicetrust.microsoft.com)
+- Microsoft's [_Guidance for meeting ASD's Essential Eight - Patch Applications_](https://learn.microsoft.com/en-au/compliance/anz/e8-patch-app)

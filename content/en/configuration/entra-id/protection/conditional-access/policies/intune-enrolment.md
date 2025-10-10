@@ -1,6 +1,5 @@
 ---
 title: "DEV - G - Intune enrolment with strong auth"
-linkTitle: "DEV - G - Intune enrolment with strong auth"
 weight: 10
 type: docs
 description: "This page describes the configuration of policies for Conditional Access within Microsoft Entra ID associated with systems built according to the guidance provided by ASD's Blueprint for Secure Cloud."
@@ -8,7 +7,7 @@ description: "This page describes the configuration of policies for Conditional 
 
 {{% alert title="Instruction" color="dark" %}}
 
-The below tables outline the *as built* configuration for ASD's *Blueprint for Secure Cloud* (the Blueprint) for the Microsoft Entra admin portal at the following URL:
+The below tables outline the _as built_ configuration for ASD's _Blueprint for Secure Cloud_ (the Blueprint) for the Microsoft Entra admin portal at the following URL:
 
 <https://entra.microsoft.com/#view/Microsoft_AAD_ConditionalAccess/ConditionalAccessBlade/~/Policies>
 
@@ -77,7 +76,7 @@ The Microsoft Intune Enrolment app is not created by default in new tenants, see
 
 #### Grant
 
-[Authentication strengths]({{<ref "configuration/entra-id/protection/conditional-access/authentication-strengths">}}) will need to be configured prior to setting this access control.
+[Authentication strengths](/configuration/entra-id/protection/conditional-access/authentication-strengths) will need to be configured prior to setting this access control.
 
 | Item                                                |                                Value |
 | --------------------------------------------------- | -----------------------------------: |
@@ -113,24 +112,24 @@ The Microsoft Intune Enrolment app is not created by default in new tenants, see
 
 ### Related information
 
-#### Security & Governance
+#### Security and governance
 
-* [Multi-factor Authentication]({{<ref "multi-factor-authentication">}})
-* [Authentication Hardening]({{<ref "system-hardening-authentication">}})
-* [Essential Eight: Restrict Microsoft Office Macros]({{<ref "restrict-microsoft-office-macros.md">}})
+- [Multi-factor authentication](/security-and-governance/essential-eight/multi-factor-authentication)
+- [Authentication hardening](/security-and-governance/system-security-plan/system-hardening-authentication)
+- [Essential Eight - Restrict Microsoft Office macros](/security-and-governance/essential-eight/restrict-microsoft-office-macros)
 
 #### Design
 
-* [Conditional access]({{<ref "design/platform/identity/conditional-access">}})
+- [Conditional access](/design/platform/identity/conditional-access)
 
 #### Configuration
 
-* [Entra ID Protection]({{<ref "configuration/entra-id/protection">}})
-* [Intune Endpoint Security]({{<ref "configuration/intune/endpoint-security">}})
+- [Entra ID Protection](/configuration/entra-id/protection)
+- [Endpoint security](/configuration/intune/endpoint-security)
 
 #### References
 
-* [Configure Microsoft Entra multifactor authentication settings](https://learn.microsoft.comentra/identity/authentication/howto-mfa-mfasettings)
-* [System-preferred multifactor authentication - Authentication methods policy](https://learn.microsoft.com/entra/identity/authentication/concept-system-preferred-multifactor-authentication)
-* [Protecting authentication methods in Microsoft Entra ID](https://learn.microsoft.com/entra/identity/authentication/concept-authentication-default-enablement)
-* [Require multifactor authentication for Intune device enrollments](https://learn.microsoft.com/en-au/mem/intune/enrollment/multi-factor-authentication#configure-intune-to-require-multifactor-authentication-at-device-enrollment)
+- [Configure Microsoft Entra multifactor authentication settings](https://learn.microsoft.comentra/identity/authentication/howto-mfa-mfasettings)
+- [System-preferred multifactor authentication - Authentication methods policy](https://learn.microsoft.com/entra/identity/authentication/concept-system-preferred-multifactor-authentication)
+- [Protecting authentication methods in Microsoft Entra ID](https://learn.microsoft.com/entra/identity/authentication/concept-authentication-default-enablement)
+- [Require multifactor authentication for Intune device enrollments](https://learn.microsoft.com/en-au/mem/intune/enrollment/multi-factor-authentication#configure-intune-to-require-multifactor-authentication-at-device-enrollment)

@@ -1,25 +1,26 @@
 ---
-title: Endpoint Management
+title: Endpoint management
 weight: 20
 description: "This section describes the design decisions associated with device enrolment, configuration, application management, security and updates for system(s) built using ASD's Blueprint for Secure Cloud."
 ---
 
 Microsoft Intune is a Microsoft 365 service that provides Mobile Device Management (MDM) and Mobile Application Management (MAM) capabilities for Apple iOS/iPadOS and macOS, Chrome OS, Android, Linux, and Microsoft Windows devices to enhance security and protection. It is a component of Endpoint Management and Security (EMS) and natively integrates with other EMS components such as Entra ID and Microsoft Purview Information Protection (MPIP). Intune enables management of device security including data access and sharing, and provides enforcement of device configuration to ensure continuous assessment of device protection controls and does this via:
 
-* **Device Enrolment Profiles** - Prior to managing devices in Intune they must be enrolled as either Personal or Corporate devices. These can either be self-enrolled or automatically enrolled.
-* **Device Compliance Policies** - Device Compliance Policies are rules, such as device PIN length or encryption requirements, that can be applied to devices. These rules must be met before a device is considered compliant. Device Compliance can then be used by services such as Conditional Access.
-* **Device Configuration Profiles** - Device Configuration Profiles provide the ability to control settings and features on supported endpoints. These include device and user settings, browser settings and hardware settings. Device Configuration Profiles can be deployed to specific users or devices in Entra ID groups.
-* **Device Security Baselines** - Device Security Baselines are pre-configured groups of Windows settings that are recommended by Microsoft security teams. The security baselines are templates that are used to create a profile that is specific to the environment for deployment.
-* **Client Applications** - Client Applications can be delivered to devices registered in Intune based on device type and group membership. Application types that can be distributed include store apps, Microsoft Office suite, Microsoft Edge browser, web links, line of business and Win32 applications. Monitoring of application distribution is provided.
-* **Software Updates** - Software Update policies store the configuration of updates without the updates themselves. This prevents the need to approve individual updates enabling a faster turnaround time. Individual policies can be created and targeted to different groups of devices.
+- **Device Enrolment Profiles** - Prior to managing devices in Intune they must be enrolled as either Personal or Corporate devices. These can either be self-enrolled or automatically enrolled.
+- **Device Compliance Policies** - Device Compliance Policies are rules, such as device PIN length or encryption requirements, that can be applied to devices. These rules must be met before a device is considered compliant. Device Compliance can then be used by services such as Conditional Access.
+- **Device Configuration Profiles** - Device Configuration Profiles provide the ability to control settings and features on supported endpoints. These include device and user settings, browser settings and hardware settings. Device Configuration Profiles can be deployed to specific users or devices in Entra ID groups.
+- **Device Security Baselines** - Device Security Baselines are pre-configured groups of Windows settings that are recommended by Microsoft security teams. The security baselines are templates that are used to create a profile that is specific to the environment for deployment.
+- **Client Applications** - Client Applications can be delivered to devices registered in Intune based on device type and group membership. Application types that can be distributed include store apps, Microsoft Office suite, Microsoft Edge browser, web links, line of business and Win32 applications. Monitoring of application distribution is provided.
+- **Software Updates** - Software Update policies store the configuration of updates without the updates themselves. This prevents the need to approve individual updates enabling a faster turnaround time. Individual policies can be created and targeted to different groups of devices.
 
 When devices are enrolled into Intune, authorised administrators are able to view:
-* Hardware details 
-* Device usage (how the device is being used)
-* Current compliance levels for:
-    * Device software
-    * Hardware
-    * Operating system
+
+- Hardware details
+- Device usage (how the device is being used)
+- Current compliance levels for:
+  - Device software
+  - Hardware
+  - Operating system
 
 Through customisation of the Company Portal, administrators can give end users the ability to install pre-approved applications and launch selected websites. This enables granular visibility of all endpoints within the Enterprise Mobility Management sphere and simplifies the approach for management.
 
@@ -70,17 +71,17 @@ Intune also provides a patching mechanism which simplifies the deployment of Mic
 The following figure provides an overview of Co-Management.
 
 {{<figure src="https://learn.microsoft.com/mem/configmgr/comanage/media/co-management-overview.svg" title="Endpoint co-management overview">}}
-*Figure reproduced from <https://learn.microsoft.com/mem/configmgr/comanage/overview>*
+_Figure reproduced from <https://learn.microsoft.com/mem/configmgr/comanage/overview>_
 
 {{% alert title="Design decisions" color="warning" %}}
 
 | Decision point                              | Design decision                             | Justification                                                                                                                                                                                      |
 | ------------------------------------------- | ------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Co-management                               | Enabled                                     | The Microsoft co-management approach will enable the organisation to strategically move device management from on-premises to the cloud in a staged manner.                                        |
-| Enrolled Device Types                       | Windows 10: 21H2 / 10.0.19044.100 (minimum) | As per the Client Devices design.<br>Note: iOS is permitted, but controlled by Intune only.                                                                                                         |
+| Enrolled Device Types                       | Windows 10: 21H2 / 10.0.19044.100 (minimum) | As per the Client Devices design.<br>Note: iOS is permitted, but controlled by Intune only.                                                                                                        |
 | Device Compliance                           | Enabled                                     | Device Compliance is enabled. All devices will be Intune enrolled and have a custom set of compliance policies applied.                                                                            |
 | Company Portal                              | Enabled                                     | The Company Portal is enabled for application deployment. Applications to be deployed will be set by the organisation requirements.                                                                |
-| Conditional Access                          | Enabled                                     | Conditional Access is enabled. It will leverage device and user compliance to allow or disallow access to the corporate environment.                                                                 |
+| Conditional Access                          | Enabled                                     | Conditional Access is enabled. It will leverage device and user compliance to allow or disallow access to the corporate environment.                                                               |
 | Mobile Device Management (MDM)              | Enabled                                     | MECM will be the MDM authority for the solution, with Intune inspecting compliance.                                                                                                                |
 | Mobile Application Management (MAM)         | Disabled                                    | Not required as Group Policy will configure application controls.                                                                                                                                  |
 | Compliance policies controlled by           | Intune preferred                            | Compliance and remediation policies to controlled via Intune. Staged migration to be completed from MECM if previously in use.                                                                     |
@@ -96,16 +97,16 @@ The following figure provides an overview of Co-Management.
 
 ### Related information
 
-#### Security & Governance
+#### Security and governance
 
-* None identified
+- None identified
 
 #### Design
 
-* None identified
+- None identified
 
 #### References
 
-* [Supported operating systems and browsers in Intune](https://learn.microsoft.com/mem/intune/fundamentals/supported-devices-browsers)
-* [What is co-management?](https://learn.microsoft.com/mem/configmgr/comanage/overview)
-* [Tutorial: Enable co-management for existing Configuration Manager clients](https://learn.microsoft.com/mem/configmgr/comanage/tutorial-co-manage-clients)
+- [Supported operating systems and browsers in Intune](https://learn.microsoft.com/mem/intune/fundamentals/supported-devices-browsers)
+- [What is co-management?](https://learn.microsoft.com/mem/configmgr/comanage/overview)
+- [Tutorial: Enable co-management for existing Configuration Manager clients](https://learn.microsoft.com/mem/configmgr/comanage/tutorial-co-manage-clients)

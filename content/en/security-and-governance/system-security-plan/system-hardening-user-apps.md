@@ -1,6 +1,5 @@
 ---
-title: "User Application Hardening"
-linkTitle: "System Hardening: User Apps"
+title: "User application hardening"
 weight: 71
 type: docs
 description: This page provides a template and guidance to assist organisations in documenting their approach to user application hardening associated with their system(s) built on ASD's Blueprint for Secure Cloud.
@@ -12,32 +11,34 @@ The user application hardening section of a System Security Plan (SSP) should do
 
 All template text refers to a typical implementation of a system built using the Blueprint, and includes reference to organisational policies, processes and technical configurations to be implemented in addition to the technical controls that may be configured using guidance in the Blueprint. Any implementation implied by the below should not be considered as prescriptive as to how organisations must scope, build, document, or assess a system.
 
-When completing the below template, organisations should insert and update information where relevant to ensure it accurately represents their approach to operating system hardening. When complete, remove any instructional boxes throughout. 
+When completing the below template, organisations should insert and update information where relevant to ensure it accurately represents their approach to operating system hardening. When complete, remove any instructional boxes throughout.
 
 {{% /alert %}}
 
-Due to the number of applicable controls in ASD's [*Guidelines for System Hardening*](https://www.cyber.gov.au/resources-business-and-government/essential-cyber-security/ism/cyber-security-guidelines/guidelines-system-hardening), guidance on system hardening has been split into its five sections for the purpose of this SSP.
+Due to the number of applicable controls in ASD's [_Guidelines for System Hardening_](https://www.cyber.gov.au/resources-business-and-government/essential-cyber-security/ism/cyber-security-guidelines/guidelines-system-hardening), guidance on system hardening has been split into its five sections for the purpose of this SSP.
 
 ### User application selection and releases
 
 #### Applicability
 
 This section of the SSP is applicable to application selection for the below `<SYSTEM-NAME>` components:
-* Endpoints (Windows laptops and desktops)
-* Mobile Devices (iOS)
-* `<ON-PREMISES SERVERS>`
+
+- Endpoints (Windows laptops and desktops)
+- Mobile Devices (iOS)
+- `<ON-PREMISES SERVERS>`
 
 `<INSERT ADDITIONAL INFORMATION AS APPROPRIATE>`
 
 #### Organisational policies and processes implemented
 
 All vendors of user applications used within `<SYSTEM-NAME>` have been assessed by `<ORGANISATION-NAME>` as demonstrating a commitment to secure-by-design and secure-by-default principles, use of memory-safe programming languages where possible, secure programming practices, and maintaining the security of their products.
-* `<ORGANISATION-NAME>` [Vendor Assessment: Microsoft]({{<ref "security-and-governance/general-documentation">}})
-* `<ORGANISATION-NAME>` [Vendor Assessment: Apple]({{<ref "security-and-governance/general-documentation">}})
-* `<ORGANISATION-NAME>` [Vendor Assessment: \<VENDOR-3>]({{<ref "security-and-governance/general-documentation">}})
 
-User applications used for `<SYSTEM-NAME>`, along with their releases and versions are listed in the `<SYSTEM-NAME>` [Allowed Applications Register]({{<ref "security-and-governance/general-documentation">}}).
-  
+- `<ORGANISATION-NAME>` [Vendor Assessment: Microsoft](/security-and-governance/general-documentation)
+- `<ORGANISATION-NAME>` [Vendor Assessment: Apple](/security-and-governance/general-documentation)
+- `<ORGANISATION-NAME>` [Vendor Assessment: \<VENDOR-3>](/security-and-governance/general-documentation)
+
+User applications used for `<SYSTEM-NAME>`, along with their releases and versions are listed in the `<SYSTEM-NAME>` [Allowed Applications Register](/security-and-governance/general-documentation).
+
 `<INSERT ADDITIONAL INFORMATION AS APPROPRIATE>`
 
 #### Technical controls implemented
@@ -51,9 +52,10 @@ Allowed applications are deployed to endpoints and configured via Microsoft Intu
 #### Applicability
 
 This section of the SSP is applicable to the hardening of user applications for the below `<SYSTEM-NAME>` components:
-* Endpoints (laptops and desktops)
-* Mobile Devices
-* `<ON-PREMISES SERVERS>`
+
+- Endpoints (laptops and desktops)
+- Mobile Devices
+- `<ON-PREMISES SERVERS>`
 
 `<INSERT ADDITIONAL INFORMATION AS APPROPRIATE>`
 
@@ -65,7 +67,7 @@ This section of the SSP is applicable to the hardening of user applications for 
 
 #### Technical controls implemented
 
-Technical controls for hardening of user applications and Microsoft Office macros within `<SYSTEM-NAME>` are configured with reference to ASD's [*Blueprint for Secure Cloud*](https://blueprint.asd.gov.au) and includes the following technical configurations:
+Technical controls for hardening of user applications and Microsoft Office macros within `<SYSTEM-NAME>` are configured with reference to ASD's [_Blueprint for Secure Cloud_](https://blueprint.asd.gov.au) and includes the following technical configurations:
 
 <div class="no-band-table">
 
@@ -113,27 +115,27 @@ Where an organisation appropriately assesses hardening user applications for ser
 
 ### Related information
 
-#### Security & Governance
+#### Security and governance
 
-* [Essential Eight: User Application Hardening]({{< ref "user-application-hardening.md">}})
-* [Essential Eight: Restrict Microsoft Office Macros]({{< ref "restrict-microsoft-office-macros.md">}})
+- [Essential Eight - User application hardening](/security-and-governance/essential-eight/user-application-hardening)
+- [Essential Eight - Restrict Microsoft Office macros](/security-and-governance/essential-eight/restrict-microsoft-office-macros)
 
 #### Design
 
-* [Microsoft Office Macro Hardening]({{< ref "microsoft-office-macro-hardening.md">}})
-* [Microsoft Office Hardening]({{< ref "microsoft-office-hardening.md">}})
-* [Microsoft Edge Hardening]({{< ref "edge-hardening.md">}})
-* [Windows Defender Application Control]({{< ref "windows-defender-application-control.md">}})
+- [Microsoft Office macro hardening](/design/endpoints/windows/security/microsoft-office-macro-hardening)
+- [Microsoft Office hardening](/design/endpoints/windows/security/microsoft-office-hardening)
+- [Microsoft Edge hardening](/design/endpoints/windows/security/edge-hardening)
+- [Windows Defender application control](/design/endpoints/windows/security/windows-defender-application-control)
 
 #### Configuration
 
-* [Microsoft Intune - Applications]({{<ref "configuration/intune/apps">}})
-* [Microsoft Entra ID - Applications]({{<ref "configuration/entra-id/applications">}})
-* [Microsoft Intune - Profile Configurations]({{<ref "configuration/intune/devices/configuration-policies">}})
-* [Endpoint security policies]({{<ref "configuration/defender/endpoints/configuration-management/endpoint-security-policies.md">}})
+- [Microsoft Intune - Applications](/configuration/intune/apps)
+- [Microsoft Entra ID - Applications](/configuration/entra-id/applications)
+- [Configuration policies](/configuration/intune/devices/configuration-policies)
+- [Endpoint security policies](/configuration/defender/endpoints/configuration-management/endpoint-security-policies)
 
 #### External documentation
 
-* ASD's [*Guidelines for System Hardening*](https://www.cyber.gov.au/resources-business-and-government/essential-cyber-security/ism/cyber-security-guidelines/guidelines-system-hardening)
-* ASD's [*Shifting the Balance of Cybersecurity Risk: Principles and Approaches for Security-by-Design and Default*](https://www.cyber.gov.au/resources-business-and-government/governance-and-user-education/secure-by-design/shifting-balance-cybersecurity-risk)
-* ASD's [*The Case for Memory Safe Roadmaps*](https://www.cyber.gov.au/resources-business-and-government/governance-and-user-education/secure-by-design/case-memory-safe-roadmaps)
+- ASD's [_Guidelines for System Hardening_](https://www.cyber.gov.au/resources-business-and-government/essential-cyber-security/ism/cyber-security-guidelines/guidelines-system-hardening)
+- ASD's [_Shifting the Balance of Cybersecurity Risk: Principles and Approaches for Security-by-Design and Default_](https://www.cyber.gov.au/resources-business-and-government/governance-and-user-education/secure-by-design/shifting-balance-cybersecurity-risk)
+- ASD's [_The Case for Memory Safe Roadmaps_](https://www.cyber.gov.au/resources-business-and-government/governance-and-user-education/secure-by-design/case-memory-safe-roadmaps)

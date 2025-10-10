@@ -1,13 +1,12 @@
 ---
 title: "Sensitivity labels"
-linkTitle: "Sensitivity labels"
 weight: 10
 description: "This section describes the configuration of sensitivity labels within Microsoft Purview associated with systems built according to guidance in ASD's Blueprint for Secure Cloud."
 ---
 
 {{% alert title="Instruction" color="dark" %}}
 
-The below pages outline the *as built* configuration for ASD's *Blueprint for Secure Cloud* (the Blueprint) for the Microsoft Purview portal at the following URL:
+The below pages outline the _as built_ configuration for ASD's _Blueprint for Secure Cloud_ (the Blueprint) for the Microsoft Purview portal at the following URL:
 
 <https://purview.microsoft.com/informationprotection/informationprotectionlabels/sensitivitylabels>
 
@@ -23,7 +22,7 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 
 The NATIONAL CABINET special handling marking has been formally retired.
 
-Organisations with existing labelling schemes may find the [migrating labelling schemes]({{<ref "tools/purview/migrating-labelling-schemes">}}) guidance useful when modifying sensitivity labels.
+Organisations with existing labelling schemes may find the [migrating labelling schemes](/tools/purview/migrating-labelling-schemes) guidance useful when modifying sensitivity labels.
 
 {{% /alert %}}
 

@@ -1,6 +1,5 @@
 ---
 title: "Registration campaign"
-linkTitle: "Registration campaign"
 weight: 30
 type: docs
 description: "This page describes the configuration of registration campaigns within Microsoft Entra ID associated with systems built according to the guidance provided by ASD's Blueprint for Secure Cloud."
@@ -8,7 +7,7 @@ description: "This page describes the configuration of registration campaigns wi
 
 {{% alert title="Instruction" color="dark" %}}
 
-The below tables outline the *as built* configuration for ASD's *Blueprint for Secure Cloud* (the Blueprint) for the Microsoft Entra admin portal at the following URL:
+The below tables outline the _as built_ configuration for ASD's _Blueprint for Secure Cloud_ (the Blueprint) for the Microsoft Entra admin portal at the following URL:
 
 <https://entra.microsoft.com/#view/Microsoft_AAD_IAM/AuthenticationMethodsMenuBlade/~/RegistrationCampaign>
 
@@ -22,11 +21,11 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 
 ### Settings
 
-| Item                      |                                    Value |
-| ------------------------- | ---------------------------------------: |
-| State                     |                                  Enabled |
-| Days allowed to snooze    |                                  14 days |
-| Limited number of snoozes |                                  Enabled |
+| Item                      |                                      Value |
+| ------------------------- | -----------------------------------------: |
+| State                     |                                    Enabled |
+| Days allowed to snooze    |                                    14 days |
+| Limited number of snoozes |                                    Enabled |
 | excluded users and groups | `<Conditional Access excluded identities>` |
 
 ### Authentication method
@@ -37,22 +36,22 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 
 ### Related information
 
-#### Security & Governance
+#### Security and governance
 
-* [Multi-factor Authentication]({{<ref "multi-factor-authentication">}})
-* [Authentication Hardening]({{<ref "system-hardening-authentication">}})
+- [Multi-factor authentication](/security-and-governance/essential-eight/multi-factor-authentication)
+- [Authentication hardening](/security-and-governance/system-security-plan/system-hardening-authentication)
 
 #### Design
 
-* [Authentication]({{<ref "authentication">}})
+- [Authentication](/design/platform/identity/authentication)
 
 #### Configuration
 
-* [Microsoft Intune - Profile Configurations]({{<ref "configuration/intune/devices/configuration-policies">}})
-* [Endpoint security policies]({{<ref "configuration/defender/endpoints/configuration-management/endpoint-security-policies.md">}})
-* [Cloud app Settings]({{<ref "configuration/defender/settings/cloud-apps/settings.md">}})
-* [Rules]({{<ref "configuration/defender/settings/endpoints/rules.md">}})
+- [Configuration policies](/configuration/intune/devices/configuration-policies)
+- [Endpoint security policies](/configuration/defender/endpoints/configuration-management/endpoint-security-policies)
+- [Cloud apps settings](/configuration/defender/settings/cloud-apps/settings)
+- [Rules](/configuration/defender/settings/endpoints/rules)
 
 #### References
 
-* [Registration campaign](https://learn.microsoft.com/entra/identity/authentication/how-to-mfa-registration-campaign)
+- [Registration campaign](https://learn.microsoft.com/entra/identity/authentication/how-to-mfa-registration-campaign)

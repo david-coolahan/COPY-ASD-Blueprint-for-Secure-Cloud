@@ -1,5 +1,5 @@
 ---
-title: Application and HR Provisioning
+title: Application and HR system identity provisioning
 weight: 85
 description: "This section describes the design decisions associated with automated provisioning of user identities for system(s) built using ASD's Blueprint for Secure Cloud."
 ---
@@ -8,9 +8,9 @@ Entra ID to SaaS application provisioning refers to automatically creating user 
 
 Provisioning can be done in two modes:
 
-* **Manual** - There is no automatic Entra ID provisioning connector for the app yet. User accounts must be created manually, for example by adding users directly into the app's administrative portal.
+- **Manual** - There is no automatic Entra ID provisioning connector for the app yet. User accounts must be created manually, for example by adding users directly into the app's administrative portal.
 
-* **Automatic** - an Entra ID provisioning connector has been developed for this application. For pre-integrated applications listed in the gallery, step-by-step guidance is available for setting up automatic provisioning.
+- **Automatic** - an Entra ID provisioning connector has been developed for this application. For pre-integrated applications listed in the gallery, step-by-step guidance is available for setting up automatic provisioning.
 
 The provisioning mode supported by an application is also visible on the Provisioning tab once the application added to the Enterprise apps. If there is no out of the box connector, and the SaaS application is SCIM 2.0 enabled then a custom SCIM Endpoint can be developed.
 
@@ -24,19 +24,19 @@ The provisioning mode supported by an application is also visible on the Provisi
 
 ### Related information
 
-#### Security & Governance
+#### Security and governance
 
-* None identified
+- None identified
 
 #### Design
 
-* None identified
+- None identified
 
 #### Configuration
 
-* None identified
+- None identified
 
 #### References
 
-* [Application Provisioning Overview](https://learn.microsoft.com/entra/identity/app-provisioning/user-provisioning)
-* [How Provisioning Works](https://learn.microsoft.com/entra/identity/app-provisioning/how-provisioning-works)
+- [Application Provisioning Overview](https://learn.microsoft.com/entra/identity/app-provisioning/user-provisioning)
+- [How Provisioning Works](https://learn.microsoft.com/entra/identity/app-provisioning/how-provisioning-works)

@@ -1,6 +1,5 @@
 ---
 title: "Cross-tenant access settings"
-linkTitle: "Cross-tenant access settings"
 weight: 10
 type: docs
 description: "This page describes the configuration of cross-tenant access settings within Microsoft Entra ID associated with systems built according to the guidance provided by ASD's Blueprint for Secure Cloud."
@@ -8,7 +7,7 @@ description: "This page describes the configuration of cross-tenant access setti
 
 {{% alert title="Instruction" color="dark" %}}
 
-The below tables outline the *as built* configuration for ASD's *Blueprint for Secure Cloud* (the Blueprint) for the Microsoft Entra admin portal at the following URL:
+The below tables outline the _as built_ configuration for ASD's _Blueprint for Secure Cloud_ (the Blueprint) for the Microsoft Entra admin portal at the following URL:
 
 <https://entra.microsoft.com/#view/Microsoft_AAD_IAM/CompanyRelationshipsMenuBlade/~/CrossTenantAccessSettings>
 
@@ -24,18 +23,18 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 
 #### Inbound access settings
 
-| Type               | Applies to                | Status      |
-| ------------------ | ------------------------- | -----------:|
+| Type               | Applies to                |      Status |
+| ------------------ | ------------------------- | ----------: |
 | B2B collaboration  | External users and groups | All blocked |
 | B2B collaboration  | Applications              | All blocked |
 | B2B direct connect | External users and groups | All blocked |
 | B2B direct connect | Applications              | All blocked |
-| Trusted settings   | N/A                       | Disabled    |
+| Trusted settings   | N/A                       |    Disabled |
 
 #### Outbound access settings
 
-| Type               | Applies to            | Status      |
-| ------------------ | --------------------- | -----------:|
+| Type               | Applies to            |      Status |
+| ------------------ | --------------------- | ----------: |
 | B2B collaboration  | Users and groups      | All blocked |
 | B2B collaboration  | External applications | All blocked |
 | B2B direct connect | Users and groups      | All blocked |
@@ -43,35 +42,35 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 
 #### Tenant restrictions
 
-| Applies to                | Status      |
-| ------------------------- | -----------:|
+| Applies to                |      Status |
+| ------------------------- | ----------: |
 | External users and groups | All blocked |
 | External applications     | All blocked |
 
 ### Microsoft cloud settings
 
-| Applies to                                   | Status      |
-| -------------------------------------------- | -----------:|
+| Applies to                                   |      Status |
+| -------------------------------------------- | ----------: |
 | Microsoft Azure Government                   | Not checked |
 | Microsoft Azure China (operated by 21Vianet) | Not checked |
 
 ### Related information
 
-#### Security & Governance
+#### Security and governance
 
-* [System Management]({{<ref "system-management.md">}})
-  
+- [System management](/security-and-governance/system-security-plan/system-management)
+
 #### Design
 
-* [External Identities]({{<ref "design/platform/identity/external-identities">}})
-* [Conditional Access]({{<ref "design/platform/identity/conditional-access.md">}})
-  
+- [External identities](/design/platform/identity/external-identities)
+- [Conditional access](/design/platform/identity/conditional-access)
+
 #### Configuration
 
-* None identified
+- None identified
 
 #### References
 
-* [Overview: Cross-tenant access](https://learn.microsoft.com/entra/external-id/cross-tenant-access-overview#default-settings)
-* [External Identities](https://learn.microsoft.com/entra/external-id/index-b2b)
-* [Cross-tenant access activity workbook](https://learn.microsoft.com/entra/identity/monitoring-health/workbook-cross-tenant-access-activity)
+- [Overview: Cross-tenant access with Microsoft Entra External ID](https://learn.microsoft.com/entra/external-id/cross-tenant-access-overview)
+- [External ID for business guests documentation](https://learn.microsoft.com/entra/external-id/index-b2b)
+- [Cross-tenant access activity workbook](https://learn.microsoft.com/entra/identity/monitoring-health/workbook-cross-tenant-access-activity)

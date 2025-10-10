@@ -1,6 +1,5 @@
 ---
 title: "General"
-linkTitle: "General"
 weight: 10
 type: docs
 description: "This page describes the configuration of group settings within Microsoft Entra ID associated with systems built according to the guidance provided by ASD's Blueprint for Secure Cloud."
@@ -8,7 +7,7 @@ description: "This page describes the configuration of group settings within Mic
 
 {{% alert title="Instruction" color="dark" %}}
 
-The below tables outline the *as built* configuration for ASD's *Blueprint for Secure Cloud* (the Blueprint) for the Microsoft Entra admin portal at the following URL:
+The below tables outline the _as built_ configuration for ASD's _Blueprint for Secure Cloud_ (the Blueprint) for the Microsoft Entra admin portal at the following URL:
 
 <https://entra.microsoft.com/#view/Microsoft_AAD_IAM/GroupsManagementMenuBlade/~/General>
 
@@ -41,22 +40,21 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 
 ### Related information
 
-#### Security & Governance
+#### Security and governance
 
-* None identified
-  
+- None identified
+
 #### Design
 
-* [Groups]({{<ref "design/platform/identity/groups">}})
-* [Microsoft Groups]({{<ref "design/shared-services/microsoft-365/microsoft365-groups.md">}})
-  
+- [Groups](/design/platform/identity/groups)
+- [Microsoft Groups](/design/shared-services/microsoft-365/microsoft365-groups)
+
 #### Configuration
 
-* None identified
+- None identified
 
 #### References
 
-* [Learn about groups and access rights](https://learn.microsoft.com/entra/fundamentals/concept-learn-about-groups)
-* [Microsoft Entra groups to manage role assignments](https://learn.microsoft.com/entra/identity/role-based-access-control/groups-concept)
-* [Make a group available for user self-service](https://learn.microsoft.com/entra/identity/users/groups-self-service-management?WT.mc_id=Portal-Microsoft_AAD_IAM#make-a-group-available-for-user-self-service)
-  
+- [Learn about groups and access rights](https://learn.microsoft.com/entra/fundamentals/concept-learn-about-groups)
+- [Microsoft Entra groups to manage role assignments](https://learn.microsoft.com/entra/identity/role-based-access-control/groups-concept)
+- [Make a group available for user self-service](https://learn.microsoft.com/entra/identity/users/groups-self-service-management?WT.mc_id=Portal-Microsoft_AAD_IAM#make-a-group-available-for-user-self-service)

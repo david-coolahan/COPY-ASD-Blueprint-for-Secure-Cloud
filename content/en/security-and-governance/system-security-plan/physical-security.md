@@ -1,6 +1,5 @@
 ---
-title: "Physical Security"
-linkTitle: "Physical Security"
+title: "Physical security"
 weight: 30
 type: docs
 description: This page provides a template and guidance to assist organisations in documenting their approach to physical security associated with their system(s) built on ASD's Blueprint for Secure Cloud.
@@ -12,11 +11,11 @@ The physical security section of a System Security Plan (SSP) should document an
 
 All template text refers to a typical implementation of a system built using the Blueprint, and includes reference to organisational policies, processes and technical configurations to be implemented in addition to the technical controls that may be configured using guidance in the Blueprint. Any implementation implied by the below should not be considered as prescriptive as to how organisations must scope, build, document, or assess a system.
 
-When completing the below template, organisations should insert and update information where relevant to ensure it accurately represents their approach to physical security within their organisation. When complete, remove any instructional boxes throughout. 
+When completing the below template, organisations should insert and update information where relevant to ensure it accurately represents their approach to physical security within their organisation. When complete, remove any instructional boxes throughout.
 
 {{% /alert %}}
 
-As `<ORGANISATION-NAME>`'s approach to implementing controls related to physical security is consistent across all controls addressed within this section, it does not delve into subsections but rather addresses the controls as a group. This approach is consistent with ASD's [*Guidelines for Physical Security*](https://www.cyber.gov.au/resources-business-and-government/essential-cyber-security/ism/cyber-security-guidelines/guidelines-physical-security). 
+As `<ORGANISATION-NAME>`'s approach to implementing controls related to physical security is consistent across all controls addressed within this section, it does not delve into subsections but rather addresses the controls as a group. This approach is consistent with ASD's [_Guidelines for Physical Security_](https://www.cyber.gov.au/resources-business-and-government/essential-cyber-security/ism/cyber-security-guidelines/guidelines-physical-security).
 
 #### Applicability
 
@@ -32,22 +31,22 @@ In particular, this is relevant to any server infrastructure hosting a hybrid de
 
 `<SYSTEM-NAME>` does not consider the direct management of these physical facilities or systems within its system boundary, and relies on the implementation from the following system assessments:
 
-* `<ORG-NETWORKING-SYSTEM>`
-* `<ORG-IDENTITY-SYSTEM>`
+- `<ORG-NETWORKING-SYSTEM>`
+- `<ORG-IDENTITY-SYSTEM>`
 
-Use of laptops and/or iPhones by staff outside of `<ORGANISATION-NAME>`'s offices is in accordance with the [Enterprise Mobility]({{<ref "enterprise-mobility.md">}}) section of this SSP. However, `<SYSTEM-NAME>` endpoints and peripherals are also deployed in `<ORGANISATION-NAME>`'s offices as their primary place of operation.
+Use of laptops and/or iPhones by staff outside of `<ORGANISATION-NAME>`'s offices is in accordance with the [Enterprise mobility](/security-and-governance/system-security-plan/enterprise-mobility) section of this SSP. However, `<SYSTEM-NAME>` endpoints and peripherals are also deployed in `<ORGANISATION-NAME>`'s offices as their primary place of operation.
 
-`<ORGANISATION-NAME>` is responsible for the physical security of devices located at `<ORGANISATION-NAME>`'s` offices. 
+`<ORGANISATION-NAME>` is responsible for the physical security of devices located at `<ORGANISATION-NAME>`'s` offices.
 
-#### Organisational  policies and processes implemented
+#### Organisational policies and processes implemented
 
-Management of facilities and physical security is performed in accordance with `<ORGANISATION-NAME>`'s [Physical Security Policy]({{<ref "security-and-governance/policies">}}), which requires all organisational assets, including ICT equipment and media to be appropriately secured according to their use.
+Management of facilities and physical security is performed in accordance with `<ORGANISATION-NAME>`'s [Physical Security Policy](/security-and-governance/policies), which requires all organisational assets, including ICT equipment and media to be appropriately secured according to their use.
 
 `<INSERT ADDITIONAL INFORMATION AS APPROPRIATE>`
 
 #### Technical controls implemented
 
-Physical server hardware, networking devices, and cryptographic equipment are deployed in secure rooms within `<ORGANISATION-NAME>`'s offices, assessed to meet `<ZONE 2>` requirements as per the Department of Home Affair's Protective Security Policy Framework (PSPF).
+Physical server hardware, networking devices, and cryptographic equipment are deployed in secure rooms within `<ORGANISATION-NAME>`'s offices, assessed to meet `<ZONE 2>` requirements as per the Department of Home Affair's _Protective Security Policy Framework_ (PSPF).
 
 Workstations are also deployed within `<ORGANISATION-NAME>`'s offices, assessed to meet `<ZONE 2>` requirements as per the PSPF.
 
@@ -57,20 +56,19 @@ Workstations are also deployed within `<ORGANISATION-NAME>`'s offices, assessed 
 
 ### Related information
 
-#### Security & Governance
+#### Security and governance
 
-* [Physical Security Policy]({{<ref "security-and-governance/policies">}})
-* [Enterprise Mobility]({{<ref "enterprise-mobility.md">}})
+- [Physical Security Policy](/security-and-governance/policies)
+- [Enterprise mobility](/security-and-governance/system-security-plan/enterprise-mobility)
 
 #### Design
 
-* None identified
-
+- None identified
 
 #### Configuration
 
-* None identified
+- None identified
 
 #### External documentation
 
-* ASD's [*Guidelines for Physical Security*](https://www.cyber.gov.au/resources-business-and-government/essential-cyber-security/ism/cyber-security-guidelines/guidelines-physical-security)
+- ASD's [_Guidelines for Physical Security_](https://www.cyber.gov.au/resources-business-and-government/essential-cyber-security/ism/cyber-security-guidelines/guidelines-physical-security)

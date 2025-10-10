@@ -5,10 +5,10 @@ description: "This section describes the configuration of Powershell scripts wit
 ---
 
 {{% alert title="Instruction" color="dark" %}}
- 
-The below script outlines the *as built* configuration for ASD's *Blueprint for Secure Cloud* (the Blueprint) for the Microsoft Intune portal at the following URL:
 
-https://intune.microsoft.com/#view/Microsoft_Intune_DeviceSettings/DevicesMenu/~/scripts
+The below script outlines the _as built_ configuration for ASD's _Blueprint for Secure Cloud_ (the Blueprint) for the Microsoft Intune portal at the following URL:
+
+<https://intune.microsoft.com/#view/Microsoft_Intune_DeviceSettings/DevicesMenu/~/scripts>
 
 The settings described on these pages provide a baseline implementation for a system configured using the Blueprint. Any implementation implied by these pages should not be considered as prescriptive as to how an organisation must scope, build, document, or assess a system.
 
@@ -31,7 +31,7 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 
 | Item                                            | Value                                                                                                                                                                                        |
 | ----------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| PowerShell script                               | {{% download file="/content/files/configscripts/SealSecureChannel.txt" %}} SealSecureChannel {{% /download %}}.ps1 <br> *Note: download the linked .txt file, and rename to .ps1 for upload* |
+| PowerShell script                               | {{% download file="/content/files/configscripts/SealSecureChannel.txt" %}} SealSecureChannel {{% /download %}}.ps1 <br> _Note: download the linked .txt file, and rename to .ps1 for upload_ |
 | Run this script using the logged on credentials | No                                                                                                                                                                                           |
 | Enforce script signature check                  | No                                                                                                                                                                                           |
 | Run script in 64 bit PowerShell Host            | No                                                                                                                                                                                           |
@@ -45,19 +45,19 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 
 ### Related information
 
-#### Security & Governance
+#### Security and governance
 
-* None identified
-  
+- None identified
+
 #### Design
 
-* None identified
-  
+- None identified
+
 #### Configuration
 
-* None identified
+- None identified
 
 #### References
 
-* [Microsoft Intune ACSC Windows Hardening Guidelines](https://github.com/microsoft/Intune-ACSC-Windows-Hardening-Guidelines)
-* [Intune Management Extension Powershell Scripts](https://docs.microsoft.com/mem/intune/apps/intune-management-extension)
+- [Microsoft Intune ACSC Windows Hardening Guidelines](https://github.com/microsoft/Intune-ACSC-Windows-Hardening-Guidelines)
+- [Intune Management Extension Powershell Scripts](https://docs.microsoft.com/mem/intune/apps/intune-management-extension)

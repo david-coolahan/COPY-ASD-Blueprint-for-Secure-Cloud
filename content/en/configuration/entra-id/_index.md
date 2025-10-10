@@ -1,13 +1,12 @@
 ---
 title: "Entra ID"
-linkTitle: "Entra ID"
 weight: 10
 description: "This page describes the configuration of Microsoft Entra ID associated with systems built according to the guidance provided by ASD's Blueprint for Secure Cloud."
 ---
 
 {{% alert title="Instruction" color="dark" %}}
 
-The below pages outline the *as built* configuration for ASD's *Blueprint for Secure Cloud* (the Blueprint) for the Microsoft Entra admin portal at the following URL:
+The below pages outline the _as built_ configuration for ASD's _Blueprint for Secure Cloud_ (the Blueprint) for the Microsoft Entra admin portal at the following URL:
 
 <https://entra.microsoft.com/>
 
@@ -53,25 +52,25 @@ Some of the Entra ID configurations cannot be assessed using a DSC blueprint. Pl
 
 1: All Conditional Access policies are set to report only when using the DSC Blueprint provided and will need to be enabled manually.
 
-2: Conditional Access policies created via DSC will use a single security group as a placeholder for policy-specific exclude groups. A placeholder group *must* be created manually before performing a DSC import. You will be prompted for the name of a placeholder group when importing the DSC Blueprint.
+2: Conditional Access policies created via DSC will use a single security group as a placeholder for policy-specific exclude groups. A placeholder group _must_ be created manually before performing a DSC import. You will be prompted for the name of a placeholder group when importing the DSC Blueprint.
 
 3: A security group containing all privileged users must be created manually before performing a DSC import. You will be promoted for the name of a security group when importing the DSC Blueprint.
 
-4: A Conditional Access *terms of use* policy must be created manually before performing a DSC import. You will be promoted for the name of a terms of use policy when importing the DSC Blueprint.
+4: A Conditional Access _terms of use_ policy must be created manually before performing a DSC import. You will be promoted for the name of a terms of use policy when importing the DSC Blueprint.
 
-5: The Microsoft Intune Enrolment app used in the [DEV - G - Intune enrolment with strong auth]({{<ref "protection/conditional-access/policies/intune-enrolment">}}) policy is not created by default in new tenants, see the [require multifactor authentication for Intune device enrollments](https://learn.microsoft.com/en-au/mem/intune/enrollment/multi-factor-authentication#configure-intune-to-require-multifactor-authentication-at-device-enrollment) page for instructions to create it before performing a DSC import.
+5: The Microsoft Intune Enrolment app used in the [DEV - G - Intune enrolment with strong auth](/configuration/entra-id/protection/conditional-access/policies/intune-enrolment) policy is not created by default in new tenants, see the [require multifactor authentication for Intune device enrollments](https://learn.microsoft.com/en-au/mem/intune/enrollment/multi-factor-authentication#configure-intune-to-require-multifactor-authentication-at-device-enrollment) page for instructions to create it before performing a DSC import.
 
-6: Named Location IP addresses must be set manually. Refer to [Named Locations]({{<ref "protection/conditional-access/named-locations">}}) for configuration guidance.
+6: Named Location IP addresses must be set manually. Refer to [Named locations](/configuration/entra-id/protection/conditional-access/named-locations) for configuration guidance.
 
-7: The [Phishing-resistant MFA and TAP]({{<ref "protection/conditional-access/authentication-strengths">}}) authentication strength must be created manually before performing a DSC import.
+7: The [Phishing-resistant MFA and TAP](/configuration/entra-id/protection/conditional-access/authentication-strengths) authentication strength must be created manually before performing a DSC import.
 
 #### Desired State Configuration
 
-Before using the below DSC file, please refer to the [setup]({{<ref "tools/deployment-and-assessment/desired-state-configuration-setup">}}) and [automated deployment]({{<ref "tools/deployment-and-assessment/automated-deployment">}}) pages for instructions.
+Before using the below DSC file, please refer to the [setup](/tools/deployment-and-assessment/desired-state-configuration-setup) and [automated deployment](/tools/deployment-and-assessment/automated-deployment) pages for instructions.
 
-**Desired State Configuration file**<br>Download the {{% download file="/content/files/automation/dsc/asdbpsc-dsc-entra.txt" %}} Entra DSC file {{% /download %}} and rename the linked .txt file to .ps1.
+**Desired State Configuration file**<br>Download the {{% download file="/content/files/automation/dsc/BlueprintEntraDsc.txt" %}} Entra DSC file {{% /download %}} and rename the linked .txt file to .ps1.
 
-**Configuration data file**<br>Download the {{% download file="/content/files/automation/dsc/configuration-data.txt" %}} configuration data file {{% /download %}} and rename the linked .txt file to .psd1.
+**Configuration data file**<br>Download the {{% download file="/content/files/automation/dsc/ConfigurationData.txt" %}} configuration data file {{% /download %}} and rename the linked .txt file to .psd1.
 
 {{% alert title="Extra parameters" color="info"%}}
 
@@ -93,7 +92,7 @@ Any existing settings in a tenancy that match the name or UID of any settings in
 
 ##### Service principal permissions
 
-For organisations importing the DSC as per the instructions on the [automated deployment]({{<ref "tools/deployment-and-assessment/automated-deployment">}}) page, the following permissions will need to be added to the M365DSC app:
+For organisations importing the DSC as per the instructions on the [automated deployment](/tools/deployment-and-assessment/automated-deployment) page, the following permissions will need to be added to the M365DSC app:
 
 ```powershell
 "AADAdministrativeUnit", "AADAuthenticationContextClassReference", "AADAuthorizationPolicy", "AADConditionalAccessPolicy", "AADCrossTenantAccessPolicyConfigurationDefault", "AADCrossTenantAccessPolicyConfigurationPartner", "AADEntitlementManagementAccessPackage", "AADEntitlementManagementAccessPackageAssignmentPolicy", "AADEntitlementManagementAccessPackageCatalog", "AADEntitlementManagementAccessPackageCatalogResource", "AADEntitlementManagementConnectedOrganization", "AADExternalIdentityPolicy", "AADGroupLifecyclePolicy", "AADNamedLocationPolicy", "AADSocialIdentityProvider", "AADTokenLifetimePolicy"

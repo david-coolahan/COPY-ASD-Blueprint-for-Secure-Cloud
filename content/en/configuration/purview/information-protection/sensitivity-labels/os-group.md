@@ -1,13 +1,12 @@
 ---
 title: "OFFICIAL Sensitive sensitivity label group"
-linkTitle: "OFFICIAL Sensitive sensitivity label group"
 weight: 015
 description: "This section describes the configuration of sensitivity labels within Microsoft Purview associated with systems built according to guidance in ASD's Blueprint for Secure Cloud."
 ---
 
 {{% alert title="Instruction" color="dark" %}}
 
-The below tables outline the *as built* configuration for ASD's *Blueprint for Secure Cloud* (the Blueprint) for the Microsoft Purview portal at the following URL:
+The below tables outline the _as built_ configuration for ASD's _Blueprint for Secure Cloud_ (the Blueprint) for the Microsoft Purview portal at the following URL:
 
 <https://purview.microsoft.com/informationprotection/informationprotectionlabels/sensitivitylabels>
 
@@ -47,7 +46,7 @@ For guidance on preparing for and mitigating potential impacts, please refer to 
 | Display Name           |                                   OFFICIAL Sensitive (group) |
 | Label Priority         |                                                            2 |
 | Description for Users  | OFFICIAL: Sensitive and Information Management Marker labels |
-| Description for admins |                                                       *None* |
+| Description for admins |                                                       _None_ |
 | Label color            |                                                     Marigold |
 
 ### Scope
@@ -92,20 +91,20 @@ For guidance on preparing for and mitigating potential impacts, please refer to 
 
 ### Related information
 
-#### Security & Governance
+#### Security and governance
 
-* None identified
-  
+- None identified
+
 #### Design
 
-* [Azure Rights Management]({{<ref "design/shared-services/purview/azure-rights-management">}})
-* [Labelling and classification]({{<ref "design/shared-services/purview/labelling-and-classification">}})
-  
+- [Azure Rights Management](/design/shared-services/purview/azure-rights-management)
+- [Labelling and classification](/design/shared-services/purview/labelling-and-classification)
+
 #### Configuration
 
-* None identified
+- None identified
 
 #### References
 
-* [Migrate parent sensitivity labels to label groups](https://learn.microsoft.com/en-au/purview/migrate-sensitivity-label-scheme)
-* [Sensitivity labels](https://learn.microsoft.com/en-gb/purview/sensitivity-labels)
+- [Migrate parent sensitivity labels to label groups](https://learn.microsoft.com/en-au/purview/migrate-sensitivity-label-scheme)
+- [Sensitivity labels](https://learn.microsoft.com/en-gb/purview/sensitivity-labels)

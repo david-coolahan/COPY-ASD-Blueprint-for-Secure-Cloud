@@ -1,13 +1,12 @@
 ---
 title: "Connectors"
-linkTitle: "Connectors"
 weight: 50
 description: "This section describes the configuration of connectors within Exchange Online associated with systems built according to guidance in ASD's Blueprint for Secure Cloud."
 ---
 
 {{% alert title="Instruction" color="dark" %}}
 
-The below tables outline the *as built* configuration for ASD's *Blueprint for Secure Cloud* (the Blueprint) for the Microsoft Exchange admin portal at the following URL:
+The below tables outline the _as built_ configuration for ASD's _Blueprint for Secure Cloud_ (the Blueprint) for the Microsoft Exchange admin portal at the following URL:
 
 <https://admin.exchange.microsoft.com/#/connectors>
 
@@ -41,44 +40,43 @@ Organisations that are required to route traffic through a 3rd party mail gatewa
 
 #### Inbound mail connector
 
-| Item                                                 |                                                                                                                                                                                                                            Configuration |
-| ---------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
-| From                                                 |                                                                                                                                                                                                         Your Organization's email server |
-| To                                                   |                                                                                                                                                                                                                               Office 365 |
-| Description                                          |                                                                                                                                                                                                                                     None |
-| Status                                               |                                                                                                                                                                                                                                       On |
-| Retain internal Exchange email headers               |                                                                                                                                                                                                                                   Enable |
-| Authenticating sent email | By verifying that the subject name on the certificate that the sending server uses to authenticate with Office 365 matches the domain entered in the text box below (recommended)           xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx |
+| Item                                   |                                                                                                                                                                                                          Configuration |
+| -------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
+| From                                   |                                                                                                                                                                                       Your Organization's email server |
+| To                                     |                                                                                                                                                                                                             Office 365 |
+| Description                            |                                                                                                                                                                                                                   None |
+| Status                                 |                                                                                                                                                                                                                     On |
+| Retain internal Exchange email headers |                                                                                                                                                                                                                 Enable |
+| Authenticating sent email              | By verifying that the subject name on the certificate that the sending server uses to authenticate with Office 365 matches the domain entered in the text box below (recommended) xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx |
 
 #### Outbound mail connector
 
-| Item                                                 |                                                                                                                                                                                                                  Configuration |
-| ---------------------------------------------------- | -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
-| From                                                 |                                                                                                                                                                                                                     Office 365 |
-| To                                                   |                                                                                                                                                                                               Your Organization’s email server |
-| Description                                          |                                                                                                                                                                                                                           None |
-| Status                                               |                                                                                                                                                                                                                             On |
-| Retain internal Exchange email headers               |                                                                                                                                                                                                                         Enable |
-| When to use the connector                            |                                                                                                                                                                          Only when email messages are sent to these domains: * |
-| Routing method                                       |                                                                                                                                                            Route email messages through these smart hosts: Organisation.gov.au |
-| Security restrictions                                | Always use Transport Layer Security (TLS) and connect only if the recipient’s email server certificate is issued by a trusted certificate authority (CA), and the subject name matches this domain: `mail.organisation.gov.au` |
-
+| Item                                   |                                                                                                                                                                                                                  Configuration |
+| -------------------------------------- | -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
+| From                                   |                                                                                                                                                                                                                     Office 365 |
+| To                                     |                                                                                                                                                                                               Your Organization’s email server |
+| Description                            |                                                                                                                                                                                                                           None |
+| Status                                 |                                                                                                                                                                                                                             On |
+| Retain internal Exchange email headers |                                                                                                                                                                                                                         Enable |
+| When to use the connector              |                                                                                                                                                                         Only when email messages are sent to these domains: \* |
+| Routing method                         |                                                                                                                                                            Route email messages through these smart hosts: Organisation.gov.au |
+| Security restrictions                  | Always use Transport Layer Security (TLS) and connect only if the recipient’s email server certificate is issued by a trusted certificate authority (CA), and the subject name matches this domain: `mail.organisation.gov.au` |
 
 ### Related information
 
-#### Security & Governance
+#### Security and governance
 
-* None identified
-  
+- None identified
+
 #### Design
 
-* [Connectors and Data Loss Prevention Policies]({{<ref "design/shared-services/power-platform/connectors-dlp-policies.md">}})
-* [Microsoft 365 Connectivity]({{<ref "design/shared-services/microsoft-365/microsoft365-connectivity.md">}})
-  
+- [Connectors and Data Loss Prevention Policies](/design/shared-services/power-platform/connectors-dlp-policies)
+- [Microsoft 365 connectivity](/design/shared-services/microsoft-365/microsoft365-connectivity)
+
 #### Configuration
 
-* None identified
+- None identified
 
 #### References
 
-* None identified
+- None identified

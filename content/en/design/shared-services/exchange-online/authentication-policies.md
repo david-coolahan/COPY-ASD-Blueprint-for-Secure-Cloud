@@ -1,5 +1,5 @@
 ---
-title: "Authentication Policies"
+title: "Authentication policies"
 weight: 35
 description: "This section describes the design decisions associated with Authentication Policies for system(s) built using ASD's Blueprint for Secure Cloud."
 ---
@@ -10,29 +10,28 @@ Blocking Basic Authentication forces clients to use Modern Authentication. Block
 
 {{% alert title="Design decisions" color="warning" %}}
 
-| Decision point                      | Design decision | Justification                                                                                                                                                |
-|-------------------------------------|-----------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Basic Authentication                | Disabled        | Basic Authentication has known exploits, Modern Authentication is preferred.                                                                                 |
+| Decision point                      | Design decision | Justification                                                                                                                                                              |
+| ----------------------------------- | --------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Basic Authentication                | Disabled        | Basic Authentication has known exploits, Modern Authentication is preferred.                                                                                               |
 | Authentication Policy Configuration | Configured      | Authentication Policy will be deployed to meet the security requirements of the organisation and be deployed in conjunction with the organisation's security requirements. |
-
 
 {{% /alert %}}
 
 ### Related information
 
-#### Security & Governance
+#### Security and governance
 
-* [Authentication Hardening]({{<ref "system-hardening-authentication">}})
-* [User application hardening]({{<ref "security-and-governance/system-security-plan/system-hardening-user-apps.md">}})
+- [Authentication hardening](/security-and-governance/system-security-plan/system-hardening-authentication)
+- [User application hardening](/security-and-governance/system-security-plan/system-hardening-user-apps)
 
 #### Design
 
-* None identified
+- None identified
 
 #### Configuration
 
-* None identified
+- None identified
 
 #### References
 
-* None identified
+- None identified

@@ -1,6 +1,5 @@
 ---
 title: "Groups"
-linkTitle: "Groups"
 weight: 25
 description: "This section describes the design decisions associated with groups for system(s) built using ASD's Blueprint for Secure Cloud."
 ---
@@ -111,7 +110,7 @@ Microsoft 365 groups are designed to be user created, enabling them to choose th
 
 Microsoft 365 Groups includes a variety of governance controls, including an expiration policy, naming conventions, and a blocked words policy, to help manage groups.
 
-*Microsoft recommends self-service to empower group owners and help users get their work done more easily. Limiting group and team creation can slow users productivity because many Microsoft 365 services require that groups be created for the service to function.*
+_Microsoft recommends self-service to empower group owners and help users get their work done more easily. Limiting group and team creation can slow users productivity because many Microsoft 365 services require that groups be created for the service to function._
 
 {{% alert title="Design decisions" color="warning" %}}
 
@@ -126,19 +125,19 @@ Microsoft 365 Groups includes a variety of governance controls, including an exp
 
 ### Related information
 
-#### Security & Governance
+#### Security and governance
 
 - None identified
 
 #### Design
 
-- [Identity Governance]({{<ref "governance">}})
-- [Microsoft 365 Groups]({{<ref "design/shared-services/microsoft-365/microsoft365-groups.md">}})
+- [Identity governance](/design/platform/identity/governance)
+- [Microsoft 365 Groups](/design/shared-services/microsoft-365/microsoft365-groups)
 
 #### Configuration
 
-- [Groups]({{<ref "configuration/entra-id/groups">}})
-- [Expiration]({{<ref "configuration/entra-id/groups/expiration.md">}})
+- [Groups](/configuration/entra-id/groups)
+- [Expiration](/configuration/entra-id/groups/expiration)
 
 #### References
 

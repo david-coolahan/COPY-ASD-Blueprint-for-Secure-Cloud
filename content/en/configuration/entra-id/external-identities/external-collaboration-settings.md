@@ -1,6 +1,5 @@
 ---
 title: "External collaboration settings"
-linkTitle: "External collaboration settings"
 weight: 30
 type: docs
 description: "This page describes the configuration of external collaboration settings within Microsoft Entra ID associated with systems built according to the guidance provided by ASD's Blueprint for Secure Cloud."
@@ -8,7 +7,7 @@ description: "This page describes the configuration of external collaboration se
 
 {{% alert title="Instruction" color="dark" %}}
 
-The below tables outline the *as built* configuration for ASD's *Blueprint for Secure Cloud* (the Blueprint) for the Microsoft Entra admin portal at the following URL:
+The below tables outline the _as built_ configuration for ASD's _Blueprint for Secure Cloud_ (the Blueprint) for the Microsoft Entra admin portal at the following URL:
 
 <https://entra.microsoft.com/#view/Microsoft_AAD_IAM/CompanyRelationshipsMenuBlade/~/Settings>
 
@@ -47,20 +46,20 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 
 ### Related information
 
-#### Security & Governance
+#### Security and governance
 
-* [System Management]({{<ref "system-management.md">}})
-  
+- [System management](/security-and-governance/system-security-plan/system-management)
+
 #### Design
 
-* [External Identities]({{<ref "design/platform/identity/external-identities">}})
-* [Conditional Access]({{<ref "design/platform/identity/conditional-access.md">}})
-  
+- [External identities](/design/platform/identity/external-identities)
+- [Conditional access](/design/platform/identity/conditional-access)
+
 #### Configuration
 
-* None identified
+- None identified
 
 #### References
 
-* [External Identities](https://learn.microsoft.com/entra/external-id/index-b2b)
-* [Configure external collaboration settings](https://learn.microsoft.com/entra/external-id/external-collaboration-settings-configure)
+- [External ID for business guests documentation](https://learn.microsoft.com/entra/external-id/index-b2b)
+- [Configure external collaboration settings for B2B in Microsoft Entra External ID](https://learn.microsoft.com/entra/external-id/external-collaboration-settings-configure)

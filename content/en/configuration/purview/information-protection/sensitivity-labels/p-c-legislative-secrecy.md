@@ -1,13 +1,12 @@
 ---
 title: "PROTECTED CABINET Legislative Secrecy sensitivity label"
-linkTitle: "PROTECTED CABINET Legislative Secrecy sensitivity label"
 weight: 135
 description: "This section describes the configuration of sensitivity labels within Microsoft Purview associated with systems built according to guidance in ASD's Blueprint for Secure Cloud."
 ---
 
 {{% alert title="Instruction" color="dark" %}}
 
-The below tables outline the *as built* configuration for ASD's *Blueprint for Secure Cloud* (the Blueprint) for the Microsoft Purview portal at the following URL:
+The below tables outline the _as built_ configuration for ASD's _Blueprint for Secure Cloud_ (the Blueprint) for the Microsoft Purview portal at the following URL:
 
 <https://purview.microsoft.com/informationprotection/informationprotectionlabels/sensitivitylabels>
 
@@ -36,7 +35,7 @@ Prior to configuring sensitivity labels for groups and sites, an additional one-
 | Display Name           |                                                                  Legislative Secrecy |
 | Label Priority         |                                                                    26 in label group |
 | Description for Users  | High business impact. Damage to the national interest, organisations or individuals. |
-| Description for admins |                                                                               *None* |
+| Description for admins |                                                                               _None_ |
 | Label color            |                                                                           Light Blue |
 
 ### Scope
@@ -129,19 +128,19 @@ Prior to configuring sensitivity labels for groups and sites, an additional one-
 
 ### Related information
 
-#### Security & Governance
+#### Security and governance
 
-* None identified
-  
+- None identified
+
 #### Design
 
-* [Azure Rights Management]({{<ref "design/shared-services/purview/azure-rights-management">}})
-* [Labelling and classification]({{<ref "design/shared-services/purview/labelling-and-classification">}})
-  
+- [Azure Rights Management](/design/shared-services/purview/azure-rights-management)
+- [Labelling and classification](/design/shared-services/purview/labelling-and-classification)
+
 #### Configuration
 
-* None identified
+- None identified
 
 #### References
 
-* [Sensitivity labels](https://learn.microsoft.com/en-gb/purview/sensitivity-labels)
+- [Sensitivity labels](https://learn.microsoft.com/en-gb/purview/sensitivity-labels)

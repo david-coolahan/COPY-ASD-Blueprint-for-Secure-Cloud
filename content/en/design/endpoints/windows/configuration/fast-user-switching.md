@@ -1,5 +1,5 @@
 ---
-title: "Fast User Switching"
+title: "Fast user switching"
 weight: 70
 description: "This section describes the design decisions associated with fast user switching on Windows 10 and 11 endpoints configured according to guidance in ASD's Blueprint for Secure Cloud."
 ---
@@ -9,25 +9,25 @@ Fast User Switching enables more than one concurrent connection to a Windows dev
 {{% alert title="Design decisions" color="warning" %}}
 
 | Decision point      | Design decision | Justification                                    |
-|---------------------|-----------------|--------------------------------------------------|
+| ------------------- | --------------- | ------------------------------------------------ |
 | Fast User Switching | Disabled        | To minimise potential attack surface of the SOE. |
 
 {{% /alert %}}
 
 ### Related information
 
-#### Security & Governance
+#### Security and governance
 
-* None identified
+- None identified
 
 #### Design
 
-* None identified
+- None identified
 
 #### Configuration
 
-* None identified
+- None identified
 
 #### References
 
-* None identified
+- None identified

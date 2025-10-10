@@ -1,50 +1,49 @@
 ---
 title: "Identity security"
-linkTitle: "Identity security"
 weight: 30
 description: "This section describes the design decisions associated with identity security for system(s) built using ASD's Blueprint for Secure Cloud."
 ---
 
 ### Identity security
 
-Identity security underpins all Microsoft cloud-based service offerings, and forms the basis of the company's Zero Trust approach and [Secure Future Initiative](https://www.microsoft.com/en-au/trust-center/security/secure-future-initiative). Identity security is also an essential component of ASD's [*Modern Defensible Architecture* (MDA)](https://www.cyber.gov.au/resources-business-and-government/governance-and-user-education/modern-defensible-architecture/foundations-modern-defensible-architecture), which provides a strategic framework for the consistent application of security principles throughout the design, development and maintenance of systems.
+Identity security underpins all Microsoft cloud-based service offerings, and forms the basis of the company's Zero Trust approach and [Secure Future Initiative](https://www.microsoft.com/en-au/trust-center/security/secure-future-initiative). Identity security is also an essential component of ASD's [_Modern Defensible Architecture_ (MDA)](https://www.cyber.gov.au/resources-business-and-government/governance-and-user-education/modern-defensible-architecture/foundations-modern-defensible-architecture), which provides a strategic framework for the consistent application of security principles throughout the design, development and maintenance of systems.
 
 Microsoft Entra ID and Microsoft Defender for Identity provide a broad range of technical capabilities to safeguard the identities used in an organisation: Entra ID manages identities and access controls, and Defender for Identity monitors and detects suspicious activity within Windows Server identity infrastructure, used together they help organisations protect access and identify potential security threats across both cloud and on-premises environments.
 
 ### Microsoft Entra ID
 
-[Entra ID](https://learn.microsoft.com/en-au/entra/fundamentals/whatis) provides a number of features to manage identities and control access to organisation resources, and provides an effective means to meet a number of ASD’s [*Information Security Manual* (ISM)](https://www.cyber.gov.au/resources-business-and-government/essential-cyber-security/ism) requirements.
+[Entra ID](https://learn.microsoft.com/en-au/entra/fundamentals/whatis) provides a number of features to manage identities and control access to organisation resources, and provides an effective means to meet a number of ASD’s [_Information Security Manual_ (ISM)](https://www.cyber.gov.au/resources-business-and-government/essential-cyber-security/ism) requirements.
 
 #### Identity management
 
 Centralised identity management reduces unnecessary authentication and enables simplified and holistic management of administrative configurations and security operations. Entra ID's identity management features include:
 
-* **[User]({{<ref "design/platform/identity/users">}}) and [group]({{<ref "design/platform/identity/groups">}}) management** allowing organisations to create, store, and manage users, groups, and devices in a centralised location
-* **[User provisioning and deprovisioning]({{<ref "design/platform/identity/provisioning">}})** automating the process of creating and removing accounts and access rights
-* **Single sign-on (SSO)** enabling users to access multiple applications and resources using a single set of credentials
-* **[Password management]({{<ref "design/platform/identity/authentication">}})** providing self-service password reset (SSPR), password policies and weak password checking
-* **[Entitlement management]({{<ref "design/platform/identity/governance">}})** allowing organisations to manage and control access to resources based on business requirements and roles
-* **[Lifecycle workflows]({{<ref "design/platform/identity/governance">}})** automating tasks related to user lifecycle, such as onboarding and offboarding
+- **[User](/design/platform/identity/users) and [group](/design/platform/identity/groups) management** allowing organisations to create, store, and manage users, groups, and devices in a centralised location
+- **[User provisioning and deprovisioning](/design/platform/identity/provisioning)** automating the process of creating and removing accounts and access rights
+- **Single sign-on (SSO)** enabling users to access multiple applications and resources using a single set of credentials
+- **[Password management](/design/platform/identity/authentication)** providing self-service password reset (SSPR), password policies and weak password checking
+- **[Entitlement management](/design/platform/identity/governance)** allowing organisations to manage and control access to resources based on business requirements and roles
+- **[Lifecycle workflows](/design/platform/identity/governance)** automating tasks related to user lifecycle, such as onboarding and offboarding
 
 #### Access control
 
 Controlling access to resources is crucial for maintaining security, data integrity and compliance. Entra ID's access control and security features include:
 
-* **[Role-based access control (RBAC)]({{<ref "design/platform/identity/roles">}})** enabling administrators to assign roles and permissions to users based on their responsibilities
-* **[Conditional Access]({{<ref "design/platform/identity/conditional-access">}})** allowing organisations to enforce security policies based on user, device, network and a number of other conditions
-* **[Multi-factor authentication (MFA)]({{<ref "design/platform/identity/authentication">}})** requiring users to provide multiple forms of verification
-* **[Privileged Identity Management (PIM)]({{<ref "design/platform/identity/governance">}})** providing fine-grained control and monitoring of access to critical resources
-* **[Access reviews]({{<ref "design/platform/identity/governance">}})** allowing organisations to periodically review and validate user access to ensure it remains appropriate
-* **Authentication protocols** supporting various authentication protocols like OpenID Connect, OAuth, and SAML
-* **[Password-free authentication]({{<ref "design/platform/identity/authentication">}})** offering passwordless authentication options like windows Hello for Business, FIDO2 and Microsoft Authenticator
+- **[Role-based access control (RBAC)](/design/platform/identity/roles)** enabling administrators to assign roles and permissions to users based on their responsibilities
+- **[Conditional access](/design/platform/identity/conditional-access)** allowing organisations to enforce security policies based on user, device, network and a number of other conditions
+- **[Multi-factor authentication (MFA)](/design/platform/identity/authentication)** requiring users to provide multiple forms of verification
+- **[Privileged Identity Management (PIM)](/design/platform/identity/governance)** providing fine-grained control and monitoring of access to critical resources
+- **[Access reviews](/design/platform/identity/governance)** allowing organisations to periodically review and validate user access to ensure it remains appropriate
+- **Authentication protocols** supporting various authentication protocols like OpenID Connect, OAuth, and SAML
+- **[Password-free authentication](/design/platform/identity/authentication)** offering passwordless authentication options like windows Hello for Business, FIDO2 and Microsoft Authenticator
 
 #### Other features
 
-* **[Identity Protection]({{<ref "design/platform/identity/protection">}})** detecting risky user behaviour and sign-ins and makes access decisions
-* **[Directory synchronisation]({{<ref "design/platform/identity/synchronisation">}})** allowing organisations to synchronise their on-premises Active Directory with Entra ID
-* **[Reporting and analytics]({{<ref "design/platform/identity/reporting-and-monitoring">}})** providing insights into user activity and access patterns
-* **Integration with other Microsoft cloud platforms** seamlessly integrating with other Microsoft services
-* **[External identities]({{<ref "design/platform/identity/external-identities">}})** Providing a range of security and enabling services for B2C and B2B collaboration
+- **[Identity Protection](/design/platform/identity/protection)** detecting risky user behaviour and sign-ins and makes access decisions
+- **[Directory synchronisation](/design/platform/identity/synchronisation)** allowing organisations to synchronise their on-premises Active Directory with Entra ID
+- **[Reporting and analytics](/design/platform/identity/reporting-and-monitoring)** providing insights into user activity and access patterns
+- **Integration with other Microsoft cloud platforms** seamlessly integrating with other Microsoft services
+- **[External identities](/design/platform/identity/external-identities)** Providing a range of security and enabling services for B2C and B2B collaboration
 
 ### Defender for Identity
 
@@ -100,8 +99,8 @@ MDI sensors will [self-sacrifice performance](https://learn.microsoft.com/en-au/
 
 Each sensor deployed requires internet connectivity to the MDI cloud service:
 
-* [Forward proxy](https://learn.microsoft.com/en-au/defender-for-identity/deploy/configure-proxy) configurations can be used although SSL inspection and interception are not supported
-* Use of ExpressRoute circuits with Microsoft Peering are supported
+- [Forward proxy](https://learn.microsoft.com/en-au/defender-for-identity/deploy/configure-proxy) configurations can be used although SSL inspection and interception are not supported
+- Use of ExpressRoute circuits with Microsoft Peering are supported
 
 Internal network controls may also need to be modified to permit protocols used with [Network Name Resolution (NNR)](https://learn.microsoft.com/en-au/defender-for-identity/nnr-policy) ([among others](https://learn.microsoft.com/en-au/defender-for-identity/technical-faq#which-traffic-does-defender-for-identity-generate-in-the-network-from-domain-controllers--and-why)). NNR performs fingerprinting that greatly enriches sensor data by translating IP address information into computer names.
 
@@ -119,10 +118,10 @@ Network issues can be [troubleshooted](#investigating-deployment-issues) by chec
 
 A number of pre and post-deployment tasks must be performed on servers to enable sensor installation and ensure they can operate to their full capabilities. The `Test-MdiReadiness.ps1` [script](https://github.com/microsoft/Microsoft-Defender-for-Identity/tree/main/Test-MdiReadiness) exists to assess compliance with several prerequisite server configurations. Guides also exist to address the following key configurations:
 
-* [Event collection](https://learn.microsoft.com/en-au/defender-for-identity/deploy/event-collection-overview) - ensure the correct events are audited and included in Windows event logs
-* [Directory Service accounts (DSA)](https://learn.microsoft.com/en-au/defender-for-identity/deploy/directory-service-accounts) - ensure servers can be queried for entities found in network, event and trace data
-* [Security Account Manager Remote (SAM-R) protocol](https://learn.microsoft.com/en-au/defender-for-identity/deploy/remote-calls-sam) - ensure Directory Service accounts can query and identify remote accounts
-* [Action account](https://learn.microsoft.com/en-au/defender-for-identity/deploy/manage-action-accounts) - ensure MDI can take remediation actions on potentially compromised accounts
+- [Event collection](https://learn.microsoft.com/en-au/defender-for-identity/deploy/event-collection-overview) - ensure the correct events are audited and included in Windows event logs
+- [Directory Service accounts (DSA)](https://learn.microsoft.com/en-au/defender-for-identity/deploy/directory-service-accounts) - ensure servers can be queried for entities found in network, event and trace data
+- [Security Account Manager Remote (SAM-R) protocol](https://learn.microsoft.com/en-au/defender-for-identity/deploy/remote-calls-sam) - ensure Directory Service accounts can query and identify remote accounts
+- [Action account](https://learn.microsoft.com/en-au/defender-for-identity/deploy/manage-action-accounts) - ensure MDI can take remediation actions on potentially compromised accounts
 
 {{% alert title="Design decisions" color="warning" %}}
 
@@ -147,10 +146,10 @@ Two sensor types are available for installation: the [classic (versions 2.x) sen
 
 While the new sensor can be installed on Windows Server 2019 and newer, it does not offer the same feature parity and protections as the classic sensor, in addition:
 
-* The new sensor can currently only be installed on Domain Controllers running Windows Server 2019 and newer
-* The new sensor is installed and updated via Microsoft Defender for Endpoint (MDE), and so requires the server to be onboarded to MDE and have appropriate [server licensing](https://learn.microsoft.com/en-au/defender-endpoint/minimum-requirements#licensing-requirements)
+- The new sensor can currently only be installed on Domain Controllers running Windows Server 2019 and newer
+- The new sensor is installed and updated via Microsoft Defender for Endpoint (MDE), and so requires the server to be onboarded to MDE and have appropriate [server licensing](https://learn.microsoft.com/en-au/defender-endpoint/minimum-requirements#licensing-requirements)
 
-The classic sensor is not affected by the above constraints and can also be deployed as a *standalone* sensor.
+The classic sensor is not affected by the above constraints and can also be deployed as a _standalone_ sensor.
 
 Standalone sensors are classic sensors installed on separate servers with port mirroring from identity servers and [a number of additional configurations](https://learn.microsoft.com/en-au/defender-for-identity/deploy/prerequisites-standalone) (compared to an integrated deployment). Standalone sensor deployments are used in environments where integrated sensors are not able to be installed, and where more isolation is required due to network design, separation of services, or infrastructure capacity. Standalone sensor deployments, by virtue of the sensor's isolation from the identity servers they protect, are also not able to offer the same feature parity as integrated sensor deployments.
 
@@ -201,9 +200,9 @@ Sensors update automatically. It is possible to enabled delayed update on classi
 
 [Entity tagging](https://learn.microsoft.com/en-au/defender-for-identity/entity-tags) can enhance the sensitivity of threat detection and response capabilities for important users, groups and devices. Tags can be viewed and applied in the Defender portal's Identities settings section, with three types of tags supported:
 
-1. The *Sensitive* tag for users, devices and groups - apply to high-value or sensitive assets like administrative or senior executive accounts and workstations
-1. The *Honeytoken* tag for users and devices - apply to accounts created specifically to lure malicious actors
-1. The *Exchange server* tag for devices - assign to Microsoft Exchange servers<sup>1</sup>
+1. The _Sensitive_ tag for users, devices and groups - apply to high-value or sensitive assets like administrative or senior executive accounts and workstations
+1. The _Honeytoken_ tag for users and devices - apply to accounts created specifically to lure malicious actors
+1. The _Exchange server_ tag for devices - assign to Microsoft Exchange servers<sup>1</sup>
 
 1: MDI will also automatically tag Exchange servers and a number of other sensitive users, groups and devices.
 
@@ -217,7 +216,7 @@ Sensors update automatically. It is possible to enabled delayed update on classi
 
 ##### Alerting
 
-Some MDI alerts require learning periods to identity patterns of behaviour which can take up to 30-days to confirm. During the learning period it can be useful for MDI operators to enable the *test mode* in the Defender portal's Identities settings section. Test mode sets applicable alert thresholds to low, triggering alerts sooner and more frequently, enabling MDI users to experience alerts, observe identity behaviour, and gain familiarity with their environment. When test mode is disabled, thresholds return to their default setting of high. While keeping alert threshold set to high is recommended, thresholds can be changed if necessary.
+Some MDI alerts require learning periods to identity patterns of behaviour which can take up to 30-days to confirm. During the learning period it can be useful for MDI operators to enable the _test mode_ in the Defender portal's Identities settings section. Test mode sets applicable alert thresholds to low, triggering alerts sooner and more frequently, enabling MDI users to experience alerts, observe identity behaviour, and gain familiarity with their environment. When test mode is disabled, thresholds return to their default setting of high. While keeping alert threshold set to high is recommended, thresholds can be changed if necessary.
 
 ##### Exclusions
 
@@ -225,53 +224,53 @@ MDI detection and response actions can be excluded for specific IP addresses, co
 
 ### Related information
 
-#### Security & Governance
+#### Security and governance
 
-* None identified
+- None identified
 
 #### Design
 
-* [Application and HR provisioning]({{<ref "design/platform/identity/protection">}})
-* [Authentication]({{<ref "design/platform/identity/authentication">}})
-* [Conditional Access]({{<ref "design/platform/identity/conditional-access">}})
-* [Enterprise users]({{<ref "design/platform/identity/protection">}})
-* [Entra ID Protection]({{<ref "design/platform/identity/protection">}})
-* [External identities]({{<ref "design/platform/identity/external-identities">}})
-* [Groups]({{<ref "design/platform/identity/groups">}})
-* [Identity governance]({{<ref "design/platform/identity/governance">}})
-* [Identity synchronisation]({{<ref "design/platform/identity/synchronisation">}})
-* [Reporting and monitoring]({{<ref "design/platform/identity/reporting-and-monitoring">}})
-* [Role-Based Access Control]({{<ref "design/platform/identity/protection">}})
+- [Application and HR provisioning](/design/platform/identity/protection)
+- [Authentication](/design/platform/identity/authentication)
+- [Conditional access](/design/platform/identity/conditional-access)
+- [Enterprise users](/design/platform/identity/protection)
+- [Entra ID Protection](/design/platform/identity/protection)
+- [External identities](/design/platform/identity/external-identities)
+- [Groups](/design/platform/identity/groups)
+- [Identity governance](/design/platform/identity/governance)
+- [Identity synchronisation](/design/platform/identity/synchronisation)
+- [Reporting and monitoring](/design/platform/identity/reporting-and-monitoring)
+- [Role-Based Access Control](/design/platform/identity/protection)
 
 #### Configuration
 
-* None identified
+- None identified
 
 #### References
 
-* [Activate Microsoft Defender for Identity capabilities directly on a domain controller](https://learn.microsoft.com/en-au/defender-for-identity/deploy/activate-capabilities)
-* [Configure endpoint proxy and internet connectivity settings](https://learn.microsoft.com/en-au/defender-for-identity/deploy/configure-proxy)
-* [Configure sensors for AD FS, AD CS, and Microsoft Entra Connect](https://learn.microsoft.com/en-au/defender-for-identity/deploy/active-directory-federation-services)
-* [Configure Microsoft Defender for Identity action accounts](https://learn.microsoft.com/en-au/defender-for-identity/deploy/manage-action-accounts)
-* [Defender for Identity entity tags in Microsoft Defender XDR](https://learn.microsoft.com/en-au/defender-for-identity/entity-tags)
-* [Deploying Microsoft Defender for Identity](https://techcommunity.microsoft.com/blog/coreinfrastructureandsecurityblog/deploying-microsoft-defender-for-identity/4363501)
-* [Directory Service Accounts for Microsoft Defender for Identity](https://learn.microsoft.com/en-au/defender-for-identity/deploy/directory-service-accounts)
-* [Event collection with Microsoft Defender for Identity](https://learn.microsoft.com/en-au/defender-for-identity/deploy/event-collection-overview)
-* [Foundations for modern defensible architecture](https://www.cyber.gov.au/resources-business-and-government/governance-and-user-education/modern-defensible-architecture/foundations-modern-defensible-architecture)
-* [Information Security Manual (ISM)](https://www.cyber.gov.au/resources-business-and-government/essential-cyber-security/ism)
-* [Install a Microsoft Defender for Identity sensor](https://learn.microsoft.com/en-au/defender-for-identity/deploy/install-sensor)
-* [Licensing, Microsoft Defender for Identity](https://learn.microsoft.com/en-au/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-defender-for-identity)
-* [Microsoft Defender data can now be hosted locally in Australia](https://techcommunity.microsoft.com/blog/microsoftdefenderatpblog/microsoft-defender-data-can-now-be-hosted-locally-in-australia/3898337)
-* [Microsoft Defender for Identity architecture](https://learn.microsoft.com/en-au/defender-for-identity/architecture)
-* [Microsoft Defender for Identity frequently asked questions](https://learn.microsoft.com/en-au/defender-for-identity/technical-faq)
-* [Microsoft Defender for Identity multi-forest support](https://learn.microsoft.com/en-au/defender-for-identity/deploy/multi-forest)
-* [Microsoft Defender for Identity setup guide](https://setup.cloud.microsoft/defender/identity)
-* [Microsoft Defender for Identity standalone sensor prerequisites](https://learn.microsoft.com/en-au/defender-for-identity/deploy/prerequisites-standalone)
-* [Minimum requirements for Microsoft Defender for Endpoint](https://learn.microsoft.com/en-au/defender-endpoint/minimum-requirements#licensing-requirements)
-* [Network Name Resolution in Microsoft Defender for Identity](https://learn.microsoft.com/en-au/defender-for-identity/nnr-policy)
-* [Plan capacity for Microsoft Defender for Identity deployment](https://learn.microsoft.com/en-au/defender-for-identity/deploy/capacity-planning)
-* [Secure Future Initiative](https://www.microsoft.com/en-au/trust-center/security/secure-future-initiative)
-* [Troubleshooting Microsoft Defender for Identity known issues](https://learn.microsoft.com/en-au/defender-for-identity/troubleshooting-known-issues)
-* [Troubleshooting Microsoft Defender for Identity sensor using the Defender for Identity logs](https://learn.microsoft.com/en-au/defender-for-identity/troubleshooting-using-logs)
-* [What is Microsoft Defender for Identity?](https://learn.microsoft.com/en-au/defender-for-identity/what-is)
-* [What is Microsoft Entra ID?](https://learn.microsoft.com/en-au/entra/fundamentals/whatis)
+- [Activate Microsoft Defender for Identity capabilities directly on a domain controller](https://learn.microsoft.com/en-au/defender-for-identity/deploy/activate-capabilities)
+- [Configure endpoint proxy and internet connectivity settings](https://learn.microsoft.com/en-au/defender-for-identity/deploy/configure-proxy)
+- [Configure sensors for AD FS, AD CS, and Microsoft Entra Connect](https://learn.microsoft.com/en-au/defender-for-identity/deploy/active-directory-federation-services)
+- [Configure Microsoft Defender for Identity action accounts](https://learn.microsoft.com/en-au/defender-for-identity/deploy/manage-action-accounts)
+- [Defender for Identity entity tags in Microsoft Defender XDR](https://learn.microsoft.com/en-au/defender-for-identity/entity-tags)
+- [Deploying Microsoft Defender for Identity](https://techcommunity.microsoft.com/blog/coreinfrastructureandsecurityblog/deploying-microsoft-defender-for-identity/4363501)
+- [Directory Service Accounts for Microsoft Defender for Identity](https://learn.microsoft.com/en-au/defender-for-identity/deploy/directory-service-accounts)
+- [Event collection with Microsoft Defender for Identity](https://learn.microsoft.com/en-au/defender-for-identity/deploy/event-collection-overview)
+- [Foundations for modern defensible architecture](https://www.cyber.gov.au/resources-business-and-government/governance-and-user-education/modern-defensible-architecture/foundations-modern-defensible-architecture)
+- [_Information Security Manual_ (ISM)](https://www.cyber.gov.au/resources-business-and-government/essential-cyber-security/ism)
+- [Install a Microsoft Defender for Identity sensor](https://learn.microsoft.com/en-au/defender-for-identity/deploy/install-sensor)
+- [Licensing, Microsoft Defender for Identity](https://learn.microsoft.com/en-au/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-defender-for-identity)
+- [Microsoft Defender data can now be hosted locally in Australia](https://techcommunity.microsoft.com/blog/microsoftdefenderatpblog/microsoft-defender-data-can-now-be-hosted-locally-in-australia/3898337)
+- [Microsoft Defender for Identity architecture](https://learn.microsoft.com/en-au/defender-for-identity/architecture)
+- [Microsoft Defender for Identity frequently asked questions](https://learn.microsoft.com/en-au/defender-for-identity/technical-faq)
+- [Microsoft Defender for Identity multi-forest support](https://learn.microsoft.com/en-au/defender-for-identity/deploy/multi-forest)
+- [Microsoft Defender for Identity setup guide](https://setup.cloud.microsoft/defender/identity)
+- [Microsoft Defender for Identity standalone sensor prerequisites](https://learn.microsoft.com/en-au/defender-for-identity/deploy/prerequisites-standalone)
+- [Minimum requirements for Microsoft Defender for Endpoint](https://learn.microsoft.com/en-au/defender-endpoint/minimum-requirements#licensing-requirements)
+- [Network Name Resolution in Microsoft Defender for Identity](https://learn.microsoft.com/en-au/defender-for-identity/nnr-policy)
+- [Plan capacity for Microsoft Defender for Identity deployment](https://learn.microsoft.com/en-au/defender-for-identity/deploy/capacity-planning)
+- [Secure Future Initiative](https://www.microsoft.com/en-au/trust-center/security/secure-future-initiative)
+- [Troubleshooting Microsoft Defender for Identity known issues](https://learn.microsoft.com/en-au/defender-for-identity/troubleshooting-known-issues)
+- [Troubleshooting Microsoft Defender for Identity sensor using the Defender for Identity logs](https://learn.microsoft.com/en-au/defender-for-identity/troubleshooting-using-logs)
+- [What is Microsoft Defender for Identity?](https://learn.microsoft.com/en-au/defender-for-identity/what-is)
+- [What is Microsoft Entra ID?](https://learn.microsoft.com/en-au/entra/fundamentals/whatis)

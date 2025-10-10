@@ -1,5 +1,5 @@
 ---
-title: "Web Filtering"
+title: "Web filtering"
 weight: 5
 description: "This section describes the design decisions associated with managing endpoint security for system(s) built using ASD's Blueprint for Secure Cloud."
 ---
@@ -8,33 +8,33 @@ Microsoft 365 and other enterprise software-as-a-service (SaaS) applications tha
 
 Microsoft Entra ID tenant restrictions prerequisites are as follows:
 
-* The organisation web filtering service must support transport layer security (TLS) interception, hypertext transfer protocol (HTTP) header insertion, uniform resource locator (URL), and fully qualified domain name (FQDN) filtering.
-* Endpoints must trust the web filtering services public key infrastructure (PKI) certificate chain for TLS communications.  
+- The organisation web filtering service must support transport layer security (TLS) interception, hypertext transfer protocol (HTTP) header insertion, uniform resource locator (URL), and fully qualified domain name (FQDN) filtering.
+- Endpoints must trust the web filtering services public key infrastructure (PKI) certificate chain for TLS communications.
 
 For more detail on Microsoft Entra ID tenant restrictions, see [use tenant restrictions to manage access to SaaS apps](https://learn.microsoft.com/entra/identity/enterprise-apps/tenant-restrictions).
 
 {{% alert title="Design decisions" color="warning" %}}
 
 | Decision point      | Design decision | Justification                                                                                                                                                                                                                              |
-|---------------------|-----------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| ------------------- | --------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | Tenant restrictions | Configured      | Organisations that have implemented an enterprise web filtering solution that is capable of this feature (using TLS inspection and HTTP header insertion) should implement tenant restrictions for PROTECTED to prevent data exfiltration. |
 
 {{% /alert %}}
 
 ### Related information
 
-#### Security & Governance
+#### Security and governance
 
-* None identified
+- None identified
 
 #### Design
 
-* None identified
+- None identified
 
 #### Configuration
 
-* [Device Management]({{<ref "configuration/defender/settings/endpoints/device-management.md">}})
+- [Device management](/configuration/defender/settings/endpoints/device-management)
 
 #### References
 
-* [Tenant Restrictions](https://learn.microsoft.com/entra/identity/enterprise-apps/tenant-restrictions)
+- [Tenant Restrictions](https://learn.microsoft.com/entra/identity/enterprise-apps/tenant-restrictions)

@@ -12,36 +12,36 @@ Administrators can put controls in place which restricts who can create a ShareP
 
 {{% alert title="Design decisions" color="warning" %}}
 
-| Decision point                                             | Design decision                                                                                                                                       | Justification                                                                                                                                                       |
-|------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| SharePoint site naming convention                          | Avoid spaces and special characters in site collection naming                                                                                         | Spaces and special characters can cause problems with indexing and extend the length of the path. Short names are easier to remember                                |
-| Configure Site Storage limits                              | Configured                                                                                                                                            | Currently set to manually set site storage limits. Larger storage can increase management therefore default limit will be set to 200GB.                             |
-| Block access from unmanaged devices                        | Configured with `Allow limited web only access`                                                                                                       | Default settings                                                                                                                                                    |
-| Enable Idle Session sign outs                              | Sign out users after 1 hr<br>Give users this much notice before signing out: 5 minutes                                                                | Default settings                                                                                                                                                    |
-| Only allow access from specific IP address locations       | Not configured                                                                                                                                        | Location based access is controlled via Conditional Access policies                                                                                                 |
+| Decision point                                             | Design decision                                                                                                                                       | Justification                                                                                                                                                                           |
+| ---------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| SharePoint site naming convention                          | Avoid spaces and special characters in site collection naming                                                                                         | Spaces and special characters can cause problems with indexing and extend the length of the path. Short names are easier to remember                                                    |
+| Configure Site Storage limits                              | Configured                                                                                                                                            | Currently set to manually set site storage limits. Larger storage can increase management therefore default limit will be set to 200GB.                                                 |
+| Block access from unmanaged devices                        | Configured with `Allow limited web only access`                                                                                                       | Default settings                                                                                                                                                                        |
+| Enable Idle Session sign outs                              | Sign out users after 1 hr<br>Give users this much notice before signing out: 5 minutes                                                                | Default settings                                                                                                                                                                        |
+| Only allow access from specific IP address locations       | Not configured                                                                                                                                        | Location based access is controlled via Conditional Access policies                                                                                                                     |
 | Only allow access from apps that use modern authentication | Enabled                                                                                                                                               | The security risk associated with allowing apps that don’t use modern authentication. Note that additional conditional access policy is in place to block legacy authentication access. |
-| Use of Root site https://organisationsites.sharepoint.com/ | Root site to be used for future core Intranet site and joined with related sites via hub site functionality. Root site to be defined as the Home Site | Best practice to use root site for Intranet and set as Home Site as this makes it more intuitive for organisational users                                           |
-| Sub site creation                                          | Disable creation of subsites                                                                                                                          | Recommended Modern SharePoint Online Information Architecture is to create site collections and join together as Hub sites                                          |
-| Hub site creation                                          | SharePoint Administrators only                                                                                                                        | To ensure governance of the management of hub sites                                                                                                                 |
-| Who can create a new site                                  | Restricted to SharePoint Administrator and Global Administrator roles                                                                                 | Users will need to request a new SharePoint site to ensure that it is created with the correct controls, for example template type, storage and classification.     |
-| Multi-Geo SharePoint                                       | Not enabled                                                                                                                                           | SharePoint Online Data residency only within Australia                                                                                                              |
+| Use of Root site https://organisationsites.sharepoint.com/ | Root site to be used for future core Intranet site and joined with related sites via hub site functionality. Root site to be defined as the Home Site | Best practice to use root site for Intranet and set as Home Site as this makes it more intuitive for organisational users                                                               |
+| Sub site creation                                          | Disable creation of subsites                                                                                                                          | Recommended Modern SharePoint Online Information Architecture is to create site collections and join together as Hub sites                                                              |
+| Hub site creation                                          | SharePoint Administrators only                                                                                                                        | To ensure governance of the management of hub sites                                                                                                                                     |
+| Who can create a new site                                  | Restricted to SharePoint Administrator and Global Administrator roles                                                                                 | Users will need to request a new SharePoint site to ensure that it is created with the correct controls, for example template type, storage and classification.                         |
+| Multi-Geo SharePoint                                       | Not enabled                                                                                                                                           | SharePoint Online Data residency only within Australia                                                                                                                                  |
 
 {{% /alert %}}
 
 ### Related information
 
-#### Security & Governance
+#### Security and governance
 
-* None identified
+- None identified
 
 #### Design
 
-* None identified
+- None identified
 
 #### Configuration
 
-* None identified
+- None identified
 
 #### References
 
-* None identified
+- None identified

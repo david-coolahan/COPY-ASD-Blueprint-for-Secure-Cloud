@@ -1,13 +1,12 @@
 ---
 title: "General"
-linkTitle: "General"
 weight: 10
 description: "This section describes the configuration of advanced endpoint features within Microsoft Defender associated with systems built according to the guidance provided by ASD's Blueprint for Secure Cloud."
 ---
 
 {{% alert title="Instruction" color="dark" %}}
 
-The below tables outline the *as built* configuration for ASD's *Blueprint for Secure Cloud* (the Blueprint) for the Microsoft Defender portal at the following URL:
+The below tables outline the _as built_ configuration for ASD's _Blueprint for Secure Cloud_ (the Blueprint) for the Microsoft Defender portal at the following URL:
 
 <https://security.microsoft.com/securitysettings/endpoints/integration>
 
@@ -36,7 +35,7 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 | Web content filtering                                                                       |            On |
 | Device discovery                                                                            |            On |
 | Download quarantined files                                                                  |            On |
-| Default to streamlined connectivity when onboarding devices in Defender portal​​              |            On |
+| Default to streamlined connectivity when onboarding devices in Defender portal​​            |            On |
 | Apply streamlined connectivity settings to devices managed by Intune and Defender for Cloud |            On |
 | Aggregated Reporting                                                                        |            On |
 | Live response                                                                               |            On |
@@ -47,23 +46,23 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 | Microsoft Intune connection                                                                 |            On |
 | Authenticated telemetry                                                                     |            On |
 | Preview features                                                                            |           Off |
-| Endpoint Attack Notifications                                                               | *Not applied* |
+| Endpoint Attack Notifications                                                               | _Not applied_ |
 
 ### Related information
 
-#### Security & Governance
+#### Security and governance
 
-* [User Application Hardening]({{<ref "system-hardening-user-apps.md">}})
-* [Essential Eight: User Application Hardening]({{<ref "user-application-hardening.md">}})
-  
+- [User application hardening](/security-and-governance/system-security-plan/system-hardening-user-apps)
+- [Essential Eight - User application hardening](/security-and-governance/essential-eight/user-application-hardening)
+
 #### Design
 
-* [Endpoint Security - Devices]({{<ref "design/platform/security/endpoint-security">}})
+- [Endpoints and devices](/design/platform/security/endpoint-security)
 
 #### Configuration
 
-* [Microsoft Entra ID - Protection]({{<ref "configuration/entra-id/protection">}})
+- [Microsoft Entra ID - Protection](/configuration/entra-id/protection)
 
 #### References
 
-* [Defender for Endpoint](https://learn.microsoft.com/microsoft-365/security/defender-endpoint)
+- [Defender for Endpoint](https://learn.microsoft.com/microsoft-365/security/defender-endpoint)

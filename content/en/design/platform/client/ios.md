@@ -8,34 +8,34 @@ iOS devices are enrolled with the Microsoft Intune portal to gain secure access 
 
 {{% alert title="Design decisions" color="warning" %}}
 
-| Decision point    | Design decision                                                                                              | Justification                                                                                                             |
-| ----------------- | -------------------------------------------------------------------------------------------------------------| --------------------------------------------------------------------------------------------------------------------------|
+| Decision point    | Design decision                                                                                              | Justification                                                                                                                      |
+| ----------------- | ------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------- |
 | iOS Enrolment     | Configured                                                                                                   | iOS is commonly deployed across the Australian Government and can be hardened in line with Apples hardening guide for iOS devices. |
-| iOS Configuration | Configurations will follow Apples hardening guide for iOS devices as much as possible using Microsoft Intune | Aligns with Apple iOS hardening guidance.                                                                                 |
+| iOS Configuration | Configurations will follow Apples hardening guide for iOS devices as much as possible using Microsoft Intune | Aligns with Apple iOS hardening guidance.                                                                                          |
 
 {{% /alert %}}
 
 {{% alert title="Note" color="info" %}}
 
-ASD’s *Blueprint for Secure Cloud* (the Blueprint) recommends organisations secure iOS for devices based on a variety of hardening guidance including the United States' (US) National Information Assurance Partnership [*Protection Profile for Mobile Device Fundamentals version 3.3*](https://www.niap-ccevs.org/Profile/Info.cfm?PPID=468&id=468), the US Department of Defence's [*Cyber Exchange Security Technical Implementation Guides (STIGs)*](https://public.cyber.mil/stigs/downloads/), the Centre for Internet Security's(CIS) [*Apple iOS Benchmarks*](https://www.cisecurity.org/benchmark/apple_ios), and ASD's [*Security Configuration Guidance for Apple iOS Devices*](https://www.cyber.gov.au/acsc/view-all-content/publications/security-configuration-guide-apple-ios-14-devices) to provide secure access to corporate information.
+ASD’s _Blueprint for Secure Cloud_ (the Blueprint) recommends organisations secure iOS for devices based on a variety of hardening guidance including the United States' (US) National Information Assurance Partnership [_Protection Profile for Mobile Device Fundamentals version 3.3_](https://www.niap-ccevs.org/Profile/Info.cfm?PPID=468&id=468), the US Department of Defence's [_Cyber Exchange Security Technical Implementation Guides (STIGs)_](https://public.cyber.mil/stigs/downloads), the Centre for Internet Security's(CIS) [_Apple iOS Benchmarks_](https://www.cisecurity.org/benchmark/apple_ios), and ASD's [_Security Configuration Guidance for Apple iOS Devices_](https://www.cyber.gov.au/acsc/view-all-content/publications/security-configuration-guide-apple-ios-14-devices) to provide secure access to corporate information.
 
 {{% /alert %}}
 
 ### Related information
 
-#### Security & Governance
+#### Security and governance
 
-* [Enterprise Mobility]({{<ref "security-and-governance/system-security-plan/enterprise-mobility.md">}})
+- [Enterprise mobility](/security-and-governance/system-security-plan/enterprise-mobility)
 
 #### Design
 
-* None identified
+- None identified
 
 #### Configuration
 
-* [ASD iOS Hardening]({{<ref "configuration/intune/devices/apple-updates/asd-ios-hardening.md">}})
-* [iOS and iPadOS]({{<ref "configuration/intune/apps/by-platform/ios-ipados.md">}})
+- [ASD iOS hardening](/configuration/intune/devices/apple-updates/asd-ios-hardening)
+- [iOS and iPadOS](/configuration/intune/apps/by-platform/ios-ipados)
 
 #### References
 
-* None identified
+- None identified

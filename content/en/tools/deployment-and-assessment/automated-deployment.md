@@ -1,6 +1,5 @@
---- 
+---
 title: "Automated deployment"
-linkTitle: "Automated deployment"
 weight: 20
 description: "This page describes the use of Microsoft 365 Desired State Configuration (DSC) to deploy a Blueprint configuration."
 ---
@@ -27,23 +26,23 @@ Any existing settings in a service that match the name or UID of any settings in
 
 #### 1. Complete the prerequisite tasks
 
-A Windows host and additional configurations are required for the following steps, instructions for these are in the [DSC setup]({{<ref "tools/deployment-and-assessment/desired-state-configuration-setup">}}) page.
+A Windows host and additional configurations are required for the following steps, instructions for these are in the [DSC setup](/tools/deployment-and-assessment/desired-state-configuration-setup) page.
 
 #### 2. Copy the DSC files
 
 On the Windows host, download the DSC file for the targeted M365 service to your working folder:
 
-| Service                                                          | Deployment coverage |
-| ---------------------------------------------------------------- | ------------------- |
-| [Entra ID]({{<ref "configuration/entra-id">}})                   | Partial             |
-| [Microsoft 365]({{<ref "configuration/microsoft-365">}})         | None                |
-| [Microsoft Intune]({{<ref "configuration/intune">}})             | Partial             |
-| [Microsoft Defender]({{<ref "configuration/defender">}})         | Partial             |
-| [Microsoft Purview]({{<ref "configuration/purview">}})           | Partial             |
-| [Exchange Online]({{<ref "configuration/exchange-online">}})     | Partial             |
-| [SharePoint Online]({{<ref "configuration/sharepoint-online">}}) | Partial             |
-| [Microsoft Teams]({{<ref "configuration/microsoft-teams">}})     | Full                |
-| [Power Platform]({{<ref "configuration/power-platform">}})       | None                |
+| Service                                               | Deployment coverage |
+| ----------------------------------------------------- | ------------------- |
+| [Entra ID](/configuration/entra-id)                   | Partial             |
+| [Microsoft 365](/configuration/microsoft-365)         | None                |
+| [Microsoft Intune](/configuration/intune)             | Partial             |
+| [Microsoft Defender](/configuration/defender)         | Partial             |
+| [Microsoft Purview](/configuration/purview)           | Partial             |
+| [Exchange Online](/configuration/exchange-online)     | Partial             |
+| [SharePoint Online](/configuration/sharepoint-online) | Partial             |
+| [Microsoft Teams](/configuration/teams)               | Full                |
+| [Power Platform](/configuration/power-platform)       | None                |
 
 {{% alert title="DSC instructions" color="info" %}}
 
@@ -99,7 +98,7 @@ Mode                 LastWriteTime         Length Name
 -a----               #####                 108984 localhost.mof
 ```
 
-This will create a folder named *M365TenantConfig* in which the MOF file will be placed.
+This will create a folder named _M365TenantConfig_ in which the MOF file will be placed.
 
 #### 6. Deploy the configuration
 
@@ -132,25 +131,25 @@ If significant or reoccurring errors are encountered, please feel free to contac
 
 #### Configuration
 
-* [Microsoft Defender]({{<ref "configuration/defender">}})
-* [Microsoft Entra ID]({{<ref "configuration/entra-id">}})
-* [Microsoft Exchange Online]({{<ref "configuration/exchange-online">}})
-* [Microsoft Intune]({{<ref "configuration/intune">}})
-* [Microsoft Purview]({{<ref "configuration/purview">}})
-* [Microsoft SharePoint Online]({{<ref "configuration/sharepoint-online">}})
-* [Microsoft Teams]({{<ref "configuration/microsoft-teams">}})
+- [Microsoft Defender](/configuration/defender)
+- [Microsoft Entra ID](/configuration/entra-id)
+- [Microsoft Exchange Online](/configuration/exchange-online)
+- [Microsoft Intune](/configuration/intune)
+- [Microsoft Purview](/configuration/purview)
+- [Microsoft SharePoint Online](/configuration/sharepoint-online)
+- [Microsoft Teams](/configuration/teams)
 
 #### Tools
 
-* [Configuration assessment]({{<ref "tools/deployment-and-assessment/configuration-assessment">}})
-* [Desired State Configuration setup]({{<ref "tools/deployment-and-assessment/desired-state-configuration-setup">}})
+- [Configuration assessment](/tools/deployment-and-assessment/configuration-assessment)
+- [Desired State Configuration setup](/tools/deployment-and-assessment/desired-state-configuration-setup)
 
 #### References
 
-* [M365DSC authentication and permissions](https://microsoft365dsc.com/user-guide/get-started/authentication-and-permissions)
-* [M365DSC blueprints](https://microsoft365dsc.com/user-guide/advanced/create-blueprint)
-* [M365DSC export tool](https://export.microsoft365dsc.com)
-* [M365DSC prerequisites](https://microsoft365dsc.com/user-guide/get-started/prerequisites)
-* [M365DSC user guide](https://microsoft365dsc.com/user-guide/get-started/how-to-install)
-* [Understanding application-only access](https://learn.microsoft.com/en-au/entra/identity-platform/app-only-access-primer)
-* [WinRM setup](https://learn.microsoft.com/en-au/windows/win32/winrm/installation-and-configuration-for-windows-remote-management)
+- [M365DSC authentication and permissions](https://microsoft365dsc.com/user-guide/get-started/authentication-and-permissions)
+- [M365DSC blueprints](https://microsoft365dsc.com/user-guide/advanced/create-blueprint)
+- [M365DSC export tool](https://export.microsoft365dsc.com)
+- [M365DSC prerequisites](https://microsoft365dsc.com/user-guide/get-started/prerequisites)
+- [M365DSC user guide](https://microsoft365dsc.com/user-guide/get-started/how-to-install)
+- [Understanding application-only access](https://learn.microsoft.com/en-au/entra/identity-platform/app-only-access-primer)
+- [WinRM setup](https://learn.microsoft.com/en-au/windows/win32/winrm/installation-and-configuration-for-windows-remote-management)

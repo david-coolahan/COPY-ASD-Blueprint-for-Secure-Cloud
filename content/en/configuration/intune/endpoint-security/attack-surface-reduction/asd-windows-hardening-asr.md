@@ -5,10 +5,10 @@ description: "This section describes the configuration of attack surface reducti
 ---
 
 {{% alert title="Instruction" color="dark" %}}
- 
-The below tables outline the *as built* configuration for ASD's *Blueprint for Secure Cloud* (the Blueprint) for the Microsoft Intune portal at the following URL:
 
-https://intune.microsoft.com/#view/Microsoft_Intune_Workflows/SecurityManagementMenu/~/asr
+The below tables outline the _as built_ configuration for ASD's _Blueprint for Secure Cloud_ (the Blueprint) for the Microsoft Intune portal at the following URL:
+
+<https://intune.microsoft.com/#view/Microsoft_Intune_Workflows/SecurityManagementMenu/~/asr>
 
 The settings described on these pages provide a baseline implementation for a system configured using the Blueprint. Any implementation implied by these pages should not be considered as prescriptive as to how an organisation must scope, build, document, or assess a system.
 
@@ -69,26 +69,22 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 | Block executable content from email client and webmail                                            |          Block |
 | - ASR Only Per Rule Exclusions                                                                    | Not configured |
 
-
-
-
 ### Related information
 
-#### Security & Governance
+#### Security and governance
 
-* [Authentication Hardening]({{<ref "system-hardening-authentication">}}) 
-* [Enterprise Mobility]({{<ref "security-and-governance/system-security-plan/enterprise-mobility.md">}})
-* [Essential Eight: Restrict Microsoft Office Macros]({{<ref "restrict-microsoft-office-macros.md">}})
+- [Authentication hardening](/security-and-governance/system-security-plan/system-hardening-authentication)
+- [Enterprise mobility](/security-and-governance/system-security-plan/enterprise-mobility)
+- [Essential Eight - Restrict Microsoft Office macros](/security-and-governance/essential-eight/restrict-microsoft-office-macros)
 
-  
 #### Design
 
-* None identified
-  
+- None identified
+
 #### Configuration
 
-* None identified
+- None identified
 
 #### References
 
-* None identified
+- None identified

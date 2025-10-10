@@ -1,6 +1,5 @@
 ---
 title: "USR - G - Require strong auth"
-linkTitle: "USR - G - Require strong auth"
 weight: 10
 type: docs
 description: "This page describes the configuration of policies for Conditional Access within Microsoft Entra ID associated with systems built according to the guidance provided by ASD's Blueprint for Secure Cloud."
@@ -8,7 +7,7 @@ description: "This page describes the configuration of policies for Conditional 
 
 {{% alert title="Instruction" color="dark" %}}
 
-The below tables outline the *as built* configuration for ASD's *Blueprint for Secure Cloud* (the Blueprint) for the Microsoft Entra admin portal at the following URL:
+The below tables outline the _as built_ configuration for ASD's _Blueprint for Secure Cloud_ (the Blueprint) for the Microsoft Entra admin portal at the following URL:
 
 <https://entra.microsoft.com/#view/Microsoft_AAD_ConditionalAccess/ConditionalAccessBlade/~/Policies>
 
@@ -22,7 +21,7 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 
 {{% alert title="Caution" color="warning" %}}
 
-In order to meet ASD Essential Eight Maturity Level 2 requirements, this policy has been updated to use an Authentication Strength that enforces the use of phishing-resistant MFA methods. This excludes the use of number matching push notifications in Microsoft Authenticator as was previously documented.
+In order to meet ASD's Essential Eight Maturity Level 2 requirements, this policy has been updated to use an Authentication Strength that enforces the use of phishing-resistant MFA methods. This excludes the use of number matching push notifications in Microsoft Authenticator as was previously documented.
 
 The use of [passkeys with Microsoft Authenticator](https://learn.microsoft.com/en-au/entra/identity/authentication/how-to-enable-authenticator-passkey) is in public preview.
 
@@ -80,7 +79,7 @@ Before implementing these settings, organisations should continue to ensure that
 
 #### Grant
 
-[Authentication strengths]({{<ref "configuration/entra-id/protection/conditional-access/authentication-strengths">}}) will need to be configured prior to setting this access control.
+[Authentication strengths](/configuration/entra-id/protection/conditional-access/authentication-strengths) will need to be configured prior to setting this access control.
 
 | Item                                                |                                Value |
 | --------------------------------------------------- | -----------------------------------: |
@@ -116,27 +115,26 @@ Before implementing these settings, organisations should continue to ensure that
 
 ### Related information
 
-#### Security & Governance
+#### Security and governance
 
-* [Multi-factor Authentication]({{<ref "multi-factor-authentication">}})
-* [Authentication Hardening]({{<ref "system-hardening-authentication">}})
-* [Essential Eight - Restrict Administrative Privileges]({{<ref "security-and-governance/essential-eight/restrict-administrative-privileges.md">}})
-* [Essential Eight: Restrict Microsoft Office Macros]({{<ref "restrict-microsoft-office-macros.md">}})
+- [Multi-factor authentication](/security-and-governance/essential-eight/multi-factor-authentication)
+- [Authentication hardening](/security-and-governance/system-security-plan/system-hardening-authentication)
+- [Essential Eight - Restrict administrative privileges](/security-and-governance/essential-eight/restrict-administrative-privileges)
+- [Essential Eight - Restrict Microsoft Office macros](/security-and-governance/essential-eight/restrict-microsoft-office-macros)
 
 #### Design
 
-* [Conditional access]({{<ref "design/platform/identity/conditional-access">}})
+- [Conditional access](/design/platform/identity/conditional-access)
 
 #### Configuration
 
-* [Authentication strengths]({{<ref "configuration/entra-id/protection/conditional-access/authentication-strengths">}})
-* [Intune Endpoint Security]({{<ref "configuration/intune/endpoint-security">}})
-* [Entra ID Protection]({{<ref "configuration/entra-id/protection">}})
+- [Authentication strengths](/configuration/entra-id/protection/conditional-access/authentication-strengths)
+- [Endpoint security](/configuration/intune/endpoint-security)
+- [Entra ID Protection](/configuration/entra-id/protection)
 
 #### References
 
-* [Configure Microsoft Entra multifactor authentication settings](https://learn.microsoft.comentra/identity/authentication/howto-mfa-mfasettings)
-* [System-preferred multifactor authentication - Authentication methods policy](https://learn.microsoft.com/entra/identity/authentication/concept-system-preferred-multifactor-authentication)
-* [Protecting authentication methods in Microsoft Entra ID](https://learn.microsoft.com/entra/identity/authentication/concept-authentication-default-enablement)
-* [Conditional Access authentication strength](https://learn.microsoft.com/entra/identity/authentication/concept-authentication-strengths)
-  
+- [Configure Microsoft Entra multifactor authentication settings](https://learn.microsoft.comentra/identity/authentication/howto-mfa-mfasettings)
+- [System-preferred multifactor authentication - Authentication methods policy](https://learn.microsoft.com/entra/identity/authentication/concept-system-preferred-multifactor-authentication)
+- [Protecting authentication methods in Microsoft Entra ID](https://learn.microsoft.com/entra/identity/authentication/concept-authentication-default-enablement)
+- [Conditional Access authentication strength](https://learn.microsoft.com/entra/identity/authentication/concept-authentication-strengths)

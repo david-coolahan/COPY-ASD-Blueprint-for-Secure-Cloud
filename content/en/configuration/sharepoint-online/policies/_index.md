@@ -1,15 +1,14 @@
 ---
 title: "Policies"
-linkTitle: "Policies"
 weight: 020
 description: "This section describes the configuration of SharePoint associated with systems built according to guidance in ASD's Blueprint for Secure Cloud."
 ---
 
 {{% alert title="Instruction" color="dark" %}}
 
-The below pages outline the *as built* configuration for ASD's *Blueprint for Secure Cloud* (the Blueprint) for the SharePoint admin portal at the following URL:
+The below pages outline the _as built_ configuration for ASD's _Blueprint for Secure Cloud_ (the Blueprint) for the SharePoint admin portal at the following URL:
 
-<https://`<TENANT-NAME>`-admin.sharepoint.com/>
+https://`<TENANT-NAME>`-admin.sharepoint.com/
 
 The settings described on these pages provide a baseline implementation for a system configured using the Blueprint. Any implementation implied by these pages should not be considered as prescriptive as to how an organisation must scope, build, document, or assess a system.
 

@@ -1,13 +1,12 @@
 ---
 title: "Add PSPF X-header and subject marking"
-linkTitle: "Add PSPF X-header and subject marking"
 weight: 010
 description: "This section describes the configuration of Data Loss Prevention policies within Microsoft Purview associated with systems built according to guidance in ASD's Blueprint for Secure Cloud."
 ---
 
 {{% alert title="Instruction" color="dark" %}}
 
-The below pages outline the *as built* configuration for ASD's *Blueprint for Secure Cloud* (the Blueprint) for the Microsoft Purview portal at the following URL:
+The below pages outline the _as built_ configuration for ASD's _Blueprint for Secure Cloud_ (the Blueprint) for the Microsoft Purview portal at the following URL:
 
 <https://purview.microsoft.com/datalossprevention/policies>
 
@@ -19,11 +18,11 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 
 {{% /alert %}}
 
-[//]: # (                                         * * * * * Note * * * * *                                                           )
-[//]: # (                                                                                                                            )
-[//]: # ( Regular expressions in tables include extra escape characters for formatting, do not copy and paste them from raw markdown )
-[//]: # (                                                                                                                            )
-[//]: # (                                         * * * * * Note * * * * *                                                           )
+[//]: # "                                         * * * * * Note * * * * *                                                           "
+[//]: # "                                                                                                                            "
+[//]: # " Regular expressions in tables include extra escape characters for formatting, do not copy and paste them from raw markdown "
+[//]: # "                                                                                                                            "
+[//]: # "                                         * * * * * Note * * * * *                                                           "
 
 ### Data to protect
 
@@ -76,7 +75,7 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 
 {{% alert title="Subject replacement text" color="warning" %}}
 
-1: The *modify subject* replacement text values must have a leading whitespace character before the `[SEC=`.
+1: The _modify subject_ replacement text values must have a leading whitespace character before the `[SEC=`.
 
 {{% /alert %}}
 
@@ -86,43 +85,43 @@ Unlike other Purview configurations, DLP rules do not support the use of commas 
 
 {{% /alert %}}
 
-***Rule index:***
+**_Rule index:_**
 
-* [Mark UNOFFICIAL X-header](#mark-unofficial-x-header)
-* [Mark UNOFFICIAL subject](#mark-unofficial-subject)
-* [Mark OFFICIAL X-header](#mark-official-x-header)
-* [Mark OFFICIAL subject](#mark-official-subject)
-* [Mark OS X-header](#mark-os-x-header)
-* [Mark OS subject](#mark-os-subject)
-* [Mark OS PP X-header](#mark-os-pp-x-header)
-* [Mark OS PP subject](#mark-os-pp-subject)
-* [Mark OS LP X-header](#mark-os-lp-x-header)
-* [Mark OS LP subject](#mark-os-lp-subject)
-* [Mark OS LS X-header](#mark-os-ls-x-header)
-* [Mark OS LS subject](#mark-os-ls-subject)
-* [Mark PROTECTED X-header](#mark-protected-x-header)
-* [Mark PROTECTED subject](#mark-protected-subject)
-* [Mark P PP X-header](#mark-p-pp-x-header)
-* [Mark P PP subject](#mark-p-pp-subject)
-* [Mark P LP X-header](#mark-p-lp-x-header)
-* [Mark P LP subject](#mark-p-lp-subject)
-* [Mark P LS X-header](#mark-p-ls-x-header)
-* [Mark P LS subject](#mark-p-ls-subject)
-* [Mark P C X-header](#mark-p-c-x-header)
-* [Mark P C subject](#mark-p-c-subject)
-* [Mark P C PP X-header](#mark-p-c-pp-x-header)
-* [Mark P C PP subject](#mark-p-c-pp-subject)
-* [Mark P C LP X-header](#mark-p-c-lp-x-header)
-* [Mark P C LP subject](#mark-p-c-lp-subject)
-* [Mark P C LS X-header](#mark-p-c-ls-x-header)
-* [Mark P C LS subject](#mark-p-c-ls-subject)
+- [Mark UNOFFICIAL X-header](#mark-unofficial-x-header)
+- [Mark UNOFFICIAL subject](#mark-unofficial-subject)
+- [Mark OFFICIAL X-header](#mark-official-x-header)
+- [Mark OFFICIAL subject](#mark-official-subject)
+- [Mark OS X-header](#mark-os-x-header)
+- [Mark OS subject](#mark-os-subject)
+- [Mark OS PP X-header](#mark-os-pp-x-header)
+- [Mark OS PP subject](#mark-os-pp-subject)
+- [Mark OS LP X-header](#mark-os-lp-x-header)
+- [Mark OS LP subject](#mark-os-lp-subject)
+- [Mark OS LS X-header](#mark-os-ls-x-header)
+- [Mark OS LS subject](#mark-os-ls-subject)
+- [Mark PROTECTED X-header](#mark-protected-x-header)
+- [Mark PROTECTED subject](#mark-protected-subject)
+- [Mark P PP X-header](#mark-p-pp-x-header)
+- [Mark P PP subject](#mark-p-pp-subject)
+- [Mark P LP X-header](#mark-p-lp-x-header)
+- [Mark P LP subject](#mark-p-lp-subject)
+- [Mark P LS X-header](#mark-p-ls-x-header)
+- [Mark P LS subject](#mark-p-ls-subject)
+- [Mark P C X-header](#mark-p-c-x-header)
+- [Mark P C subject](#mark-p-c-subject)
+- [Mark P C PP X-header](#mark-p-c-pp-x-header)
+- [Mark P C PP subject](#mark-p-c-pp-subject)
+- [Mark P C LP X-header](#mark-p-c-lp-x-header)
+- [Mark P C LP subject](#mark-p-c-lp-subject)
+- [Mark P C LS X-header](#mark-p-c-ls-x-header)
+- [Mark P C LS subject](#mark-p-c-ls-subject)
 
 ##### Mark UNOFFICIAL X-header
 
 | Item                                                                                                                                |                                                                                       Value |
 | ----------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------: |
 | Name                                                                                                                                |                                                                    Mark UNOFFICIAL X-header |
-| Description                                                                                                                         |                                                                                      *None* |
+| Description                                                                                                                         |                                                                                      _None_ |
 | **Conditions**                                                                                                                      |                                                                                             |
 | Content contains                                                                                                                    |                                                                                             |
 | - Group name                                                                                                                        |                                                                                     Default |
@@ -153,7 +152,7 @@ Unlike other Purview configurations, DLP rules do not support the use of commas 
 | Item                                                                                                                                |                                                 Value |
 | ----------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------: |
 | Name                                                                                                                                |                               Mark UNOFFICIAL subject |
-| Description                                                                                                                         |                                                *None* |
+| Description                                                                                                                         |                                                _None_ |
 | **Conditions**                                                                                                                      |                                                       |
 | Content contains                                                                                                                    |                                                       |
 | - Group name                                                                                                                        |                                               Default |
@@ -183,7 +182,7 @@ Unlike other Purview configurations, DLP rules do not support the use of commas 
 | Item                                                                                                                                |                                                                                     Value |
 | ----------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------: |
 | Name                                                                                                                                |                                                                    Mark OFFICIAL X-header |
-| Description                                                                                                                         |                                                                                    *None* |
+| Description                                                                                                                         |                                                                                    _None_ |
 | **Conditions**                                                                                                                      |                                                                                           |
 | Content contains                                                                                                                    |                                                                                           |
 | - Group name                                                                                                                        |                                                                                   Default |
@@ -214,7 +213,7 @@ Unlike other Purview configurations, DLP rules do not support the use of commas 
 | Item                                                                                                                                |                                                 Value |
 | ----------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------: |
 | Name                                                                                                                                |                                 Mark OFFICIAL subject |
-| Description                                                                                                                         |                                                *None* |
+| Description                                                                                                                         |                                                _None_ |
 | **Conditions**                                                                                                                      |                                                       |
 | Content contains                                                                                                                    |                                                       |
 | - Group name                                                                                                                        |                                               Default |
@@ -244,7 +243,7 @@ Unlike other Purview configurations, DLP rules do not support the use of commas 
 | Item                                                                                                                                |                                                                                                Value |
 | ----------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------: |
 | Name                                                                                                                                |                                                                                     Mark OS X-header |
-| Description                                                                                                                         |                                                                                               *None* |
+| Description                                                                                                                         |                                                                                               _None_ |
 | **Conditions**                                                                                                                      |                                                                                                      |
 | Content contains                                                                                                                    |                                                                                                      |
 | - Group name                                                                                                                        |                                                                                              Default |
@@ -275,7 +274,7 @@ Unlike other Purview configurations, DLP rules do not support the use of commas 
 | Item                                                                                                                                |                                                 Value |
 | ----------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------: |
 | Name                                                                                                                                |                                       Mark OS subject |
-| Description                                                                                                                         |                                                *None* |
+| Description                                                                                                                         |                                                _None_ |
 | **Conditions**                                                                                                                      |                                                       |
 | Content contains                                                                                                                    |                                                       |
 | - Group name                                                                                                                        |                                               Default |
@@ -305,7 +304,7 @@ Unlike other Purview configurations, DLP rules do not support the use of commas 
 | Item                                                                                                                                |                                                                                                                        Value |
 | ----------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------: |
 | Name                                                                                                                                |                                                                                                          Mark OS PP X-header |
-| Description                                                                                                                         |                                                                                                                       *None* |
+| Description                                                                                                                         |                                                                                                                       _None_ |
 | **Conditions**                                                                                                                      |                                                                                                                              |
 | Content contains                                                                                                                    |                                                                                                                              |
 | - Group name                                                                                                                        |                                                                                                                      Default |
@@ -336,7 +335,7 @@ Unlike other Purview configurations, DLP rules do not support the use of commas 
 | Item                                                                                                                                |                                                                 Value |
 | ----------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------: |
 | Name                                                                                                                                |                                                    Mark OS PP subject |
-| Description                                                                                                                         |                                                                *None* |
+| Description                                                                                                                         |                                                                _None_ |
 | **Conditions**                                                                                                                      |                                                                       |
 | Content contains                                                                                                                    |                                                                       |
 | - Group name                                                                                                                        |                                                               Default |
@@ -366,7 +365,7 @@ Unlike other Purview configurations, DLP rules do not support the use of commas 
 | Item                                                                                                                                |                                                                                                                       Value |
 | ----------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------: |
 | Name                                                                                                                                |                                                                                                         Mark OS LP X-header |
-| Description                                                                                                                         |                                                                                                                      *None* |
+| Description                                                                                                                         |                                                                                                                      _None_ |
 | **Conditions**                                                                                                                      |                                                                                                                             |
 | Content contains                                                                                                                    |                                                                                                                             |
 | - Group name                                                                                                                        |                                                                                                                     Default |
@@ -397,7 +396,7 @@ Unlike other Purview configurations, DLP rules do not support the use of commas 
 | Item                                                                                                                                |                                                                Value |
 | ----------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------: |
 | Name                                                                                                                                |                                                   Mark OS LP subject |
-| Description                                                                                                                         |                                                               *None* |
+| Description                                                                                                                         |                                                               _None_ |
 | **Conditions**                                                                                                                      |                                                                      |
 | Content contains                                                                                                                    |                                                                      |
 | - Group name                                                                                                                        |                                                              Default |
@@ -427,7 +426,7 @@ Unlike other Purview configurations, DLP rules do not support the use of commas 
 | Item                                                                                                                                |                                                                                                                           Value |
 | ----------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------: |
 | Name                                                                                                                                |                                                                                                             Mark OS LS X-header |
-| Description                                                                                                                         |                                                                                                                          *None* |
+| Description                                                                                                                         |                                                                                                                          _None_ |
 | **Conditions**                                                                                                                      |                                                                                                                                 |
 | Content contains                                                                                                                    |                                                                                                                                 |
 | - Group name                                                                                                                        |                                                                                                                         Default |
@@ -458,7 +457,7 @@ Unlike other Purview configurations, DLP rules do not support the use of commas 
 | Item                                                                                                                                |                                                                    Value |
 | ----------------------------------------------------------------------------------------------------------------------------------- | -----------------------------------------------------------------------: |
 | Name                                                                                                                                |                                                       Mark OS LS subject |
-| Description                                                                                                                         |                                                                   *None* |
+| Description                                                                                                                         |                                                                   _None_ |
 | **Conditions**                                                                                                                      |                                                                          |
 | Content contains                                                                                                                    |                                                                          |
 | - Group name                                                                                                                        |                                                                  Default |
@@ -488,7 +487,7 @@ Unlike other Purview configurations, DLP rules do not support the use of commas 
 | Item                                                                                                                                |                                                                                       Value |
 | ----------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------: |
 | Name                                                                                                                                |                                                                     Mark PROTECTED X-header |
-| Description                                                                                                                         |                                                                                      *None* |
+| Description                                                                                                                         |                                                                                      _None_ |
 | **Conditions**                                                                                                                      |                                                                                             |
 | Content contains                                                                                                                    |                                                                                             |
 | - Group name                                                                                                                        |                                                                                     Default |
@@ -519,7 +518,7 @@ Unlike other Purview configurations, DLP rules do not support the use of commas 
 | Item                                                                                                                                |                                                 Value |
 | ----------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------: |
 | Name                                                                                                                                |                                Mark PROTECTED subject |
-| Description                                                                                                                         |                                                *None* |
+| Description                                                                                                                         |                                                _None_ |
 | **Conditions**                                                                                                                      |                                                       |
 | Content contains                                                                                                                    |                                                       |
 | - Group name                                                                                                                        |                                               Default |
@@ -549,7 +548,7 @@ Unlike other Purview configurations, DLP rules do not support the use of commas 
 | Item                                                                                                                                |                                                                                                               Value |
 | ----------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------: |
 | Name                                                                                                                                |                                                                                                  Mark P PP X-header |
-| Description                                                                                                                         |                                                                                                              *None* |
+| Description                                                                                                                         |                                                                                                              _None_ |
 | **Conditions**                                                                                                                      |                                                                                                                     |
 | Content contains                                                                                                                    |                                                                                                                     |
 | - Group name                                                                                                                        |                                                                                                             Default |
@@ -580,7 +579,7 @@ Unlike other Purview configurations, DLP rules do not support the use of commas 
 | Item                                                                                                                                |                                                        Value |
 | ----------------------------------------------------------------------------------------------------------------------------------- | -----------------------------------------------------------: |
 | Name                                                                                                                                |                                            Mark P PP subject |
-| Description                                                                                                                         |                                                       *None* |
+| Description                                                                                                                         |                                                       _None_ |
 | **Conditions**                                                                                                                      |                                                              |
 | Content contains                                                                                                                    |                                                              |
 | - Group name                                                                                                                        |                                                      Default |
@@ -610,7 +609,7 @@ Unlike other Purview configurations, DLP rules do not support the use of commas 
 | Item                                                                                                                                |                                                                                                              Value |
 | ----------------------------------------------------------------------------------------------------------------------------------- | -----------------------------------------------------------------------------------------------------------------: |
 | Name                                                                                                                                |                                                                                                 Mark P LP X-header |
-| Description                                                                                                                         |                                                                                                             *None* |
+| Description                                                                                                                         |                                                                                                             _None_ |
 | **Conditions**                                                                                                                      |                                                                                                                    |
 | Content contains                                                                                                                    |                                                                                                                    |
 | - Group name                                                                                                                        |                                                                                                            Default |
@@ -641,7 +640,7 @@ Unlike other Purview configurations, DLP rules do not support the use of commas 
 | Item                                                                                                                                |                                                       Value |
 | ----------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------: |
 | Name                                                                                                                                |                                           Mark P LP subject |
-| Description                                                                                                                         |                                                      *None* |
+| Description                                                                                                                         |                                                      _None_ |
 | **Conditions**                                                                                                                      |                                                             |
 | Content contains                                                                                                                    |                                                             |
 | - Group name                                                                                                                        |                                                     Default |
@@ -671,7 +670,7 @@ Unlike other Purview configurations, DLP rules do not support the use of commas 
 | Item                                                                                                                                |                                                                                                                  Value |
 | ----------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------: |
 | Name                                                                                                                                |                                                                                                     Mark P LS X-header |
-| Description                                                                                                                         |                                                                                                                 *None* |
+| Description                                                                                                                         |                                                                                                                 _None_ |
 | **Conditions**                                                                                                                      |                                                                                                                        |
 | Content contains                                                                                                                    |                                                                                                                        |
 | - Group name                                                                                                                        |                                                                                                                Default |
@@ -702,7 +701,7 @@ Unlike other Purview configurations, DLP rules do not support the use of commas 
 | Item                                                                                                                                |                                                           Value |
 | ----------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------: |
 | Name                                                                                                                                |                                               Mark P LS subject |
-| Description                                                                                                                         |                                                          *None* |
+| Description                                                                                                                         |                                                          _None_ |
 | **Conditions**                                                                                                                      |                                                                 |
 | Content contains                                                                                                                    |                                                                 |
 | - Group name                                                                                                                        |                                                         Default |
@@ -732,7 +731,7 @@ Unlike other Purview configurations, DLP rules do not support the use of commas 
 | Item                                                                                                                                |                                                                                                         Value |
 | ----------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------: |
 | Name                                                                                                                                |                                                                                             Mark P C X-header |
-| Description                                                                                                                         |                                                                                                        *None* |
+| Description                                                                                                                         |                                                                                                        _None_ |
 | **Conditions**                                                                                                                      |                                                                                                               |
 | Content contains                                                                                                                    |                                                                                                               |
 | - Group name                                                                                                                        |                                                                                                       Default |
@@ -763,7 +762,7 @@ Unlike other Purview configurations, DLP rules do not support the use of commas 
 | Item                                                                                                                                |                                                  Value |
 | ----------------------------------------------------------------------------------------------------------------------------------- | -----------------------------------------------------: |
 | Name                                                                                                                                |                                       Mark P C subject |
-| Description                                                                                                                         |                                                 *None* |
+| Description                                                                                                                         |                                                 _None_ |
 | **Conditions**                                                                                                                      |                                                        |
 | Content contains                                                                                                                    |                                                        |
 | - Group name                                                                                                                        |                                                Default |
@@ -793,7 +792,7 @@ Unlike other Purview configurations, DLP rules do not support the use of commas 
 | Item                                                                                                                                |                                                                                                                                  Value |
 | ----------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------: |
 | Name                                                                                                                                |                                                                                                                   Mark P C PP X-header |
-| Description                                                                                                                         |                                                                                                                                 *None* |
+| Description                                                                                                                         |                                                                                                                                 _None_ |
 | **Conditions**                                                                                                                      |                                                                                                                                        |
 | Content contains                                                                                                                    |                                                                                                                                        |
 | - Group name                                                                                                                        |                                                                                                                                Default |
@@ -824,7 +823,7 @@ Unlike other Purview configurations, DLP rules do not support the use of commas 
 | Item                                                                                                                                |                                                                           Value |
 | ----------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------: |
 | Name                                                                                                                                |                                                             Mark P C PP subject |
-| Description                                                                                                                         |                                                                          *None* |
+| Description                                                                                                                         |                                                                          _None_ |
 | **Conditions**                                                                                                                      |                                                                                 |
 | Content contains                                                                                                                    |                                                                                 |
 | - Group name                                                                                                                        |                                                                         Default |
@@ -854,7 +853,7 @@ Unlike other Purview configurations, DLP rules do not support the use of commas 
 | Item                                                                                                                                |                                                                                                                                 Value |
 | ----------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------: |
 | Name                                                                                                                                |                                                                                                                  Mark P C LP X-header |
-| Description                                                                                                                         |                                                                                                                                *None* |
+| Description                                                                                                                         |                                                                                                                                _None_ |
 | **Conditions**                                                                                                                      |                                                                                                                                       |
 | Content contains                                                                                                                    |                                                                                                                                       |
 | - Group name                                                                                                                        |                                                                                                                               Default |
@@ -885,7 +884,7 @@ Unlike other Purview configurations, DLP rules do not support the use of commas 
 | Item                                                                                                                                |                                                                          Value |
 | ----------------------------------------------------------------------------------------------------------------------------------- | -----------------------------------------------------------------------------: |
 | Name                                                                                                                                |                                                            Mark P C LP subject |
-| Description                                                                                                                         |                                                                         *None* |
+| Description                                                                                                                         |                                                                         _None_ |
 | **Conditions**                                                                                                                      |                                                                                |
 | Content contains                                                                                                                    |                                                                                |
 | - Group name                                                                                                                        |                                                                        Default |
@@ -915,7 +914,7 @@ Unlike other Purview configurations, DLP rules do not support the use of commas 
 | Item                                                                                                                                |                                                                                                                                     Value |
 | ----------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------: |
 | Name                                                                                                                                |                                                                                                                      Mark P C LS X-header |
-| Description                                                                                                                         |                                                                                                                                    *None* |
+| Description                                                                                                                         |                                                                                                                                    _None_ |
 | **Conditions**                                                                                                                      |                                                                                                                                           |
 | Content contains                                                                                                                    |                                                                                                                                           |
 | - Group name                                                                                                                        |                                                                                                                                   Default |
@@ -946,7 +945,7 @@ Unlike other Purview configurations, DLP rules do not support the use of commas 
 | Item                                                                                                                                |                                                                              Value |
 | ----------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------: |
 | Name                                                                                                                                |                                                                Mark P C LS subject |
-| Description                                                                                                                         |                                                                             *None* |
+| Description                                                                                                                         |                                                                             _None_ |
 | **Conditions**                                                                                                                      |                                                                                    |
 | Content contains                                                                                                                    |                                                                                    |
 | - Group name                                                                                                                        |                                                                            Default |
@@ -973,7 +972,7 @@ Unlike other Purview configurations, DLP rules do not support the use of commas 
 
 {{% alert title="Subject replacement text" color="warning" %}}
 
-1: The *modify subject* replacement text values must have a leading whitespace character before the `[SEC=`.
+1: The _modify subject_ replacement text values must have a leading whitespace character before the `[SEC=`.
 
 {{% /alert %}}
 
@@ -985,21 +984,21 @@ Unlike other Purview configurations, DLP rules do not support the use of commas 
 
 ### Related information
 
-#### Security & Governance
+#### Security and governance
 
-* None identified
-  
+- None identified
+
 #### Design
 
-* [Data Loss Prevention]({{<ref "design/shared-services/purview/data-loss-prevention">}})
-  
+- [Data Loss Prevention](/design/shared-services/purview/data-loss-prevention)
+
 #### Configuration
 
-* None identified
+- None identified
 
 #### References
 
-* [Data loss prevention Exchange reference](https://learn.microsoft.com/en-au/purview/dlp-exchange-conditions-and-actions)
-* [Data loss prevention policy reference](https://learn.microsoft.com/en-au/purview/dlp-policy-reference)
-* [Learn about using regular expressions (regex) in data loss prevention policies](https://learn.microsoft.com/en-au/purview/dlp-policy-learn-about-regex-use)
-* [Regular expression quick reference](https://learn.microsoft.com/en-au/dotnet/standard/base-types/regular-expression-language-quick-reference)
+- [Data loss prevention Exchange reference](https://learn.microsoft.com/en-au/purview/dlp-exchange-conditions-and-actions)
+- [Data loss prevention policy reference](https://learn.microsoft.com/en-au/purview/dlp-policy-reference)
+- [Learn about using regular expressions (regex) in data loss prevention policies](https://learn.microsoft.com/en-au/purview/dlp-policy-learn-about-regex-use)
+- [Regular expression quick reference](https://learn.microsoft.com/en-au/dotnet/standard/base-types/regular-expression-language-quick-reference)

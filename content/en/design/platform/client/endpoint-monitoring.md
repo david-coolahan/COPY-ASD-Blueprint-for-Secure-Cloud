@@ -1,10 +1,10 @@
 ---
-title: Endpoint Monitoring
+title: Endpoint monitoring
 weight: 55
 description: "Design decisions associated with monitoring of endpoint management activities for system(s) built using ASD's Blueprint for Secure Cloud."
 ---
 
-Endpoint management is performed predominantly by Microsoft Intune with additional security layers provided by Microsoft Defender for Endpoint. Microsoft Defender for Endpoint is part of the Microsoft 365 Defender stack. 
+Endpoint management is performed predominantly by Microsoft Intune with additional security layers provided by Microsoft Defender for Endpoint. Microsoft Defender for Endpoint is part of the Microsoft 365 Defender stack.
 
 Integration with Azure Sentinel Security Information and Event Management (SIEM) is managed via the Sentinel Microsoft 365 Defender Data Connector. This connector writes Defender for Endpoint information to the following Sentinel Log Analytics tables:
 
@@ -27,22 +27,22 @@ Integration with Azure Sentinel Security Information and Event Management (SIEM)
 
 ### Related information
 
-#### Security & Governance
+#### Security and governance
 
-* [Application Control]({{<ref "security-and-governance/essential-eight/application-control.md">}})
-* [System Monitoring]({{<ref "system-monitoring.md">}})
+- [Essential Eight - Application control](/security-and-governance/essential-eight/application-control)
+- [System monitoring](/security-and-governance/system-security-plan/system-monitoring)
 
 #### Design
 
-* None identified
+- None identified
 
 #### Configuration
 
-* [Endpoint security policies]({{<ref "configuration/defender/endpoints/configuration-management/endpoint-security-policies.md">}})
+- [Endpoint security policies](/configuration/defender/endpoints/configuration-management/endpoint-security-policies)
 
 #### References
 
-*   [Connect data from Microsoft 365 Defender to Microsoft Sentinel](https://learn.microsoft.com/azure/sentinel/connect-microsoft-365-defender)
-*   [Microsoft 365 Defender integration with Microsoft Sentinel](https://learn.microsoft.com/azure/sentinel/microsoft-365-defender-sentinel-integration)
-*   [Find your Microsoft Sentinel data connector - Microsoft 365 Defender](https://learn.microsoft.com/azure/sentinel/data-connectors-reference#microsoft-365-defender)
-*   [Connecting Intune to Azure Sentinel - Azure Cloud & AI Domain Blog (azurecloudai.blog)](https://azurecloudai.blog/2020/07/02/connecting-intune-to-azure-sentinel/)
+- [Connect data from Microsoft 365 Defender to Microsoft Sentinel](https://learn.microsoft.com/azure/sentinel/connect-microsoft-365-defender)
+- [Microsoft 365 Defender integration with Microsoft Sentinel](https://learn.microsoft.com/azure/sentinel/microsoft-365-defender-sentinel-integration)
+- [Find your Microsoft Sentinel data connector - Microsoft 365 Defender](https://learn.microsoft.com/azure/sentinel/data-connectors-reference#microsoft-365-defender)
+- [Connecting Intune to Azure Sentinel - Azure Cloud & AI Domain Blog (azurecloudai.blog)](https://azurecloudai.blog/2020/07/02/connecting-intune-to-azure-sentinel)

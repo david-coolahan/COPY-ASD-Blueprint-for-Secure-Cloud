@@ -1,5 +1,5 @@
 ---
-title: Device Compliance
+title: Device compliance
 weight: 15
 description: "This section describes the design decisions associated with Device Compliance for system(s) built using ASD's Blueprint for Secure Cloud."
 ---
@@ -10,17 +10,17 @@ Microsoft Intune can control access to resources by interrogating endpoints and 
 
 Deployed device compliance profiles ensure a strong security posture for the entire Windows and iOS fleet. Compliance policies allow the organisation to ensure that baselines are met prior to access being granted to any corporate applications or data. The Windows 10 / 11 compliance policy settings include:
 
-* **Device Health** - This includes BitLocker status and whether code integrity is enabled.
-* **Device Properties** - Including a minimum and maximum operating system version.
-* **Configuration Manager Compliance** - Whether the endpoint is compliant with all Configuration Manager evaluations. This is especially applicable in a co-managed scenario such as this deployment.
-* **System Security** - Password compliance, standards, length and complexity. Also includes device level firewall, Trusted Platform Module (TPM), Antivirus, Anti-spyware and Microsoft Defender Antimalware settings.
-* **Microsoft Defender for Endpoint** - Configures the maximum allowed machine risk score, if exceeded the device is marked as non-compliant.
+- **Device Health** - This includes BitLocker status and whether code integrity is enabled.
+- **Device Properties** - Including a minimum and maximum operating system version.
+- **Configuration Manager Compliance** - Whether the endpoint is compliant with all Configuration Manager evaluations. This is especially applicable in a co-managed scenario such as this deployment.
+- **System Security** - Password compliance, standards, length and complexity. Also includes device level firewall, Trusted Platform Module (TPM), Antivirus, Anti-spyware and Microsoft Defender Antimalware settings.
+- **Microsoft Defender for Endpoint** - Configures the maximum allowed machine risk score, if exceeded the device is marked as non-compliant.
 
 {{% alert title="Design decisions" color="warning" %}}
 
-| Decision point        | Design decision                                                                  | Justification                |
-| --------------------- | -------------------------------------------------------------------------------- | ---------------------------- |
-| Compliance Assessment | Configured | Used for conditional access.<br>Requires compliance with Device Health, Device Properties and Microsoft Defender |
+| Decision point        | Design decision | Justification                                                                                                    |
+| --------------------- | --------------- | ---------------------------------------------------------------------------------------------------------------- |
+| Compliance Assessment | Configured      | Used for conditional access.<br>Requires compliance with Device Health, Device Properties and Microsoft Defender |
 
 {{% /alert %}}
 
@@ -32,19 +32,19 @@ Since mobile devices routinely leave the office environment, and the protection 
 
 ### Related information
 
-#### Security & Governance
+#### Security and governance
 
-* [System Monitoring]({{<ref "system-monitoring.md">}})
-* [Enterprise Mobility]({{<ref "security-and-governance/system-security-plan/enterprise-mobility.md">}})
+- [System monitoring](/security-and-governance/system-security-plan/system-monitoring)
+- [Enterprise mobility](/security-and-governance/system-security-plan/enterprise-mobility)
 
 #### Design
 
-* [Conditional Access]({{<ref "design/platform/identity/conditional-access">}})
+- [Conditional access](/design/platform/identity/conditional-access)
 
 #### Configuration
 
-* [Compliance Policies]({{<ref "configuration/intune/devices/compliance-policies/policies">}})
+- [Compliance Policies](/configuration/intune/devices/compliance-policies/policies)
 
 #### References
 
-* [Device Compliance Overview](https://docs.microsoft.com/mem/intune/protect/device-compliance-get-started)
+- [Device Compliance Overview](https://docs.microsoft.com/mem/intune/protect/device-compliance-get-started)

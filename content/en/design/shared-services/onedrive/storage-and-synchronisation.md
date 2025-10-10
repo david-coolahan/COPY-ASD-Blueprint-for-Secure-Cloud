@@ -1,5 +1,5 @@
 ---
-title: "Storage and Synchronisation"
+title: "Storage and synchronisation"
 weight: 40
 description: "This section describes the design decisions associated with One Drive Storage and Synchronisation for system(s) built using ASD's Blueprint for Secure Cloud."
 ---
@@ -9,7 +9,7 @@ OneDrive and SharePoint can synchronise content locally through the OneDrive for
 {{% alert title="Design decisions" color="warning" %}}
 
 | Decision point         | Design decision | Justification                                                                                                   |
-|------------------------|-----------------|-----------------------------------------------------------------------------------------------------------------|
+| ---------------------- | --------------- | --------------------------------------------------------------------------------------------------------------- |
 | Synchronisation client | Configured      | The organisation must use the OneDrive sync client to provide an offline file capability.                       |
 | Storage Limitations    | Configured      | To assist the organisation in managing user data specific storage and retention limitations will be configured. |
 
@@ -27,18 +27,18 @@ Storage and Synchronisation Configuration Choices:
 
 ### Related information
 
-#### Security & Governance
+#### Security and governance
 
-* None identified
+- None identified
 
 #### Design
 
-* None identified
+- None identified
 
 #### Configuration
 
-* [Settings]({{<ref "configuration/sharepoint-online/settings">}})
+- [Settings](/configuration/sharepoint-online/settings)
 
 #### References
 
-* [Content Synchronisation](https://docs.microsoft.com/onedrive/sync-process)
+- [Content Synchronisation](https://docs.microsoft.com/onedrive/sync-process)

@@ -1,8 +1,7 @@
 ---
 title: "Networking"
-linkTitle: "Networking"
 weight: 100
-description: "This section describes the networking configuration associated with hybrid systems built according to guidance in ASD's Blueprint for Secure Cloud."
+description: "This section describes the configuration of networking associated with hybrid systems built according to guidance in ASD's Blueprint for Secure Cloud."
 ---
 
 {{% alert title="Instruction" color="dark" %}}

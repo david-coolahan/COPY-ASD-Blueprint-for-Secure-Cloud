@@ -8,9 +8,9 @@ Printing is a legitimate method of data transfer out of an environment. Printing
 
 For a user to leverage an available printer, connectivity and a device driver is often required. The drivers can be delivered and updated using Microsoft Intune and/or Microsoft Endpoint Configuration Manager (MECM). Connectivity will depend on the connected network(s) of the device. Options include:
 
-* **Corporate Network printing** - In the workplace, the domain joined computers can connect to the print servers and send jobs to the queue.
-* **External Network printing via Hybrid Cloud Print** - Without network connectivity via Citrix, a VPN, or Microsoft Hybrid Cloud Print, direct print server connectivity is not available. Microsoft Hybrid Cloud Print utilises a reverse proxy to communicate with the print servers located within the work network.
-* **External Network printing via VPN** - When direct printer connectivity is not available from external networks, a VPN such as Windows 10 Always-On VPN can enable clients to function as if they were part of the corporate network.
+- **Corporate Network printing** - In the workplace, the domain joined computers can connect to the print servers and send jobs to the queue.
+- **External Network printing via Hybrid Cloud Print** - Without network connectivity via Citrix, a VPN, or Microsoft Hybrid Cloud Print, direct print server connectivity is not available. Microsoft Hybrid Cloud Print utilises a reverse proxy to communicate with the print servers located within the work network.
+- **External Network printing via VPN** - When direct printer connectivity is not available from external networks, a VPN such as Windows 10 Always-On VPN can enable clients to function as if they were part of the corporate network.
 
 When deploying a hybrid solution, the allocation of printers to users should be considered. Other management solutions such as Group Policy and MECM may be servicing the allocation of printers to devices.
 
@@ -38,7 +38,7 @@ When deploying a hybrid solution, the allocation of printers to users should be 
 
 ### Universal Print
 
-Universal Print enables organisations to manage print infrastructure through cloud services for compatible printers and apart from the printer does not require any additional on-premises infrastructure. The service integrates with Microsoft Entra ID and where required also supports single sign-on. By using the additional [Universal Print connector software](https://learn.microsoft.com/universal-print/fundamentals/universal-print-connector-overview), organisations can also deploy the service for non-compatible printers. 
+Universal Print enables organisations to manage print infrastructure through cloud services for compatible printers and apart from the printer does not require any additional on-premises infrastructure. The service integrates with Microsoft Entra ID and where required also supports single sign-on. By using the additional [Universal Print connector software](https://learn.microsoft.com/universal-print/fundamentals/universal-print-connector-overview), organisations can also deploy the service for non-compatible printers.
 
 {{<figure src="https://learn.microsoft.com/universal-print/fundamentals/media/architecture-diagram.png" title="Universal Print Architecture">}}
 
@@ -48,22 +48,22 @@ Organisations should undertake an assessment of the Universal Print service to d
 
 ### Related information
 
-#### Security & Governance
+#### Security and governance
 
-* None identified
+- None identified
 
 #### Design
 
-* [Drivers and Peripherals]({{<ref "design/endpoints/windows/hardware/drivers-and-peripherals.md">}})
-* [Windows Desktop Applications]({{<ref "/design/endpoints/windows/configuration/enterprise-applications">}})
-* [Windows Universal Applications]({{<ref "universal-platform-applications">}})
+- [Drivers and peripherals](/design/endpoints/windows/hardware/drivers-and-peripherals)
+- [Enterprise applications](/design/endpoints/windows/configuration/enterprise-applications)
+- [Universal Platform applications](/design/endpoints/windows/configuration/universal-platform-applications)
 
 #### Configuration
 
-* None identified
+- None identified
 
 #### References
 
-* [Microsoft Intune App Management](https://docs.microsoft.com/mem/intune/apps/app-management)
-* [Proactive Remediations](https://docs.microsoft.com/mem/analytics/proactive-remediations)
-* [Universal Print](https://learn.microsoft.com/universal-print/fundamentals/)
+- [Microsoft Intune App Management](https://docs.microsoft.com/mem/intune/apps/app-management)
+- [Proactive Remediations](https://docs.microsoft.com/mem/analytics/proactive-remediations)
+- [Universal Print](https://learn.microsoft.com/universal-print/fundamentals)

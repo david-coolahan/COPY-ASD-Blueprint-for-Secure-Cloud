@@ -8,32 +8,32 @@ Stream (on SharePoint) is an intelligent enterprise video experience that is par
 
 Microsoft Stream provides two platforms :
 
-* Stream (on SharePoint) is uploading and using video files directly stored in SharePoint, Teams, and OneDrive.
+- Stream (on SharePoint) is uploading and using video files directly stored in SharePoint, Teams, and OneDrive.
 
-* Stream (Classic) is using video files stored on the retiring Azure based microsoftstream.com service
+- Stream (Classic) is using video files stored on the retiring Azure based microsoftstream.com service
 
 {{% alert title="Design decisions" color="warning" %}}
 
 | Decision point                | Design decision                                                                                 | Justification                                                                                                                             |
-|-------------------------------|-------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------|
+| ----------------------------- | ----------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
 | Usage of Stream on SharePoint | Utilise Microsoft Stream (Built on SharePoint) experience rather than Stream Classic experience | Stream Classic experience is being deprecated.<br>Storing Stream videos in SharePoint Online provides additional compliance capabilities. |
 
 {{% /alert %}}
 
 ### Related information
 
-#### Security & Governance
+#### Security and governance
 
-* None identified
+- None identified
 
 #### Design
 
-* None identified
+- None identified
 
 #### Configuration
 
-* None identified
+- None identified
 
 #### References
 
-* None identified
+- None identified

@@ -1,6 +1,5 @@
 ---
-title: "Security Documentation"
-linkTitle: "Security Documentation"
+title: "Security documentation"
 weight: 25
 type: docs
 description: This page provides a template and guidance to assist organisations in documenting their approach to cyber security documentation associated with their system(s) built on ASD's Blueprint for Secure Cloud.
@@ -12,11 +11,11 @@ The cyber security documentation section of a System Security Plan (SSP) should 
 
 All template text refers to a typical implementation of a system built using the Blueprint, and includes reference to organisational policies, processes and technical configurations to be implemented in addition to the technical controls that may be configured using guidance in the Blueprint. Any implementation implied by the below should not be considered as prescriptive as to how organisations must scope, build, document, or assess a system.
 
-When completing the below template, organisations should insert and update information where relevant to ensure it accurately represents the approach to cyber security documentation within their organisation. When complete, remove any instructional boxes throughout. 
+When completing the below template, organisations should insert and update information where relevant to ensure it accurately represents the approach to cyber security documentation within their organisation. When complete, remove any instructional boxes throughout.
 
 {{% /alert %}}
 
-As `<ORGANISATION-NAME>`'s approach to implementing controls related to cyber security documentation is consistent across all controls addressed within this section, it does not delve into subsections but rather addresses the controls as a group. 
+As `<ORGANISATION-NAME>`'s approach to implementing controls related to cyber security documentation is consistent across all controls addressed within this section, it does not delve into subsections but rather addresses the controls as a group.
 
 #### Applicability
 
@@ -42,25 +41,24 @@ No technical controls are implemented in `<SYSTEM-NAME>` relating to cyber secur
 
 ### Related information
 
-#### Security & Governance
+#### Security and governance
 
-*   `<ORGANISATION-NAME>`'s [Cyber Security Strategy]({{<ref "security-and-governance/policies">}})
-*   `<SYSTEM-NAME>`'s [Continuous Monitoring Plan]({{<ref "security-and-governance/general-documentation">}})
-*   `<SYSTEM-NAME>`'s [System Security Plan]({{<ref "security-and-governance/system-security-plan">}}) (this document)
-*   [System Security Plan Annex]({{<ref "annex.md">}})
-*   `<SYSTEM-NAME>`'s [Incident Response Plan]({{<ref "security-and-governance/general-documentation">}})
-*   `<SYSTEM-NAME>`'s [Security Assessment Report]({{<ref "security-and-governance/general-documentation">}})
-*   `<SYSTEM-NAME>`'s [Plan of Actions and Milestones]({{<ref "security-and-governance/general-documentation">}})
+- `<ORGANISATION-NAME>`'s [Cyber Security Strategy](/security-and-governance/policies)
+- `<SYSTEM-NAME>`'s [Continuous Monitoring Plan](/security-and-governance/general-documentation)
+- `<SYSTEM-NAME>`'s [System Security Plan](/security-and-governance/system-security-plan) (this document)
+- [System Security Plan Annex](/security-and-governance/annex)
+- `<SYSTEM-NAME>`'s [Incident Response Plan](/security-and-governance/general-documentation)
+- `<SYSTEM-NAME>`'s [Security Assessment Report](/security-and-governance/general-documentation)
+- `<SYSTEM-NAME>`'s [Plan of Actions and Milestones](/security-and-governance/general-documentation)
 
 #### Design
 
-*   [System Administration]({{<ref "_index.md">}})
+- [System Security Plan](/security-and-governance/system-security-plan)
 
 #### Configuration
 
-* None identified
-
+- None identified
 
 #### External links
 
-*   ASD's [*Guidelines for Security Documentation*](https://www.cyber.gov.au/resources-business-and-government/essential-cyber-security/ism/cyber-security-guidelines/guidelines-security-documentation)
+- ASD's [_Guidelines for Security Documentation_](https://www.cyber.gov.au/resources-business-and-government/essential-cyber-security/ism/cyber-security-guidelines/guidelines-security-documentation)

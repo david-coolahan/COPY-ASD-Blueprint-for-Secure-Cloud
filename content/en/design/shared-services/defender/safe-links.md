@@ -14,58 +14,58 @@ Safe Links policies can be configured at an organisational level or on a per rec
 
 How Safe Links works within Exchange Online:
 
-* All incoming email goes through Exchange Online Protection, where IP and envelope filters, signature-based malware protection, anti-spam and anti-malware filters are applied
-* An end-user signs into Office 365 and accesses their Exchange Online mailbox
-* An end-user opens an email message containing a URL, and then clicks on the URL in the email message
-* The Safe Links feature immediately checks the URL before opening the website. The URL is identified as blocked, malicious, or safe
-* If the URL sends an end-user to a website that is included in a custom "Do not rewrite" URLs list for a policy that applies to the user, the website opens
-* If the URL sends an end-user to a website that is included in the organisation's custom blocked URLs list, a warning page opens
-* If the URL sends an end-user to a website that has been determined to be malicious, a warning page opens
-* If the URL goes to a downloadable file and the Safe Links policies are configured to scan such content, the downloadable file is checked
-* If the URL is considered safe, the end-user is taken to the website.
+- All incoming email goes through Exchange Online Protection, where IP and envelope filters, signature-based malware protection, anti-spam and anti-malware filters are applied
+- An end-user signs into Office 365 and accesses their Exchange Online mailbox
+- An end-user opens an email message containing a URL, and then clicks on the URL in the email message
+- The Safe Links feature immediately checks the URL before opening the website. The URL is identified as blocked, malicious, or safe
+- If the URL sends an end-user to a website that is included in a custom "Do not rewrite" URLs list for a policy that applies to the user, the website opens
+- If the URL sends an end-user to a website that is included in the organisation's custom blocked URLs list, a warning page opens
+- If the URL sends an end-user to a website that has been determined to be malicious, a warning page opens
+- If the URL goes to a downloadable file and the Safe Links policies are configured to scan such content, the downloadable file is checked
+- If the URL is considered safe, the end-user is taken to the website.
 
 How Safe Links works within Office applications:
 
-* A user opens a Word, Excel, PowerPoint, or Visio, and is signed in using their Office 365 security credentials. The document contains URLs
-* When a user clicks on a URL in the document, the link is checked by the Safe Links service
-* If the URL sends an end-user to a website that is included in a custom "Do not rewrite" URLs list for a policy that applies to the user, that user is taken to the website
-* If the URL sends an end-user to a website that is included in the organisation's custom blocked URLs list, the user is taken to a warning page
-* If the URL sends an end-user to a website that has been determined to be malicious, the user is taken to a warning page
-* If the URL goes to a downloadable file and the Safe Links policies are configured to scan such downloads, the downloadable file is checked
-* If the URL is considered safe, the end-user is taken to the website.
+- A user opens a Word, Excel, PowerPoint, or Visio, and is signed in using their Office 365 security credentials. The document contains URLs
+- When a user clicks on a URL in the document, the link is checked by the Safe Links service
+- If the URL sends an end-user to a website that is included in a custom "Do not rewrite" URLs list for a policy that applies to the user, that user is taken to the website
+- If the URL sends an end-user to a website that is included in the organisation's custom blocked URLs list, the user is taken to a warning page
+- If the URL sends an end-user to a website that has been determined to be malicious, the user is taken to a warning page
+- If the URL goes to a downloadable file and the Safe Links policies are configured to scan such downloads, the downloadable file is checked
+- If the URL is considered safe, the end-user is taken to the website.
 
 How Safe Links works within Teams:
 
 {{% alert title="Design decisions" color="warning" %}}
 
 | Decision point                                                                              | Design decision                                                                                                             | Justification                                                                                                                                                                     |
-|---------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Defender for Office 365 Safe Links                                                          | Configured                                                                                                                  | Configured to align with ASD's Malicious Email Mitigation Strategies and Microsoft guidance.                                                                                     |
+| ------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Defender for Office 365 Safe Links                                                          | Configured                                                                                                                  | Configured to align with ASD's Malicious Email Mitigation Strategies and Microsoft guidance.                                                                                      |
 | **Settings that apply to content across Office 365**                                        |                                                                                                                             |                                                                                                                                                                                   |
 | Block the following URL's                                                                   | No URLs defined                                                                                                             | Managing the Blocked URL list is an ongoing administrative task. Organisations will need to consider the resourcing requirements of maintaining a blocked URL list.               |
 | **Settings that apply to content except mail**                                              |                                                                                                                             |                                                                                                                                                                                   |
 | Use safe links in Office 365 ProPlus, Office for iOS and Android                            | Checked                                                                                                                     | Safe links will be checked by default within these Office 365 applications.                                                                                                       |
 | For the locations selected above: Do not track when users click safe links                  | Unchecked                                                                                                                   | Information about when end-users click safe links in the Office 365 documents will be tracked.                                                                                    |
 | For the locations selected above: Do not let users click through safe links to original URL | Checked                                                                                                                     | If end-users click on safe links in Office 365 documents, then they will be directed to a warning page and will not be presented with an option to continue to the original link. |
-| Action for unknown or potentially malicious URLs within Microsoft Teams                     | Microsoft Teams will check against a list of known malicious links when user clicks on the link; URLs will not be rewritten | Configured to align with ASD's Malicious Email Mitigation Strategies and Microsoft guidance.                                                                                     |
-| Action for unknown potentially malicious URLs in messages                                   | URLs will be rewritten and checked against a list of known malicious links when user clicks on the link                     | Configured to align with ASD's Malicious Email Mitigation Strategies and Microsoft guidance.                                                                                     |
+| Action for unknown or potentially malicious URLs within Microsoft Teams                     | Microsoft Teams will check against a list of known malicious links when user clicks on the link; URLs will not be rewritten | Configured to align with ASD's Malicious Email Mitigation Strategies and Microsoft guidance.                                                                                      |
+| Action for unknown potentially malicious URLs in messages                                   | URLs will be rewritten and checked against a list of known malicious links when user clicks on the link                     | Configured to align with ASD's Malicious Email Mitigation Strategies and Microsoft guidance.                                                                                      |
 
 {{% /alert %}}
 
 ### Related information
 
-#### Security & Governance
+#### Security and governance
 
-* None identified
+- None identified
 
 #### Design
 
-* None identified
+- None identified
 
 #### Configuration
 
-* None identified
+- None identified
 
 #### References
 
-* [Safe Links in Microsoft Defender for Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/safe-links?view=o365-worldwide)
+- [Safe Links in Microsoft Defender for Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/safe-links?view=o365-worldwide)

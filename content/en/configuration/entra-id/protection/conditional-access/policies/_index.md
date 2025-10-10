@@ -1,6 +1,5 @@
 ---
 title: "Policies"
-linkTitle: "Policies"
 weight: 10
 type: docs
 description: "This page describes the configuration of Conditional Access policies within Microsoft Entra ID associated with systems built according to the guidance provided by ASD's Blueprint for Secure Cloud."
@@ -8,7 +7,7 @@ description: "This page describes the configuration of Conditional Access polici
 
 {{% alert title="Instruction" color="dark" %}}
 
-The below pages outline the *as built* configuration for ASD's *Blueprint for Secure Cloud* (the Blueprint) for the Microsoft Entra admin portal at the following URL:
+The below pages outline the _as built_ configuration for ASD's _Blueprint for Secure Cloud_ (the Blueprint) for the Microsoft Entra admin portal at the following URL:
 
 <https://entra.microsoft.com/#view/Microsoft_AAD_ConditionalAccess/ConditionalAccessBlade/~/Policies>
 
@@ -22,7 +21,7 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 
 All Conditional Access policies in the DSC are set to report only and will need to be enabled manually.
 
-Microsoft-managed policies may be created as a result of other Entra ID settings and identified by a *MICROSOFT-MANAGED* tag. These policies can be disabled as they're superseded by Blueprint policies.
+Microsoft-managed policies may be created as a result of other Entra ID settings and identified by a _MICROSOFT-MANAGED_ tag. These policies can be disabled as they're superseded by Blueprint policies.
 
 | Item          |                                                                   Value |
 | ------------- | ----------------------------------------------------------------------: |

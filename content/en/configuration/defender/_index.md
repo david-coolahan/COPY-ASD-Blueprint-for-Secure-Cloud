@@ -1,13 +1,12 @@
 ---
 title: "Microsoft Defender"
-linkTitle: "Microsoft Defender"
 weight: 040
 description: "This section describes the configuration of Microsoft Defender associated with systems built according to the guidance provided by ASD's Blueprint for Secure Cloud."
 ---
 
 {{% alert title="Instruction" color="dark" %}}
 
-The below pages outline the *as built* configuration for ASD's *Blueprint for Secure Cloud* (the Blueprint) for the Microsoft Defender portal at the following URL:
+The below pages outline the _as built_ configuration for ASD's _Blueprint for Secure Cloud_ (the Blueprint) for the Microsoft Defender portal at the following URL:
 
 <https://security.microsoft.com/>
 
@@ -38,11 +37,11 @@ Some of the Defender configurations cannot be assessed using a DSC blueprint. Pl
 
 #### Desired State Configuration
 
-Before using the below DSC file, please refer to the [setup]({{<ref "tools/deployment-and-assessment/desired-state-configuration-setup">}}) and [automated deployment]({{<ref "tools/deployment-and-assessment/automated-deployment">}}) pages for instructions.
+Before using the below DSC file, please refer to the [setup](/tools/deployment-and-assessment/desired-state-configuration-setup) and [automated deployment](/tools/deployment-and-assessment/automated-deployment) pages for instructions.
 
-**Desired State Configuration file**<br>Download the {{% download file="/content/files/automation/dsc/asdbpsc-dsc-defender.txt" %}} Defender DSC file {{% /download %}} and rename the linked .txt file to .ps1.
+**Desired State Configuration file**<br>Download the {{% download file="/content/files/automation/dsc/BlueprintDefenderDsc.txt" %}} Defender DSC file {{% /download %}} and rename the linked .txt file to .ps1.
 
-**Configuration data file**<br>Download the {{% download file="/content/files/automation/dsc/configuration-data.txt" %}} configuration data file {{% /download %}} and rename the linked .txt file to .psd1.
+**Configuration data file**<br>Download the {{% download file="/content/files/automation/dsc/ConfigurationData.txt" %}} configuration data file {{% /download %}} and rename the linked .txt file to .psd1.
 
 {{% alert title="Warning" color="danger" %}}
 
@@ -52,7 +51,7 @@ Any existing settings in a tenancy that match the name or UID of any settings in
 
 ##### Service principal permissions
 
-For organisations importing the DSC as per the instructions on the [automated deployment]({{<ref "tools/deployment-and-assessment/automated-deployment">}}) page, the following permissions will need to be added to the M365DSC app:
+For organisations importing the DSC as per the instructions on the [automated deployment](/tools/deployment-and-assessment/automated-deployment) page, the following permissions will need to be added to the M365DSC app:
 
 ```powershell
 "IntuneSettingCatalogASRRulesPolicyWindows10", "IntuneAntivirusPolicyWindows10SettingCatalog", "IntuneEndpointDetectionAndResponsePolicyWindows10"

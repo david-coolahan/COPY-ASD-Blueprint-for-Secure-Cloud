@@ -1,13 +1,12 @@
 ---
 title: "App launcher settings"
-linkTitle: "App launcher settings"
 weight: 10
 description: "This page describes the configuration of app launcher settings within Microsoft Entra ID associated with systems built according to the guidance provided by ASD's Blueprint for Secure Cloud."
 ---
 
 {{% alert title="Instruction" color="dark" %}}
 
-The below pages outline the *as built* configuration for ASD's *Blueprint for Secure Cloud* (the Blueprint) for the Microsoft Entra admin portal at the following URL:
+The below pages outline the _as built_ configuration for ASD's _Blueprint for Secure Cloud_ (the Blueprint) for the Microsoft Entra admin portal at the following URL:
 
 <https://entra.microsoft.com/#view/Microsoft_AAD_IAM/AppLaunchersBlade/~/Settings>
 
@@ -21,28 +20,27 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 
 ### Microsoft 365 Settings
 
-| Item                                                              | Value       |
+| Item                                                              |       Value |
 | ----------------------------------------------------------------- | ----------: |
 | Users can only see Microsoft 365 apps in the Microsoft 365 portal | Not checked |
 
 ### Related information
 
-#### Security & Governance
+#### Security and governance
 
-* [Application Control]({{<ref "security-and-governance/essential-eight/application-control.md">}})
-* [User Application Hardening]({{<ref "system-hardening-user-apps.md">}})
-* [Essential Eight: Patch Applications]({{<ref "patch-applications.md">}})
-* [System Monitoring]({{<ref "system-monitoring.md">}})
-  
+- [Essential Eight - Application control](/security-and-governance/essential-eight/application-control)
+- [User application hardening](/security-and-governance/system-security-plan/system-hardening-user-apps)
+- [Essential Eight - Patch applications](/security-and-governance/essential-eight/patch-applications)
+- [System monitoring](/security-and-governance/system-security-plan/system-monitoring)
+
 #### Design
 
-* None identified
-  
+- None identified
+
 #### Configuration
 
-* None identified
+- None identified
 
 #### References
 
-* [Application management documentation](https://learn.microsoft.com/entra/identity/enterprise-apps/)
-  
+- [Application management documentation](https://learn.microsoft.com/entra/identity/enterprise-apps)

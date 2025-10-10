@@ -1,5 +1,5 @@
 ---
-title: "Mailbox Auditing"
+title: "Mailbox auditing"
 weight: 35
 description: "This section describes the design decisions associated with Exchange Online for system(s) built using ASD's Blueprint for Secure Cloud."
 ---
@@ -13,9 +13,9 @@ Security Operations teams may have a requirement that all Exchange Online (EXO) 
 
 {{% alert title="Design decisions" color="warning" %}}
 
-| Decision point               | Design decision | Justification                                                                                                                                                                                                                                                                                                                                                                    |
-|------------------------------|-----------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Mailbox Auditing             | Configured      | An event log auditing process, and supporting event log auditing procedures, is developed and implemented covering the scope and schedule of audits, what constitutes a violation of security policy, and actions to be taken when violations are detected, including reporting requirements.                                                                                    |
+| Decision point               | Design decision | Justification                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| ---------------------------- | --------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Mailbox Auditing             | Configured      | An event log auditing process, and supporting event log auditing procedures, is developed and implemented covering the scope and schedule of audits, what constitutes a violation of security policy, and actions to be taken when violations are detected, including reporting requirements.                                                                                                                                  |
 | Centralised Logging Facility | Not Configured  | organisations should consider their operational and security requirements around the use of a SIEM separately to the implementation of the Blueprint.<br>The Blueprint implements Microsoft PurviewThis design will implement Office ATP and Defender ATP which audit most Office and Defender logs for up to two years. These technologies send alert emails to Global Administrators and selected Office 365 administrators. |
 
 {{% /alert %}}
@@ -26,12 +26,12 @@ Within cloud native deployments, the option to capture all emails for Security O
 
 ### Hybrid deployments
 
-Journaling within hybrid deployments is accomplished using [Exchange Journaling]({{<ref "design/shared-services/exchange-online/journaling">}}).
+Journaling within hybrid deployments is accomplished using [Exchange Journaling](/design/shared-services/exchange-online/journaling).
 
 ### Mailbox Auditing configuration
 
 | Configuration                                           | Value                                                                                                                                                                                                                                               | Description                                                                                                            |
-|---------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------|
+| ------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------- |
 | **User Mailbox and Shared Mailbox Audit Configuration** |                                                                                                                                                                                                                                                     |                                                                                                                        |
 | Admin Audited Actions                                   | ApplyRecord<br>Copy<br>Create<br>FolderBind<br>HardDelete<br>MessageBind<br>Move<br>MoveToDeletedItems<br>RecordDelete<br>SendAs<br>SendOnBehalf<br>SoftDelete<br>Update<br>UpdateCalendarDelegation<br>UpdateFolderPermissions<br>UpdateInboxRules | All available audit actions will be selected in order to provide the required visibility of changes made to a mailbox. |
 | Delegate Audited Actions                                | ApplyRecord<br>Create<br>FolderBind<br>HardDelete<br>Move<br>MoveToDeletedItems<br>RecordDelete<br>SendAs<br>SendOnBehalf<br>SoftDelete<br>Update<br>UpdateFolderPermissions<br>UpdateInboxRules                                                    | All available audit actions will be selected in order to provide the required visibility of changes made to a mailbox. |
@@ -43,18 +43,18 @@ Journaling within hybrid deployments is accomplished using [Exchange Journaling]
 
 ### Related information
 
-#### Security & Governance
+#### Security and governance
 
-* None identified
+- None identified
 
 #### Design
 
-* None identified
+- None identified
 
 #### Configuration
 
-* None identified
+- None identified
 
 #### References
 
-* None identified
+- None identified

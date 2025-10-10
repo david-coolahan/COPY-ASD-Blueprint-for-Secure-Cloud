@@ -9,7 +9,7 @@ The OneDrive sharing administration screen provides granular configuration. Cont
 {{% alert title="Design decisions" color="warning" %}}
 
 | Decision point   | Design decision | Justification                                                                                       |
-|------------------|-----------------|-----------------------------------------------------------------------------------------------------|
+| ---------------- | --------------- | --------------------------------------------------------------------------------------------------- |
 | External Sharing | Disabled        | Sharing to external users will be disabled. Collaboration and sharing will be achieved using Teams. |
 
 {{% /alert %}}
@@ -32,18 +32,18 @@ OneDrive sharing configuration choices:
 
 ### Related information
 
-#### Security & Governance
+#### Security and governance
 
-* None identified
+- None identified
 
 #### Design
 
-* None identified
+- None identified
 
 #### Configuration
 
-* [Sharing]({{<ref "configuration/sharepoint-online/policies/sharing">}})
+- [Sharing](/configuration/sharepoint-online/policies/sharing)
 
 #### References
 
-* [Content Sharing](https://docs.microsoft.com/onedrive/manage-sharing)
+- [Content Sharing](https://docs.microsoft.com/onedrive/manage-sharing)

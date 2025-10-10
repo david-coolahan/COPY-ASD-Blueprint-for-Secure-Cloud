@@ -1,6 +1,5 @@
 ---
 title: "Enterprise state roaming"
-linkTitle: "Enterprise state roaming"
 weight: 20
 type: docs
 description: "This page describes the configuration of enterprise state roaming within Microsoft Entra ID associated with systems built according to the guidance provided by ASD's Blueprint for Secure Cloud."
@@ -8,7 +7,7 @@ description: "This page describes the configuration of enterprise state roaming 
 
 {{% alert title="Instruction" color="dark" %}}
 
-The below tables outline the *as built* configuration for ASD's *Blueprint for Secure Cloud* (the Blueprint) for the Microsoft Entra admin portal at the following URL:
+The below tables outline the _as built_ configuration for ASD's _Blueprint for Secure Cloud_ (the Blueprint) for the Microsoft Entra admin portal at the following URL:
 
 <https://entra.microsoft.com/#view/Microsoft_AAD_Devices/DevicesMenuBlade/~/RoamingSettings>
 
@@ -26,25 +25,24 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 
 ### Related information
 
-#### Security & Governance
+#### Security and governance
 
-* [Enterprise Mobility]({{< ref "security-and-governance/system-security-plan/enterprise-mobility.md">}})
-* [`<SYSTEM-NAME>` Mobile Device Usage Policy]({{< ref "security-and-governance/policies">}})
-* [`<SYSTEM-NAME>` Mobile Device Management Policy]({{< ref "security-and-governance/policies">}})
-* [Overseas Travel SOP]({{<ref "security-and-governance/general-documentation">}})
-* [Enterprise Mobility]({{<ref "security-and-governance/system-security-plan/enterprise-mobility.md">}})
-  
+- [Enterprise mobility](/security-and-governance/system-security-plan/enterprise-mobility)
+- [`<SYSTEM-NAME>` Mobile Device Usage Policy](/security-and-governance/policies)
+- [`<SYSTEM-NAME>` Mobile Device Management Policy](/security-and-governance/policies)
+- [Overseas Travel SOP](/security-and-governance/general-documentation)
+- [Enterprise mobility](/security-and-governance/system-security-plan/enterprise-mobility)
+
 #### Design
 
-* [Devices]({{<ref "design/platform/identity/devices">}})
-  
+- [Devices](/design/platform/identity/devices)
+
 #### Configuration
 
-* [Entra ID Protection]({{<ref "configuration/entra-id/protection">}})
-* [Microsoft Intune - Profile Configurations]({{<ref "configuration/intune/devices/configuration-policies">}})
-* [Endpoint security policies]({{<ref "configuration/defender/endpoints/configuration-management/endpoint-security-policies.md">}})
+- [Entra ID Protection](/configuration/entra-id/protection)
+- [Configuration policies](/configuration/intune/devices/configuration-policies)
+- [Endpoint security policies](/configuration/defender/endpoints/configuration-management/endpoint-security-policies)
 
 #### References
 
-* [Microsoft Entra device identity documentation](https://learn.microsoft.com/entra/identity/devices/)
-  
+- [Microsoft Entra device identity documentation](https://learn.microsoft.com/entra/identity/devices)

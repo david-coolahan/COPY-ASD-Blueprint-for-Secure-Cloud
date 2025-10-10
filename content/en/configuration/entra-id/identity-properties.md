@@ -1,6 +1,5 @@
 ---
 title: "Identity properties"
-linkTitle: "Identity properties"
 weight: 10
 type: docs
 description: "This page describes the configuration of identity properties within Microsoft Entra ID associated with systems built according to the guidance provided by ASD's Blueprint for Secure Cloud."
@@ -8,7 +7,7 @@ description: "This page describes the configuration of identity properties withi
 
 {{% alert title="Instruction" color="dark" %}}
 
-The below tables pages outline the *as built* configuration for ASD's *Blueprint for Secure Cloud* (the Blueprint) for the Microsoft Entra admin portal at the following URL:
+The below tables outline the _as built_ configuration for ASD's _Blueprint for Secure Cloud_ (the Blueprint) for the Microsoft Entra admin portal at the following URL:
 
 <https://entra.microsoft.com/#view/Microsoft_AAD_IAM/TenantOverview.ReactView>
 
@@ -22,31 +21,31 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 
 | Item                                  |                           Value |
 | ------------------------------------- | ------------------------------: |
-| Name                                  |             *organisation name* |
+| Name                                  |             _organisation name_ |
 | Country or region                     |                       Australia |
 | Data location                         |           Australia datacenters |
 | Notification language                 |                         English |
 | Tenant ID                             |                                 |
-| Technical contact                     |       *Technical contact email* |
-| Global privacy contact                |         *Privacy contact email* |
-| Privacy statement URL                 | *Privacy statement web address* |
+| Technical contact                     |       _Technical contact email_ |
+| Global privacy contact                |         _Privacy contact email_ |
+| Privacy statement URL                 | _Privacy statement web address_ |
 | Access management for Azure resources |                              No |
 
 ### Related information
 
-#### Security & Governance
+#### Security and governance
 
-* [Multi-factor Authentication]({{<ref "multi-factor-authentication">}})
+- [Multi-factor authentication](/security-and-governance/essential-eight/multi-factor-authentication)
 
 #### Design
 
-* [Identity]({{<ref "design/platform/identity">}})
-* [Identity security]({{<ref "identity-security">}})
+- [Identity](/design/platform/identity)
+- [Identity security](/design/platform/security/identity-security)
 
 #### Configuration
 
-* [External Identities]({{<ref "configuration/entra-id/external-identities">}})
+- [External identities](/configuration/entra-id/external-identities)
 
 #### References
 
-* [Learn Entra](https://learn.microsoft.com/entra/)
+- [Learn Entra](https://learn.microsoft.com/entra)

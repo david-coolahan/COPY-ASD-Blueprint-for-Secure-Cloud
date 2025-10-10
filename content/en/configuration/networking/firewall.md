@@ -1,6 +1,5 @@
 ---
-title: "Firewall Settings"
-linkTitle: "Firewall Settings"
+title: "Firewall settings"
 weight: 010
 description: "This section describes the configuration of firewalls associated with hybrid systems built according to guidance in ASD's Blueprint for Secure Cloud."
 ---

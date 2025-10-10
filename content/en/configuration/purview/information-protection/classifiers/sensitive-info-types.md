@@ -1,13 +1,12 @@
 ---
 title: "Sensitive info types"
-linkTitle: "Sensitive info types"
 weight: 010
 description: "This section describes the configuration of sensitive info types within Microsoft Purview associated with systems built according to guidance in ASD's Blueprint for Secure Cloud."
 ---
 
 {{% alert title="Instruction" color="dark" %}}
 
-The below tables outline the *as built* configuration for ASD's *Blueprint for Secure Cloud* (the Blueprint) for the Microsoft Purview portal at the following URL:
+The below tables outline the _as built_ configuration for ASD's _Blueprint for Secure Cloud_ (the Blueprint) for the Microsoft Purview portal at the following URL:
 
 <https://purview.microsoft.com/informationprotection/dataclassification/multicloudsensitiveinfotypes>
 
@@ -19,7 +18,7 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 
 {{% /alert %}}
 
-***Sensitive info type index:***
+**_Sensitive info type index:_**
 
 - [UNOFFICIAL](#unofficial)
 - [UNOFFICIAL (paragraph)](#unofficial-paragraph)
@@ -62,11 +61,11 @@ To manage historical information, the corresponding sensitive info types will be
 
 ### Sensitive info types
 
-[//]: # (                                         * * * * * Note * * * * *                                                           )
-[//]: # (                                                                                                                            )
-[//]: # ( Regular expressions in tables include extra escape characters for formatting, do not copy and paste them from raw markdown )
-[//]: # (                                                                                                                            )
-[//]: # (                                         * * * * * Note * * * * *                                                           )
+[//]: # "                                         * * * * * Note * * * * *                                                           "
+[//]: # "                                                                                                                            "
+[//]: # " Regular expressions in tables include extra escape characters for formatting, do not copy and paste them from raw markdown "
+[//]: # "                                                                                                                            "
+[//]: # "                                         * * * * * Note * * * * *                                                           "
 
 #### UNOFFICIAL
 
@@ -526,13 +525,13 @@ The following sensitivity info types are used for detecting content not appropri
 
 ### Related information
 
-#### Security & Governance
+#### Security and governance
 
-- [Guidelines for email]({{<ref "content\en\security-and-governance\system-security-plan\email.md">}})
+- [Guidelines for email](/security-and-governance/system-security-plan/email)
 
 #### Design
 
-- [Labelling and classification]({{<ref "design/shared-services/purview/labelling-and-classification">}})
+- [Labelling and classification](/design/shared-services/purview/labelling-and-classification)
 
 #### Configuration
 
@@ -540,5 +539,5 @@ The following sensitivity info types are used for detecting content not appropri
 
 #### References
 
-- [Australian Government Protective Security Policy Framework (PSPF)](https://www.protectivesecurity.gov.au/pspf-annual-release)
+- [Australian Government _Protective Security Policy Framework_ (PSPF)](https://www.protectivesecurity.gov.au/pspf-annual-release)
 - [Learn about sensitive information types](https://learn.microsoft.com/purview/sensitive-information-type-learn-about)

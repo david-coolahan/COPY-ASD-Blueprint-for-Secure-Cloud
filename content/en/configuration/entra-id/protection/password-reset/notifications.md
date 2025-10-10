@@ -1,6 +1,5 @@
 ---
 title: "Notifications"
-linkTitle: "Notifications"
 weight: 40
 type: docs
 description: "This page describes the configuration of notifications for password resets within Microsoft Entra ID associated with systems built according to the guidance provided by ASD's Blueprint for Secure Cloud."
@@ -8,7 +7,7 @@ description: "This page describes the configuration of notifications for passwor
 
 {{% alert title="Instruction" color="dark" %}}
 
-The below tables outline the *as built* configuration for ASD's *Blueprint for Secure Cloud* (the Blueprint) for the Microsoft Entra admin portal at the following URL:
+The below tables outline the _as built_ configuration for ASD's _Blueprint for Secure Cloud_ (the Blueprint) for the Microsoft Entra admin portal at the following URL:
 
 <https://entra.microsoft.com/#view/Microsoft_AAD_IAM/PasswordResetMenuBlade/~/Notifications>
 
@@ -30,21 +29,21 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 
 ### Related information
 
-#### Security & Governance
+#### Security and governance
 
-* [Authentication Hardening]({{<ref "system-hardening-authentication">}})
-* [System Monitoring]({{<ref "system-monitoring">}})
-* [Essential Eight: Multi-factor Authentication]({{<ref "security-and-governance/essential-eight/multi-factor-authentication.md">}})
-* [Essential Eight - Restrict Administrative Privileges]({{<ref "security-and-governance/essential-eight/restrict-administrative-privileges.md">}})
-  
+- [Authentication hardening](/security-and-governance/system-security-plan/system-hardening-authentication)
+- [System monitoring](/security-and-governance/system-security-plan/system-monitoring)
+- [Essential Eight - Multi-factor authentication](/security-and-governance/essential-eight/multi-factor-authentication)
+- [Essential Eight - Restrict administrative privileges](/security-and-governance/essential-eight/restrict-administrative-privileges)
+
 #### Design
 
-* None identified
-  
+- None identified
+
 #### Configuration
 
-* [Notifications]({{<ref "notifications.md">}})
+- [Notifications](/configuration/entra-id/protection/risky-activities/multifactor-authentication/notifications)
 
 #### References
 
-* None identified
+- None identified

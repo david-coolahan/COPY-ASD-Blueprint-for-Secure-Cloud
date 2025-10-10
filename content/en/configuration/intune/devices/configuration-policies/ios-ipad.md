@@ -5,17 +5,17 @@ description: "This section describes the configuration of device configuration p
 ---
 
 {{% alert title="Instruction" color="dark" %}}
- 
-The below tables outline the *as built* configuration for ASD's *Blueprint for Secure Cloud* (the Blueprint) for the Microsoft Intune portal at the following URL:
 
-https://intune.microsoft.com/#view/Microsoft_Intune_DeviceSettings/DevicesMenu/~/configuration
- 
+The below tables outline the _as built_ configuration for ASD's _Blueprint for Secure Cloud_ (the Blueprint) for the Microsoft Intune portal at the following URL:
+
+<https://intune.microsoft.com/#view/Microsoft_Intune_DeviceSettings/DevicesMenu/~/configuration>
+
 The settings described on these pages provide a baseline implementation for a system configured using the Blueprint. Any implementation implied by these pages should not be considered as prescriptive as to how an organisation must scope, build, document, or assess a system.
 
 Implementation of the guidance provided by the Blueprint will differ depending on an organisation’s operating context and organisational culture. Organisations should implement the Blueprint in alignment with their existing change management, business processes and frameworks.
 
 Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-NAME>` should be replaced with the relevant details as required.
- 
+
 {{% /alert %}}
 
 ### Basics
@@ -35,7 +35,9 @@ None
 
 #### Excluded groups
 
-None
+| Item   |              Value |
+| ------ | -----------------: |
+| Groups | No groups selected |
 
 ### Scope tags
 
@@ -152,7 +154,6 @@ None
 | Block Today view in lock screen                 |   Yes |
 | Block Wallet notifications in lock screen       |   Yes |
 
-
 #### Password
 
 | Item                                                          |        Value |
@@ -182,20 +183,20 @@ None
 
 ##### Apps list
 
-| App store URL                                                          |                    App bundle ID |                     App name |             Publisher |
-| ---------------------------------------------------------------------- | -------------------------------: | ---------------------------: | --------------------: |
-| https://apps.apple.com/au/app/adobe-acrobat-reader-for-pdf/id469337564 |           com.adobe.Adobe-Reader | Adobe Acrobat Reader for PDF |             Adobe Inc |
-| https://apps.apple.com/us/app/microsoft-authenticator/id983156458      | com.microsoft.azureauthenticator |      Microsoft Authenticator | Microsoft Corporation |
-| https://apps.apple.com/us/app/microsoft-edge/id1288723196              |             com.microsoft.msedge |               Microsoft Edge | Microsoft Corporation |
-| https://apps.apple.com/us/app/microsoft-excel/id586683407              |       com.microsoft.Office.Excel |              Microsoft Excel | Microsoft Corporation |
-| https://apps.apple.com/us/app/microsoft-onedrive/id477537958           |           com.microsoft.skydrive |           Microsoft OneDrive | Microsoft Corporation |
-| https://apps.apple.com/au/app/microsoft-onenote/id410395246            |            com.microsoft.onenote |            Microsoft OneNote | Microsoft Corporation |
-| https://apps.apple.com/au/app/microsoft-powerpoint/id586449534         |  com.microsoft.Office.Powerpoint |         Microsoft PowerPoint | Microsoft Corporation |
-| https://apps.apple.com/us/app/microsoft-outlook/id951937596            |     com.microsoft.Office.Outlook |            Microsoft Outlook | Microsoft Corporation |
-| https://apps.apple.com/au/app/microsoft-sharepoint/id1091505266        |         com.microsoft.sharepoint |         Microsoft SharePoint | Microsoft Corporation |
-| https://apps.apple.com/us/app/microsoft-teams/id1113153706             |        com.microsoft.skype.teams |              Microsoft Teams | Microsoft Corporation |
-| https://apps.apple.com/us/app/microsoft-word/id586447913               |        com.microsoft.Office.Word |               Microsoft Word | Microsoft Corporation |
-| https://apps.apple.com/au/app/power-apps/id1047318566                  |             com.microsoft.msapps |                    PowerApps | Microsoft Corporation |
+| App store URL                                                            |                    App bundle ID |                     App name |             Publisher |
+| ------------------------------------------------------------------------ | -------------------------------: | ---------------------------: | --------------------: |
+| <https://apps.apple.com/au/app/adobe-acrobat-reader-for-pdf/id469337564> |           com.adobe.Adobe-Reader | Adobe Acrobat Reader for PDF |             Adobe Inc |
+| <https://apps.apple.com/us/app/microsoft-authenticator/id983156458>      | com.microsoft.azureauthenticator |      Microsoft Authenticator | Microsoft Corporation |
+| <https://apps.apple.com/us/app/microsoft-edge/id1288723196>              |             com.microsoft.msedge |               Microsoft Edge | Microsoft Corporation |
+| <https://apps.apple.com/us/app/microsoft-excel/id586683407>              |       com.microsoft.Office.Excel |              Microsoft Excel | Microsoft Corporation |
+| <https://apps.apple.com/us/app/microsoft-onedrive/id477537958>           |           com.microsoft.skydrive |           Microsoft OneDrive | Microsoft Corporation |
+| <https://apps.apple.com/au/app/microsoft-onenote/id410395246>            |            com.microsoft.onenote |            Microsoft OneNote | Microsoft Corporation |
+| <https://apps.apple.com/au/app/microsoft-powerpoint/id586449534>         |  com.microsoft.Office.Powerpoint |         Microsoft PowerPoint | Microsoft Corporation |
+| <https://apps.apple.com/us/app/microsoft-outlook/id951937596>            |     com.microsoft.Office.Outlook |            Microsoft Outlook | Microsoft Corporation |
+| <https://apps.apple.com/au/app/microsoft-sharepoint/id1091505266>        |         com.microsoft.sharepoint |         Microsoft SharePoint | Microsoft Corporation |
+| <https://apps.apple.com/us/app/teams/id1113153706>                       |        com.microsoft.skype.teams |              Microsoft Teams | Microsoft Corporation |
+| <https://apps.apple.com/us/app/microsoft-word/id586447913>               |        com.microsoft.Office.Word |               Microsoft Word | Microsoft Corporation |
+| <https://apps.apple.com/au/app/power-apps/id1047318566>                  |             com.microsoft.msapps |                    PowerApps | Microsoft Corporation |
 
 #### Shared iPad
 
@@ -211,33 +212,32 @@ None
 
 ### Related information
 
-#### Security & Governance
+#### Security and governance
 
-* [Enterprise Mobility]({{<ref "security-and-governance/system-security-plan/enterprise-mobility.md">}})
-* [User Application Hardening]({{<ref "security-and-governance/system-security-plan/system-hardening-user-apps.md">}})
-* [System Management]({{<ref "system-management.md">}})
-* [Essential Eight: Restrict Microsoft Office Macros]({{<ref "restrict-microsoft-office-macros.md">}})
-* [Essential Eight: Patch Applications]({{< ref "patch-applications.md">}})
-* [Essential Eight: Patch Operating Systems]({{< ref "patch-os.md">}})
-* [Essential Eight: Regular Backups]({{< ref "regular-backups.md">}})
-* [System Monitoring]({{<ref "system-monitoring.md">}})
-* [Enterprise Mobility]({{<ref "security-and-governance/system-security-plan/enterprise-mobility.md">}})
-* [Application Control]({{<ref "security-and-governance/essential-eight/application-control.md">}})
-  
+- [Enterprise mobility](/security-and-governance/system-security-plan/enterprise-mobility)
+- [User application hardening](/security-and-governance/system-security-plan/system-hardening-user-apps)
+- [System management](/security-and-governance/system-security-plan/system-management)
+- [Essential Eight - Restrict Microsoft Office macros](/security-and-governance/essential-eight/restrict-microsoft-office-macros)
+- [Essential Eight - Patch applications](/security-and-governance/essential-eight/patch-applications)
+- [Essential Eight - Patch operating systems](/security-and-governance/essential-eight/patch-os)
+- [Essential Eight - Regular backups](/security-and-governance/essential-eight/regular-backups)
+- [System monitoring](/security-and-governance/system-security-plan/system-monitoring)
+- [Enterprise mobility](/security-and-governance/system-security-plan/enterprise-mobility)
+- [Essential Eight - Application control](/security-and-governance/essential-eight/application-control)
+
 #### Design
 
-* [Authentication]({{<ref "design/platform/identity/authentication.md">}})
-* [Securing iOS devices]({{<ref "securing-ios-devices.md">}})
-  
+- [Authentication](/design/platform/identity/authentication)
+- [Securing iOS devices](/design/endpoints/ios/security/securing-ios-devices)
+
 #### Configuration
 
-* [iOS and iPadOS]({{< ref "configuration/intune/apps/by-platform/ios-ipados.md">}})
-* [Microsoft Intune - profile configurations]({{<ref "configuration/intune/devices/configuration-policies">}})
-* [Endpoint security policies]({{<ref "configuration/defender/endpoints/configuration-management/endpoint-security-policies.md">}})
-* [Permissions]({{<ref "configuration/defender/settings/endpoints/permissions.md">}})
-* [Rules]({{<ref "configuration/defender/settings/endpoints/rules.md">}})
-
+- [iOS and iPadOS](/configuration/intune/apps/by-platform/ios-ipados)
+- [Microsoft Intune - profile configurations](/configuration/intune/devices/configuration-policies)
+- [Endpoint security policies](/configuration/defender/endpoints/configuration-management/endpoint-security-policies)
+- [Permissions](/configuration/defender/settings/endpoints/permissions)
+- [Rules](/configuration/defender/settings/endpoints/rules)
 
 #### References
 
-* None identified
+- None identified

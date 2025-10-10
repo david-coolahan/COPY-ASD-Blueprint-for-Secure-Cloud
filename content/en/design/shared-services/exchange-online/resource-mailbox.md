@@ -1,5 +1,5 @@
 ---
-title: "Resource Mailboxes"
+title: "Resource mailboxes"
 weight: 35
 description: "This section describes the design decisions associated with Exchange Online for system(s) built using ASD's Blueprint for Secure Cloud."
 ---
@@ -8,8 +8,8 @@ A Resource Mailbox is a mailbox which is assigned to a resource as opposed to a 
 
 Resource Mailboxes have two types:
 
-* **Room mailboxes** – Used for meeting rooms
-* **Equipment mailboxes** – Used for non-location specific resources such as computers, projectors, microphones, or cars
+- **Room mailboxes** – Used for meeting rooms
+- **Equipment mailboxes** – Used for non-location specific resources such as computers, projectors, microphones, or cars
 
 Users book these resources using meeting requests. Resource Mailboxes can be configured to accept or decline the request based on their availability.
 
@@ -18,7 +18,7 @@ Room Mailboxes can be sorted into lists using Room Lists. Room Lists are leverag
 {{% alert title="Design decisions" color="warning" %}}
 
 | Decision point                          | Design decision | Justification                                                                                                                                                      |
-|-----------------------------------------|-----------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| --------------------------------------- | --------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | Room Mailboxes                          | Configured      | There is a requirement for booking rooms within the solution. Rooms will be configured with a mailbox so that users can book them through their calendars.         |
 | Equipment Mailboxes                     | Configured      | There is a requirement for booking equipment within the solution. Equipment will be configured with a mailbox so that users can book them through their calendars. |
 | Room Lists                              | Configured      | There is a requirement for booking rooms within the solution. Room Assets will be configured with a list so that users can book them through their calendars.      |
@@ -28,18 +28,18 @@ Room Mailboxes can be sorted into lists using Room Lists. Room Lists are leverag
 
 ### Related information
 
-#### Security & Governance
+#### Security and governance
 
-* None identified
+- None identified
 
 #### Design
 
-* None identified
+- None identified
 
 #### Configuration
 
-* None identified
+- None identified
 
 #### References
 
-* None identified
+- None identified

@@ -1,13 +1,12 @@
 ---
 title: "Label incoming PROTECTED CABINET email"
-linkTitle: "Label incoming PROTECTED CABINET email"
 weight: 095
 description: "This section describes the configuration of auto-labeling policies within Microsoft Purview associated with systems built according to guidance in ASD's Blueprint for Secure Cloud."
 ---
 
 {{% alert title="Instruction" color="dark" %}}
 
-The below tables outline the *as built* configuration for ASD's *Blueprint for Secure Cloud* (the Blueprint) for the Microsoft Purview portal at the following URL:
+The below tables outline the _as built_ configuration for ASD's _Blueprint for Secure Cloud_ (the Blueprint) for the Microsoft Purview portal at the following URL:
 
 <https://purview.microsoft.com/informationprotection/autolabeling>
 
@@ -73,16 +72,16 @@ Auto-labeling polices are in simulation mode by default and must be individually
 | Item               |                                                        Value |
 | ------------------ | -----------------------------------------------------------: |
 | Name               |                         Check for PROTECTED CABINET X-header |
-| Description        |                                                       *None* |
+| Description        |                                                       _None_ |
 | Conditions         |                                      Header matches patterns |
 | Header name        |                                         X-Protective-Marking |
 | Regular expression | `SEC=PROTECTED, CAVEAT=SH:CABINET(?![a-zA-Z,= /]*, ACCESS=)` |
 
-| Item               |                                                                  Value |
-| ------------------ | ---------------------------------------------------------------------: |
-| Name               |                                    Check for PROTECTED CABINET subject |
-| Description        |                                                                 *None* |
-| Conditions         |                                               Subject matches patterns |
+| Item               |                                                            Value |
+| ------------------ | ---------------------------------------------------------------: |
+| Name               |                              Check for PROTECTED CABINET subject |
+| Description        |                                                           _None_ |
+| Conditions         |                                         Subject matches patterns |
 | Regular expression | `\[SEC=PROTECTED, CAVEAT=SH:CABINET(?![a-zA-Z,= /]*, ACCESS=)\]` |
 
 ### Additional settings for email
@@ -102,16 +101,16 @@ Auto-labeling polices are in simulation mode by default and must be individually
 
 ### Related information
 
-#### Security & Governance
+#### Security and governance
 
 - None identified
-  
+
 #### Design
 
-- [Azure Rights Management]({{<ref "design/shared-services/purview/azure-rights-management">}})
-- [Email flow]({{<ref "design/shared-services/purview/email-handling">}})
-- [Labelling and classification]({{<ref "design/shared-services/purview/labelling-and-classification">}})
-  
+- [Azure Rights Management](/design/shared-services/purview/azure-rights-management)
+- [Email flow](/design/shared-services/purview/email-handling)
+- [Labelling and classification](/design/shared-services/purview/labelling-and-classification)
+
 #### Configuration
 
 - None identified

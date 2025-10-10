@@ -1,14 +1,14 @@
 ---
-title: "System Properties"
+title: "System properties"
 weight: 80
 description: "This section describes the design decisions associated with system properties on Windows 10 and 11 endpoints configured according to guidance in ASD's Blueprint for Secure Cloud."
 ---
 
 The System Properties window can be customised in several ways. Within the System Properties window, the Manufacturer and Model values can be displayed. Support information can also be populated which includes:
 
-* Support phone
-* Support hours
-* Support website
+- Support phone
+- Support hours
+- Support website
 
 A custom Original Equipment Manufacturers (OEMs) logo can also be displayed below the Windows logo.
 
@@ -19,7 +19,7 @@ The Manufacturer value is used in the title string displayed in the support sect
 {{% alert title="Design decisions" color="warning" %}}
 
 | Decision point       | Design decision                                    | Justification                                                               |
-|----------------------|----------------------------------------------------|-----------------------------------------------------------------------------|
+| -------------------- | -------------------------------------------------- | --------------------------------------------------------------------------- |
 | Company Name         | Not Configured                                     | Not required to support deployments.                                        |
 | OEM Logo             | Configured – Australian Government crest           | To identify that the equipment is under Australian Government jurisdiction. |
 | Manufacturer Value   | Configured – the Organisation Name                 | To identify the organisation as the device owner.                           |
@@ -33,18 +33,18 @@ The Manufacturer value is used in the title string displayed in the support sect
 
 ### Related information
 
-#### Security & Governance
+#### Security and governance
 
-* None identified
+- None identified
 
 #### Design
 
-* None identified
+- None identified
 
 #### Configuration
 
-* None identified
+- None identified
 
 #### References
 
-* None identified
+- None identified

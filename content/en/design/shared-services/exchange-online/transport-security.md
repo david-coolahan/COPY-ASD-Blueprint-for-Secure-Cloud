@@ -1,5 +1,5 @@
 ---
-title: "Transport Security"
+title: "Transport security"
 weight: 40
 description: "This section describes the design decisions associated with Exchange Online for system(s) built using ASD's Blueprint for Secure Cloud."
 ---
@@ -11,7 +11,7 @@ Opportunistic TLS enables email traffic to be encrypted when both the sender and
 {{% alert title="Design decisions" color="warning" %}}
 
 | Decision point           | Design decision   | Justification                                                                             |
-|--------------------------|-------------------|-------------------------------------------------------------------------------------------|
+| ------------------------ | ----------------- | ----------------------------------------------------------------------------------------- |
 | Configuration of MTA-STS | Recommended       | Organisations should configure the required DNS record and policy to require TLS support. |
 | Opportunistic TLS        | Enabled (default) | To encrypt email traffic where supported by the external email domain.                    |
 
@@ -19,18 +19,18 @@ Opportunistic TLS enables email traffic to be encrypted when both the sender and
 
 ### Related information
 
-#### Security & Governance
+#### Security and governance
 
-* None identified
+- None identified
 
 #### Design
 
-* None identified
+- None identified
 
 #### Configuration
 
-* None identified
+- None identified
 
 #### References
 
-* None identified
+- None identified

@@ -1,15 +1,14 @@
 ---
 title: "SharePoint Online"
-linkTitle: "SharePoint Online"
 weight: 070
 description: "This section describes the configuration of SharePoint associated with systems built according to guidance in ASD's Blueprint for Secure Cloud."
 ---
 
 {{% alert title="Instruction" color="dark" %}}
 
-The below pages outline the *as built* configuration for ASD's *Blueprint for Secure Cloud* (the Blueprint) for the SharePoint admin portal at the following URL:
+The below pages outline the _as built_ configuration for ASD's _Blueprint for Secure Cloud_ (the Blueprint) for the SharePoint admin portal at the following URL:
 
-<https://`<TENANT-NAME>`-admin.sharepoint.com/>
+https://`<TENANT-NAME>`-admin.sharepoint.com/
 
 The settings described on these pages provide a baseline implementation for a system configured using the Blueprint. Any implementation implied by these pages should not be considered as prescriptive as to how an organisation must scope, build, document, or assess a system.
 
@@ -36,11 +35,11 @@ Some of the Sharepoint Online configurations cannot be assessed using a DSC blue
 
 #### Desired State Configuration
 
-Before using the below DSC file, please refer to the [setup]({{<ref "tools/deployment-and-assessment/desired-state-configuration-setup">}}) and [automated deployment]({{<ref "tools/deployment-and-assessment/automated-deployment">}}) pages for instructions.
+Before using the below DSC file, please refer to the [setup](/tools/deployment-and-assessment/desired-state-configuration-setup) and [automated deployment](/tools/deployment-and-assessment/automated-deployment) pages for instructions.
 
-**Desired State Configuration file**<br>Download the {{% download file="/content/files/automation/dsc/asdbpsc-dsc-spo.txt" %}} Sharepoint DSC file {{% /download %}} and rename the linked .txt file to .ps1.
+**Desired State Configuration file**<br>Download the {{% download file="/content/files/automation/dsc/BlueprintSpoDsc.txt" %}} Sharepoint DSC file {{% /download %}} and rename the linked .txt file to .ps1.
 
-**Configuration data file**<br>Download the {{% download file="/content/files/automation/dsc/configuration-data.txt" %}} configuration data file {{% /download %}} and rename the linked .txt file to .psd1.
+**Configuration data file**<br>Download the {{% download file="/content/files/automation/dsc/ConfigurationData.txt" %}} configuration data file {{% /download %}} and rename the linked .txt file to .psd1.
 
 {{% alert title="Warning" color="danger" %}}
 
@@ -50,7 +49,7 @@ Any existing settings in a tenancy that match the name or UID of any settings in
 
 ##### Service principal permissions
 
-For organisations importing the DSC as per the instructions on the [automated deployment]({{<ref "tools/deployment-and-assessment/automated-deployment">}}) page, the following permissions will need to be added to the M365DSC app:
+For organisations importing the DSC as per the instructions on the [automated deployment](/tools/deployment-and-assessment/automated-deployment) page, the following permissions will need to be added to the M365DSC app:
 
 ```powershell
 "ODSettings", "SPOAccessControlSettings", "SPOBrowserIdleSignout", "SPOSearchManagedProperty", "SPOSearchResultSource", "SPOSharingSettings"

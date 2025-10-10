@@ -1,6 +1,5 @@
 ---
 Title: "Migrating labelling schemes"
-linkTitle: "Migrating labelling schemes"
 weight: 10
 description: "This section describes how to migrate labelling schemes within Microsoft Purview for system(s) built using ASD's Blueprint for Secure Cloud."
 ---
@@ -9,20 +8,20 @@ description: "This section describes how to migrate labelling schemes within Mic
 
 Organisations intending to migrate from currently in-place labelling schemes to newer sensitivity label naming, priority ordering or grouping, or to use revised [PSPF markings in emails](https://www.protectivesecurity.gov.au/publications-library/australian-government-email-protective-marking-standard), should consider the following priority outcomes:
 
-* The new scheme is correct in terms of label naming, priority ordering and grouping from a user experience perspective
-* Implementing the new scheme incurs minimal impact to business operations
-* Data security controls associated with labelling are maintained
+- The new scheme is correct in terms of label naming, priority ordering and grouping from a user experience perspective
+- Implementing the new scheme incurs minimal impact to business operations
+- Data security controls associated with labelling are maintained
 
 The simplest approach can be to delete old sensitivity labels and all label-dependent configurations and start again from first principles. However this may not be possible while ensuring the above outcomes. The following caveats should be considered before proceeding with any label migration activity.
 
 #### Duplicate label identifiers
 
-Sensitivity labels have several distinct identifiers including, a GUID for programmatic use and service integration, a *name* which is used an administrative identifier, and a *display name* which is presented for selection by users in applications and workflows. Conflicts can arise when creating labels with the same name, or same display name:
+Sensitivity labels have several distinct identifiers including, a GUID for programmatic use and service integration, a _name_ which is used an administrative identifier, and a _display name_ which is presented for selection by users in applications and workflows. Conflicts can arise when creating labels with the same name, or same display name:
 
-* Purview will prevent the use of duplicate label names
-* Purview will only permit the use of duplicate label display names if the labels are created as sub-labels under different parent labels
-* Purview will prevent label priority ordering changes to move labels into, or out of, label groups
-* Azure Rights Management will prevent the creation of new labels with the same name as those used with archived protection templates (from a deleted label)
+- Purview will prevent the use of duplicate label names
+- Purview will only permit the use of duplicate label display names if the labels are created as sub-labels under different parent labels
+- Purview will prevent label priority ordering changes to move labels into, or out of, label groups
+- Azure Rights Management will prevent the creation of new labels with the same name as those used with archived protection templates (from a deleted label)
 
 {{% alert title="Handling label naming conflicts" color="info" %}}
 
@@ -37,7 +36,7 @@ When creating a new labelling scheme, existing sensitivity labels should be pres
 
 #### Relabelling
 
-It is currently not possible to use conventional Purview mechanisms, like auto-labelling and data loss prevention, to detect the existence of old sensitivity labels and apply new ones. It is possible to manipulate the labels applied to information via a combination of PowerShell or Power Automate flows with Graph API calls, or Defender for Cloud Apps with the *apply a label* governance action. Whether such an approach should be invested in will largely depend on the extent to which old labels have been used.
+It is currently not possible to use conventional Purview mechanisms, like auto-labelling and data loss prevention, to detect the existence of old sensitivity labels and apply new ones. It is possible to manipulate the labels applied to information via a combination of PowerShell or Power Automate flows with Graph API calls, or Defender for Cloud Apps with the _apply a label_ governance action. Whether such an approach should be invested in will largely depend on the extent to which old labels have been used.
 
 {{% alert title="Find information with old-labels" color="info" %}}
 
@@ -47,7 +46,7 @@ Use [Purview eDiscovery Content search](https://learn.microsoft.com/en-au/purvie
 
 #### Managing old labels
 
-Deleting old sensitivity labels and not relabelling relies on the lifecycle of information for new labels to be applied as users access and modify old labelled information. While this approach may result in some information never getting labels reapplied, the information would appear similarly to other information created *pre-Purview*. Old-labelled information would still have content markings in place after label deletion.
+Deleting old sensitivity labels and not relabelling relies on the lifecycle of information for new labels to be applied as users access and modify old labelled information. While this approach may result in some information never getting labels reapplied, the information would appear similarly to other information created _pre-Purview_. Old-labelled information would still have content markings in place after label deletion.
 
 Leaving old sensitivity labels in place is simple in terms of upfront effort, but may require ongoing maintenance to keep label and related policy configurations maintained. Even though old labels would not be published, they would continue to appear associated with emails, documents and containers; users would need to be made aware of the variation, which could also be used as a prompt to manually relabel information as it's noticed. Old labels can also have their display name renamed to indicate their deprecated status. Data loss prevention policies and other label-based security mechanisms can also remain in place, continuing to protect information.
 
@@ -55,8 +54,8 @@ Leaving old sensitivity labels in place is simple in terms of upfront effort, bu
 
 Azure Rights Management usage rights associated with old sensitivity labels can add complexity to a decision to relabel information, or to maintain or delete old labels:
 
-* If the intent is to relabel information and the old label usage rights do not permit reprotection, the [usage rights may need modification](https://learn.microsoft.com/en-au/azure/information-protection/configure-usage-rights).
-* If a label is deleted, the usage rights and protection template associated with that label remain archived in the Azure Information Protection tenant, allowing information associated with the old label to still be accessed. If the archived protection templates are to persist after label deletion, and if usage rights associated with new equivalent labels were ever updated, the old protection templates also require updating to maintain parity.
+- If the intent is to relabel information and the old label usage rights do not permit reprotection, the [usage rights may need modification](https://learn.microsoft.com/en-au/azure/information-protection/configure-usage-rights).
+- If a label is deleted, the usage rights and protection template associated with that label remain archived in the Azure Information Protection tenant, allowing information associated with the old label to still be accessed. If the archived protection templates are to persist after label deletion, and if usage rights associated with new equivalent labels were ever updated, the old protection templates also require updating to maintain parity.
 
 {{% alert title="Warning" color="warning" %}}
 
@@ -74,7 +73,7 @@ The metadata associated with old sensitivity label configurations may be the onl
 
 #### Implement the new labelling scheme
 
-1. Create the new [labels]({{<ref "configuration/purview/information-protection/sensitivity-labels">}}) in accordance with the Blueprint
+1. Create the new [labels](/configuration/purview/information-protection/sensitivity-labels) in accordance with the Blueprint
 1. Modify publishing policies to use the new labels
 1. Modify auto-labelling policies to use the new labels
 1. Modify data loss prevention policies to use the new labels
@@ -87,28 +86,28 @@ While it is possible to operate both new and old labelled schemes concurrently a
 
 In the example table below:
 
-* The *OFFICIAL Sensitive* label can exist as a top-level label and as a sub-label under the *OFFICIAL Sensitive (group)* parent label, as long as the new label's name is different, for example *OFFICIAL Sensitive v02*.
-* The old labels pending deletion can have their display names renamed to highlight their status, for example renaming *OFFICIAL Sensitive* to *OFFICIAL Sensitive deprecated* (or an equivalent abbreviation).
+- The _OFFICIAL Sensitive_ label can exist as a top-level label and as a sub-label under the _OFFICIAL Sensitive (group)_ parent label, as long as the new label's name is different, for example _OFFICIAL Sensitive v02_.
+- The old labels pending deletion can have their display names renamed to highlight their status, for example renaming _OFFICIAL Sensitive_ to _OFFICIAL Sensitive deprecated_ (or an equivalent abbreviation).
 
-| Old label scheme (example)             | Old label action            | New label scheme (Blueprint)                | New label action |
-| -------------------------------------- | --------------------------- | ------------------------------------------- | ---------------- |
-| UNOFFICIAL                             | Preserve                    | UNOFFICIAL                                  | *NA*             |
-| OFFICIAL                               | Preserve                    | OFFICIAL                                    | *NA*             |
-| OFFICIAL Sensitive                     | Rename,<br>pending deletion | OFFICIAL Sensitive (group)                  | Create           |
-| OFFICIAL Sensitive Personal Privacy    | Rename,<br>pending deletion | - OFFICIAL Sensitive                        | Create           |
-| OFFICIAL Sensitive Legal Privilege     | Rename,<br>pending deletion | - Personal Privacy                          | Create           |
-| OFFICIAL Sensitive Legislative Secrecy | Rename,<br>pending deletion | - Legal Privilege                           | Create           |
-| PROTECTED                              | Rename,<br>pending deletion | - Legislative Secrecy                       | Create           |
-|                                        |                             | PROTECTED (group)                           | Create           |
-|                                        |                             | - PROTECTED                                 | Create           |
-|                                        |                             | - Personal Privacy                          | Create           |
-|                                        |                             | - Legal Privilege                           | Create           |
-|                                        |                             | - Legislative Secrecy                       | Create           |
-|                                        |                             | PROTECTED CABINET (group)                   | Create           |
-|                                        |                             | - PROTECTED CABINET                         | Create           |
-|                                        |                             | - Personal Privacy                          | Create           |
-|                                        |                             | - Legal Privilege                           | Create           |
-|                                        |                             | - Legislative Secrecy                       | Create           |
+| Old label scheme (example)             | Old label action            | New label scheme (Blueprint) | New label action |
+| -------------------------------------- | --------------------------- | ---------------------------- | ---------------- |
+| UNOFFICIAL                             | Preserve                    | UNOFFICIAL                   | _NA_             |
+| OFFICIAL                               | Preserve                    | OFFICIAL                     | _NA_             |
+| OFFICIAL Sensitive                     | Rename,<br>pending deletion | OFFICIAL Sensitive (group)   | Create           |
+| OFFICIAL Sensitive Personal Privacy    | Rename,<br>pending deletion | - OFFICIAL Sensitive         | Create           |
+| OFFICIAL Sensitive Legal Privilege     | Rename,<br>pending deletion | - Personal Privacy           | Create           |
+| OFFICIAL Sensitive Legislative Secrecy | Rename,<br>pending deletion | - Legal Privilege            | Create           |
+| PROTECTED                              | Rename,<br>pending deletion | - Legislative Secrecy        | Create           |
+|                                        |                             | PROTECTED (group)            | Create           |
+|                                        |                             | - PROTECTED                  | Create           |
+|                                        |                             | - Personal Privacy           | Create           |
+|                                        |                             | - Legal Privilege            | Create           |
+|                                        |                             | - Legislative Secrecy        | Create           |
+|                                        |                             | PROTECTED CABINET (group)    | Create           |
+|                                        |                             | - PROTECTED CABINET          | Create           |
+|                                        |                             | - Personal Privacy           | Create           |
+|                                        |                             | - Legal Privilege            | Create           |
+|                                        |                             | - Legislative Secrecy        | Create           |
 
 #### Migrate old-labelled information to the new labelling scheme
 
@@ -154,7 +153,7 @@ Ensure that relabelling efforts have been completed to the required degree by re
 
 Delete any policies or rules associated with old sensitivity labels after any relabelling has been completed. After such policies have been deleted, the labels themselves can be deleted.
 
-If relabelling was not performed and a label deleted the information will appear unlabelled, triggering the *require users to apply a label to their emails and documents* publishing policy setting.
+If relabelling was not performed and a label deleted the information will appear unlabelled, triggering the _require users to apply a label to their emails and documents_ publishing policy setting.
 
 {{% alert title="Test label deletion" color="warning" %}}
 
@@ -164,29 +163,29 @@ Deleting labels carries some caveats which are documented in Microsoft's [removi
 
 ### Related information
 
-#### Security & Governance
+#### Security and governance
 
-* [Guidelines for email]({{<ref "content\en\security-and-governance\system-security-plan\email.md">}})
+- [Guidelines for email](/security-and-governance/system-security-plan/email)
 
 #### Design
 
-* [Azure Rights Management]({{<ref "design/shared-services/purview/azure-rights-management">}})
-* [Email handling]({{<ref "design/shared-services/purview/email-handling">}})
-* [Data Loss Prevention]({{<ref "design/shared-services/purview/data-loss-prevention">}})
-* [Labelling and classification]({{<ref "design/shared-services/purview/labelling-and-classification">}})
+- [Azure Rights Management](/design/shared-services/purview/azure-rights-management)
+- [Email handling](/design/shared-services/purview/email-handling)
+- [Data Loss Prevention](/design/shared-services/purview/data-loss-prevention)
+- [Labelling and classification](/design/shared-services/purview/labelling-and-classification)
 
 #### Configuration
 
-* [Sensitivity labels]({{<ref "configuration/purview/information-protection/sensitivity-labels">}})
+- [Sensitivity labels](/configuration/purview/information-protection/sensitivity-labels)
 
 #### References
 
-* [Australian Government Email Protective Marking Standard](https://www.protectivesecurity.gov.au/publications-library/australian-government-email-protective-marking-standard)
-* [Australian Government Protective Security Policy Framework (PSPF)](https://www.protectivesecurity.gov.au/pspf-annual-release)
-* [Configure usage rights for Azure Information Protection](https://learn.microsoft.com/en-au/azure/information-protection/configure-usage-rights)
-* [driveItem: assignSensitivityLabel](https://learn.microsoft.com/en-au/graph/api/driveitem-assignsensitivitylabel?view=graph-rest-1.0&WT.mc_id=M365-MVP-9501&tabs=htt)
-* [Microsoft Purview Information Protection client](https://learn.microsoft.com/en-au/purview/information-protection-client?tabs=devices%2Cinstall-client-exe%2Cclassification-file-types%2Cexcluded-folders)
-* [Overview of Content search](https://learn.microsoft.com/en-au/purview/ediscovery-content-search-overview)
-* [Removing and deleting labels](https://learn.microsoft.com/en-au/purview/create-sensitivity-labels#removing-and-deleting-labels)
-* [Set-FileLabel](https://learn.microsoft.com/en-au/powershell/module/purviewinformationprotection/set-filelabel?view=azureipps)
-* [Use PowerShell to convert classifications for Microsoft 365 groups to sensitivity labels](https://learn.microsoft.com/en-au/purview/sensitivity-labels-teams-groups-sites#use-powershell-to-convert-classifications-for-microsoft-365-groups-to-sensitivity-labels)
+- [Australian Government Email Protective Marking Standard](https://www.protectivesecurity.gov.au/publications-library/australian-government-email-protective-marking-standard)
+- [Australian Government _Protective Security Policy Framework_ (PSPF)](https://www.protectivesecurity.gov.au/pspf-annual-release)
+- [Configure usage rights for Azure Information Protection](https://learn.microsoft.com/en-au/azure/information-protection/configure-usage-rights)
+- [driveItem: assignSensitivityLabel](https://learn.microsoft.com/en-au/graph/api/driveitem-assignsensitivitylabel?view=graph-rest-1.0&WT.mc_id=M365-MVP-9501&tabs=htt)
+- [Microsoft Purview Information Protection client](https://learn.microsoft.com/en-au/purview/information-protection-client?tabs=devices%2Cinstall-client-exe%2Cclassification-file-types%2Cexcluded-folders)
+- [Overview of Content search](https://learn.microsoft.com/en-au/purview/ediscovery-content-search-overview)
+- [Removing and deleting labels](https://learn.microsoft.com/en-au/purview/create-sensitivity-labels#removing-and-deleting-labels)
+- [Set-FileLabel](https://learn.microsoft.com/en-au/powershell/module/purviewinformationprotection/set-filelabel?view=azureipps)
+- [Use PowerShell to convert classifications for Microsoft 365 groups to sensitivity labels](https://learn.microsoft.com/en-au/purview/sensitivity-labels-teams-groups-sites#use-powershell-to-convert-classifications-for-microsoft-365-groups-to-sensitivity-labels)

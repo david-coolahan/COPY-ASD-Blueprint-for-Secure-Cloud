@@ -10,14 +10,14 @@ Microsoft Office Teams can integrate with third-party UC products and provide co
 
 Microsoft Office Teams can natively provide the following UC features:
 
-* Individual and group voice calls
-* Individual and group video calls
-* Individual and group chat.
+- Individual and group voice calls
+- Individual and group video calls
+- Individual and group chat.
 
 {{% alert title="Design decisions" color="warning" %}}
 
 | Decision point                   | Design decision | Justification         |
-|----------------------------------|-----------------|-----------------------|
+| -------------------------------- | --------------- | --------------------- |
 | Individual and group voice calls | Configured      | Default functionality |
 | Individual and group video calls | Configured      | Default functionality |
 | Individual and group chat        | Configured      | Default functionality |
@@ -26,19 +26,19 @@ Microsoft Office Teams can natively provide the following UC features:
 
 ### Related information
 
-#### Security & Governance
+#### Security and governance
 
-* None identified
+- None identified
 
 #### Design
 
-* None identified
+- None identified
 
 #### Configuration
 
-* [Messaging policies]({{<ref "configuration/microsoft-teams/Setting-&-policies/Global-(org-wide-default)-settings/messaging/messaging">}})
-* [Calling policies]({{<ref "configuration/microsoft-teams/Setting-&-policies/Global-(org-wide-default)-settings/voice/calling">}})
+- [Messaging policies](/configuration/teams/setting-and-policies/global-settings/messaging/messaging)
+- [Calling policies](/configuration/teams/setting-and-policies/global-settings/voice/calling)
 
 #### References
 
-* None identified
+- None identified

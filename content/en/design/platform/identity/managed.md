@@ -1,5 +1,5 @@
 ---
-title: Managed Identities for Resources
+title: Managed identities for resources
 weight: 80
 description: "This section describes the design decisions associated with managed identities for azure resources for system(s) built using ASD's Blueprint for Secure Cloud."
 ---
@@ -10,25 +10,25 @@ Managed identities provide an identity for applications to use when connecting t
 
 There are two types of managed identities:
 
-* **System-assigned** - Some Azure services allow a managed identity to be enabled directly on a service instance - it is a one-to-one relationship between the identity and the resource. When a system-assigned managed identity is enabled, an identity is created in Entra ID that is tied to the life cycle of that service instance. So when the resource is deleted, Azure automatically deletes the identity. By design, only that Azure resource can use this identity to request tokens from Entra ID.
-* **User-assigned** - A managed identity may also be created as a standalone Azure resource - it is a one-to-many relationship between the identity and the resources. A user-assigned managed identity can be created and assigned to one or more instances of an Azure service. In the case of user-assigned managed identities, the identity is managed separately from the resources that use it.
+- **System-assigned** - Some Azure services allow a managed identity to be enabled directly on a service instance - it is a one-to-one relationship between the identity and the resource. When a system-assigned managed identity is enabled, an identity is created in Entra ID that is tied to the life cycle of that service instance. So when the resource is deleted, Azure automatically deletes the identity. By design, only that Azure resource can use this identity to request tokens from Entra ID.
+- **User-assigned** - A managed identity may also be created as a standalone Azure resource - it is a one-to-many relationship between the identity and the resources. A user-assigned managed identity can be created and assigned to one or more instances of an Azure service. In the case of user-assigned managed identities, the identity is managed separately from the resources that use it.
 
 Regardless of the type of identity chosen a managed identity is a service principal of a special type that may only be used with Azure resources.
 
 Resources that support system-assigned managed identities:
 
-* Allow managed identities at the resource level to be enabled or disabled.
-* Use RBAC roles to grant permissions.
-* Allow the viewing of create, read, update, delete (CRUD) operations in Azure Activity logs.
-* Allow the viewing of sign-in activity in Entra ID sign-in logs.
+- Allow managed identities at the resource level to be enabled or disabled.
+- Use RBAC roles to grant permissions.
+- Allow the viewing of create, read, update, delete (CRUD) operations in Azure Activity logs.
+- Allow the viewing of sign-in activity in Entra ID sign-in logs.
 
 A user-assigned managed identity:
 
-* Enables CRUD operations for the identities.
-* Uses RBAC role assignments to grant permissions.
-* Can be used on more than one resource.
-* Enables the review of CRUD operations in Azure Activity logs.
-* Enables the viewing of sign-in activity in Entra ID sign-in logs.
+- Enables CRUD operations for the identities.
+- Uses RBAC role assignments to grant permissions.
+- Can be used on more than one resource.
+- Enables the review of CRUD operations in Azure Activity logs.
+- Enables the viewing of sign-in activity in Entra ID sign-in logs.
 
 The services that [support managed identities](https://learn.microsoft.com/entra/identity/managed-identities-azure-resources/managed-identities-status) are varied. User-assigned managed identities are more efficient in a broader range of scenarios than system-assigned managed identities.
 
@@ -48,19 +48,19 @@ User-assigned identities need to be manually deleted when they are no longer req
 
 ### Related information
 
-#### Security & Governance
+#### Security and governance
 
-* None identified
+- None identified
 
 #### Design
 
-* None identified
+- None identified
 
 #### Configuration
 
-* None identified
+- None identified
 
 #### References
 
-* [Managed Identities for Azure Resources Overview](https://learn.microsoft.com/entra/identity/managed-identities-azure-resources/overview)
-* [Managed Identity Best Practice](https://learn.microsoft.com/entra/identity/managed-identities-azure-resources/managed-identity-best-practice-recommendations)
+- [Managed Identities for Azure Resources Overview](https://learn.microsoft.com/entra/identity/managed-identities-azure-resources/overview)
+- [Managed Identity Best Practice](https://learn.microsoft.com/entra/identity/managed-identities-azure-resources/managed-identity-best-practice-recommendations)

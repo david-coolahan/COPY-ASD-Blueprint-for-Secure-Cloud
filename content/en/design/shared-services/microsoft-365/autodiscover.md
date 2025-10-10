@@ -6,7 +6,7 @@ description: "This section describes the design decisions associated with Autodi
 
 Autodiscover is a mechanism for the configuration of a user's email client with minimal user input. The required input from the user is their email address and password.
 
-Autodiscover for a cloud environment varies from the process utilised when on-premises Exchange is leveraged. With a cloud environment, an Autodiscover Endpoint representing the domain is not available. Instead, Domain Name System (DNS) redirection and Hypertext Transfer Protocol Secure (HTTPS) redirection is leveraged to direct the Autodiscover client to a trusted Autodiscover Endpoint. 
+Autodiscover for a cloud environment varies from the process utilised when on-premises Exchange is leveraged. With a cloud environment, an Autodiscover Endpoint representing the domain is not available. Instead, Domain Name System (DNS) redirection and Hypertext Transfer Protocol Secure (HTTPS) redirection is leveraged to direct the Autodiscover client to a trusted Autodiscover Endpoint.
 
 The high-level process for Autodiscover is:
 
@@ -22,7 +22,7 @@ The above process requires appropriate [External DNS records](https://learn.micr
 {{% alert title="Design decisions" color="warning" %}}
 
 | Decision point      | Design decision                                                  | Justification                                                 |
-|---------------------|------------------------------------------------------------------|---------------------------------------------------------------|
+| ------------------- | ---------------------------------------------------------------- | ------------------------------------------------------------- |
 | DNS Records (CNAME) | **Alias**: Autodiscover<br>**Target**:`autodiscover.outlook.com` | A DNS record that points clients to the Autodiscover service. |
 
 {{% /alert %}}
@@ -32,7 +32,7 @@ The above process requires appropriate [External DNS records](https://learn.micr
 {{% alert title="Design decisions" color="warning" %}}
 
 | Decision point | Design decision                                                        | Justification                                                                                                  |
-|----------------|------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------|
+| -------------- | ---------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------- |
 | Autodiscover   | CNAME **Alias**: Autodiscover<br>**Target**:`autodiscover.outlook.com` | Autodiscover will improve the user experience and is required to configure a user's Outlook profile and inbox. |
 
 {{% /alert %}}
@@ -41,10 +41,10 @@ The above process requires appropriate [External DNS records](https://learn.micr
 
 {{% alert title="Design decisions" color="warning" %}}
 
-| Decision point          | Design decision                       | Justification                                                                                                                                      |
-|-------------------------|---------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------|
+| Decision point          | Design decision                       | Justification                                                                                                                                         |
+| ----------------------- | ------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Autodiscover internally | Configured - Service Connection Point | Autodiscover will continue to point to the internal Exchange Servers until all mailboxes have been migrated to Microsoft 365 to ensure functionality. |
-| Autodiscover externally | Configured – DNS record               | To ensure autodiscover functions externally to the organisation.                                                                                   |
+| Autodiscover externally | Configured – DNS record               | To ensure autodiscover functions externally to the organisation.                                                                                      |
 
 {{% /alert %}}
 
@@ -56,19 +56,19 @@ Public DNS records should be maintained within the Australian Protective Domain 
 
 ### Related information
 
-#### Security & Governance
+#### Security and governance
 
-* None identified
+- None identified
 
 #### Design
 
-* None identified
+- None identified
 
 #### Configuration
 
-* None identified
+- None identified
 
 #### References
 
-* [Microsoft 365 DNS Record Requirements](https://learn.microsoft.com/microsoft-365/enterprise/external-domain-name-system-records?view=o365-worldwide)
-* [Gateway Security Guidance Package: Gateway Technology Guide](https://www.cyber.gov.au/resources-business-and-government/maintaining-devices-and-systems/system-hardening-and-administration/gateway-hardening/gateway-security-guidance-package-gateway-technology-guides)
+- [Microsoft 365 DNS Record Requirements](https://learn.microsoft.com/microsoft-365/enterprise/external-domain-name-system-records?view=o365-worldwide)
+- [Gateway Security Guidance Package: Gateway Technology Guide](https://www.cyber.gov.au/resources-business-and-government/maintaining-devices-and-systems/system-hardening-and-administration/gateway-hardening/gateway-security-guidance-package-gateway-technology-guides)

@@ -1,13 +1,12 @@
 ---
 title: "Block PROTECTED emails except for approved domains"
-linkTitle: "Block PROTECTED emails except for approved domains"
 weight: 015
 description: "This section describes the configuration of Data Loss Prevention policies within Microsoft Purview associated with systems built according to guidance in ASD's Blueprint for Secure Cloud."
 ---
 
 {{% alert title="Instruction" color="dark" %}}
 
-The below pages outline the *as built* configuration for ASD's *Blueprint for Secure Cloud* (the Blueprint) for the Microsoft Purview portal at the following URL:
+The below pages outline the _as built_ configuration for ASD's _Blueprint for Secure Cloud_ (the Blueprint) for the Microsoft Purview portal at the following URL:
 
 <https://purview.microsoft.com/datalossprevention/policies>
 
@@ -73,12 +72,12 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 | Item                                                                                                                                |                                                                                                                                                    Value |
 | ----------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------: |
 | Name                                                                                                                                |                                                                                                                       Block unapproved recipient domains |
-| Description                                                                                                                         |                                                                                                                                                   *None* |
+| Description                                                                                                                         |                                                                                                                                                   _None_ |
 | **Conditions**                                                                                                                      |                                                                                                                                                          |
 | Content contains                                                                                                                    |                                                                                                                                                          |
 | - Group name                                                                                                                        |                                                                                                                                                  Default |
 | - Group operator                                                                                                                    |                                                                                                                                             Any of these |
-| - Sensitivity labels                                                                                                                |                                                                                                                            *Select all PROTECTED labels* |
+| - Sensitivity labels                                                                                                                |                                                                                                                            _Select all PROTECTED labels_ |
 | - Evaluate predicate for (available for Exchange workload only)                                                                     |                                                                                                                                    Message or attachment |
 | Condition group **AND**                                                                                                             |                                                                                                                                                          |
 | **NOT**                                                                                                                             |                                                                                                                                                          |
@@ -115,12 +114,12 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 | Item                                                                                                                                |                                                                                                                                                    Value |
 | ----------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------: |
 | Name                                                                                                                                |                                                                                                                          Block unapproved sender domains |
-| Description                                                                                                                         |                                                                                                                                                   *None* |
+| Description                                                                                                                         |                                                                                                                                                   _None_ |
 | **Conditions**                                                                                                                      |                                                                                                                                                          |
 | Content contains                                                                                                                    |                                                                                                                                                          |
 | - Group name                                                                                                                        |                                                                                                                                                  Default |
 | - Group operator                                                                                                                    |                                                                                                                                             Any of these |
-| - Sensitivity labels                                                                                                                |                                                                                                                            *Select all PROTECTED labels* |
+| - Sensitivity labels                                                                                                                |                                                                                                                            _Select all PROTECTED labels_ |
 | - Evaluate predicate for (available for Exchange workload only)                                                                     |                                                                                                                                    Message or attachment |
 | Condition group **AND**                                                                                                             |                                                                                                                                                          |
 | **NOT**                                                                                                                             |                                                                                                                                                          |
@@ -160,18 +159,18 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 
 ### Related information
 
-#### Security & Governance
+#### Security and governance
 
-* None identified
-  
+- None identified
+
 #### Design
 
-* [Data Loss Prevention]({{<ref "design/shared-services/purview/data-loss-prevention">}})
-  
+- [Data Loss Prevention](/design/shared-services/purview/data-loss-prevention)
+
 #### Configuration
 
-* None identified
+- None identified
 
 #### References
 
-* [Data Loss Prevention policy reference](https://learn.microsoft.com/en-au/purview/dlp-policy-reference)
+- [Data Loss Prevention policy reference](https://learn.microsoft.com/en-au/purview/dlp-policy-reference)

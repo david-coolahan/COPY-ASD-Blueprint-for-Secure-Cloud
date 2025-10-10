@@ -6,13 +6,13 @@ type: docs
 description:
 ---
 
-ASD's *Blueprint for Secure Cloud* (the Blueprint) does not provide guidance or templates for general system documentation as required by ASD's ISM. However, this page is provided as a check list and placeholder for organisations to refer to when reviewing, developing and updating documentation their documentation associated with system(s) built on the Blueprint. 
+ASD's _Blueprint for Secure Cloud_ (the Blueprint) does not provide guidance or templates for general system documentation as required by ASD's ISM. However, this page is provided as a check list and placeholder for organisations to refer to when reviewing, developing and updating documentation their documentation associated with system(s) built on the Blueprint.
 
-#### Approved Supplier List 
+#### Approved Supplier List
 
 An Approved Supplier List is a requirement of ISM control ISM-1786.
 
-#### Continuous Monitoring Plan 
+#### Continuous Monitoring Plan
 
 A Continuous Monitoring Plan is a requirement of ISM control ISM-1163.
 
@@ -24,7 +24,7 @@ Cyber Security Awareness Training is a requirement of ISM control ISM-0252.
 
 A Cyber Security Incident Register is a requirement of ISM control ISM-0125.
 
-#### Cyber Security Incident Response Plan 
+#### Cyber Security Incident Response Plan
 
 A Cyber Security Incident Response Plan is a requirement of ISM control ISM-0576.
 
@@ -56,7 +56,7 @@ ICT Equipment Disposal Process and Procedures are a requirement of ISM control I
 
 ICT Equipment Maintenance and Repair SOPs are requirements of ISM controls ISM-0305, ISM-0307, ISM-0306, ISM-0310, and ISM-1510.
 
-#### ICT Equipment Register 
+#### ICT Equipment Register
 
 An ICT Equipment Register is a requirement of ISM controls ISM-0336 and ISM-1548 for networked and non-networked ICT equipment respectively.
 
@@ -68,7 +68,7 @@ ICT Equipment Sanitisation Process and Procedures are a requirement of ISM contr
 
 Media Destruction Process and Procedures are a requirement of ISM control ISM-0363.
 
-#### Media Disposal Process and Procedures 
+#### Media Disposal Process and Procedures
 
 Media Disposal Process and Procedures are a requirement of ISM control ISM-0374.
 
@@ -88,11 +88,11 @@ Overseas Travel Processes and Procedures are a requirement of ISM controls ISM-1
 
 Vulnerability and Patch Management Process and Procedures are a requirement of ISM control ISM-1143
 
-#### Plan of Actions and Milestones 
+#### Plan of Actions and Milestones
 
 A Plan of Actions and Milestones is a requirement of ISM control ISM-1564.
 
-#### Removable Media Register 
+#### Removable Media Register
 
 A Removable Media Register is a requirement of ISM control ISM-1713.
 

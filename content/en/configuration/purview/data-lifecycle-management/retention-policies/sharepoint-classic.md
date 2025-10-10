@@ -1,13 +1,12 @@
 ---
 title: "SharePoint classic and communication sites 7 year hold"
-linkTitle: "SharePoint classic and communication sites 7 year hold"
 weight: 025
 description: "This section describes the configuration of Data Lifecycle Management retention policies within Microsoft Purview associated with systems built according to the guidance provided by ASD's Blueprint for Secure Cloud."
 ---
 
 {{% alert title="Instruction" color="dark" %}}
 
-The below tables outline the *as built* configuration for ASD's *Blueprint for Secure Cloud* (the Blueprint) for the Microsoft Purview portal at the following URL:
+The below tables outline the _as built_ configuration for ASD's _Blueprint for Secure Cloud_ (the Blueprint) for the Microsoft Purview portal at the following URL:
 
 <https://purview.microsoft.com/datalifecyclemanagement/retention>
 
@@ -75,20 +74,20 @@ Retention policies are enabled by default after creation. Administrators should 
 
 ### Related information
 
-#### Security & Governance
+#### Security and governance
 
-* None identified
-  
+- None identified
+
 #### Design
 
-* [Backup and Operational Management]({{<ref "design/platform/backup">}})
-* [Data Lifecycle Management]({{<ref "design/shared-services/purview/data-lifecycle-management">}})
-  
+- [Backup and operational management](/design/platform/backup)
+- [Data Lifecycle Management](/design/shared-services/purview/data-lifecycle-management)
+
 #### Configuration
 
-* None identified
+- None identified
 
 #### References
 
-* [Learn about data lifecycle management](https://learn.microsoft.com/en-au/purview/data-lifecycle-management)
-* [Create and configure retention policies](https://learn.microsoft.com/en-au/purview/create-retention-policies?tabs=teams-retention)
+- [Learn about data lifecycle management](https://learn.microsoft.com/en-au/purview/data-lifecycle-management)
+- [Create and configure retention policies](https://learn.microsoft.com/en-au/purview/create-retention-policies?tabs=teams-retention)

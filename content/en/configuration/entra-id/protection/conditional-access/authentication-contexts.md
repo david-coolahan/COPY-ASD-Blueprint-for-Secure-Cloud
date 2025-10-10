@@ -1,6 +1,5 @@
 ---
 title: "Authentication contexts"
-linkTitle: "Authentication contexts"
 weight: 30
 type: docs
 description: "This page describes the configuration of authentication contexts within Microsoft Entra ID associated with systems built according to the guidance provided by ASD's Blueprint for Secure Cloud."
@@ -8,7 +7,7 @@ description: "This page describes the configuration of authentication contexts w
 
 {{% alert title="Instruction" color="dark" %}}
 
-The below tables outline the *as built* configuration for ASD's *Blueprint for Secure Cloud* (the Blueprint) for the Microsoft Entra admin portal at the following URL:
+The below tables outline the _as built_ configuration for ASD's _Blueprint for Secure Cloud_ (the Blueprint) for the Microsoft Entra admin portal at the following URL:
 
 <https://entra.microsoft.com/#view/Microsoft_AAD_ConditionalAccess/ConditionalAccessBlade/~/AuthenticationContext/fromNav/>
 
@@ -28,21 +27,21 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 
 ### Related information
 
-#### Security & Governance
+#### Security and governance
 
-* [Authentication Hardening]({{<ref "system-hardening-authentication">}})
-* [Essential Eight: Restrict Microsoft Office Macros]({{<ref "restrict-microsoft-office-macros.md">}})
-* [Multi-factor Authentication]({{<ref "multi-factor-authentication">}})
+- [Authentication hardening](/security-and-governance/system-security-plan/system-hardening-authentication)
+- [Essential Eight - Restrict Microsoft Office macros](/security-and-governance/essential-eight/restrict-microsoft-office-macros)
+- [Multi-factor authentication](/security-and-governance/essential-eight/multi-factor-authentication)
 
 #### Design
 
-* [Conditional access]({{<ref "design/platform/identity/conditional-access">}})
-* [Purview labels]({{<ref "design/shared-services/purview/labelling-and-classification">}})
+- [Conditional access](/design/platform/identity/conditional-access)
+- [Purview labels](/design/shared-services/purview/labelling-and-classification)
 
 #### Configuration
 
-* [Password protection]({{<ref "password-protection.md">}})
+- [Password protection](/configuration/entra-id/protection/authentication-methods/password-protection)
 
 #### References
 
-* [Conditional Access: Target resources](https://learn.microsoft.com/entra/identity/conditional-access/concept-conditional-access-cloud-apps#authentication-context)
+- [Conditional Access: Target resources](https://learn.microsoft.com/entra/identity/conditional-access/concept-conditional-access-cloud-apps#authentication-context)

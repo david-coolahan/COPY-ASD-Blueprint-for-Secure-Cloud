@@ -1,6 +1,5 @@
 ---
 title: "Break glass account setup"
-linkTitle: "Break glass account setup"
 weight: 10
 type: docs
 description: "This page describes the configuration of break glass accounts within Microsoft Entra ID associated with systems built according to the guidance provided by ASD's Blueprint for Secure Cloud."
@@ -8,7 +7,7 @@ description: "This page describes the configuration of break glass accounts with
 
 {{% alert title="Instruction" color="dark" %}}
 
-The below tables outline the *as built* configuration for ASD's *Blueprint for Secure Cloud* (the Blueprint) for the Microsoft Entra admin portal at the following URL:
+The below tables outline the _as built_ configuration for ASD's _Blueprint for Secure Cloud_ (the Blueprint) for the Microsoft Entra admin portal at the following URL:
 
 <https://entra.microsoft.com/#view/Microsoft_AAD_UsersAndTenants/CreateUser.ReactView>
 
@@ -44,24 +43,23 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 
 ### Related information
 
-#### Security & Governance
+#### Security and governance
 
-* [Authentication Hardening]({{<ref "system-hardening-authentication">}})
-* [Multi-factor Authentication]({{<ref "multi-factor-authentication">}})
-* [Essential Eight - Restrict Administrative Privileges]({{<ref "security-and-governance/essential-eight/restrict-administrative-privileges.md">}})
+- [Authentication hardening](/security-and-governance/system-security-plan/system-hardening-authentication)
+- [Multi-factor authentication](/security-and-governance/essential-eight/multi-factor-authentication)
+- [Essential Eight - Restrict administrative privileges](/security-and-governance/essential-eight/restrict-administrative-privileges)
 
 #### Design
 
-* [Emergency access admin accounts]({{<ref "design/platform/identity/users">}})
+- [Emergency access admin accounts](/design/platform/identity/users)
 
 #### Configuration
 
-* [Break Glass]({{<ref "configuration/entra-id/users/break-glass-accounts.md">}})
+- [System glass account setup](/configuration/entra-id/users/break-glass-accounts)
 
 #### References
 
-* [Create or delete users](https://learn.microsoft.com/entra/fundamentals/how-to-create-delete-users)
-* [Emergency access accounts](https://learn.microsoft.com/entra/architecture/security-operations-privileged-accounts)
-* [Securing privileged access](https://learn.microsoft.com/entra/identity/role-based-access-control/security-planning)
-* [Manage emergency access accounts](https://learn.microsoft.com/entra/identity/role-based-access-control/security-emergency-access)
-  
+- [Create or delete users](https://learn.microsoft.com/entra/fundamentals/how-to-create-delete-users)
+- [Emergency access accounts](https://learn.microsoft.com/entra/architecture/security-operations-privileged-accounts)
+- [Securing privileged access](https://learn.microsoft.com/entra/identity/role-based-access-control/security-planning)
+- [Manage emergency access accounts](https://learn.microsoft.com/entra/identity/role-based-access-control/security-emergency-access)

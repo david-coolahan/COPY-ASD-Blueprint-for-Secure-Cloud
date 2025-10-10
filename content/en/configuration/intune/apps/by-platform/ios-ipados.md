@@ -1,13 +1,12 @@
 ---
 title: "iOS and iPadOS"
-linkTitle: "iOS and iPadOS"
 weight: 20
 description: "This section describes the configuration of iOS and iPadOS within Microsoft Intune associated with systems built according to the guidance provided by ASD's Blueprint for Secure Cloud."
 ---
 
 {{% alert title="Instruction" color="dark" %}}
 
-The below pages outline the *as built* configuration for ASD's *Blueprint for Secure Cloud* (the Blueprint) for the Microsoft Intune portal at the following URL:
+The below pages outline the _as built_ configuration for ASD's _Blueprint for Secure Cloud_ (the Blueprint) for the Microsoft Intune portal at the following URL:
 
 <https://intune.microsoft.com/#view/Microsoft_Intune_DeviceSettings/AppsIosMenu/~/iosApps>
 
@@ -27,17 +26,17 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 | ------------------------------------------------- | -----------------------: |
 | App type                                          |      iOS Store app (new) |
 | Name                                              |    Intune Company Portal |
-| Description                                       | *As populated by Intune* |
+| Description                                       | _As populated by Intune_ |
 | Publisher                                         |    Microsoft Corporation |
-| Appstore URL                                      | *As populated by Intune* |
+| Appstore URL                                      | _As populated by Intune_ |
 | Minimum operating system                          |                   iOS 17 |
 | Applicable device type                            |  iPad<br>iPhone and iPod |
 | Category                                          |               0 selected |
 | Show this as a featured app in the Company Portal |                      Yes |
-| Information URL                                   | *As populated by Intune* |
-| Privacy URL                                       | *As populated by Intune* |
-| Developer                                         | *As populated by Intune* |
-| Owner                                             | *As populated by Intune* |
+| Information URL                                   | _As populated by Intune_ |
+| Privacy URL                                       | _As populated by Intune_ |
+| Developer                                         | _As populated by Intune_ |
+| Owner                                             | _As populated by Intune_ |
 | Notes                                             |                          |
 
 #### Assignments
@@ -56,18 +55,18 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 | ------------------------------------------------- | -----------------------: |
 | App type                                          |      iOS Store app (new) |
 | Name                                              |   Microsoft 365 (Office) |
-| Description                                       | *As populated by Intune* |
+| Description                                       | _As populated by Intune_ |
 | Publisher                                         |    Microsoft Corporation |
-| Appstore URL                                      | *As populated by Intune* |
+| Appstore URL                                      | _As populated by Intune_ |
 | Minimum operating system                          |                   iOS 17 |
 | Applicable device type                            |  iPad<br>iPhone and iPod |
 | Category                                          |               0 selected |
 | Show this as a featured app in the Company Portal |                       No |
-| Information URL                                   | *As populated by Intune* |
-| Privacy URL                                       | *As populated by Intune* |
-| Developer                                         | *As populated by Intune* |
-| Owner                                             | *As populated by Intune* |
-| Notes                                             | *As populated by Intune* |
+| Information URL                                   | _As populated by Intune_ |
+| Privacy URL                                       | _As populated by Intune_ |
+| Developer                                         | _As populated by Intune_ |
+| Owner                                             | _As populated by Intune_ |
+| Notes                                             | _As populated by Intune_ |
 
 #### Assignments
 
@@ -85,18 +84,18 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 | ------------------------------------------------- | -----------------------: |
 | App type                                          |      iOS Store app (new) |
 | Name                                              |  Microsoft Authenticator |
-| Description                                       | *As populated by Intune* |
+| Description                                       | _As populated by Intune_ |
 | Publisher                                         |    Microsoft Corporation |
-| Appstore URL                                      | *As populated by Intune* |
+| Appstore URL                                      | _As populated by Intune_ |
 | Minimum operating system                          |                   iOS 17 |
 | Applicable device type                            |  iPad<br>iPhone and iPod |
 | Category                                          |               0 selected |
 | Show this as a featured app in the Company Portal |                      Yes |
-| Information URL                                   | *As populated by Intune* |
-| Privacy URL                                       | *As populated by Intune* |
-| Developer                                         | *As populated by Intune* |
-| Owner                                             | *As populated by Intune* |
-| Notes                                             | *As populated by Intune* |
+| Information URL                                   | _As populated by Intune_ |
+| Privacy URL                                       | _As populated by Intune_ |
+| Developer                                         | _As populated by Intune_ |
+| Owner                                             | _As populated by Intune_ |
+| Notes                                             | _As populated by Intune_ |
 
 #### Assignments
 
@@ -114,17 +113,17 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 | ------------------------------------------------- | -------------------------: |
 | App type                                          |        iOS Store app (new) |
 | Name                                              | Microsoft Edge: AI Browser |
-| Description                                       |   *As populated by Intune* |
+| Description                                       |   _As populated by Intune_ |
 | Publisher                                         |      Microsoft Corporation |
-| Appstore URL                                      |   *As populated by Intune* |
+| Appstore URL                                      |   _As populated by Intune_ |
 | Minimum operating system                          |                     iOS 17 |
 | Applicable device type                            |    iPad<br>iPhone and iPod |
 | Category                                          |                 0 selected |
 | Show this as a featured app in the Company Portal |                         No |
-| Information URL                                   |   *As populated by Intune* |
-| Privacy URL                                       |   *As populated by Intune* |
-| Developer                                         |   *As populated by Intune* |
-| Owner                                             |   *As populated by Intune* |
+| Information URL                                   |   _As populated by Intune_ |
+| Privacy URL                                       |   _As populated by Intune_ |
+| Developer                                         |   _As populated by Intune_ |
+| Owner                                             |   _As populated by Intune_ |
 | Notes                                             |                            |
 
 #### Assignments
@@ -143,17 +142,17 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 | ------------------------------------------------- | -----------------------: |
 | App type                                          |      iOS Store app (new) |
 | Name                                              |       Microsoft OneDrive |
-| Description                                       | *As populated by Intune* |
+| Description                                       | _As populated by Intune_ |
 | Publisher                                         |    Microsoft Corporation |
-| Appstore URL                                      | *As populated by Intune* |
+| Appstore URL                                      | _As populated by Intune_ |
 | Minimum operating system                          |                   iOS 17 |
 | Applicable device type                            |  iPad<br>iPhone and iPod |
 | Category                                          |               0 selected |
 | Show this as a featured app in the Company Portal |                      Yes |
-| Information URL                                   | *As populated by Intune* |
-| Privacy URL                                       | *As populated by Intune* |
-| Developer                                         | *As populated by Intune* |
-| Owner                                             | *As populated by Intune* |
+| Information URL                                   | _As populated by Intune_ |
+| Privacy URL                                       | _As populated by Intune_ |
+| Developer                                         | _As populated by Intune_ |
+| Owner                                             | _As populated by Intune_ |
 | Notes                                             |                          |
 
 #### Assignments
@@ -172,17 +171,17 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 | ------------------------------------------------- | -----------------------: |
 | App type                                          |      iOS Store app (new) |
 | Name                                              |        Microsoft Outlook |
-| Description                                       | *As populated by Intune* |
+| Description                                       | _As populated by Intune_ |
 | Publisher                                         |    Microsoft Corporation |
-| Appstore URL                                      | *As populated by Intune* |
+| Appstore URL                                      | _As populated by Intune_ |
 | Minimum operating system                          |                   iOS 17 |
 | Applicable device type                            |  iPad<br>iPhone and iPod |
 | Category                                          |               0 selected |
 | Show this as a featured app in the Company Portal |                      Yes |
-| Information URL                                   | *As populated by Intune* |
-| Privacy URL                                       | *As populated by Intune* |
-| Developer                                         | *As populated by Intune* |
-| Owner                                             | *As populated by Intune* |
+| Information URL                                   | _As populated by Intune_ |
+| Privacy URL                                       | _As populated by Intune_ |
+| Developer                                         | _As populated by Intune_ |
+| Owner                                             | _As populated by Intune_ |
 | Notes                                             |                          |
 
 #### Assignments
@@ -201,17 +200,17 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 | ------------------------------------------------- | -----------------------: |
 | App type                                          |      iOS Store app (new) |
 | Name                                              |        Microsoft Planner |
-| Description                                       | *As populated by Intune* |
+| Description                                       | _As populated by Intune_ |
 | Publisher                                         |    Microsoft Corporation |
-| Appstore URL                                      | *As populated by Intune* |
+| Appstore URL                                      | _As populated by Intune_ |
 | Minimum operating system                          |                   iOS 17 |
 | Applicable device type                            |  iPad<br>iPhone and iPod |
 | Category                                          |               0 selected |
 | Show this as a featured app in the Company Portal |                      Yes |
-| Information URL                                   | *As populated by Intune* |
-| Privacy URL                                       | *As populated by Intune* |
-| Developer                                         | *As populated by Intune* |
-| Owner                                             | *As populated by Intune* |
+| Information URL                                   | _As populated by Intune_ |
+| Privacy URL                                       | _As populated by Intune_ |
+| Developer                                         | _As populated by Intune_ |
+| Owner                                             | _As populated by Intune_ |
 | Notes                                             |                          |
 
 #### Assignments
@@ -230,17 +229,17 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 | ------------------------------------------------- | -----------------------: |
 | App type                                          |      iOS Store app (new) |
 | Name                                              |          Microsoft Teams |
-| Description                                       | *As populated by Intune* |
+| Description                                       | _As populated by Intune_ |
 | Publisher                                         |    Microsoft Corporation |
-| Appstore URL                                      | *As populated by Intune* |
+| Appstore URL                                      | _As populated by Intune_ |
 | Minimum operating system                          |                   iOS 17 |
 | Applicable device type                            |  iPad<br>iPhone and iPod |
 | Category                                          |               0 selected |
 | Show this as a featured app in the Company Portal |                      Yes |
-| Information URL                                   | *As populated by Intune* |
-| Privacy URL                                       | *As populated by Intune* |
-| Developer                                         | *As populated by Intune* |
-| Owner                                             | *As populated by Intune* |
+| Information URL                                   | _As populated by Intune_ |
+| Privacy URL                                       | _As populated by Intune_ |
+| Developer                                         | _As populated by Intune_ |
+| Owner                                             | _As populated by Intune_ |
 | Notes                                             |                          |
 
 #### Assignments
@@ -259,17 +258,17 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 | ------------------------------------------------- | -----------------------: |
 | App type                                          |      iOS Store app (new) |
 | Name                                              |     Microsoft Whiteboard |
-| Description                                       | *As populated by Intune* |
+| Description                                       | _As populated by Intune_ |
 | Publisher                                         |    Microsoft Corporation |
-| Appstore URL                                      | *As populated by Intune* |
+| Appstore URL                                      | _As populated by Intune_ |
 | Minimum operating system                          |                   iOS 17 |
 | Applicable device type                            |  iPad<br>iPhone and iPod |
 | Category                                          |               0 selected |
 | Show this as a featured app in the Company Portal |                      Yes |
-| Information URL                                   | *As populated by Intune* |
-| Privacy URL                                       | *As populated by Intune* |
-| Developer                                         | *As populated by Intune* |
-| Owner                                             | *As populated by Intune* |
+| Information URL                                   | _As populated by Intune_ |
+| Privacy URL                                       | _As populated by Intune_ |
+| Developer                                         | _As populated by Intune_ |
+| Owner                                             | _As populated by Intune_ |
 | Notes                                             |                          |
 
 #### Assignments
@@ -288,17 +287,17 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 | ------------------------------------------------- | -----------------------: |
 | App type                                          |      iOS Store app (new) |
 | Name                                              |               Power Apps |
-| Description                                       | *As populated by Intune* |
+| Description                                       | _As populated by Intune_ |
 | Publisher                                         |    Microsoft Corporation |
-| Appstore URL                                      | *As populated by Intune* |
+| Appstore URL                                      | _As populated by Intune_ |
 | Minimum operating system                          |                   iOS 17 |
 | Applicable device type                            |  iPad<br>iPhone and iPod |
 | Category                                          |               0 selected |
 | Show this as a featured app in the Company Portal |                      Yes |
-| Information URL                                   | *As populated by Intune* |
-| Privacy URL                                       | *As populated by Intune* |
-| Developer                                         | *As populated by Intune* |
-| Owner                                             | *As populated by Intune* |
+| Information URL                                   | _As populated by Intune_ |
+| Privacy URL                                       | _As populated by Intune_ |
+| Developer                                         | _As populated by Intune_ |
+| Owner                                             | _As populated by Intune_ |
 | Notes                                             |                          |
 
 #### Assignments
@@ -311,25 +310,25 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 
 ### Related information
 
-#### Security & Governance
+#### Security and governance
 
-* [Enterprise Mobility]({{<ref "security-and-governance/system-security-plan/enterprise-mobility.md">}})
-* [User Application Hardening]({{<ref "security-and-governance/system-security-plan/system-hardening-user-apps.md">}})
-* [Application Control]({{<ref "security-and-governance/essential-eight/application-control.md">}})
-* [Essential Eight: Patch Applications]({{< ref "patch-applications.md">}})
-  
+- [Enterprise mobility](/security-and-governance/system-security-plan/enterprise-mobility)
+- [User application hardening](/security-and-governance/system-security-plan/system-hardening-user-apps)
+- [Essential Eight - Application control](/security-and-governance/essential-eight/application-control)
+- [Essential Eight - Patch applications](/security-and-governance/essential-eight/patch-applications)
+
 #### Design
 
-* [Authentication]({{<ref "design/platform/identity/authentication.md">}})
-* [Securing iOS devices]({{<ref "securing-ios-devices.md">}})
-* [iOS]({{<ref "design/platform/client/ios.md">}})
-  
+- [Authentication](/design/platform/identity/authentication)
+- [Securing iOS devices](/design/endpoints/ios/security/securing-ios-devices)
+- [iOS](/design/platform/client/ios)
+
 #### Configuration
 
-* [Microsoft Intune - profile configurations]({{<ref "configuration/intune/devices/configuration-policies">}})
-* [Endpoint security policies]({{<ref "configuration/defender/endpoints/configuration-management/endpoint-security-policies.md">}})
-* [Permissions]({{<ref "configuration/defender/settings/endpoints/permissions.md">}})
+- [Microsoft Intune - profile configurations](/configuration/intune/devices/configuration-policies)
+- [Endpoint security policies](/configuration/defender/endpoints/configuration-management/endpoint-security-policies)
+- [Permissions](/configuration/defender/settings/endpoints/permissions)
 
 #### References
 
-* None identified
+- None identified

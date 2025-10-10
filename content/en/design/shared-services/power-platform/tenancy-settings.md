@@ -1,17 +1,18 @@
 ---
-title: "Power BI Tenancy Settings"
+title: "Power BI tenancy settings"
 weight: 55
 description: "This section describes the design decisions associated with configuring Power BI within the Power BI Admin Portal for system(s) built using ASD's Blueprint for Secure Cloud."
 ---
+
 Power BI is a data visualisation tool which can be leveraged to provide interactive dashboards and reports. It integrates with a variety of data sources to enable the creation of dashboards and reports.
 
 Power BI consists of five components:
 
-* **Power BI Desktop** - Power BI desktop is a Windows desktop application which enables the manipulation of data and the creation of reports and dashboards.
-* **Power BI Service** - The Power BI service is a SaaS offering that enables the creation, modification, and sharing of reports and dashboards.
-* **Power BI Mobile** - Power BI mobile is a mobile application that enables the consumption of reports and dashboards.
-* **Power BI Report Server** - The Power BI report server is an on-premises tool which enables reports to be distributed as required.
-* **Power BI Embedded** – Power BI embedded enables organisations to publish Power BI reports to be consumed on a public website.
+- **Power BI Desktop** - Power BI desktop is a Windows desktop application which enables the manipulation of data and the creation of reports and dashboards.
+- **Power BI Service** - The Power BI service is a SaaS offering that enables the creation, modification, and sharing of reports and dashboards.
+- **Power BI Mobile** - Power BI mobile is a mobile application that enables the consumption of reports and dashboards.
+- **Power BI Report Server** - The Power BI report server is an on-premises tool which enables reports to be distributed as required.
+- **Power BI Embedded** – Power BI embedded enables organisations to publish Power BI reports to be consumed on a public website.
 
 Inside the Power BI Service, the creation of workspaces, content packs, custom visualisations, and data flows can be controlled both on an enterprise level and a group level. This simplifies management of the service.
 
@@ -20,7 +21,7 @@ Power BI also enables administrators to control the sharing of datasets, content
 {{% alert title="Design decisions" color="warning" %}}
 
 | Decision point                  | Design decision | Justification                                                                                                                                                                                                   |
-|---------------------------------|-----------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| ------------------------------- | --------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Power BI Information Protection | Enabled         | Power BI Information Protection leverages sensitive labels to label Power BI Reports.                                                                                                                           |
 | External Sharing                | Disabled        | External Sharing is disabled to reduce the risk of data spills.                                                                                                                                                 |
 | Data Export                     | Disabled        | Export of data is disabled to prevent unauthorised access to the underlying report information.                                                                                                                 |
@@ -30,18 +31,18 @@ Power BI also enables administrators to control the sharing of datasets, content
 
 ### Related information
 
-#### Security & Governance
+#### Security and governance
 
-* None identified
+- None identified
 
 #### Design
 
-* None identified
+- None identified
 
 #### Configuration
 
-* None identified
+- None identified
 
 #### References
 
-* [About tenant settings](https://learn.microsoft.com/power-bi/admin/service-admin-portal-about-tenant-settings)
+- [About tenant settings](https://learn.microsoft.com/power-bi/admin/service-admin-portal-about-tenant-settings)

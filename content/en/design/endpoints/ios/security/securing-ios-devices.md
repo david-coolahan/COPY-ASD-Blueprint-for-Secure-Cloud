@@ -8,11 +8,11 @@ Intune provides ability to configure iOS configuration settings for securing, co
 
 MDM provides the capability to configure iOS devices. These devices must be configured to meet ASD's iOS Secure Hardening guide to ensure the device can access and store the organisations data. These configurations can be categories as:
 
-* **Security** – Ensure device has up to date and secure authentication policies and encryption devices that meets ASD's Secure iOS guide. 
-* **Branding** – The organisations branding for lock screen, wallpapers, and reporting if the device is lost can be configured.
-* **Device features** – Configures device features, for example, AirDrop and Bluetooth pairing, within iOS devices.
+- **Security** – Ensure device has up to date and secure authentication policies and encryption devices that meets ASD's Secure iOS guide.
+- **Branding** – The organisations branding for lock screen, wallpapers, and reporting if the device is lost can be configured.
+- **Device features** – Configures device features, for example, AirDrop and Bluetooth pairing, within iOS devices.
 
-Using Intune together with Apple Business Manager provides the ability to restrict applications deployed to iOS devices. They improve the user experience during the onboarding process and remove the requirement for an Apple ID and the public Apple App Store. When restricting application deployments, the App Store is blocked and all application management is completed through the Intune Company Portal. All applications must be licenced within Apple Business Manager and use device based licensing. 
+Using Intune together with Apple Business Manager provides the ability to restrict applications deployed to iOS devices. They improve the user experience during the onboarding process and remove the requirement for an Apple ID and the public Apple App Store. When restricting application deployments, the App Store is blocked and all application management is completed through the Intune Company Portal. All applications must be licenced within Apple Business Manager and use device based licensing.
 
 {{% alert title="Design decisions" color="warning" %}}
 
@@ -44,22 +44,21 @@ Using Intune together with Apple Business Manager provides the ability to restri
 
 ### Related information
 
-#### Security & Governance
+#### Security and governance
 
-* [Enterprise Mobility]({{<ref "security-and-governance/system-security-plan/enterprise-mobility.md">}})
-* [Authentication Hardening]({{<ref "system-hardening-authentication">}})
-  
+- [Enterprise mobility](/security-and-governance/system-security-plan/enterprise-mobility)
+- [Authentication hardening](/security-and-governance/system-security-plan/system-hardening-authentication)
 
 #### Design
 
-* [Entra ID Protection]({{<ref "design/platform/identity/protection.md">}})
-* [Endpoint management]({{<ref "design/platform/client">}})
+- [Entra ID Protection](/design/platform/identity/protection)
+- [Endpoint management](/design/platform/client)
 
 #### Configuration
 
-* [iOS and iPadOS]({{<ref "configuration/intune/apps/by-platform/ios-ipados.md">}})
-* [ASD iOS Hardening]({{<ref "configuration/intune/devices/apple-updates/asd-ios-hardening.md">}})
+- [iOS and iPadOS](/configuration/intune/apps/by-platform/ios-ipados)
+- [ASD iOS hardening](/configuration/intune/devices/apple-updates/asd-ios-hardening)
 
 #### References
 
-* None identified
+- None identified

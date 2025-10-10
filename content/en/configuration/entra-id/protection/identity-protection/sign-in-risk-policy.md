@@ -1,6 +1,5 @@
 ---
 title: "Sign-in risk policy"
-linkTitle: "Sign-in risk policy"
 weight: 20
 type: docs
 description: "This page describes the configuration of a sign-in risk policy within Microsoft Entra ID associated with systems built according to the guidance provided by ASD's Blueprint for Secure Cloud."
@@ -8,7 +7,7 @@ description: "This page describes the configuration of a sign-in risk policy wit
 
 {{% alert title="Instruction" color="dark" %}}
 
-The below tables outline the *as built* configuration for ASD's *Blueprint for Secure Cloud* (the Blueprint) for the Microsoft Entra admin portal at the following URL:
+The below tables outline the _as built_ configuration for ASD's _Blueprint for Secure Cloud_ (the Blueprint) for the Microsoft Entra admin portal at the following URL:
 
 <https://entra.microsoft.com/#view/Microsoft_AAD_IAM/IdentityProtectionMenuBlade/~/SignInPolicy>
 
@@ -26,28 +25,28 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 | ------------------ | ---------------------------------: |
 | Users              |                 Include: All users |
 |                    |  Exclude: `<Break Glass accounts>` |
-| User risk          |                   Medium and above |
+| Sign-in risk       |                   Medium and above |
 | Controls           | Require multifactor authentication |
 | Policy enforcement |                            Enabled |
 
 ### Related information
 
-#### Security & Governance
+#### Security and governance
 
-* [Essential Eight - Restrict Administrative Privileges]({{<ref "security-and-governance/essential-eight/restrict-administrative-privileges.md">}})
-* [Authentication Hardening]({{<ref "system-hardening-authentication">}})
-* [Essential Eight: Multi-factor Authentication]({{<ref "security-and-governance/essential-eight/multi-factor-authentication.md">}})
-  
+- [Essential Eight - Restrict administrative privileges](/security-and-governance/essential-eight/restrict-administrative-privileges)
+- [Authentication hardening](/security-and-governance/system-security-plan/system-hardening-authentication)
+- [Essential Eight - Multi-factor authentication](/security-and-governance/essential-eight/multi-factor-authentication)
+
 #### Design
 
-* [Identity protection]({{<ref "design/platform/identity/protection">}})
+- [Identity protection](/design/platform/identity/protection)
 
 #### Configuration
 
-* [Entra ID Protection]({{<ref "configuration/entra-id/protection">}})
-* [Break Glass]({{<ref "configuration/entra-id/users/break-glass-accounts.md">}})
+- [Entra ID Protection](/configuration/entra-id/protection)
+- [System glass account setup](/configuration/entra-id/users/break-glass-accounts)
 
 #### References
 
-* [Migrate risk policies from Identity Protection to Conditional Access](https://learn.microsoft.com/entra/id-protection/howto-identity-protection-configure-risk-policies#migrate-risk-policies-from-identity-protection-to-conditional-access)
-* [What is identity protection](https://learn.microsoft.com/entra/id-protection/overview-identity-protection)
+- [Migrate risk policies from Identity Protection to Conditional Access](https://learn.microsoft.com/entra/id-protection/howto-identity-protection-configure-risk-policies#migrate-risk-policies-from-identity-protection-to-conditional-access)
+- [What is identity protection](https://learn.microsoft.com/entra/id-protection/overview-identity-protection)

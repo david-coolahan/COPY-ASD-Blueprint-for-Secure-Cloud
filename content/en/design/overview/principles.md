@@ -1,10 +1,10 @@
 ---
-title: "Design Principles"
+title: "Design principles"
 weight: 20
 description: "This section provides an overview of the design principles associated with system(s) built on ASD's Blueprint for Secure Cloud."
 ---
 
-At the foundation of ASD's *Blueprint for Secure Cloud's* (the Blueprint's) architecture lies a set of core design principles which serve as a base for subsequent design decisions across business, technical, and security domains. The design principles are intentionally aspirational to help organisations strive for an optimum design of the target architecture.
+At the foundation of ASD's _Blueprint for Secure Cloud's_ (the Blueprint's) architecture lies a set of core design principles which serve as a base for subsequent design decisions across business, technical, and security domains. The design principles are intentionally aspirational to help organisations strive for an optimum design of the target architecture.
 
 Use these principles in implementation of the Blueprint as a guide to enable addition of future Microsoft 365 services and expansion into other cloud technologies. Organisations choosing to deploy the Blueprint should look to apply and maintain the design principles and understand the impact and trade-offs associated with deviation.
 

@@ -8,6 +8,6 @@ Microsoft Defender for Office 365 extends the native security features in Office
 
 Microsoft Defender for Office 365 provides the following capabilities:
 
-* **Safe Links** - Microsoft Defender for Office 365 Safe Links provides inspection of links included in emails and Office 365 documents to determine if it is malicious, redirecting the user if it is.
-* **Safe Attachments** - Microsoft Defender for Office 365 Safe Attachments provides sandbox execution of attachments to detect and delete malicious content.
-* **Anti-Phishing** - Microsoft Defender for Office 365 Anti-Phishing provides machine learning capabilities to detect advanced phishing campaigns.
+- **Safe Links** - Microsoft Defender for Office 365 Safe Links provides inspection of links included in emails and Office 365 documents to determine if it is malicious, redirecting the user if it is.
+- **Safe Attachments** - Microsoft Defender for Office 365 Safe Attachments provides sandbox execution of attachments to detect and delete malicious content.
+- **Anti-Phishing** - Microsoft Defender for Office 365 Anti-Phishing provides machine learning capabilities to detect advanced phishing campaigns.

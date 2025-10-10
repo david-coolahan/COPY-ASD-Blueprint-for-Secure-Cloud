@@ -1,6 +1,5 @@
 ---
 title: "User risk policy"
-linkTitle: "User risk policy"
 weight: 10
 type: docs
 description: "This page describes the configuration of a user risk policy within Microsoft Entra ID associated with systems built according to the guidance provided by ASD's Blueprint for Secure Cloud."
@@ -8,7 +7,7 @@ description: "This page describes the configuration of a user risk policy within
 
 {{% alert title="Instruction" color="dark" %}}
 
-The below tables outline the *as built* configuration for ASD's *Blueprint for Secure Cloud* (the Blueprint) for the Microsoft Entra admin portal at the following URL:
+The below tables outline the _as built_ configuration for ASD's _Blueprint for Secure Cloud_ (the Blueprint) for the Microsoft Entra admin portal at the following URL:
 
 <https://entra.microsoft.com/#view/Microsoft_AAD_IAM/IdentityProtectionMenuBlade/~/UserPolicy>
 
@@ -32,22 +31,22 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 
 ### Related information
 
-#### Security & Governance
+#### Security and governance
 
-* [Essential Eight - Restrict Administrative Privileges]({{<ref "security-and-governance/essential-eight/restrict-administrative-privileges.md">}})
-* [Authentication Hardening]({{<ref "system-hardening-authentication">}})
-* [Essential Eight: Multi-factor Authentication]({{<ref "security-and-governance/essential-eight/multi-factor-authentication.md">}})
-  
+- [Essential Eight - Restrict administrative privileges](/security-and-governance/essential-eight/restrict-administrative-privileges)
+- [Authentication hardening](/security-and-governance/system-security-plan/system-hardening-authentication)
+- [Essential Eight - Multi-factor authentication](/security-and-governance/essential-eight/multi-factor-authentication)
+
 #### Design
 
-* [Identity protection]({{<ref "design/platform/identity/protection">}})
+- [Identity protection](/design/platform/identity/protection)
 
 #### Configuration
 
-* [Sign-in risk policy]({{<ref "sign-in-risk-policy.md">}})
-* [MFA for Risky Sign-ins]({{<ref "reauthentication-for-risky-sign-ins.md">}})
+- [Sign-in risk policy](/configuration/entra-id/protection/identity-protection/sign-in-risk-policy)
+- [MFA for Risky Sign-ins](/configuration/entra-id/protection/conditional-access/policies/reauthentication-for-risky-sign-ins)
 
 #### References
 
-* [Migrate risk policies from Identity Protection to Conditional Access](https://learn.microsoft.com/entra/id-protection/howto-identity-protection-configure-risk-policies#migrate-risk-policies-from-identity-protection-to-conditional-access)
-* [What is identity protection](https://learn.microsoft.com/entra/id-protection/overview-identity-protection)
+- [Migrate risk policies from Identity Protection to Conditional Access](https://learn.microsoft.com/entra/id-protection/howto-identity-protection-configure-risk-policies#migrate-risk-policies-from-identity-protection-to-conditional-access)
+- [What is identity protection](https://learn.microsoft.com/entra/id-protection/overview-identity-protection)

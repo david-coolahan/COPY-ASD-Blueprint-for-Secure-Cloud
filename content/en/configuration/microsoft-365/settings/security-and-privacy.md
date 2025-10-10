@@ -1,13 +1,12 @@
 ---
-title: "Security & privacy"
-linkTitle: "Security & privacy"
+title: "Security and privacy"
 weight: 00
 description: "This section describes the configuration of security and privacy settings in Microsoft 365 associated with systems built according to the guidance provided by ASD's Blueprint for Secure Cloud."
 ---
 
 {{% alert title="Instruction" color="dark" %}}
 
-The below tables outline the *as built* configuration for ASD's *Blueprint for Secure Cloud* (the Blueprint) for the Microsoft 365 portal at the following URL:
+The below tables outline the _as built_ configuration for ASD's _Blueprint for Secure Cloud_ (the Blueprint) for the Microsoft 365 portal at the following URL:
 
 <https://admin.microsoft.com/Adminportal/Home?#/Settings/SecurityPrivacy>
 
@@ -48,8 +47,8 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 
 | Item                           |                                    Value |
 | ------------------------------ | ---------------------------------------: |
-| Organization privacy statement |     *URL to organisation privacy policy* |
-| Organisation privacy contact   | *email for organisation privacy contact* |
+| Organization privacy statement |     _URL to organisation privacy policy_ |
+| Organisation privacy contact   | _email for organisation privacy contact_ |
 
 ### Privileged access
 
@@ -65,18 +64,18 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 
 ### Related information
 
-#### Security & Governance
+#### Security and governance
 
-* None identified
-  
+- None identified
+
 #### Design
 
-* [Customer Lockbox]({{<ref "design/shared-services/microsoft-365/lockbox">}})
-  
+- [Customer Lockbox](/design/shared-services/microsoft-365/lockbox)
+
 #### Configuration
 
-* None identified
+- None identified
 
 #### References
 
-* None identified
+- None identified

@@ -1,26 +1,25 @@
 ---
-title: "Restrict Administrative Privileges"
-linkTitle: "Restrict Administrative Privileges"
+title: "Restrict administrative privileges"
 weight: 025
 type: docs
-description: This page provides a template and guidance to assist organisations in documenting their approach to restricting administrative privileges, as per the Essential Eight Maturity Model, associated with their system(s) built on ASD's Blueprint for Secure Cloud.
+description: This page provides a template and guidance to assist organisations in documenting their approach to restricting administrative privileges, as per the Essential Eight maturity model, associated with their system(s) built on ASD's Blueprint for Secure Cloud.
 ---
 
 {{% alert title="Instruction" color="dark" %}}
 
-The Essential Eight sections of a System Security Plan (SSP) should document the Essential Eight Maturity levels associated with implementation of a system. As with other sections of the SSP, information in this section should be documented according to the relevant controls outlined in ASD's ISM and the SSP Annex. 
+The Essential Eight sections of a System Security Plan (SSP) should document the Essential Eight maturity levels associated with implementation of a system. As with other sections of the SSP, information in this section should be documented according to the relevant controls outlined in ASD's ISM and the SSP Annex.
 
 All template text refers to a typical implementation of a system built using the Blueprint, and includes reference to organisational policies, processes and technical configurations to be implemented in addition to the technical controls that may be configured using guidance from the Blueprint. Any implementation implied by the below text should not be considered as prescriptive of how the organisation must scope, build, document, or assess its system.
 
-When completing the below template, organisations should insert and update information where relevant to ensure it accurately represents the Essential Eight Maturity levels associated with implementation of their system. When complete, remove any instructional boxes throughout. 
+When completing the below template, organisations should insert and update information where relevant to ensure it accurately represents the Essential Eight maturity levels associated with implementation of their system. When complete, remove any instructional boxes throughout.
 
 {{% /alert %}}
 
 {{% alert title="Blueprint guidance" color="info" %}}
 
-For applicable government organisations to meet the minimum requirements established under the [*Protective Security Policy Framework* (PSPF)](https://www.protectivesecurity.gov.au/publications-library/policy-10-safeguarding-data-cyber-threats) maturity model, these organisations must implement Maturity Level Two for each of the below components of ASD's [*Essential Eight Maturity Model*](https://www.cyber.gov.au/resources-business-and-government/essential-cyber-security/essential-eight).
+For applicable government organisations to meet the minimum requirements established under the [_Protective Security Policy Framework_ (PSPF)](https://www.protectivesecurity.gov.au) maturity model, these organisations must implement Maturity Level Two for each of the below components of ASD's [_Essential Eight maturity model_](https://www.cyber.gov.au/resources-business-and-government/essential-cyber-security/essential-eight).
 
-As with implementation of ISM controls, the Blueprint does not itself *achieve* any particular Essential Eight Maturity levels, but rather assists organisations in designing and building systems to achieve their desired maturity level based on their own operating context.
+As with implementation of ISM controls, the Blueprint does not itself _achieve_ any particular Essential Eight maturity levels, but rather assists organisations in designing and building systems to achieve their desired maturity level based on their own operating context.
 
 {{% /alert %}}
 
@@ -41,14 +40,14 @@ The Restrict Administrative Privileges mitigation strategy is applicable to rest
 
 {{% alert title="Essential Eight guidance" color="success" %}}
 
-| Privileged Access to:         | What                                         | ML1 | ML2 | ML3 |
-| :---------------------------- | :------------------------------------------- | :-: | :-: | :-: |
+| Privileged Access to:     | What                                         | ML1 | ML2 | ML3 |
+| :------------------------ | :------------------------------------------- | :-: | :-: | :-: |
 | Systems and Applications: | Validated when first requested:              | Yes | Yes | Yes |
-|                               | Disabled after 12 months unless revalidated: |  -  | Yes | Yes |
-|                               | Disabled after 45 days of inactivity:        |  -  | Yes | Yes |
-|                               |                                              |     |     |     |
-| Data Repositories:            | Validated when first requested:              | Yes | Yes | Yes |
-|                               | Disabled after 12 months unless revalidate:  |  -  | Yes | Yes |
+|                           | Disabled after 12 months unless revalidated: |  -  | Yes | Yes |
+|                           | Disabled after 45 days of inactivity:        |  -  | Yes | Yes |
+|                           |                                              |     |     |     |
+| Data Repositories:        | Validated when first requested:              | Yes | Yes | Yes |
+|                           | Disabled after 12 months unless revalidate:  |  -  | Yes | Yes |
 
 {{% /alert %}}
 
@@ -135,15 +134,15 @@ Furthermore, these accounts have appropriate Role Based Access Control applied, 
 
 Maturity Levels Two and Three require that credentials for the following account types are long, unique, unpredictable and managed:
 
-* Break Glass Accounts
-* Local Administrator Accounts
-* Service Accounts
+- Break Glass Accounts
+- Local Administrator Accounts
+- Service Accounts
 
 {{% /alert %}}
 
 `<SYSTEM-NAME>` provides a central identity store that governs and grants all user access prior to accessing resources on the system. Users are assigned specific user roles according to their business requirements.
 
-Credentials for Break Glass Accounts, local administrator accounts and service accounts are required to be a minimum of 30 characters, uniquely and unpredictably generated, and managed in accordance with the `<SYSTEM-NAME>` [System Administration Process and Procedures]({{<ref "security-and-governance/policies">}}), including ensuring that all service accounts are created as Managed Service Accounts.
+Credentials for Break Glass Accounts, local administrator accounts and service accounts are required to be a minimum of 30 characters, uniquely and unpredictably generated, and managed in accordance with the `<SYSTEM-NAME>` [System Administration Process and Procedures](/security-and-governance/policies), including ensuring that all service accounts are created as Managed Service Accounts.
 
 `<INSERT ADDITIONAL INFORMATION AS APPROPRIATE>`
 
@@ -152,10 +151,11 @@ Credentials for Break Glass Accounts, local administrator accounts and service a
 {{% alert title="Essential Eight guidance" color="success" %}}
 
 Maturity Level Three Requires the following functionality to be enabled for protecting accounts:
-* Memory integrity
-* Local Security Authority protection
-* Credential Guard
-* Remote Credential Guard
+
+- Memory integrity
+- Local Security Authority protection
+- Credential Guard
+- Remote Credential Guard
 
 {{% /alert %}}
 
@@ -175,8 +175,9 @@ Maturity Level Three Requires the following functionality to be enabled for prot
 {{% alert title="Essential Eight guidance" color="success" %}}
 
 Maturity Levels Two and Three require that
-* all Allowed and blocked application control events to be captured from all systems and services and centrally logged
-* event logs are protected from unauthorised modification and deletion.                         
+
+- all Allowed and blocked application control events to be captured from all systems and services and centrally logged
+- event logs are protected from unauthorised modification and deletion.
 
 {{% /alert %}}
 
@@ -211,11 +212,12 @@ Maturity Levels Two and Three require all Privileged access, privileged account,
 | Workstations:                |  -  | Yes |
 
 Both Maturity Levels Two and Three also require the following:
-* cyber security events are analysed in a timely manner to identify cyber security incidents
-* as soon as possible after a cyber security incident occurs or is discovered the:
-* cyber security incident response plan is enacted
-* incident is reported to the Chief Information Security Officer, or one of their delegates
-* incident is reported to ASD. 
+
+- cyber security events are analysed in a timely manner to identify cyber security incidents
+- as soon as possible after a cyber security incident occurs or is discovered the:
+- cyber security incident response plan is enacted
+- incident is reported to the Chief Information Security Officer, or one of their delegates
+- incident is reported to ASD.
 
 {{% /alert %}}
 
@@ -225,7 +227,7 @@ While the Blueprint provides limited guidance to support organisations in develo
 
 {{% /alert %}}
 
-`<SYSTEM-NAME>` utilises the Microsoft 365 Defender portal and `<SIEM-PRODUCT>` to assist in the identification of cyber security incidents. 
+`<SYSTEM-NAME>` utilises the Microsoft 365 Defender portal and `<SIEM-PRODUCT>` to assist in the identification of cyber security incidents.
 
 This includes the processing, analysis, and response to the following event logs in a timely manner:
 
@@ -235,34 +237,34 @@ This includes the processing, analysis, and response to the following event logs
 | Privileged account: |    `Yes`     | `<Detail implementation>` |
 | Group management:   |    `Yes`     | `<Detail implementation>` |
 
-`<ORGANISATION-NAME>` has established a Security Operations Centre (SOC) to analyse cyber security events in a timely manner, and a [Cyber Security Incident Register]({{<ref "security-and-governance/general-documentation">}}), and [Incident Response Plan]({{<ref "security-and-governance/general-documentation">}}) to facilitate the response to detected cyber security events in a timely and appropriate manner. This plan includes reporting all incidents to the `<ORGANISATION-NAME>` CISO and to ASD in a timely manner.
+`<ORGANISATION-NAME>` has established a Security Operations Centre (SOC) to analyse cyber security events in a timely manner, and a [Cyber Security Incident Register](/security-and-governance/general-documentation), and [Incident Response Plan](/security-and-governance/general-documentation) to facilitate the response to detected cyber security events in a timely and appropriate manner. This plan includes reporting all incidents to the `<ORGANISATION-NAME>` CISO and to ASD in a timely manner.
 
 `<INSERT ADDITIONAL INFORMATION AS APPROPRIATE>`
 
 ### Related information
 
-#### Security & Governance
+#### Security and governance
 
-* [System Management]({{<ref "system-management.md">}})
-* [System Monitoring]({{<ref "system-monitoring.md">}})
-* [Cyber Security Incidents]({{<ref "cyber-security-incidents.md">}})
-* [System Administration Process and Procedures]({{<ref "security-and-governance/policies">}})
+- [System management](/security-and-governance/system-security-plan/system-management)
+- [System monitoring](/security-and-governance/system-security-plan/system-monitoring)
+- [Cyber security incidents](/security-and-governance/system-security-plan/cyber-security-incidents)
+- [System Administration Process and Procedures](/security-and-governance/policies)
 
 #### Design
 
-* [Authentication]({{<ref "design/platform/identity/authentication.md" >}})
-* [Entra ID Protection]({{< ref "design/platform/identity/protection.md" >}})
-* [Windows Security]({{<ref "design/endpoints/windows/security">}})
+- [Authentication](/design/platform/identity/authentication)
+- [Entra ID Protection](/design/platform/identity/protection)
+- [Windows security](/design/endpoints/windows/security)
 
 #### Configuration
 
-* [Microsoft Entra ID - Users]({{<ref "configuration/entra-id/users">}})
-* [Microsoft Intune - Profile Configurations]({{<ref "configuration/intune/devices/configuration-policies">}})
-* [Entra ID Protection]({{<ref "configuration/entra-id/protection">}})
-* [Intune Endpoint Security]({{<ref "configuration/intune/endpoint-security">}})
+- [Microsoft Entra ID - Users](/configuration/entra-id/users)
+- [Configuration policies](/configuration/intune/devices/configuration-policies)
+- [Entra ID Protection](/configuration/entra-id/protection)
+- [Endpoint security](/configuration/intune/endpoint-security)
 
 #### External links
 
-* ASD's [*Essential Eight*](https://www.cyber.gov.au/resources-business-and-government/essential-cyber-security/essential-eight)
-* Microsoft's [Service Trust Portal](https://servicetrust.microsoft.com/)
-* Microsoft's [*Guidance for meeting ASD's Essential Eight - Restrict Administrative Privileges*](https://learn.microsoft.com/compliance/essential-eight/e8-admin)
+- ASD's [Essential Eight](https://www.cyber.gov.au/resources-business-and-government/essential-cyber-security/essential-eight)
+- Microsoft's [Service Trust Portal](https://servicetrust.microsoft.com)
+- Microsoft's [_Guidance for meeting ASD's Essential Eight - Restrict Administrative Privileges_](https://learn.microsoft.com/en-au/compliance/anz/e8-admin)

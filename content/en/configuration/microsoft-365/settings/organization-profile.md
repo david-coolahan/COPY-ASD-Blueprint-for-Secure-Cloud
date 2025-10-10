@@ -1,13 +1,12 @@
 ---
 title: "Organization profile"
-linkTitle: "Organization profile"
 weight: 00
 description: "This section describes the configuration of organisational profiles in Microsoft 365 associated with systems built according to the guidance provided by ASD's Blueprint for Secure Cloud."
 ---
 
 {{% alert title="Instruction" color="dark" %}}
 
-The below tables outline the *as built* configuration for ASD's *Blueprint for Secure Cloud* (the Blueprint) for the Microsoft 365 portal at the following URL:
+The below tables outline the _as built_ configuration for ASD's _Blueprint for Secure Cloud_ (the Blueprint) for the Microsoft 365 portal at the following URL:
 
 <https://admin.microsoft.com/Adminportal/Home?#/Settings/OrganizationProfile>
 
@@ -24,32 +23,32 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 | Item                                      |                                Value |
 | ----------------------------------------- | -----------------------------------: |
 | **General**                               |                                      |
-| Name                                      |            *organisation preference* |
-| Groups                                    |            *organisation preference* |
+| Name                                      |            _organisation preference_ |
+| Groups                                    |            _organisation preference_ |
 | Prevent users from overriding their theme |                              Enabled |
 | Show the user's display name              |                              Enabled |
 | **Logos**                                 |                                      |
-| Default logo                              |           *URL of organisation logo* |
-| Alternate logo                            | *URL of organisation alternate logo* |
-| On-click link                             |        *Organisational provided URL* |
+| Default logo                              |           _URL of organisation logo_ |
+| Alternate logo                            | _URL of organisation alternate logo_ |
+| On-click link                             |        _Organisational provided URL_ |
 | **Colors**                                |                                      |
-| Navigation bar color                      |              *Organisation supplied* |
-| Text and icon color                       |              *Organisation supplied* |
-| Accent color                              |              *Organisation supplied* |
+| Navigation bar color                      |              _Organisation supplied_ |
+| Text and icon color                       |              _Organisation supplied_ |
+| Accent color                              |              _Organisation supplied_ |
 
 ### Organization information
 
 | Item               |                         Value |
 | ------------------ | ----------------------------: |
-| Name               |           *Organisation name* |
-| Street Address     |        *Organisation address* |
-| City               |           *Organisation city* |
-| State or province  |          *Organisation state* |
-| ZIP or postal code |    *Organisation postal code* |
+| Name               |           _Organisation name_ |
+| Street Address     |        _Organisation address_ |
+| City               |           _Organisation city_ |
+| State or province  |          _Organisation state_ |
+| ZIP or postal code |    _Organisation postal code_ |
 | Country or region  |                     Australia |
-| Phone              | *Organisation contact number* |
-| Technical contact  |  *Organisation contact email* |
-| Preferred language |       *Organisation language* |
+| Phone              | _Organisation contact number_ |
+| Technical contact  |  _Organisation contact email_ |
+| Preferred language |       _Organisation language_ |
 
 ### Release preferences
 
@@ -57,7 +56,7 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 | ----------------------------- | -------: |
 | Standard release for everyone | Selected |
 
-### Send email notifications from your domain  
+### Send email notifications from your domain
 
 | Item                                  |    Value |
 | ------------------------------------- | -------: |
@@ -65,18 +64,18 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 
 ### Related information
 
-#### Security & Governance
+#### Security and governance
 
-* None identified
-  
+- None identified
+
 #### Design
 
-* None identified
-  
+- None identified
+
 #### Configuration
 
-* None identified
+- None identified
 
 #### References
 
-* None identified
+- None identified

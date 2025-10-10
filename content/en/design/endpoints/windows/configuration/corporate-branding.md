@@ -1,5 +1,5 @@
 ---
-title: "Corporate Branding"
+title: "Corporate branding"
 weight: 75
 description: "This section describes the design decisions associated with corporate branding on Windows 10 and 11 endpoints configured according to guidance in ASD's Blueprint for Secure Cloud."
 ---
@@ -13,7 +13,7 @@ Although a system is capable of being assessed as PROTECTED, banners and backgro
 {{% alert title="Design decisions" color="warning" %}}
 
 | Decision point                         | Design decision            | Justification                                                                                                    |
-|----------------------------------------|----------------------------|------------------------------------------------------------------------------------------------------------------|
+| -------------------------------------- | -------------------------- | ---------------------------------------------------------------------------------------------------------------- |
 | Lock Screen                            | Custom Corporate wallpaper | Customised to the organisation corporate wallpaper to provide a corporate look and feel.                         |
 | Logon Screen                           | Custom Corporate wallpaper | Customised to the organisation corporate wallpaper to provide a corporate look and feel.                         |
 | Wallpaper                              | Custom Corporate wallpaper | Customised to the organisation corporate wallpaper to provide a corporate look and feel.                         |
@@ -28,18 +28,18 @@ Although a system is capable of being assessed as PROTECTED, banners and backgro
 
 ### Related information
 
-#### Security & Governance
+#### Security and governance
 
-* None identified
+- None identified
 
 #### Design
 
-* [Entra ID Tenant Settings]({{<ref "design/platform/identity/tenant.md">}})
+- [Entra ID Tenant Settings](/design/platform/identity/tenant)
 
 #### Configuration
 
-* None identified
+- None identified
 
 #### References
 
-* None identified
+- None identified

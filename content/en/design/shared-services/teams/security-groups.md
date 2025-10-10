@@ -13,7 +13,7 @@ Naming of Dynamic Security groups can be streamlined using a Naming Policy. The 
 {{% alert title="Design decisions" color="warning" %}}
 
 | Decision point | Design decision                                         | Justification                                                                                          |
-|----------------|---------------------------------------------------------|--------------------------------------------------------------------------------------------------------|
+| -------------- | ------------------------------------------------------- | ------------------------------------------------------------------------------------------------------ |
 | Naming Policy  | Configured. Suggestion `grp-<Organisation>-<GroupName>` | Assists in MOGs and standardisation of organisation configuration.                                     |
 | Welcome Email  | Disabled                                                | The welcome email will be disabled to reduce the amount of generic correspondence being sent to users. |
 
@@ -27,18 +27,18 @@ The Welcome Email setting is not able to be disabled across the organisation. Th
 
 ### Related information
 
-#### Security & Governance
+#### Security and governance
 
-* None identified
+- None identified
 
 #### Design
 
-* None identified
+- None identified
 
 #### Configuration
 
-* None identified
+- None identified
 
 #### References
 
-* None identified
+- None identified

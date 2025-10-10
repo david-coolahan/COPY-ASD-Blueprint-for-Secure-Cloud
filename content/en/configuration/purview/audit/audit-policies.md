@@ -1,13 +1,12 @@
 ---
 title: "Audit policies"
-linkTitle: "Audit policies"
 weight: 010
 description: "This section describes the configuration of audit policies within Microsoft Purview associated with systems built according to the guidance provided by ASD's Blueprint for Secure Cloud."
 ---
 
 {{% alert title="Instruction" color="dark" %}}
 
-The below tables configuration outlines the *as built* configuration for ASD's *Blueprint for Secure Cloud* (the Blueprint) for the Microsoft Purview portal at the following URL:
+The below tables configuration outlines the _as built_ configuration for ASD's _Blueprint for Secure Cloud_ (the Blueprint) for the Microsoft Purview portal at the following URL:
 
 <https://purview.microsoft.com/audit/auditpolicies>
 
@@ -31,21 +30,21 @@ Prior to configuring auditing policies, an additional one-time procedure is requ
 | ------------------ | ----------------------------------------: |
 | Policy name        |                          7 year audit log |
 | Policy description | Retains all audit log records for 7 years |
-| Record Type        | *Select none to include all record types* |
+| Record Type        | _Select none to include all record types_ |
 | Duration           |                                   7 years |
 | Priority           |                                         1 |
 
 ### Related information
 
-#### Security & Governance
+#### Security and governance
 
-- [Regular Backups]({{<ref "security-and-governance/essential-eight/regular-backups">}})
+- [Regular backups](/security-and-governance/essential-eight/regular-backups)
 
 #### Design
 
-- [Audit]({{<ref "design/shared-services/purview/audit">}})
-- [Backup and Operational Management]({{<ref "design/platform/backup">}})
-- [Retention policies]({{<ref "design/shared-services/purview/data-lifecycle-management">}})
+- [Audit](/design/shared-services/purview/audit)
+- [Backup and operational management](/design/platform/backup)
+- [Retention policies](/design/shared-services/purview/data-lifecycle-management)
 
 #### Configuration
 

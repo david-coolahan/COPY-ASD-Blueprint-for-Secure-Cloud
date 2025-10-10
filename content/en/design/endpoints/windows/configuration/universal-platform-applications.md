@@ -1,5 +1,5 @@
 ---
-title: "Universal Platform Applications"
+title: "Universal platform applications"
 weight: 35
 description: "This section describes the design decisions associated with universal platform applications on Windows 10 and 11 endpoints configured according to guidance in ASD's Blueprint for Secure Cloud."
 ---
@@ -11,7 +11,7 @@ UWP applications cannot access user resources unless the application specificall
 {{% alert title="Design decisions" color="warning" %}}
 
 | Decision point        | Design decision | Justification                                                                                                                                                                                             |
-|-----------------------|-----------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| --------------------- | --------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Windows SOE Footprint | Reduce          | The organisation will reduce the size of the Windows SOE footprint by configuring the settings in the next table unless the organisation has a specific requirement for these applications to be enabled. |
 
 {{% /alert %}}
@@ -26,7 +26,7 @@ UWP applications cannot access user resources unless the application specificall
 | Camera                         | Removed                                                        | The redesigned Camera is faster and simpler than ever before.                                                                                                          |
 | Mail and Calendar              | Removed                                                        | The Mail and Calendar apps provides access to a user's email, schedule, and contacts. This access will be granted through Outlook.                                     |
 | Maps                           | Removed                                                        | Provides search functionality for places to get directions, contact numbers, business info, and reviews.                                                               |
-| Microsoft OneDrive             | OneDrive personal removed. OneDrive for Business will be used. | OneDrive is a cloud storage, file hosting service that enables a user to synchronise files and later access them from a web browser or mobile device.                   |
+| Microsoft OneDrive             | OneDrive personal removed. OneDrive for Business will be used. | OneDrive is a cloud storage, file hosting service that enables a user to synchronise files and later access them from a web browser or mobile device.                  |
 | Microsoft Solitaire Collection | Removed                                                        | Microsoft Solitaire Collection on Windows 10.                                                                                                                          |
 | Microsoft Video                | Removed                                                        | The Movies & TV app brings a user the latest entertainment in one simple, fast, and elegant app on Windows.                                                            |
 | Mixed Reality                  | Removed                                                        | 3D Viewer, Print 3D, Mixed Reality Portal.                                                                                                                             |
@@ -39,24 +39,23 @@ UWP applications cannot access user resources unless the application specificall
 | Snip and Sketch                | Provisioned                                                    | Capture a specific area of the screen.                                                                                                                                 |
 | MS Paint                       | Provisioned                                                    | Creative paint and drawing tool.                                                                                                                                       |
 | Sticky Notes                   | Provisioned                                                    | Sticky Notes.                                                                                                                                                          |
-| Store                          | Microsoft Store for Business will be used.                     | Shopfront for purchasing and downloading applications.                                                                                                                 |
 | Microsoft Xbox                 | Removed                                                        | The Xbox experience on Windows. The Xbox app brings together friends, games, and accomplishments across Xbox One and Windows devices.                                  |
 | Zune                           | Removed                                                        | Groove Music and Movies.                                                                                                                                               |
 
 ### Related information
 
-#### Security & Governance
+#### Security and governance
 
-* None identified
+- None identified
 
 #### Design
 
-* None identified
+- None identified
 
 #### Configuration
 
-* None identified
+- None identified
 
 #### References
 
-* None identified
+- None identified

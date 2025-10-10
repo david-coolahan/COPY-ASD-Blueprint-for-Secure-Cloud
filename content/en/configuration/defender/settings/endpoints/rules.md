@@ -1,13 +1,12 @@
 ---
 title: "Rules"
-linkTitle: "Rules"
 weight: 30
 description: "This section describes the configuration of rules within Microsoft Defender associated with systems built according to the guidance provided by ASD's Blueprint for Secure Cloud."
 ---
 
 {{% alert title="Instruction" color="dark" %}}
 
-The below tables outline the *as built* configuration for ASD's *Blueprint for Secure Cloud* (the Blueprint) for the Microsoft Defender portal at the following URL:
+The below tables outline the _as built_ configuration for ASD's _Blueprint for Secure Cloud_ (the Blueprint) for the Microsoft Defender portal at the following URL:
 
 <https://security.microsoft.com/securitysettings/endpoints/alert_suppression>
 
@@ -66,20 +65,20 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 
 ### Related information
 
-#### Security & Governance
+#### Security and governance
 
-* None identified
-  
+- None identified
+
 #### Design
 
-* [Endpoint Security - Devices]({{<ref "design/platform/security/endpoint-security">}})
+- [Endpoints and devices](/design/platform/security/endpoint-security)
 
 #### Configuration
 
-* [Entra ID Protection]({{<ref "configuration/entra-id/protection">}})
-* [Intune Endpoint Security]({{<ref "configuration/intune/endpoint-security">}})
-* [Microsoft Intune - Profile Configurations]({{<ref "configuration/intune/devices/configuration-policies">}})
+- [Entra ID Protection](/configuration/entra-id/protection)
+- [Endpoint security](/configuration/intune/endpoint-security)
+- [Configuration policies](/configuration/intune/devices/configuration-policies)
 
 #### References
 
-* [Defender for Endpoint](https://learn.microsoft.com/microsoft-365/security/defender-endpoint)
+- [Defender for Endpoint](https://learn.microsoft.com/microsoft-365/security/defender-endpoint)

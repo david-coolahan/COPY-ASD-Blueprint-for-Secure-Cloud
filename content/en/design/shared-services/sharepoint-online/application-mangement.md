@@ -1,5 +1,5 @@
 ---
-title: "Application Management"
+title: "Application management"
 weight: 50
 description: "This section describes the design decisions associated with SharePoint Application Management for system(s) built using ASD's Blueprint for Secure Cloud."
 ---
@@ -11,7 +11,7 @@ SharePoint default methods of displaying and sharing of sharing data are availab
 {{% alert title="Design decisions" color="warning" %}}
 
 | Decision point                                                                | Design decision | Justification                                                                                                                      |
-|-------------------------------------------------------------------------------|-----------------|------------------------------------------------------------------------------------------------------------------------------------|
+| ----------------------------------------------------------------------------- | --------------- | ---------------------------------------------------------------------------------------------------------------------------------- |
 | Users to have the ability to get apps from marketplace                        | Disable         | Only administrators are approved to assign or purchase application.                                                                |
 | Allow third party apps from the store be open office documents in the browser | Disable         | This setting increases the security of the solution by ensuring documents in the browser cannot start third party apps for Office. |
 
@@ -19,18 +19,18 @@ SharePoint default methods of displaying and sharing of sharing data are availab
 
 ### Related information
 
-#### Security & Governance
+#### Security and governance
 
-* None identified
+- None identified
 
 #### Design
 
-* None identified
+- None identified
 
 #### Configuration
 
-* None identified
+- None identified
 
 #### References
 
-* None identified
+- None identified

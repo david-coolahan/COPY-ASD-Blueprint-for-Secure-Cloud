@@ -1,5 +1,5 @@
 ---
-title: "Outlook on the Web Policies"
+title: "Outlook on the Web policies"
 weight: 35
 description: "This section describes the design decisions associated with Outlook on the Web Policies for system(s) built using ASD's Blueprint for Secure Cloud."
 ---
@@ -10,14 +10,14 @@ A mailbox can only be assigned one OWA policy and every mailbox must have a poli
 
 Features and settings which can be controlled by an OWA policy include:
 
-* Third party file provider integration
-* Office 365 group creation from within Outlook on the Web
-* Microsoft Satisfaction survey prompts
+- Third party file provider integration
+- Office 365 group creation from within Outlook on the Web
+- Microsoft Satisfaction survey prompts
 
 {{% alert title="Design decisions" color="warning" %}}
 
 | Decision point                        | Design decision | Justification                                                                                                                                                                 |
-|---------------------------------------|-----------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| ------------------------------------- | --------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Outlook on the Web                    | Enabled         | OWA will be enabled to allow users to access their email in a flexible manner                                                                                                 |
 | Third party file provider integration | Disabled        | Only Microsoft file providers are approved for integration, no third-party file providers will be configured. This decreases security risk associated with third-party tools. |
 | Office 365 group creation by users    | Disabled        | Groups can only be created by administrators, not users. This will ensure that the GAL is the most up to date and that there is a consistent naming convention utilised.      |
@@ -26,18 +26,18 @@ Features and settings which can be controlled by an OWA policy include:
 
 ### Related information
 
-#### Security & Governance
+#### Security and governance
 
-* None identified
+- None identified
 
 #### Design
 
-* None identified
+- None identified
 
 #### Configuration
 
-* None identified
+- None identified
 
 #### References
 
-* None identified
+- None identified

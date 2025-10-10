@@ -1,13 +1,12 @@
 ---
-title: "Access Control"
-linkTitle: "Access Control"
+title: "Access control"
 weight: 030
 description: "This section describes the configuration of SharePoint associated with systems built according to guidance in ASD's Blueprint for Secure Cloud."
 ---
 
 {{% alert title="Instruction" color="dark" %}}
 
-The below tables outline the *as built* configuration for ASD's *Blueprint for Secure Cloud* (the Blueprint) for the SharePoint admin portal at the following URL:
+The below tables outline the _as built_ configuration for ASD's _Blueprint for Secure Cloud_ (the Blueprint) for the SharePoint admin portal at the following URL:
 
 https://`<TENANT-NAME>`-admin.sharepoint.com/
 
@@ -61,18 +60,18 @@ Selecting this policy setting will automatically create two Conditional Access p
 
 ### Related information
 
-#### Security & Governance
+#### Security and governance
 
-* None identified
+- None identified
 
 #### Design
 
-* [Sharing and Access Controls]({{<ref "design/shared-services/sharepoint-online/sharing">}})
+- [Sharing and access controls](/design/shared-services/sharepoint-online/sharing)
 
 #### Configuration
 
-* None identified
+- None identified
 
 #### References
 
-* None identified
+- None identified

@@ -1,13 +1,12 @@
 ---
 title: "Compliance Manager settings"
-linkTitle: "Compliance Manager settings"
 weight: 10
 description: "This section describes the configuration of Compliance Manager settings within Microsoft Purview associated with systems built according to the guidance provided by ASD's Blueprint for Secure Cloud."
 ---
 
 {{% alert title="Instruction" color="dark" %}}
 
-The below pages outline the *as built* configuration for ASD's *Blueprint for Secure Cloud* (the Blueprint) for the Microsoft Purview portal at the following URL:
+The below pages outline the _as built_ configuration for ASD's _Blueprint for Secure Cloud_ (the Blueprint) for the Microsoft Purview portal at the following URL:
 
 <https://purview.microsoft.com/settings/application-settings/compliancemanager>
 
@@ -29,14 +28,14 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 
 ### Related information
 
-#### Security & Governance
+#### Security and governance
 
 - None identified
-  
+
 #### Design
 
-- [Compliance Manager]({{<ref "design/shared-services/purview/compliance-manager">}})
-  
+- [Compliance Manager](/design/shared-services/purview/compliance-manager)
+
 #### Configuration
 
 - None identified

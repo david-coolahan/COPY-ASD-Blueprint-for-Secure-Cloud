@@ -1,13 +1,12 @@
 ---
 title: "Endpoint security policies"
-linkTitle: "Endpoint security policies"
 weight: 10
 description: "This section describes the configuration of endpoint security policies within Microsoft Defender associated with systems built according to the guidance provided by ASD's Blueprint for Secure Cloud."
 ---
 
 {{% alert title="Instruction" color="dark" %}}
 
-The below tables outline the *as built* configuration for ASD's *Blueprint for Secure Cloud* (the Blueprint) for the Microsoft Defender portal at the following URL:
+The below tables outline the _as built_ configuration for ASD's _Blueprint for Secure Cloud_ (the Blueprint) for the Microsoft Defender portal at the following URL:
 
 <https://security.microsoft.com/policy-inventory>
 
@@ -44,7 +43,7 @@ The below guidance on configuration to enforce security policies on endpoints. W
 | Allow Behavior Monitoring                              |                                                   Allowed. Turns on real-time behavior monitoring. |
 | Allow Cloud Protection                                 |                                                                Allowed. Turns on Cloud Protection. |
 | Allow Email Scanning                                   |                                                             Not allowed. Turns off email scanning. |
-| Allow Full Scan On Mapped Network Drives               |                                                                                   *Not configured* |
+| Allow Full Scan On Mapped Network Drives               |                                                                                   _Not configured_ |
 | Allow Full Scan Removable Drive Scanning               |                                                                   Allowed. Scans removable drives. |
 | [Deprecated] Allow Intrusion Prevention System         |                                                                                           Allowed. |
 | Allow scanning of all downloaded files and attachments |                                                                                           Allowed. |
@@ -53,57 +52,57 @@ The below guidance on configuration to enforce security policies on endpoints. W
 | Allow Script Scanning                                  |                                                                                           Allowed. |
 | Allow User UI Access                                   |                                                     Not allowed. Prevents users from accessing UI. |
 | Avg CPU Load Factor                                    |                                                                                                 50 |
-| Archive Max Depth                                      |                                                                                   *Not Configured* |
-| Archive Max Size                                       |                                                                                   *Not Configured* |
+| Archive Max Depth                                      |                                                                                   _Not Configured_ |
+| Archive Max Size                                       |                                                                                   _Not Configured_ |
 | Check For Signatures Before Running Scan               |                                                                                            Enabled |
 | Cloud Block Level                                      |                                                                                               High |
-| Cloud Extended Timeout                                 |                                                                                   *Not Configured* |
-| Days To Retain Cleaned Malware                         |                                                                                   *Not Configured* |
+| Cloud Extended Timeout                                 |                                                                                   _Not Configured_ |
+| Days To Retain Cleaned Malware                         |                                                                                   _Not Configured_ |
 | Disable Catchup Full Scan                              |                                                                                            Enabled |
 | Disable Catchup Quick Scan                             |                                                                                            Enabled |
 | Enable Low CPU Priority                                |                                                                                            Enabled |
 | Enable Network Protection                              |                                                                               Enabled (block mode) |
-| Excluded Extensions                                    |                                                                                   *Not configured* |
-| Excluded Paths                                         |                                                                                   *Not configured* |
-| Excluded Processes                                     |                                                                                   *Not configured* |
+| Excluded Extensions                                    |                                                                                   _Not configured_ |
+| Excluded Paths                                         |                                                                                   _Not configured_ |
+| Excluded Processes                                     |                                                                                   _Not configured_ |
 | PUA Protection                                         | PUA Protection on. Detected items are blocked. They will show in history along with other threats. |
 | Real Time Scan Direction                               |                                                                Monitor all files (bi-directional). |
 | Scan Parameter                                         |                                                                                         Quick scan |
 | Schedule Quick Scan Time                               |                                                                                                120 |
 | Schedule Scan Day                                      |                                                                                          Every day |
 | Schedule Scan Time                                     |                                                                                                120 |
-| Signature Update Fallback Order                        |                                                                                   *Not configured* |
-| Signature Update File Shares Sources                   |                                                                                   *Not configured* |
+| Signature Update Fallback Order                        |                                                                                   _Not configured_ |
+| Signature Update File Shares Sources                   |                                                                                   _Not configured_ |
 | Signature Update Interval                              |                                                                                                  4 |
 | Submit Samples Consent                                 |                                                                   Send safe samples automatically. |
-| Disable Local Admin Merge                              |                                                                                   *Not configured* |
+| Disable Local Admin Merge                              |                                                                                   _Not configured_ |
 | Allow On Access Protection                             |                                                                                           Allowed. |
-| Remediation action for High severity threats           |                                                                                   *Not configured* |
+| Remediation action for High severity threats           |                                                                                   _Not configured_ |
 | Remediation action for Severe threats                  |                                                                      Block. Blocks file execution. |
 | Remediation action for Low severity threats            |                                        Clean. Service tries to recover files and try to disinfect. |
 | Remediation action for Moderate severity threats       |                                                             Quarantine. Moves files to quarantine. |
-| Allow Network Protection Down Level                    |                                                                                   *Not configured* |
-| Allow Datagram Processing On Win Server                |                                                                                   *Not configured* |
-| Disable Dns Over Tcp Parsing                           |                                                                                   *Not configured* |
-| Disable Http Parsing                                   |                                                                                   *Not configured* |
-| Disable Ssh Parsing                                    |                                                                                   *Not configured* |
-| Disable Tls Parsing                                    |                                                                                   *Not configured* |
-| [Deprecated] Enable Dns Sinkhole                       |                                                                                   *Not configured* |
-| Engine Updates Channel                                 |                                                                                   *Not configured* |
-| Metered Connection Updates                             |                                                                                   *Not configured* |
-| Platform Updates Channel                               |                                                                                   *Not configured* |
-| Security Intelligence Updates Channel                  |                                                                                   *Not configured* |
-| Randomize Schedule Task Times                          |                                                                                   *Not Configured* |
-| Scheduler Randomization Time                           |                                                                                   *Not Configured* |
-| Archive Max Size                                       |                                                                                   *Not Configured* |
-| Disable Core Service ECS Integration                   |                                                                                   *Not configured* |
-| Disable Core Service Telemetry                         |                                                                                   *Not configured* |
+| Allow Network Protection Down Level                    |                                                                                   _Not configured_ |
+| Allow Datagram Processing On Win Server                |                                                                                   _Not configured_ |
+| Disable Dns Over Tcp Parsing                           |                                                                                   _Not configured_ |
+| Disable Http Parsing                                   |                                                                                   _Not configured_ |
+| Disable Ssh Parsing                                    |                                                                                   _Not configured_ |
+| Disable Tls Parsing                                    |                                                                                   _Not configured_ |
+| [Deprecated] Enable Dns Sinkhole                       |                                                                                   _Not configured_ |
+| Engine Updates Channel                                 |                                                                                   _Not configured_ |
+| Metered Connection Updates                             |                                                                                   _Not configured_ |
+| Platform Updates Channel                               |                                                                                   _Not configured_ |
+| Security Intelligence Updates Channel                  |                                                                                   _Not configured_ |
+| Randomize Schedule Task Times                          |                                                                                   _Not Configured_ |
+| Scheduler Randomization Time                           |                                                                                   _Not Configured_ |
+| Archive Max Size                                       |                                                                                   _Not Configured_ |
+| Disable Core Service ECS Integration                   |                                                                                   _Not configured_ |
+| Disable Core Service Telemetry                         |                                                                                   _Not configured_ |
 
 ##### Assignments
 
 | Item  |                        Value |
 | ----- | ---------------------------: |
-| Group | *Organisation group name(s)* |
+| Group | _Organisation group name(s)_ |
 
 #### ASD Windows Hardening Guidelines - Attack Surface Reduction
 
@@ -137,13 +136,13 @@ The below guidance on configuration to enforce security policies on endpoints. W
 | [PREVIEW] Block rebooting machine in Safe Mode                                                    |            Block |
 | Use advanced protection against ransomware                                                        |            Block |
 | Block executable content from email client and webmail                                            |            Block |
-| Enable Controlled Folder Access                                                                   | *Not configured* |
+| Enable Controlled Folder Access                                                                   | _Not configured_ |
 
 ##### Assignments
 
 | Item  |                        Value |
 | ----- | ---------------------------: |
-| Group | *Organisation group name(s)* |
+| Group | _Organisation group name(s)_ |
 
 #### ASD Windows Hardening Guidelines - Endpoint Detection and Response
 
@@ -166,7 +165,7 @@ The below guidance on configuration to enforce security policies on endpoints. W
 
 | Item  |                        Value |
 | ----- | ---------------------------: |
-| Group | *Organisation group name(s)* |
+| Group | _Organisation group name(s)_ |
 
 ### Mac policies
 
@@ -178,27 +177,27 @@ The below guidance on configuration to enforce security policies on endpoints. W
 
 ### Related information
 
-#### Security & Governance
+#### Security and governance
 
-* [Operating System Hardening]({{<ref "security-and-governance/system-security-plan/system-hardening-os.md">}})
-* [Patch Operating System]({{<ref "security-and-governance/essential-eight/patch-os.md">}})
-* [Essential Eight: Multi-factor-Authentication]({{<ref "multi-factor-authentication.md" >}})
-* [Authentication Hardening]({{<ref "system-hardening-authentication.md">}})
-* [System Management]({{<ref "system-management.md">}})
-* [System Monitoring]({{<ref "system-monitoring.md">}})
+- [Operating system hardening](/security-and-governance/system-security-plan/system-hardening-os)
+- [Patch operating system](/security-and-governance/essential-eight/patch-os)
+- [Essential Eight - Multi-factor-Authentication](/security-and-governance/essential-eight/multi-factor-authentication)
+- [Authentication hardening](/security-and-governance/system-security-plan/system-hardening-authentication)
+- [System management](/security-and-governance/system-security-plan/system-management)
+- [System monitoring](/security-and-governance/system-security-plan/system-monitoring)
 
 #### Design
 
-* [Devices]({{<ref "design/platform/security/endpoint-security">}})
-* [Devices]({{<ref "design/endpoints">}})
-  
+- [Devices](/design/platform/security/endpoint-security)
+- [Devices](/design/endpoints)
+
 #### Configuration
 
-* [Microsoft Intune - Devices]({{< ref "configuration/intune/devices">}})
-* [Microsoft Entra ID - Devices]({{< ref "configuration/entra-id/devices">}})
-* [iOS and iPadOS]({{< ref "configuration/intune/apps/by-platform/ios-ipados.md">}})
-* [Entra ID Protection]({{<ref "configuration/entra-id/protection">}})
+- [Microsoft Intune - Devices](/configuration/intune/devices)
+- [Microsoft Entra ID - Devices](/configuration/entra-id/devices)
+- [iOS and iPadOS](/configuration/intune/apps/by-platform/ios-ipados)
+- [Entra ID Protection](/configuration/entra-id/protection)
 
 #### References
 
-* [Defender for Endpoint](https://learn.microsoft.com/microsoft-365/security/defender-endpoint)
+- [Defender for Endpoint](https://learn.microsoft.com/microsoft-365/security/defender-endpoint)

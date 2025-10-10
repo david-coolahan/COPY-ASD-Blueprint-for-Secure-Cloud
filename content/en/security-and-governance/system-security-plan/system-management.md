@@ -1,6 +1,5 @@
 ---
-title: "System Management"
-linkTitle: "System Management"
+title: "System management"
 weight: 75
 type: docs
 description: This page provides a template and guidance to assist organisations in documenting their approach to system administration, patching and backups and restoration associated with their system(s) built on ASD's Blueprint for Secure Cloud.
@@ -8,11 +7,11 @@ description: This page provides a template and guidance to assist organisations 
 
 {{% alert title="Instruction" color="dark" %}}
 
-The system management section of a System Security Plan (SSP) should document an organisation's approach to system administration, patching, backups and restoration. As with other sections of the SSP, information in the system management section should be documented according to the relevant controls outlined in ASD's ISM and the SSP Annex. 
+The system management section of a System Security Plan (SSP) should document an organisation's approach to system administration, patching, backups and restoration. As with other sections of the SSP, information in the system management section should be documented according to the relevant controls outlined in ASD's ISM and the SSP Annex.
 
 All template text refers to a typical implementation of a system built using the Blueprint, and includes reference to organisational policies, processes and technical configurations to be implemented in addition to the technical controls that may be configured using guidance from the Blueprint. Any implementation implied by the below text should not be considered as prescriptive of how organisations must scope, build, document, or assess its system.
 
-When completing the below template, organisations should insert and update information where relevant to ensure it accurately represents their approach to system administration, patching and backups and restoration. When complete, remove any instructional boxes throughout. 
+When completing the below template, organisations should insert and update information where relevant to ensure it accurately represents their approach to system administration, patching and backups and restoration. When complete, remove any instructional boxes throughout.
 
 {{% /alert %}}
 
@@ -20,13 +19,13 @@ When completing the below template, organisations should insert and update infor
 
 #### Applicability
 
-ISM controls relating to the system administration of `<SYSTEM-NAME>`'s are applicable to and covered by this section of the SSP. 
+ISM controls relating to the system administration of `<SYSTEM-NAME>`'s are applicable to and covered by this section of the SSP.
 
 `<INSERT ADDITIONAL INFORMATION AS APPROPRIATE>`
 
 #### Organisational policies and processes implemented
 
-Administration of Microsoft services within `<SYSTEM-NAME>` is performed as per `<SYSTEM-NAME>`'s [System Administration Process]({{<ref "security-and-governance/general-documentation">}}) via a number of Microsoft portals as listed below:
+Administration of Microsoft services within `<SYSTEM-NAME>` is performed as per `<SYSTEM-NAME>`'s [System Administration Process](/security-and-governance/general-documentation) via a number of Microsoft portals as listed below:
 
 | Portal                                  | Purpose                                                                                                            | URL                                                                                    |
 | --------------------------------------- | ------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------- |
@@ -42,14 +41,14 @@ Administration of Microsoft services within `<SYSTEM-NAME>` is performed as per 
 | SharePoint admin centre                 | Inform, configure, and govern management of all aspects of SharePoint Online across the tenant                     | [https://admin.microsoft.com/sharepoint](https://admin.microsoft.com/sharepoint)       |
 | Defender for Cloud Apps portal          | Configure and manage threat detection, session controls, data protections, and Shadow IT detection                 | [https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com)             |
 | Azure Portal                            | View and manage all aspects of an organisation's Azure environment                                                 | [https://portal.azure.com](https://portal.azure.com)                                   |
-| Network Connectivity Test Tool          | Enables measurement of the connectivity between a device and Microsoft's network for troubleshooting and tuning    | [https://connectivity.office.com/](https://connectivity.office.com/)                   |
+| Network Connectivity Test Tool          | Enables measurement of the connectivity between a device and Microsoft's network for troubleshooting and tuning    | [https://connectivity.office.com/](https://connectivity.office.com)                    |
 | Microsoft Teams Call Quality Dashboard  | Shows organisation wide information for call and meeting quality with relation to Microsoft Teams                  | [https://cqd.teams.microsoft.com](https://cqd.teams.microsoft.com)                     |
 
 `<INSERT ADDITIONAL INFORMATION AS APPROPRIATE>`
 
 #### Technical controls implemented
 
-Technical controls for system administration of `<SYSTEM-NAME>` are configured with reference to ASD's [*Blueprint for Secure Cloud*](https://blueprint.asd.gov.au) including the following technical configuration. 
+Technical controls for system administration of `<SYSTEM-NAME>` are configured with reference to ASD's [_Blueprint for Secure Cloud_](https://blueprint.asd.gov.au) including the following technical configuration.
 
 Administrative access to the above portals is restricted via conditional access to be performed solely from dedicated Secure Administrative Workstations (SAWs), and with appropriate role and attribute based access control applied.
 
@@ -59,33 +58,33 @@ Administrative access to the above portals is restricted via conditional access 
 
 #### Applicability
 
-ISM controls relating to the system patching within `<SYSTEM-NAME>` are applicable to and covered by this section of the SSP. 
+ISM controls relating to the system patching within `<SYSTEM-NAME>` are applicable to and covered by this section of the SSP.
 
 {{% alert title="Blueprint guidance" color="info" %}}
 
-Organisations with hybrid configurations build on the Blueprint, should consider inclusion of the following words or similar in this section of the SSP: 
+Organisations with hybrid configurations build on the Blueprint, should consider inclusion of the following words or similar in this section of the SSP:
 
 System patching is also applicable to `<SYSTEM-NAME>`'s on-premise servers that host hybrid components of this system.
 
 {{% /alert %}}
 
-`<SYSTEM-NAME>` also uses system components as implemented by Microsoft as part of its Microsoft 365 services, and inherits implementation of patching for those systems. `<ORGANISATION-NAME>` has assessed the implementation of these systems as documented in Microsoft's IRAP assessments, and available in Microsoft's [Service Trust Portal](https://servicetrust.microsoft.com/), and is satisfied with their implementation as they relate to `<SYSTEM-NAME>`.
+`<SYSTEM-NAME>` also uses system components as implemented by Microsoft as part of its Microsoft 365 services, and inherits implementation of patching for those systems. `<ORGANISATION-NAME>` has assessed the implementation of these systems as documented in Microsoft's IRAP assessments, and available in Microsoft's [Service Trust Portal](https://servicetrust.microsoft.com), and is satisfied with their implementation as they relate to `<SYSTEM-NAME>`.
 
 `<INSERT ADDITIONAL INFORMATION AS APPROPRIATE>`
 
 #### Organisational policies and processes implemented
 
-System Patching for `<SYSTEM-NAME>` is performed in accordance with the [`<SYSTEM-NAME>` Patch Management Process]({{< ref "security-and-governance/general-documentation">}}).
+System Patching for `<SYSTEM-NAME>` is performed in accordance with the [`<SYSTEM-NAME>` Patch Management Process](/security-and-governance/general-documentation).
 
 `<INSERT ADDITIONAL INFORMATION AS APPROPRIATE>`
 
 #### Technical controls implemented
 
-Technical controls for `<SYSTEM-NAME>`'s implementation of system patching were configured with reference to ASD's [*Blueprint for Secure Cloud*](https://blueprint.asd.gov.au), and includes the following technical configurations for `<SYSTEM-NAME>` endpoints and mobile devices via Intune:
+Technical controls for `<SYSTEM-NAME>`'s implementation of system patching were configured with reference to ASD's [_Blueprint for Secure Cloud_](https://blueprint.asd.gov.au), and includes the following technical configurations for `<SYSTEM-NAME>` endpoints and mobile devices via Intune:
 
-* Intune is configured to provide a centralised approach to patching Windows endpoints, and automatically installs updates within 48-hours on all Windows devices
-* Windows Update verifies the integrity of patches before installing them
-* Microsoft Defender for Endpoint provides a level of continuous vulnerability management capability for all Windows devices.
+- Intune is configured to provide a centralised approach to patching Windows endpoints, and automatically installs updates within 48-hours on all Windows devices
+- Windows Update verifies the integrity of patches before installing them
+- Microsoft Defender for Endpoint provides a level of continuous vulnerability management capability for all Windows devices.
 
 `<INSERT ADDITIONAL INFORMATION AS APPROPRIATE>`
 
@@ -101,15 +100,16 @@ Where organisations appropriately assess this within another document, they may 
 
 #### Applicability
 
-ISM controls relating to the backups and restoration, to the extent that they relate to `<SYSTEM-NAME>`, are applicable to and covered by this section of the SSP. 
+ISM controls relating to the backups and restoration, to the extent that they relate to `<SYSTEM-NAME>`, are applicable to and covered by this section of the SSP.
 
 `<INSERT ADDITIONAL INFORMATION AS APPROPRIATE>`
 
 #### Organisational policies and processes implemented
 
-Backups and restoration, including for information within the system boundary of `<SYSTEM-NAME>`, are performed in accordance with `<ORGANISATION-NAME>`'s [Digital Preservation Policy]({{< ref "security-and-governance/policies">}}) and associated SOPs:
-* [`<SYSTEM-NAME>` Data Backup Process]({{< ref "security-and-governance/general-documentation">}})
-* [`<SYSTEM-NAME>` Data Restoration Process]({{< ref "security-and-governance/general-documentation">}})
+Backups and restoration, including for information within the system boundary of `<SYSTEM-NAME>`, are performed in accordance with `<ORGANISATION-NAME>`'s [Digital Preservation Policy](/security-and-governance/policies) and associated SOPs:
+
+- [`<SYSTEM-NAME>` Data Backup Process](/security-and-governance/general-documentation)
+- [`<SYSTEM-NAME>` Data Restoration Process](/security-and-governance/general-documentation)
 
 `<INSERT ADDITIONAL INFORMATION AS APPROPRIATE>`
 
@@ -117,36 +117,36 @@ Backups and restoration, including for information within the system boundary of
 
 Technical controls backups and restoration are configured with reference to `<RELEVANT-GUIDANCE>` and includes the following technical configurations:
 
-* `<TECHNICAL-CONFIGURATION-1>`
-* `<TECHNICAL-CONFIGURATION-2>`
-* `<TECHNICAL-CONFIGURATION-3>`
+- `<TECHNICAL-CONFIGURATION-1>`
+- `<TECHNICAL-CONFIGURATION-2>`
+- `<TECHNICAL-CONFIGURATION-3>`
 
 `<INSERT ADDITIONAL INFORMATION AS APPROPRIATE>`
 
 ### Related information
 
-#### Security & Governance
+#### Security and governance
 
-* [Essential Eight: Patch Applications]({{< ref "patch-applications.md">}})
-* [Essential Eight: Patch Operating Systems]({{< ref "patch-os.md">}})
-* [Essential Eight: Regular Backups]({{< ref "regular-backups.md">}})
-* [Essential Eight: Restrict Microsoft Office Macros]({{<ref "restrict-microsoft-office-macros.md">}})
-* [Essential Eight: Multi-factor Authentication]({{<ref "security-and-governance/essential-eight/multi-factor-authentication.md">}})
-* [System Administration Process]({{<ref "security-and-governance/general-documentation">}})
-* [Application Control]({{<ref "security-and-governance/essential-eight/application-control.md">}})
+- [Essential Eight - Patch applications](/security-and-governance/essential-eight/patch-applications)
+- [Essential Eight - Patch operating systems](/security-and-governance/essential-eight/patch-os)
+- [Essential Eight - Regular backups](/security-and-governance/essential-eight/regular-backups)
+- [Essential Eight - Restrict Microsoft Office macros](/security-and-governance/essential-eight/restrict-microsoft-office-macros)
+- [Essential Eight - Multi-factor authentication](/security-and-governance/essential-eight/multi-factor-authentication)
+- [System Administration Process](/security-and-governance/general-documentation)
+- [Essential Eight - Application control](/security-and-governance/essential-eight/application-control)
 
 #### Design
 
-* [Backup and Operational Management]({{<ref "design/platform/backup">}})
-* [Data Lifecycle Management]({{<ref "design/shared-services/purview/data-lifecycle-management">}})
+- [Backup and operational management](/design/platform/backup)
+- [Data Lifecycle Management](/design/shared-services/purview/data-lifecycle-management)
 
 #### Configuration
 
-* [Microsoft Intune - Profile Configurations]({{<ref "configuration/intune/devices/configuration-policies">}})
-* [Endpoint security policies]({{<ref "configuration/defender/endpoints/configuration-management/endpoint-security-policies.md">}})
-* [Cloud app Settings]({{<ref "configuration/defender/settings/cloud-apps/settings.md">}})
-* [Permissions]({{<ref "configuration/defender/settings/endpoints/permissions.md">}})
+- [Configuration policies](/configuration/intune/devices/configuration-policies)
+- [Endpoint security policies](/configuration/defender/endpoints/configuration-management/endpoint-security-policies)
+- [Cloud apps settings](/configuration/defender/settings/cloud-apps/settings)
+- [Permissions](/configuration/defender/settings/endpoints/permissions)
 
 #### External links
 
-* ASD's [*Guidelines for System Management*](https://www.cyber.gov.au/resources-business-and-government/essential-cyber-security/ism/cyber-security-guidelines/guidelines-system-management)
+- ASD's [_Guidelines for System Management_](https://www.cyber.gov.au/resources-business-and-government/essential-cyber-security/ism/cyber-security-guidelines/guidelines-system-management)

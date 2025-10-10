@@ -10,9 +10,9 @@ OneDrive enables the secure sharing of files inside and outside organisations, a
 
 The OneDrive for Business client has access to two distinct primary rings and an additional preview ring:
 
-* **Production Ring** – The Production ring provides new features and improvements as soon as they are released by Microsoft.
-* **Enterprise Ring** – The enterprise ring rolls out changes after validated in the Production ring, reducing the risk of issues. This ring enables administrators to deploy updates from an internal network location and control the timing of the deployment (within a 60-day window). This is the recommended update ring for most large scale or high-risk organisations.
-* **Insiders Ring** – Insider ring users will receive builds that let them preview new features coming to OneDrive.
+- **Production Ring** – The Production ring provides new features and improvements as soon as they are released by Microsoft.
+- **Enterprise Ring** – The enterprise ring rolls out changes after validated in the Production ring, reducing the risk of issues. This ring enables administrators to deploy updates from an internal network location and control the timing of the deployment (within a 60-day window). This is the recommended update ring for most large scale or high-risk organisations.
+- **Insiders Ring** – Insider ring users will receive builds that let them preview new features coming to OneDrive.
 
 The Windows Known Folder feature of OneDrive for Business enables administrators to easily move files in a users' Desktop, Documents and Pictures folders to OneDrive.
 
@@ -23,7 +23,7 @@ OneDrive enables users to work on content that is stored online in the cloud as 
 {{% alert title="Design decisions" color="warning" %}}
 
 | Decision point                      | Design decision                               | Justification                                                                                                                                                                                            |
-|-------------------------------------|-----------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| ----------------------------------- | --------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | OneDrive for Business               | Enabled and silently configured               | OneDrive will be configured without user intervention on sign in.                                                                                                                                        |
 | Sync Client Update Ring             | Enterprise                                    | As per Microsoft recommendations for large environments.                                                                                                                                                 |
 | OneDrive Personal Account           | Disabled                                      | Personal accounts will be disabled. OneDrive for Business accounts will be used.                                                                                                                         |
@@ -31,8 +31,8 @@ OneDrive enables users to work on content that is stored online in the cloud as 
 | Allow Changing Default Location     | Disabled                                      | As per Microsoft recommendation for shared devices users will be prevented from changing the default OneDrive folder location.                                                                           |
 | Files On-Demand                     | Enabled                                       | Files On-Demand will be configured to save storage space on users' computers and minimise the network impact of sync.                                                                                    |
 | Backup - Sync Windows Known Folders | Enabled                                       | Syncing Windows known folders to OneDrive for Business will be configured for the Windows SOE. This will enable the users Documents, Pictures and Desktop folders to be saved in OneDrive automatically. |
-| Network settings – Upload           | Do not limit                                  | Enable dynamic network configuration to provide best performance.                                                                                                                                         |
-| Network settings – Download         | Do not limit                                  | Enable dynamic network configuration to provide best performance.                                                                                                                                         |
+| Network settings – Upload           | Do not limit                                  | Enable dynamic network configuration to provide best performance.                                                                                                                                        |
+| Network settings – Download         | Do not limit                                  | Enable dynamic network configuration to provide best performance.                                                                                                                                        |
 | File Collaboration Policy           | Enabled                                       | File collaboration will be enabled to allow users to work collaboratively and increase productivity.                                                                                                     |
 | Sync Conflict Policy                | Let me choose to merge changes or keep copies | The OneDrive sync conflict policy will be configured to allow the user to choose.                                                                                                                        |
 
@@ -40,18 +40,18 @@ OneDrive enables users to work on content that is stored online in the cloud as 
 
 ### Related information
 
-#### Security & Governance
+#### Security and governance
 
-* None identified
+- None identified
 
 #### Design
 
-* None identified
+- None identified
 
 #### Configuration
 
-* [Endpoint security policies]({{<ref "configuration/defender/endpoints/configuration-management/endpoint-security-policies.md">}})
+- [Endpoint security policies](/configuration/defender/endpoints/configuration-management/endpoint-security-policies)
 
 #### References
 
-* [Introduction to SharePoint and OneDrive in Microsoft 365 for administrators](https://learn.microsoft.com/sharepoint/introduction)
+- [Introduction to SharePoint and OneDrive in Microsoft 365 for administrators](https://learn.microsoft.com/sharepoint/introduction)

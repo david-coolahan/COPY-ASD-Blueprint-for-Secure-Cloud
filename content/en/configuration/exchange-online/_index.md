@@ -1,13 +1,12 @@
 ---
 title: "Exchange Online"
-linkTitle: "Exchange Online"
 weight: 060
 description: "This section describes the configuration of Exchange Online associated with systems built according to guidance in ASD's Blueprint for Secure Cloud."
 ---
 
 {{% alert title="Instruction" color="dark" %}}
 
-The below pages outline the *as built* configuration for ASD's *Blueprint for Secure Cloud* (the Blueprint) for the Microsoft Exchange admin portal at the following URL:
+The below pages outline the _as built_ configuration for ASD's _Blueprint for Secure Cloud_ (the Blueprint) for the Microsoft Exchange admin portal at the following URL:
 
 <https://admin.exchange.microsoft.com/>
 
@@ -38,17 +37,17 @@ Some of the Exchange Online configurations cannot be assessed using a DSC bluepr
 | **Roles**        | Yes (DSC)                     |
 | **Settings**     | No                            |
 
-1: The words or phrases setting in the *Require TLS for sensitive items* rule must be configured manually. Refer to [Rules]({{<ref "mail-flow/rules">}}) for configuration guidance.
+1: The words or phrases setting in the _Require TLS for sensitive items_ rule must be configured manually. Refer to [Rules](/configuration/exchange-online/mail-flow/rules) for configuration guidance.
 
 #### Desired State Configuration
 
-Before using the below DSC file, please refer to the [setup]({{<ref "tools/deployment-and-assessment/desired-state-configuration-setup">}}) and [automated deployment]({{<ref "tools/deployment-and-assessment/automated-deployment">}}) pages for instructions.
+Before using the below DSC file, please refer to the [setup](/tools/deployment-and-assessment/desired-state-configuration-setup) and [automated deployment](/tools/deployment-and-assessment/automated-deployment) pages for instructions.
 
 Do not proceed with the automated deployment instructions until you've familiarised yourself with the [addition configuration](#additional-configuration) required below.
 
-**Desired State Configuration file**<br>Download the {{% download file="/content/files/automation/dsc/asdbpsc-dsc-exo.txt" %}} Exchange DSC file {{% /download %}} and rename the linked .txt file to .ps1.
+**Desired State Configuration file**<br>Download the {{% download file="/content/files/automation/dsc/BlueprintExoDsc.txt" %}} Exchange DSC file {{% /download %}} and rename the linked .txt file to .ps1.
 
-**Configuration data file**<br>Download the {{% download file="/content/files/automation/dsc/configuration-data.txt" %}} configuration data file {{% /download %}} and rename the linked .txt file to .psd1.
+**Configuration data file**<br>Download the {{% download file="/content/files/automation/dsc/ConfigurationData.txt" %}} configuration data file {{% /download %}} and rename the linked .txt file to .psd1.
 
 {{% alert title="Extra parameters" color="info"%}}
 
@@ -70,7 +69,7 @@ Any existing settings in a tenancy that match the name or UID of any settings in
 
 ##### Service Principal permissions
 
-For organisations importing the DSC as per the instructions on the [automated deployment]({{<ref "tools/deployment-and-assessment/automated-deployment">}}) page, the following permissions will need to be added to the Service Principal:
+For organisations importing the DSC as per the instructions on the [automated deployment](/tools/deployment-and-assessment/automated-deployment) page, the following permissions will need to be added to the Service Principal:
 
 ```powershell
 "EXOOwaMailboxPolicy", "EXORemoteDomain", "EXOTransportConfig", "EXOTransportRule"
@@ -78,6 +77,6 @@ For organisations importing the DSC as per the instructions on the [automated de
 
 ##### Additional configuration
 
-The following instructions must be completed before *step 6 Deploy the configuration*, on the [automated deployment]({{<ref "tools/deployment-and-assessment/automated-deployment">}}) page:
+The following instructions must be completed before _step 6 Deploy the configuration_, on the [automated deployment](/tools/deployment-and-assessment/automated-deployment) page:
 
-* Assign the Entra, Exchange Administrator role to the M365DSC service principal.
+- Assign the Entra, Exchange Administrator role to the M365DSC service principal.

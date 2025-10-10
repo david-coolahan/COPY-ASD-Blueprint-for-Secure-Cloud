@@ -1,13 +1,12 @@
 ---
 title: "Data Loss Prevention"
-linkTitle: "Data Loss Prevention"
 weight: 50
 description: "This section describes the configuration of Data Loss Prevention within Microsoft Purview associated with systems built according to the guidance provided by ASD's Blueprint for Secure Cloud."
 ---
 
 {{% alert title="Instruction" color="dark" %}}
 
-The below pages outline the *as built* configuration for ASD's *Blueprint for Secure Cloud* (the Blueprint) for the Microsoft Purview portal at the following URL:
+The below pages outline the _as built_ configuration for ASD's _Blueprint for Secure Cloud_ (the Blueprint) for the Microsoft Purview portal at the following URL:
 
 <https://purview.microsoft.com/datalossprevention/overview>
 

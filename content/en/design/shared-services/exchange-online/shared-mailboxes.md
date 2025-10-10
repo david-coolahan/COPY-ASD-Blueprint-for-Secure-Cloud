@@ -1,5 +1,5 @@
 ---
-title: "Shared Mailboxes"
+title: "Shared mailboxes"
 weight: 35
 description: "This section describes the design decisions associated with Shared Mailboxes for system(s) built using ASD's Blueprint for Secure Cloud."
 ---
@@ -15,27 +15,27 @@ User access to the mailbox is provided using mailbox delegation rights (Full Acc
 {{% alert title="Design decisions" color="warning" %}}
 
 | Decision point                                                   | Design decision                                                                           | Justification                                                                                                                                                                                                   |
-|------------------------------------------------------------------|-------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| ---------------------------------------------------------------- | ----------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Shared mailbox delegation (Full Access, Send As, Send on Behalf) | Configured via mail-enabled Security groups which are hidden from the Global Address book | Mail-enabled security groups limit the management overhead associated with mailbox delegation when compared to direct delegations. A security group is required to be mail-enabled to appear within Office 365. |
-| Naming standard for security groups                              | Configured                                                                                | To distinguish between security groups managing a shared mailbox an organisational naming standard should be followed.                                                                                        |
+| Naming standard for security groups                              | Configured                                                                                | To distinguish between security groups managing a shared mailbox an organisational naming standard should be followed.                                                                                          |
 | Shared Mailbox user account                                      | Disabled                                                                                  | Default configuration. Accounts will remain disabled to reduce system attack surface.                                                                                                                           |
 
 {{% /alert %}}
 
 ### Related information
 
-#### Security & Governance
+#### Security and governance
 
-* None identified
+- None identified
 
 #### Design
 
-* None identified
+- None identified
 
 #### Configuration
 
-* None identified
+- None identified
 
 #### References
 
-* None identified
+- None identified

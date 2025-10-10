@@ -1,6 +1,5 @@
 ---
-title: "Procurement and Outsourcing"
-linkTitle: "Procurement and Outsourcing"
+title: "Procurement and outsourcing"
 weight: 20
 type: docs
 description: This page provides a template and guidance to assist organisations in documenting their approach to procurement and outsourcing associated with their system(s) built on ASD's Blueprint for Secure Cloud.
@@ -12,11 +11,11 @@ The procurement and outsourcing section of a System Security Plan (SSP) should d
 
 All template text refers to a typical implementation of a system built using the Blueprint, and includes reference to organisational policies, processes and technical configurations to be implemented in addition to the technical controls that may be configured using guidance in the Blueprint. Any implementation implied by the below should not be considered as prescriptive as to how organisations must scope, build, document, or assess a system.
 
-When completing the below template, organisations should insert and update information where relevant to ensure it accurately represents their approach to management of suppliers of applications, ICT equipment and services within their organisation. When complete, remove any instructional boxes throughout. 
+When completing the below template, organisations should insert and update information where relevant to ensure it accurately represents their approach to management of suppliers of applications, ICT equipment and services within their organisation. When complete, remove any instructional boxes throughout.
 
 {{% /alert %}}
 
-As `<ORGANISATION-NAME>`'s overall approach to implementing controls related to procurement and outsourcing is consistent across all controls addressed within this section, it does not delve into subsections but rather addresses the controls as a group. 
+As `<ORGANISATION-NAME>`'s overall approach to implementing controls related to procurement and outsourcing is consistent across all controls addressed within this section, it does not delve into subsections but rather addresses the controls as a group.
 
 ### Cyber supply chain risk management
 
@@ -26,11 +25,11 @@ As `<ORGANISATION-NAME>`'s overall approach to implementing controls related to 
 
 This section of a SSP is directly applicable to the management of an organisation's relationship with Microsoft as a service provider, including as a supplier of operating systems and applications. Similarly, this section is also applicable to the procurement of any other hardware, software or services used within a system built using the Blueprint, including:
 
-* Laptops, endpoints and peripherals
-* Server hardware
-* Networking equipment
-* On-premise server applications
-* SaaS products
+- Laptops, endpoints and peripherals
+- Server hardware
+- Networking equipment
+- On-premise server applications
+- SaaS products
 
 {{% /alert %}}
 
@@ -76,22 +75,22 @@ The Blueprint does not inherently leverage the use of Managed Service Providers 
 
 #### Organisational policies and processes implemented
 
-`<SYSTEM-NAME>` only uses managed services that have been procured through existing `<ORGANISATION-NAME>` supply arrangements. 
+`<SYSTEM-NAME>` only uses managed services that have been procured through existing `<ORGANISATION-NAME>` supply arrangements.
 
 The following Managed Service Providers (MSPs) are used in relation to `<SYSTEM-NAME>`:
 
 **`<MANAGED SERVICE PROVIDER 1>`**
 
-| MSP Name                                    | `<MSP-NAME>`                                                          |
-| ------------------------------------------- | --------------------------------------------------------------------- |
-| Managed service name                        | `<MSP-SERVICE>`                                                       |
-| Purpose of managed service                  | `<PURPOSE>`                                                           |
-| Sensitivity/classification of data involved | `<PROTECTED>`                                                         |
-| Due date for next security assessment       | `<MMM-YYYY>`                                                          |
-| Contractual arrangements                    | [`<LINK>`]({{<ref "security-and-governance/general-documentation">}}) |
-| Point of contact                            | `<MSP-POC-NAME>`                                                      |
-| Contact email                               | `<CONTACT-EMAIL>`                                                     |
-| 24/7 contact phone                          | `<+61X XX XXX XXX>`                                                   |
+| MSP Name                                    | `<MSP-NAME>`                                               |
+| ------------------------------------------- | ---------------------------------------------------------- |
+| Managed service name                        | `<MSP-SERVICE>`                                            |
+| Purpose of managed service                  | `<PURPOSE>`                                                |
+| Sensitivity/classification of data involved | `<PROTECTED>`                                              |
+| Due date for next security assessment       | `<MMM-YYYY>`                                               |
+| Contractual arrangements                    | [`<LINK>`](/security-and-governance/general-documentation) |
+| Point of contact                            | `<MSP-POC-NAME>`                                           |
+| Contact email                               | `<CONTACT-EMAIL>`                                          |
+| 24/7 contact phone                          | `<+61X XX XXX XXX>`                                        |
 
 `<INSERT ADDITIONAL INFORMATION AS APPROPRIATE>`
 
@@ -117,16 +116,15 @@ The following cloud services providers are used in relation to `<SYSTEM-NAME>`:
 
 **Contractual details and contacts**
 
-| Field                                                | Value                                                                       |
-| ---------------------------------------------------- | --------------------------------------------------------------------------- |
-| Completed IRAP Assessment                            | Yes ([<`LINK`>]({{<ref "security-and-governance/general-documentation">}})) |
-| Completed Vendor Assessment by `<ORGANISATION-NAME>` | Yes ([<`LINK`>]({{<ref "security-and-governance/general-documentation">}})) |
-| Due date for next security assessment                | `<MMM-YYYY>`                                                                |
-| Contractual arrangements                             | [<`LINK`>]({{<ref "security-and-governance/general-documentation">}})       |
-| Point of contact                                     | `<CSP-POC-NAME>`                                                            |
-| Contact email                                        | `<CONTACT-EMAIL>`                                                           |
-| 24/7 contact phone                                   | `<+61X XX XXX XXX>`                                                         |
-
+| Field                                                | Value                                                            |
+| ---------------------------------------------------- | ---------------------------------------------------------------- |
+| Completed IRAP Assessment                            | Yes ([<`LINK`>](/security-and-governance/general-documentation)) |
+| Completed Vendor Assessment by `<ORGANISATION-NAME>` | Yes ([<`LINK`>](/security-and-governance/general-documentation)) |
+| Due date for next security assessment                | `<MMM-YYYY>`                                                     |
+| Contractual arrangements                             | [<`LINK`>](/security-and-governance/general-documentation)       |
+| Point of contact                                     | `<CSP-POC-NAME>`                                                 |
+| Contact email                                        | `<CONTACT-EMAIL>`                                                |
+| 24/7 contact phone                                   | `<+61X XX XXX XXX>`                                              |
 
 **Entra ID**
 
@@ -150,7 +148,6 @@ The following cloud services providers are used in relation to `<SYSTEM-NAME>`:
 | Sensitivity/classification of data involved                   | `<PROTECTED>`   |
 | Availability regions used                                     | `<REGION>`      |
 
-
 **Defender**
 
 | Field                                                         | Value           |
@@ -161,7 +158,6 @@ The following cloud services providers are used in relation to `<SYSTEM-NAME>`:
 | Description of data involved                                  | `<DESCRIPTION>` |
 | Sensitivity/classification of data involved                   | `<PROTECTED>`   |
 | Availability regions used                                     | `<REGION>`      |
-
 
 **Exchange Online**
 
@@ -174,7 +170,6 @@ The following cloud services providers are used in relation to `<SYSTEM-NAME>`:
 | Sensitivity/classification of data involved                   | `<PROTECTED>`   |
 | Availability regions used                                     | `<REGION>`      |
 
-
 **Exchange Online Protection**
 
 | Field                                                         | Value           |
@@ -185,7 +180,6 @@ The following cloud services providers are used in relation to `<SYSTEM-NAME>`:
 | Description of data involved                                  | `<DESCRIPTION>` |
 | Sensitivity/classification of data involved                   | `<PROTECTED>`   |
 | Availability regions used                                     | `<REGION>`      |
-
 
 **SharePoint Online**
 
@@ -198,7 +192,6 @@ The following cloud services providers are used in relation to `<SYSTEM-NAME>`:
 | Sensitivity/classification of data involved                   | `<PROTECTED>`   |
 | Availability regions used                                     | `<REGION>`      |
 
-
 **OneDrive for Business**
 
 | Field                                                         | Value           |
@@ -209,7 +202,6 @@ The following cloud services providers are used in relation to `<SYSTEM-NAME>`:
 | Description of data involved                                  | `<DESCRIPTION>` |
 | Sensitivity/classification of data involved                   | `<PROTECTED>`   |
 | Availability regions used                                     | `<REGION>`      |
-
 
 **Teams**
 
@@ -222,7 +214,6 @@ The following cloud services providers are used in relation to `<SYSTEM-NAME>`:
 | Sensitivity/classification of data involved                   | `<PROTECTED>`   |
 | Availability regions used                                     | `<REGION>`      |
 
-
 **Forms**
 
 | Field                                                         | Value           |
@@ -233,7 +224,6 @@ The following cloud services providers are used in relation to `<SYSTEM-NAME>`:
 | Description of data involved                                  | `<DESCRIPTION>` |
 | Sensitivity/classification of data involved                   | `<PROTECTED>`   |
 | Availability regions used                                     | `<REGION>`      |
-
 
 **Power Automate**
 
@@ -246,7 +236,6 @@ The following cloud services providers are used in relation to `<SYSTEM-NAME>`:
 | Sensitivity/classification of data involved                   | `<PROTECTED>`   |
 | Availability regions used                                     | `<REGION>`      |
 
-
 **Power BI**
 
 | Field                                                         | Value           |
@@ -257,7 +246,6 @@ The following cloud services providers are used in relation to `<SYSTEM-NAME>`:
 | Description of data involved                                  | `<DESCRIPTION>` |
 | Sensitivity/classification of data involved                   | `<PROTECTED>`   |
 | Availability regions used                                     | `<REGION>`      |
-
 
 **Power Apps**
 
@@ -270,7 +258,6 @@ The following cloud services providers are used in relation to `<SYSTEM-NAME>`:
 | Sensitivity/classification of data involved                   | `<PROTECTED>`   |
 | Availability regions used                                     | `<REGION>`      |
 
-
 **Log Analytics**
 
 | Field                                                         | Value           |
@@ -281,7 +268,6 @@ The following cloud services providers are used in relation to `<SYSTEM-NAME>`:
 | Description of data involved                                  | `<DESCRIPTION>` |
 | Sensitivity/classification of data involved                   | `<PROTECTED>`   |
 | Availability regions used                                     | `<REGION>`      |
-
 
 **Whiteboard**
 
@@ -294,7 +280,6 @@ The following cloud services providers are used in relation to `<SYSTEM-NAME>`:
 | Sensitivity/classification of data involved                   | `<PROTECTED>`   |
 | Availability regions used                                     | `<REGION>`      |
 
-
 **Planner**
 
 | Field                                                         | Value           |
@@ -305,7 +290,6 @@ The following cloud services providers are used in relation to `<SYSTEM-NAME>`:
 | Description of data involved                                  | `<DESCRIPTION>` |
 | Sensitivity/classification of data involved                   | `<PROTECTED>`   |
 | Availability regions used                                     | `<REGION>`      |
-
 
 **Viva Learning**
 
@@ -318,19 +302,17 @@ The following cloud services providers are used in relation to `<SYSTEM-NAME>`:
 | Sensitivity/classification of data involved                   | `<PROTECTED>`   |
 | Availability regions used                                     | `<REGION>`      |
 
-
-
 ##### `<PROVIDER-2>`
 
 **Contractual details and contacts**
 
-| Field                                 | Value                                                                 |
-| ------------------------------------- | --------------------------------------------------------------------- |
-| Due date for next security assessment | `<MMM-YYYY>`                                                          |
-| Contractual arrangements              | [<`LINK`>]({{<ref "security-and-governance/general-documentation">}}) |
-| Point of contact                      | `<CSP-POC-NAME>`                                                      |
-| Contact email                         | `<CONTACT-EMAIL>`                                                     |
-| 24/7 contact phone                    | `<+61X XX XXX XXX>`                                                   |
+| Field                                 | Value                                                      |
+| ------------------------------------- | ---------------------------------------------------------- |
+| Due date for next security assessment | `<MMM-YYYY>`                                               |
+| Contractual arrangements              | [<`LINK`>](/security-and-governance/general-documentation) |
+| Point of contact                      | `<CSP-POC-NAME>`                                           |
+| Contact email                         | `<CONTACT-EMAIL>`                                          |
+| 24/7 contact phone                    | `<+61X XX XXX XXX>`                                        |
 
 **`<SERVICE 1>`**
 
@@ -353,20 +335,19 @@ No technical controls are implemented in `<SYSTEM-NAME>` relating to the procure
 
 ### Related information
 
-#### Security & Governance
+#### Security and governance
 
-* None identified
+- None identified
 
 #### Design
 
-* None identified
+- None identified
 
 #### Configuration
 
-* None identified
-
+- None identified
 
 #### External links
 
-* ASD's [*Guidelines for Procurement and Outsourcing*](https://www.cyber.gov.au/resources-business-and-government/essential-cyber-security/ism/cyber-security-guidelines/guidelines-procurement-and-outsourcing)
-* Microsoft's [Service Trust Portal](https://servicetrust.microsoft.com/)
+- ASD's [_Guidelines for Procurement and Outsourcing_](https://www.cyber.gov.au/resources-business-and-government/essential-cyber-security/ism/cyber-security-guidelines/guidelines-procurement-and-outsourcing)
+- Microsoft's [Service Trust Portal](https://servicetrust.microsoft.com)

@@ -1,13 +1,12 @@
 ---
 title: "Endpoints"
-linkTitle: "Endpoints"
 weight: 5
 description: "This section describes the configuration of Defender for Endpoint settings within Microsoft Defender associated with systems built according to the guidance provided by ASD's Blueprint for Secure Cloud."
 ---
 
 {{% alert title="Instruction" color="dark" %}}
 
-The below pages outline the *as built* configuration for ASD's *Blueprint for Secure Cloud* (the Blueprint) for the Microsoft Defender portal at the following URL:
+The below pages outline the _as built_ configuration for ASD's _Blueprint for Secure Cloud_ (the Blueprint) for the Microsoft Defender portal at the following URL:
 
 <https://security.microsoft.com/securitysettings/endpoints/integration>
 

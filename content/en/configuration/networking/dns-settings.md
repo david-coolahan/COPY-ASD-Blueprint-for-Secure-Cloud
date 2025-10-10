@@ -1,6 +1,5 @@
 ---
-title: "DNS Settings"
-linkTitle: "DNS Settings"
+title: "DNS settings"
 weight: 090
 description: "This section describes the DNS configuration associated with hybrid systems built according to guidance in ASD's Blueprint for Secure Cloud."
 ---

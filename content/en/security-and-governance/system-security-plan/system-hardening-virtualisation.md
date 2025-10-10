@@ -1,6 +1,5 @@
 ---
-title: "Virtualisation Hardening"
-linkTitle: "System Hardening: Virtualisation"
+title: "Virtualisation hardening"
 weight: 74
 type: docs
 description: This page provides a template and guidance to assist organisations in documenting their approach to virtualisation hardening associated with their system(s) built on ASD's Blueprint for Secure Cloud.
@@ -16,7 +15,7 @@ When completing the below template, organisations should insert and update infor
 
 {{% /alert %}}
 
-Due to the number of applicable controls in ASD's [*Guidelines for System Hardening*](https://www.cyber.gov.au/resources-business-and-government/essential-cyber-security/ism/cyber-security-guidelines/guidelines-system-hardening), guidance on system hardening has been split into its five sections for the purpose of this SSP.
+Due to the number of applicable controls in ASD's [_Guidelines for System Hardening_](https://www.cyber.gov.au/resources-business-and-government/essential-cyber-security/ism/cyber-security-guidelines/guidelines-system-hardening), guidance on system hardening has been split into its five sections for the purpose of this SSP.
 
 ### Virtualisation hardening
 
@@ -24,7 +23,7 @@ Due to the number of applicable controls in ASD's [*Guidelines for System Harden
 
 This section of the SSP is not applicable to `<SYSTEM-NAME>` as it does not utilise system virtualisation and as such the requirements of this section are not directly applicable to this SSP. However, `<SYSTEM-NAME>` does rely on other systems and services that implement virtualisation as part of their hosting.
 
-In particular, `<SYSTEM-NAME>` leverages system virtualisation components as implemented by Microsoft as part of its Microsoft 365 services. `<ORGANISATION-NAME>` has assessed the implementation of these as documented in Microsoft's IRAP assessments, and available in Microsoft's [Service Trust Portal](https://servicetrust.microsoft.com/) and is satisfied with their implementation as they relate to `<SYSTEM-NAME>`.
+In particular, `<SYSTEM-NAME>` leverages system virtualisation components as implemented by Microsoft as part of its Microsoft 365 services. `<ORGANISATION-NAME>` has assessed the implementation of these as documented in Microsoft's IRAP assessments, and available in Microsoft's [Service Trust Portal](https://servicetrust.microsoft.com) and is satisfied with their implementation as they relate to `<SYSTEM-NAME>`.
 
 `<INSERT ADDITIONAL INFORMATION AS APPROPRIATE>`
 
@@ -42,20 +41,19 @@ No technical controls are implemented in `<SYSTEM-NAME>` relating to virtualisat
 
 ### Related information
 
-#### Security & Governance
+#### Security and governance
 
-* [System Management]({{<ref "system-management.md">}})
+- [System management](/security-and-governance/system-security-plan/system-management)
 
 #### Design
 
-* [Windows Hardware]({{<ref "design/endpoints/windows/hardware">}})
+- [Windows hardware](/design/endpoints/windows/hardware)
 
 #### Configuration
 
-* [Microsoft Intune - Profile Configurations]({{<ref "configuration/intune/devices/configuration-policies">}})
-
+- [Configuration policies](/configuration/intune/devices/configuration-policies)
 
 #### External documentation
 
-* ASD's [*Guidelines for System Hardening*](https://www.cyber.gov.au/resources-business-and-government/essential-cyber-security/ism/cyber-security-guidelines/guidelines-system-hardening)
-* Microsoft's [Service Trust Portal](https://servicetrust.microsoft.com/)
+- ASD's [_Guidelines for System Hardening_](https://www.cyber.gov.au/resources-business-and-government/essential-cyber-security/ism/cyber-security-guidelines/guidelines-system-hardening)
+- Microsoft's [Service Trust Portal](https://servicetrust.microsoft.com)

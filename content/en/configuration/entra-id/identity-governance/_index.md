@@ -1,13 +1,12 @@
 ---
 title: "Identity Governance"
-linkTitle: "Identity Governance"
 weight: 60
 description: "This page describes the configuration of identity governance within Microsoft Entra ID associated with systems built according to the guidance provided by ASD's Blueprint for Secure Cloud."
 ---
 
 {{% alert title="Instruction" color="dark" %}}
 
-The below pages outline the *as built* configuration for ASD's *Blueprint for Secure Cloud* (the Blueprint) for the Microsoft Entra admin portal at the following URL:
+The below pages outline the _as built_ configuration for ASD's _Blueprint for Secure Cloud_ (the Blueprint) for the Microsoft Entra admin portal at the following URL:
 
 <https://entra.microsoft.com/#view/Microsoft_Azure_IdentityGovernance/Dashboard.ReactView>
 

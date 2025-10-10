@@ -10,8 +10,8 @@ Litigation hold is not enabled by default, and legal teams will need to proactiv
 
 {{% alert title="Design decisions" color="warning" %}}
 
-| Decision point  | Design decision                          | Justification                                                    |
-|-----------------|------------------------------------------|------------------------------------------------------------------|
+| Decision point  | Design decision                          | Justification                                                          |
+| --------------- | ---------------------------------------- | ---------------------------------------------------------------------- |
 | Litigation hold | Configured as required on selected users | Litigation hold requirements are unique to each organisation and user. |
 
 {{% /alert %}}
@@ -24,18 +24,18 @@ Litigation hold is not an alternative to backups. While it is true that it keeps
 
 ### Related information
 
-#### Security & Governance
+#### Security and governance
 
-* None identified
+- None identified
 
 #### Design
 
-* None identified
+- None identified
 
 #### Configuration
 
-* None identified
+- None identified
 
 #### References
 
-* None identified
+- None identified

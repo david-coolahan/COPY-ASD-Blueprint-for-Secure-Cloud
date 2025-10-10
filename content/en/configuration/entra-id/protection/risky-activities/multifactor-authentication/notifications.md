@@ -1,6 +1,5 @@
 ---
 title: "Notifications"
-linkTitle: "Notifications"
 weight: 30
 type: docs
 description: "This page describes the configuration of multifactor authentication within Microsoft Entra ID associated with systems built according to the guidance provided by ASD's Blueprint for Secure Cloud."
@@ -8,7 +7,7 @@ description: "This page describes the configuration of multifactor authenticatio
 
 {{% alert title="Instruction" color="dark" %}}
 
-The below tables outline the *as built* configuration for ASD's *Blueprint for Secure Cloud* (the Blueprint) for the Microsoft Entra admin portal at the following URL:
+The below tables outline the _as built_ configuration for ASD's _Blueprint for Secure Cloud_ (the Blueprint) for the Microsoft Entra admin portal at the following URL:
 
 <https://entra.microsoft.com/#view/Microsoft_AAD_IAM/MultifactorAuthenticationMenuBlade/~/Notifications>
 
@@ -22,24 +21,24 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 
 | Item                     |                                     Value |
 | ------------------------ | ----------------------------------------: |
-| Recipients Email Address | *Organisation notification email address* |
+| Recipients Email Address | _Organisation notification email address_ |
 
 ### Related information
 
-#### Security & Governance
+#### Security and governance
 
-* [Authentication Hardening]({{<ref "system-hardening-authentication">}})
-* [Multi-factor Authentication]({{<ref "multi-factor-authentication">}})
-* [System Monitoring]({{<ref "system-monitoring">}})
-  
+- [Authentication hardening](/security-and-governance/system-security-plan/system-hardening-authentication)
+- [Multi-factor authentication](/security-and-governance/essential-eight/multi-factor-authentication)
+- [System monitoring](/security-and-governance/system-security-plan/system-monitoring)
+
 #### Design
 
-* [Conditional access]({{<ref "design/platform/identity/conditional-access">}})
-  
+- [Conditional access](/design/platform/identity/conditional-access)
+
 #### Configuration
 
-* [Notifications]({{<ref "notifications.md">}})
+- [Notifications](/configuration/entra-id/protection/password-reset/notifications)
 
 #### References
 
-* None identified
+- None identified

@@ -1,5 +1,5 @@
 ---
-title: "Legacy Features"
+title: "Legacy features"
 weight: 50
 description: "This section describes the design decisions associated with SharePoint Legacy Features for system(s) built using ASD's Blueprint for Secure Cloud."
 ---
@@ -9,7 +9,7 @@ Legacy features allow for backwards compatibility for legacy capabilities from S
 {{% alert title="Design decisions" color="warning" %}}
 
 | Decision point                 | Design decision                                                                                     | Justification                                                                                                                                                                                                                                                                                                                                                                                                       |
-|--------------------------------|-----------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| ------------------------------ | --------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | InfoPath                       | Not configured                                                                                      | InfoPath is going to be deprecated and it is recommended that InfoPath forms to be redeveloped into PowerApps in Office 365.                                                                                                                                                                                                                                                                                        |
 | Records Management             | Not configured                                                                                      | Records Management administrative screen provides configuration settings to route files from a SharePoint Document Library to a centralised SharePoint Records Management site. This is to support the traditional Centralised records management system in SharePoint.<br>**Note**, this is a separate feature from [records management in Microsoft 365](https://learn.microsoft.com/purview/records-management). |
 | Secure Store Settings          | Not Configured                                                                                      | Secure Store in SharePoint Online provides a key vault to store all sensitive information in SharePoint. This is primarily used by InfoPath to store sensitive keys and passwords. It is recommended to use Azure Key Vault to store sensitive information.                                                                                                                                                         |
@@ -23,18 +23,18 @@ Legacy features allow for backwards compatibility for legacy capabilities from S
 
 ### Related information
 
-#### Security & Governance
+#### Security and governance
 
-* None identified
+- None identified
 
 #### Design
 
-* None identified
+- None identified
 
 #### Configuration
 
-* None identified
+- None identified
 
 #### References
 
-* None identified
+- None identified

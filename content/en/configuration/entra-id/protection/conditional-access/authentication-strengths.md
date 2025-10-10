@@ -1,6 +1,5 @@
 ---
 title: "Authentication strengths"
-linkTitle: "Authentication strengths"
 weight: 40
 type: docs
 description: "This page describes the configuration of authentication strengths within Microsoft Entra ID associated with systems built according to the guidance provided by ASD's Blueprint for Secure Cloud."
@@ -8,7 +7,7 @@ description: "This page describes the configuration of authentication strengths 
 
 {{% alert title="Instruction" color="dark" %}}
 
-The below tables outline the *as built* configuration for ASD's *Blueprint for Secure Cloud* (the Blueprint) for the Microsoft Entra admin portal at the following URL:
+The below tables outline the _as built_ configuration for ASD's _Blueprint for Secure Cloud_ (the Blueprint) for the Microsoft Entra admin portal at the following URL:
 
 <https://entra.microsoft.com/#view/Microsoft_AAD_ConditionalAccess/ConditionalAccessBlade/~/AuthStrengths/fromNav>
 
@@ -31,20 +30,20 @@ New authentication strengths can take some time to appear for use in Conditional
 
 ### Related information
 
-#### Security & Governance
+#### Security and governance
 
-* [Multi-factor Authentication]({{<ref "multi-factor-authentication">}})
+- [Multi-factor authentication](/security-and-governance/essential-eight/multi-factor-authentication)
 
 #### Design
 
-* [Conditional access]({{<ref "design/platform/identity/conditional-access">}})
-* [Purview labels]({{<ref "design/shared-services/purview/labelling-and-classification">}})
+- [Conditional access](/design/platform/identity/conditional-access)
+- [Purview labels](/design/shared-services/purview/labelling-and-classification)
 
 #### Configuration
 
-* [Entra ID Protection]({{<ref "configuration/entra-id/protection">}})
-* [Endpoint security policies]({{<ref "configuration/defender/endpoints/configuration-management/endpoint-security-policies.md">}})
+- [Entra ID Protection](/configuration/entra-id/protection)
+- [Endpoint security policies](/configuration/defender/endpoints/configuration-management/endpoint-security-policies)
 
 #### References
 
-* [Conditional Access: Target resources](https://learn.microsoft.com/entra/identity/conditional-access/concept-conditional-access-cloud-apps#authentication-context)
+- [Conditional Access: Target resources](https://learn.microsoft.com/entra/identity/conditional-access/concept-conditional-access-cloud-apps#authentication-context)

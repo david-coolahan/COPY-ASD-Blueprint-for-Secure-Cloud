@@ -1,5 +1,5 @@
 ---
-title: "Web Services"
+title: "Web services"
 weight: 20
 description: "This section describes the design decisions associated with securing Web Services or cloud Software as a Services (SaaS) applications including Microsoft and other third party services for system(s) built using ASD's Blueprint for Secure Cloud."
 ---
@@ -10,10 +10,10 @@ description: "This section describes the design decisions associated with securi
 
 To manage the risks presented using cloud services, Microsoft has defined a [cloud app security framework](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security#the-cloud-app-security-framework) which Microsoft Defender for Cloud Apps implements:
 
-* **Discover and control the use of Shadow IT** – Shadow IT includes cloud services that are in use by users but not assessed and approved by security, including Software-as-a-Service (SaaS), Platform-as-a-Service (PaaS), and Infrastructure-as-a-Service (IaaS) offerings. To protect users and their data these services must be identified so that their risk can be determined and management controls can be implemented. Microsoft Defender for Cloud Apps enables administrators to assess an extensive library of apps against a wide range of risks.
-* **Protect sensitive information anywhere in the cloud** – Once data is uploaded to a cloud service it is harder to control and manage compared to traditional on-premises storage. Microsoft Defender for Cloud Apps enables controls to be applied to data regardless of where it is stored, leveraging automated processes and inbuilt policies to both classify and protect information.
-* **Protect against cyber threats and anomalies** – Due to the public nature of cloud apps they are exposed to potential malicious activity from external actors. Microsoft Defender for Cloud Apps monitors both user behaviour and app activity to identify anomalies and perform automatic remediation to ensure the confidentiality of data stored in the cloud. This includes identifying indications that a user's account credentials have been compromised.
-* **Assess the compliance of cloud apps** – Performing security assessments of cloud apps and services is both complex and expensive. Microsoft Defender for Cloud Apps provides an overview of the industry and regulatory standards that each identified cloud app has been assessed against to simplify the approval process.
+- **Discover and control the use of Shadow IT** – Shadow IT includes cloud services that are in use by users but not assessed and approved by security, including Software-as-a-Service (SaaS), Platform-as-a-Service (PaaS), and Infrastructure-as-a-Service (IaaS) offerings. To protect users and their data these services must be identified so that their risk can be determined and management controls can be implemented. Microsoft Defender for Cloud Apps enables administrators to assess an extensive library of apps against a wide range of risks.
+- **Protect sensitive information anywhere in the cloud** – Once data is uploaded to a cloud service it is harder to control and manage compared to traditional on-premises storage. Microsoft Defender for Cloud Apps enables controls to be applied to data regardless of where it is stored, leveraging automated processes and inbuilt policies to both classify and protect information.
+- **Protect against cyber threats and anomalies** – Due to the public nature of cloud apps they are exposed to potential malicious activity from external actors. Microsoft Defender for Cloud Apps monitors both user behaviour and app activity to identify anomalies and perform automatic remediation to ensure the confidentiality of data stored in the cloud. This includes identifying indications that a user's account credentials have been compromised.
+- **Assess the compliance of cloud apps** – Performing security assessments of cloud apps and services is both complex and expensive. Microsoft Defender for Cloud Apps provides an overview of the industry and regulatory standards that each identified cloud app has been assessed against to simplify the approval process.
 
 ### Product architecture
 
@@ -27,12 +27,12 @@ At the time of writing Defender for Cloud Apps is hosted from Azure data centres
 
 #### Data retention
 
-The data retention period for information stored within Microsoft Defender for Cloud Apps varies depending on the specific type of data.  The [four data types](https://docs.microsoft.com/cloud-app-security/cas-compliance-trust#data-retention) and their respective periods are listed below:
+The data retention period for information stored within Microsoft Defender for Cloud Apps varies depending on the specific type of data. The [four data types](https://docs.microsoft.com/cloud-app-security/cas-compliance-trust#data-retention) and their respective periods are listed below:
 
-* Activity log – 180 days
-* Discovery data – 90 days
-* Alerts – 180 days
-* Governance log – 120 days
+- Activity log – 180 days
+- Discovery data – 90 days
+- Alerts – 180 days
+- Governance log – 120 days
 
 Note, all user activity and security alert information can be exported from Microsoft Defender for Cloud Apps in Comma-Separated Values (CSV) format if longer data retention is required.
 
@@ -55,8 +55,8 @@ There are two types of cloud discovery reports that are generated by Microsoft D
 
 Continuous reports can be generated a few ways such as configuring one or more of the following [automated log upload capabilities](https://docs.microsoft.com/cloud-app-security/set-up-cloud-discovery):
 
-* **Log collector** – centralisation of logs from one or more proxy or firewall devices to a Docker-powered collector using Syslog and/or File Transfer Protocol (FTP).
-* **Microsoft Defender Advanced Threat Protection (ATP) integration** – native integration with Defender ATP logs directly from onboarded endpoint devices running, regardless of whether they connect to cloud services via a managed gateway or directly via the internet.
+- **Log collector** – centralisation of logs from one or more proxy or firewall devices to a Docker-powered collector using Syslog and/or File Transfer Protocol (FTP).
+- **Microsoft Defender Advanced Threat Protection (ATP) integration** – native integration with Defender ATP logs directly from onboarded endpoint devices running, regardless of whether they connect to cloud services via a managed gateway or directly via the internet.
 
 Microsoft Defender for Cloud Apps supports a wide range of [popular proxy and firewall vendors and products](https://docs.microsoft.com/cloud-app-security/set-up-cloud-discovery#supported-firewalls-and-proxies-) for both snapshot and continuous reports (via log collectors). A custom parser can also be configured for unsupported devices enabling manual attribute mapping.
 
@@ -138,10 +138,10 @@ To protect the privacy of users Microsoft Defender for Cloud Apps supports anony
 Security analysts can resolve encrypted usernames on demand to assist in investigations, and each username conversion is recorded in the Governance log. In addition to usernames, Microsoft Defender for Cloud Apps can also anonymise Windows machine names.
 
 {{% alert title="Design decisions" color="warning" %}}
-| Decision point             | Design decision | Justification                                                                                                                                                         |
+| Decision point | Design decision | Justification |
 | -------------------------- | --------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Username anonymisation     | Not enabled     | Reduced investigation effort by not requiring security analysts to decrypt usernames on demand. If the organisation identifies a requirement this can be enabled.     |
-| Machine name anonymisation | Not enabled     | Reduced investigation effort by not requiring security analysts to decrypt machine names on demand. If the organisation identifies a requirement this can be enabled. |
+| Username anonymisation | Not enabled | Reduced investigation effort by not requiring security analysts to decrypt usernames on demand. If the organisation identifies a requirement this can be enabled. |
+| Machine name anonymisation | Not enabled | Reduced investigation effort by not requiring security analysts to decrypt machine names on demand. If the organisation identifies a requirement this can be enabled. |
 
 {{% /alert %}}
 
@@ -159,7 +159,7 @@ This enables Cloud Discovery to identify these custom cloud apps from uploaded f
 
 {{% /alert %}}
 
-#### App filters and queries 
+#### App filters and queries
 
 Microsoft Defender for Cloud Apps supports the creation and assignment of custom app tags from within the portal. Security analysts can create and apply custom tags to allow them to filter and query results specific to an area of interest. For example, a custom tag may be created for a business unit and that tag applied to only the applications that are approved for their use (i.e. Procurement). An analyst can then quickly filter based on this tag to review the use of these applications.
 
@@ -185,13 +185,13 @@ To connect to each cloud app via API Microsoft Defender for Cloud Apps will requ
 
 Microsoft also provide a connector for [Microsoft 365 apps](https://learn.microsoft.com/defender-cloud-apps/connect-office-365), which supports a number of their services including:
 
-* Office 365
-* Dynamics 365
-* Exchange Online
-* OneDrive for Business
-* SharePoint Online
-* Power BI
-* Teams
+- Office 365
+- Dynamics 365
+- Exchange Online
+- OneDrive for Business
+- SharePoint Online
+- Power BI
+- Teams
 
 {{% alert title="Note" color="info" %}}
 
@@ -216,17 +216,17 @@ Microsoft Defender for Cloud Apps supports a range of policy types to address th
 
 Up to seven policy types are available in Microsoft Defender for Cloud Apps depending on the data sources that have been enabled. These include:
 
-* **Access policies** – providing real-time monitoring and control of user logins to identified cloud apps.
-* **Activity policies** – leveraging integration with each cloud app's API, provides monitoring and control of activities within those applications (specific activities dependent on each vendor's API capabilities).
-* **Anomaly detection policy** – detecting anomalous activities within connected cloud apps based on specific risk factors compared with a pre-determined baseline.
-* **App discovery policy** – detecting new (unsanctioned) cloud apps and provides associated alerts.
-* **Cloud Discovery anomaly detection policy** – reviewing the logs provided to Cloud Discovery specifically (as previously described) to detect anomalous behaviour.
-* **File policy** – enabling scanning of connected cloud apps to detect and apply restrictions to specific sensitive files and content.
-* **Session policy** – providing real-time monitoring and control of user activities within authenticated sessions to identified cloud apps.
+- **Access policies** – providing real-time monitoring and control of user logins to identified cloud apps.
+- **Activity policies** – leveraging integration with each cloud app's API, provides monitoring and control of activities within those applications (specific activities dependent on each vendor's API capabilities).
+- **Anomaly detection policy** – detecting anomalous activities within connected cloud apps based on specific risk factors compared with a pre-determined baseline.
+- **App discovery policy** – detecting new (unsanctioned) cloud apps and provides associated alerts.
+- **Cloud Discovery anomaly detection policy** – reviewing the logs provided to Cloud Discovery specifically (as previously described) to detect anomalous behaviour.
+- **File policy** – enabling scanning of connected cloud apps to detect and apply restrictions to specific sensitive files and content.
+- **Session policy** – providing real-time monitoring and control of user activities within authenticated sessions to identified cloud apps.
 
 {{% alert title="Note" color="info" %}}
 
-Access and Sessions policies are covered in additional detail in the [Conditional Access App Control section]({{<ref "#conditional-access-app-control-protection">}}). 
+Access and Sessions policies are covered in additional detail in the [Conditional Access App Control section](/design/platform/security/web-service-security/#conditional-access-app-control-protection).
 
 {{% /alert %}}
 
@@ -234,8 +234,8 @@ In addition to the policy types listed above, Microsoft Defender for Cloud Apps 
 
 {{% alert title="Design decisions" color="warning" %}}
 
-| Decision point  | Design decision                                                                                                | Justification                                                                            |
-| --------------- | -------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------- |
+| Decision point  | Design decision                                                                                                 | Justification                                                                            |
+| --------------- | --------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------- |
 | Use of policies | Use of policies is organisation-specific and would need further development with internal Cyber security Teams. | Provides visibility within the organisation of suspicious behaviour and application use. |
 
 {{% /alert %}}
@@ -264,7 +264,7 @@ The Microsoft Defender for Cloud Apps Information Protection design decisions ca
 
 ##### Admin quarantine
 
-The admin quarantine is used to store files for administrative review that have been matched against an Microsoft Defender for Cloud Apps file policy. Examples include identifying and removing files from cloud apps that include sensitive content, such as financial and Personally Identifiable Information (PII) that should only be stored on-premises and not shared with external collaborators. 
+The admin quarantine is used to store files for administrative review that have been matched against an Microsoft Defender for Cloud Apps file policy. Examples include identifying and removing files from cloud apps that include sensitive content, such as financial and Personally Identifiable Information (PII) that should only be stored on-premises and not shared with external collaborators.
 
 {{% alert title="Note" color="info" %}}
 
@@ -321,19 +321,19 @@ The Conditional Access App Control capability of Microsoft Defender for Cloud Ap
 
 Examples of the Conditional Access App Control policies that can be configured to monitor and control user app access and sessions in real time are listed below:
 
-* **Prevent data exfiltration** – block copy and cut clipboard actions, printing and downloading of sensitive information and documents.
-* **Protect on download** – allows sensitive documents to be downloaded by leveraging AIP applies a classification label and protection to it.
-* **Prevent upload of unlabelled files** – blocks documents from being uploaded until a user applies an AIP label to them based on the sensitivity of the information they contain.
-* **Monitor user sessions for compliance** – identify risky users based on their behaviour during a session.
-* **Block access** – based on specific risk factors can prevent users and/or devices from accessing specific resources across one or all connected apps.
-* **Block custom activities** – application-specific events can be blocked if they increase the risk of data leakage or exfiltration.
+- **Prevent data exfiltration** – block copy and cut clipboard actions, printing and downloading of sensitive information and documents.
+- **Protect on download** – allows sensitive documents to be downloaded by leveraging AIP applies a classification label and protection to it.
+- **Prevent upload of unlabelled files** – blocks documents from being uploaded until a user applies an AIP label to them based on the sensitivity of the information they contain.
+- **Monitor user sessions for compliance** – identify risky users based on their behaviour during a session.
+- **Block access** – based on specific risk factors can prevent users and/or devices from accessing specific resources across one or all connected apps.
+- **Block custom activities** – application-specific events can be blocked if they increase the risk of data leakage or exfiltration.
 
 Note, to use Conditional Access App Control an Entra ID Premium P1 licence is required in addition to the Microsoft Defender for Cloud Apps licence.
 
 {{% alert title="Design decisions" color="warning" %}}
 
-| Decision point           | Design decision                                                                                               | Justification                                                          |
-| ------------------------ | ------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------- |
+| Decision point           | Design decision                                                                                                | Justification                                                          |
+| ------------------------ | -------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------- |
 | Access control policies  | Use of policies is organisation-specific and would need further development with internal cyber security team. | Provides a greater security posture for the organisation applications. |
 | Session control policies | Use of policies is organisation-specific and would need further development with internal cyber security team. | Provides a greater security posture for users within the organisation. |
 
@@ -361,8 +361,8 @@ If user notifications are enabled administrators can either use a Microsoft-prov
 
 {{% alert title="Design decisions" color="warning" %}}
 
-| Decision point                | Design decision | Justification                                                                                                                                                                                             |
-| ----------------------------- | --------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Decision point                | Design decision | Justification                                                                                                                                                                                              |
+| ----------------------------- | --------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | User monitoring notifications | Not enabled     | There is no default requirement to notify users. Organisations can enable User Monitoring as appropriate to meet operational requirements without impacting the cyber security posture of the environment. |
 
 {{% /alert %}}
@@ -385,7 +385,6 @@ A combination of multiple of these methods can be configured to identify devices
 | ---------------------------------------------------- | --------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Use of client certificates for device identification | Not configured  | There is no requirement to use client certificates has been identified as the organisation will leverage Intune for compliant and Hybrid Microsoft Entra ID devices. |
 
-
 {{% /alert %}}
 
 ##### App onboarding / maintenance
@@ -406,10 +405,10 @@ These users can be identified by either email or User Principal Name (UPN) and m
 
 To integrate with other security solutions, for example Security Information and Event Management (SIEM) products, Microsoft Defender for Cloud Apps supports a range of security extensions. These include:
 
-* **API tokens** – to provide access to Microsoft Defender for Cloud Apps Representational State Transfer (REST) API endpoints for read and update operations.
-* **SIEM agents** – to centralise alerts and activities from Microsoft Defender for Cloud Apps to a SIEM.
-* **External Data Loss Prevention (DLP)** – to connect Microsoft Defender for Cloud Apps to external DLP solutions.
-* **Playbooks** – to leverage Microsoft Flow playbooks for automation.
+- **API tokens** – to provide access to Microsoft Defender for Cloud Apps Representational State Transfer (REST) API endpoints for read and update operations.
+- **SIEM agents** – to centralise alerts and activities from Microsoft Defender for Cloud Apps to a SIEM.
+- **External Data Loss Prevention (DLP)** – to connect Microsoft Defender for Cloud Apps to external DLP solutions.
+- **Playbooks** – to leverage Microsoft Flow playbooks for automation.
 
 Each of these security extension capabilities is described below.
 
@@ -431,7 +430,7 @@ A common use-case for this is to generate block scripts from a third-party netwo
 
 To enable Microsoft Defender for Cloud Apps alerts and activities to be integrated into existing security analyst workflows that have been developed in SIEM products Microsoft Defender for Cloud Apps provides SIEM agents.
 
-The Microsoft Defender for Cloud Apps SIEM agent runs on a server – either on-premises or as IaaS – and acts as a forwarder between Microsoft Defender for Cloud Apps and the SIEM. The SIEM agent makes an outgoing request to Microsoft Defender for Cloud Apps over an encrypted Hypertext Transfer Protocol Secure (HTTPS) channel using port 443, leveraging the Microsoft Defender for Cloud Apps RESTful APIs. Once the data has been downloaded it then forwards it to the SIEM as syslog messages on a configurable Transmission Control Protocol (TCP) or User Datagram Protocol (UDP) port.  
+The Microsoft Defender for Cloud Apps SIEM agent runs on a server – either on-premises or as IaaS – and acts as a forwarder between Microsoft Defender for Cloud Apps and the SIEM. The SIEM agent makes an outgoing request to Microsoft Defender for Cloud Apps over an encrypted Hypertext Transfer Protocol Secure (HTTPS) channel using port 443, leveraging the Microsoft Defender for Cloud Apps RESTful APIs. Once the data has been downloaded it then forwards it to the SIEM as syslog messages on a configurable Transmission Control Protocol (TCP) or User Datagram Protocol (UDP) port.
 
 {{% alert title="Note" color="info" %}}
 
@@ -498,24 +497,24 @@ Specific Microsoft Defender for Cloud Apps alerts can be configured as playbook 
 
 Microsoft Defender for Cloud Apps Security is a cloud-based service that helps keep the organisation secure from threats by collecting data from a cloud-based tenant and hybrid on-premises infrastructure and analysing this data. To achieve this firewall rules and proxy allow lists needs to be in place to allow communication between all the components.
 
-Firewall rules and proxy allow lists will be implemented as part of the Microsoft Defender for Cloud Apps security solution. 
+Firewall rules and proxy allow lists will be implemented as part of the Microsoft Defender for Cloud Apps security solution.
 
 Further details on firewall configuration and proxy allow lists for the solution can be found in the Network Configuration.
 
 ### Related information
 
-#### Security & Governance
+#### Security and governance
 
-* None identified
+- None identified
 
 #### Design
 
-* [Conditional Access App Control section]({{<ref "#conditional-access-app-control-protection">}})
+- [Conditional Access App Control section](/design/platform/security/web-service-security/#conditional-access-app-control-protection)
 
 #### Configuration
 
-* [Device Management]({{<ref "configuration/defender/settings/endpoints/device-management.md">}})
+- [Device management](/configuration/defender/settings/endpoints/device-management)
 
 #### References
 
-* [Microsoft Defender for Cloud Apps Overview](https://docs.microsoft.com/defender-cloud-apps/what-is-defender-for-cloud-apps)
+- [Microsoft Defender for Cloud Apps Overview](https://docs.microsoft.com/defender-cloud-apps/what-is-defender-for-cloud-apps)

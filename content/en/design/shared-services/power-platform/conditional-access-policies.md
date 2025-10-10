@@ -1,5 +1,5 @@
 ---
-title: "Power Platform Specific Conditional Access policies"
+title: "Power Platform specific conditional access policies"
 weight: 55
 description: "This section describes the design decisions associated with Power Platform specific conditional access policies for system(s) built using ASD's Blueprint for Secure Cloud."
 ---
@@ -8,26 +8,26 @@ Given the ability for the Power Platform to be used in a wide range of scenarios
 
 {{% alert title="Design decisions" color="warning" %}}
 
-| Decision point     | Design decision                                                            | Justification                                                                                                                          |
-|--------------------|----------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------|
+| Decision point     | Design decision       | Justification                                                                                                                                                                               |
+| ------------------ | --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Conditional Access | Organisation decision | The Blueprint does not detail specific Power Platform Conditional Access policies as tenancy wide conditional access policies are defined.<br>Organisations implementing the Power Platform |
 
 {{% /alert %}}
 
 ### Related information
 
-#### Security & Governance
+#### Security and governance
 
-* None identified
+- None identified
 
 #### Design
 
-* None identified
+- None identified
 
 #### Configuration
 
-* None identified
+- None identified
 
 #### References
 
-* [Set up Conditional Access for Power Platform](https://docs.microsoft.com/power-platform/guidance/adoption/conditional-access)
+- [Set up Conditional Access for Power Platform](https://docs.microsoft.com/power-platform/guidance/adoption/conditional-access)

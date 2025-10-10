@@ -1,5 +1,5 @@
 ---
-title: "Local Administrator"
+title: "Local administrator"
 weight: 55
 description: "This section describes the design decisions associated with local administrator accounts on Windows 10 and 11 endpoints configured according to guidance in ASD's Blueprint for Secure Cloud."
 ---
@@ -16,31 +16,31 @@ LAPS gives system administrators the ability to set a different, random password
 
 {{% alert title="Design decisions" color="warning" %}}
 
-| Decision point                          | Design decision | Justification                                                                                                                                                                                                                                                                                              |
-|-----------------------------------------|-----------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Local Administrator Account             | Disabled        | The local administrator account will be disabled to align with ASD's [*Hardening Microsoft Windows 10 version 21H1 Workstations*](https://www.cyber.gov.au/resources-business-and-government/maintaining-devices-and-systems/system-hardening-and-administration/system-hardening/hardening-microsoft-windows-10-version-21h1-workstations) guidance.                                                                                                                                                                                                        |
-| Local Administrator Account Name        | Renamed         | The local administrator account will be renamed during the image deployment<br>In line with [Microsoft recommendations for securing the local administrator account](https://learn.microsoft.com/windows/security/threat-protection/security-policy-settings/accounts-rename-administrator-account). |
-| Local Administrator Account Password    | Randomised      | To align with ASD's *Hardening Microsoft Windows 10 version 21H1 Workstations* guidance.                                                                                                                                                                                                                                                         |
-| Additional Local Administrator Accounts | Not Configured  | Additional administrator accounts will not be created during the image deployment.                                                                                                                                                                                                                         |
-| LAPS                                    | Not Configured  | Not required for the solution. The local Administrator account will be disabled and renamed.                                                                                                                                                                                                               |
+| Decision point                          | Design decision | Justification                                                                                                                                                                                                                                                                                                                                         |
+| --------------------------------------- | --------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Local Administrator Account             | Disabled        | The local administrator account will be disabled to align with ASD's [_Hardening Microsoft Windows 10 version 21H1 Workstations_](https://www.cyber.gov.au/resources-business-and-government/maintaining-devices-and-systems/system-hardening-and-administration/system-hardening/hardening-microsoft-windows-10-version-21h1-workstations) guidance. |
+| Local Administrator Account Name        | Renamed         | The local administrator account will be renamed during the image deployment<br>In line with [Microsoft recommendations for securing the local administrator account](https://learn.microsoft.com/windows/security/threat-protection/security-policy-settings/accounts-rename-administrator-account).                                                  |
+| Local Administrator Account Password    | Randomised      | To align with ASD's _Hardening Microsoft Windows 10 version 21H1 Workstations_ guidance.                                                                                                                                                                                                                                                              |
+| Additional Local Administrator Accounts | Not Configured  | Additional administrator accounts will not be created during the image deployment.                                                                                                                                                                                                                                                                    |
+| LAPS                                    | Not Configured  | Not required for the solution. The local Administrator account will be disabled and renamed.                                                                                                                                                                                                                                                          |
 
 {{% /alert %}}
 
 ### Related information
 
-#### Security & Governance
+#### Security and governance
 
-* [Application Control]({{<ref "security-and-governance/essential-eight/application-control.md">}})
-* [Essential Eight: Restrict Microsoft Office Macros]({{<ref "restrict-microsoft-office-macros.md">}})
+- [Essential Eight - Application control](/security-and-governance/essential-eight/application-control)
+- [Essential Eight - Restrict Microsoft Office macros](/security-and-governance/essential-eight/restrict-microsoft-office-macros)
 
 #### Design
 
-* None identified
+- None identified
 
 #### Configuration
 
-* [ASD Windows Hardening Guidelines]({{<ref "configuration/intune/devices/configuration-policies/asd-windows-hardening-guidelines.md">}})
+- [ASD Windows hardening guidelines](/configuration/intune/devices/configuration-policies/asd-windows-hardening-guidelines)
 
 #### References
 
-* None identified
+- None identified

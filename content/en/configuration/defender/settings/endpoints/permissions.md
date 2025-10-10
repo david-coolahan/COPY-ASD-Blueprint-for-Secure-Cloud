@@ -1,13 +1,12 @@
 ---
 title: "Permissions"
-linkTitle: "Permissions"
 weight: 20
 description: "This section describes the configuration of endpoint permissions within Microsoft Defender associated with systems built according to the guidance provided by ASD's Blueprint for Secure Cloud."
 ---
 
 {{% alert title="Instruction" color="dark" %}}
 
-The below tables outline the *as built* configuration for ASD's *Blueprint for Secure Cloud* (the Blueprint) for the Microsoft Defender portal at the following URL:
+The below tables outline the _as built_ configuration for ASD's _Blueprint for Secure Cloud_ (the Blueprint) for the Microsoft Defender portal at the following URL:
 
 <https://security.microsoft.com/securitysettings/endpoints/user_roles>
 
@@ -26,9 +25,9 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 | Item                     |                                  Value |
 | ------------------------ | -------------------------------------: |
 | **General**              |                                        |
-| All Settings             |                     *Leave as default* |
+| All Settings             |                     _Leave as default_ |
 | **Assigned user groups** |                                        |
-| Group Name               | Azure ATP *tenant name* Administrators |
+| Group Name               | Azure ATP _tenant name_ Administrators |
 
 #### Microsoft Defender for Endpoint Remediation
 
@@ -50,7 +49,7 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 | Live response capabilities                                                        |                                     Enabled |
 | - Advanced                                                                        |                                    Selected |
 | **Assigned User groups**                                                          |                                             |
-| Group Name                                                                        |               Azure ATP *tenant name* Users |
+| Group Name                                                                        |               Azure ATP _tenant name_ Users |
 
 #### Microsoft Defender for Endpoint Viewer
 
@@ -62,7 +61,7 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 | - Security operations               |                                Enabled |
 | - Defender Vulnerability Management |                                Enabled |
 | **Assigned User groups**            |                                        |
-| Group Name                          |        Azure ATP *tenant name* Viewers |
+| Group Name                          |        Azure ATP _tenant name_ Viewers |
 
 ### Device groups
 
@@ -80,37 +79,37 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 | AND Tag           |                                                                                       `Not configured` |
 | AND OS            |                                                                            In - Windows 10, Windows 11 |
 | **User access**   |                                                                                                        |
-| Group Name        | Azure ATP *tenant name* Administrators, Azure ATP *tenant name* Users, Azure ATP *tenant name* Viewers |
+| Group Name        | Azure ATP _tenant name_ Administrators, Azure ATP _tenant name_ Users, Azure ATP _tenant name_ Viewers |
 
 #### Ungrouped devices
 
 | Item              |                                                                                                  Value |
 | ----------------- | -----------------------------------------------------------------------------------------------------: |
-| Rank              |                                                *Not applicable for the default ungrouped device group* |
+| Rank              |                                                _Not applicable for the default ungrouped device group_ |
 | **General**       |                                                                                                        |
 | Device group name |                                                                            Ungrouped devices (default) |
 | Remediation level |                                                                 Full - remediate threats automatically |
-| **Devices**       |                                                *Not applicable for the default ungrouped device group* |
+| **Devices**       |                                                _Not applicable for the default ungrouped device group_ |
 | **User access**   |                                                                                                        |
-| Group Name        | Azure ATP *tenant name* Administrators, Azure ATP *tenant name* Users, Azure ATP *tenant name* Viewers |
+| Group Name        | Azure ATP _tenant name_ Administrators, Azure ATP _tenant name_ Users, Azure ATP _tenant name_ Viewers |
 
 ### Related information
 
-#### Security & Governance
+#### Security and governance
 
-* [System Management]({{<ref "system-management.md">}})
-* [Essential Eight: User Application Hardening]({{<ref "user-application-hardening.md">}})
-  
+- [System management](/security-and-governance/system-security-plan/system-management)
+- [Essential Eight - User application hardening](/security-and-governance/essential-eight/user-application-hardening)
+
 #### Design
 
-* [Endpoint Security - Devices]({{<ref "design/platform/security/endpoint-security">}})
-  
+- [Endpoints and devices](/design/platform/security/endpoint-security)
+
 #### Configuration
 
-* [Microsoft Intune - Applications]({{<ref "configuration/intune/apps">}})
-* [Microsoft Entra ID - Applications]({{<ref "configuration/entra-id/applications">}})
-* [Microsoft Intune - Profile Configurations]({{<ref "configuration/intune/devices/configuration-policies">}})
+- [Microsoft Intune - Applications](/configuration/intune/apps)
+- [Microsoft Entra ID - Applications](/configuration/entra-id/applications)
+- [Configuration policies](/configuration/intune/devices/configuration-policies)
 
 #### References
 
-* [Defender for Endpoint](https://learn.microsoft.com/microsoft-365/security/defender-endpoint)
+- [Defender for Endpoint](https://learn.microsoft.com/microsoft-365/security/defender-endpoint)

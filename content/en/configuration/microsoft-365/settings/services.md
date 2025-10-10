@@ -1,13 +1,12 @@
 ---
 title: "Services"
-linkTitle: "Services"
 weight: 00
 description: "This section describes the configuration of services in Microsoft 365 associated with systems built according to the guidance provided by ASD's Blueprint for Secure Cloud."
 ---
 
 {{% alert title="Instruction" color="dark" %}}
 
-The below tables outline the *as built* configuration for ASD's *Blueprint for Secure Cloud* (the Blueprint) for the Microsoft 365 portal at the following URL:
+The below tables outline the _as built_ configuration for ASD's _Blueprint for Secure Cloud_ (the Blueprint) for the Microsoft 365 portal at the following URL:
 
 <https://admin.microsoft.com/Adminportal/Home?#/Settings/Services>
 
@@ -254,23 +253,23 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 
 ### Related information
 
-#### Security & Governance
+#### Security and governance
 
-* None identified
-  
+- None identified
+
 #### Design
 
-* [Services and Add-Ins]({{<ref "design/shared-services/microsoft-365/services-and-addins">}})
-* [Sharing and Access Controls]({{<ref "design/shared-services/sharepoint-online/sharing">}})
-* [Microsoft Whiteboard]({{<ref "design/shared-services/whiteboard">}})
-* [Microsoft Forms]({{<ref "design/shared-services/forms">}})
-* [Microsoft Planner]({{<ref "design/shared-services/planner">}})
-* [Viva Learning]({{<ref "design/shared-services/viva-learning">}})
-  
+- [Services and Add-Ins](/design/shared-services/microsoft-365/services-and-addins)
+- [Sharing and access controls](/design/shared-services/sharepoint-online/sharing)
+- [Microsoft Whiteboard](/design/shared-services/whiteboard)
+- [Microsoft Forms](/design/shared-services/forms)
+- [Microsoft Planner](/design/shared-services/planner)
+- [Viva Learning](/design/shared-services/viva-learning)
+
 #### Configuration
 
-* [Sharing]({{<ref "configuration/sharepoint-online/policies/sharing">}})
+- [Sharing](/configuration/sharepoint-online/policies/sharing)
 
 #### References
 
-* None identified
+- None identified

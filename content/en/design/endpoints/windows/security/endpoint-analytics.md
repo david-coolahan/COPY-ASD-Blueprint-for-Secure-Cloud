@@ -8,9 +8,9 @@ Endpoint analytics is a service which provides insight and intelligence to organ
 
 Desktop analytics can be used with Configuration Manager to:
 
-* Capture application inventory for organisations.
-* Analyse application compatibility with latest Windows 10 and 11 feature updates.
-* Determine compatibility Endpoint analytics aims to improve user productivity and reduce IT support costs by providing insights into the user experience. The insights enable IT to optimise the end-user experience with proactive support and to detect regressions to the user experience by assessing user impact of configuration changes.
+- Capture application inventory for organisations.
+- Analyse application compatibility with latest Windows 10 and 11 feature updates.
+- Determine compatibility Endpoint analytics aims to improve user productivity and reduce IT support costs by providing insights into the user experience. The insights enable IT to optimise the end-user experience with proactive support and to detect regressions to the user experience by assessing user impact of configuration changes.
 
 Devices that are AD Joined are automatically enrolled for Endpoint analytics. Proactive remediation's can be scripted to remediate common issues.
 
@@ -19,27 +19,27 @@ Endpoint analytics uses the Windows Connected User Experiences and Telemetry com
 {{% alert title="Design decisions" color="warning" %}}
 
 | Decision point     | Design decision | Justification           |
-|--------------------|-----------------|-------------------------|
+| ------------------ | --------------- | ----------------------- |
 | Endpoint analytics | Connected       | Improve user experience |
 
 {{% /alert %}}
 
 ### Related information
 
-#### Security & Governance
+#### Security and governance
 
-* [Application Control]({{<ref "security-and-governance/essential-eight/application-control.md">}})
-* [Essential Eight: Restrict Microsoft Office Macros]({{<ref "restrict-microsoft-office-macros.md">}})
+- [Essential Eight - Application control](/security-and-governance/essential-eight/application-control)
+- [Essential Eight - Restrict Microsoft Office macros](/security-and-governance/essential-eight/restrict-microsoft-office-macros)
 
 #### Design
 
-* None identified
+- None identified
 
 #### Configuration
 
-* None identified
+- None identified
 
 #### References
 
-* [What is Endpoint analytics?](https://learn.microsoft.com/mem/analytics/overview)
-* [Endpoint analytics data collection](https://learn.microsoft.com/mem/analytics/data-collection)
+- [What is Endpoint analytics?](https://learn.microsoft.com/mem/analytics/overview)
+- [Endpoint analytics data collection](https://learn.microsoft.com/mem/analytics/data-collection)

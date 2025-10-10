@@ -1,5 +1,5 @@
 ---
-title: "Connection Filtering"
+title: "Connection filtering"
 weight: 60
 description: "This section describes the design decisions associated with Connection Filtering Microsoft 365 security features for system(s) built using ASD's Blueprint for Secure Cloud."
 ---
@@ -11,8 +11,8 @@ Exchange Online Protection Connection Filtering is always enabled however it can
 {{% alert title="Design decisions" color="warning" %}}
 
 | Decision point                | Design decision | Justification                                                                                                      |
-|-------------------------------|-----------------|--------------------------------------------------------------------------------------------------------------------|
-| Configure Connection Filter   | Configured      | organisations are to provide IP addresses considered as safe.                                                           |
+| ----------------------------- | --------------- | ------------------------------------------------------------------------------------------------------------------ |
+| Configure Connection Filter   | Configured      | organisations are to provide IP addresses considered as safe.                                                      |
 | Connection filter policy name | Default         | This policy is the default policy configured when Exchange Online is enabled and is consistent with best practice. |
 | Scoped to                     | All Domains     | This is the default setting configured when Exchange Online is enabled.                                            |
 | IP Allow list                 | Not Configured  | This is the default setting configured when Exchange Online is enabled.                                            |
@@ -23,22 +23,22 @@ Exchange Online Protection Connection Filtering is always enabled however it can
 
 ### Related information
 
-#### Security & Governance
+#### Security and governance
 
-* None identified
+- None identified
 
 #### Design
 
-* None identified
+- None identified
 
 #### Configuration
 
-* None identified
+- None identified
 
 #### Configuration
 
-* None identified
+- None identified
 
 #### References
 
-* [Configure connection filtering](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-the-connection-filter-policy?view=o365-worldwide)
+- [Configure connection filtering](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-the-connection-filter-policy?view=o365-worldwide)

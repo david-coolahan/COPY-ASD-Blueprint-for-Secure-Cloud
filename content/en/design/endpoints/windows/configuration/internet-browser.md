@@ -11,7 +11,7 @@ Alternate browsers may also be deployed to support specific business needs or re
 {{% alert title="Design decisions" color="warning" %}}
 
 | Decision point  | Design decision                          | Justification                                                  |
-|-----------------|------------------------------------------|----------------------------------------------------------------|
+| --------------- | ---------------------------------------- | -------------------------------------------------------------- |
 | Default Browser | Microsoft Edge Chromium – Stable edition | To ensure compatibility and performance with modern web pages. |
 | Legacy support  | Microsoft Edge with IE mode              | To support legacy web pages not compatible with Edge.          |
 
@@ -19,18 +19,18 @@ Alternate browsers may also be deployed to support specific business needs or re
 
 ### Related information
 
-#### Security & Governance
+#### Security and governance
 
-* None identified
+- None identified
 
 #### Design
 
-* None identified
+- None identified
 
 #### Configuration
 
-* None identified
+- None identified
 
 #### References
 
-* None identified
+- None identified

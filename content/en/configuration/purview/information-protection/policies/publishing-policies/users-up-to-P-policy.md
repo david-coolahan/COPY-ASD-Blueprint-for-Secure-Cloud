@@ -1,13 +1,12 @@
 ---
 title: "Users up to PROTECTED policy"
-linkTitle: "Users up to PROTECTED policy"
 weight: 010
 description: "This section describes the configuration of label publishing policies within Microsoft Purview associated with systems built according to guidance in ASD's Blueprint for Secure Cloud."
 ---
 
 {{% alert title="Instruction" color="dark" %}}
 
-The below tables outline the *as built* configuration for ASD's *Blueprint for Secure Cloud* (the Blueprint) for the Microsoft Purview portal at the following URL:
+The below tables outline the _as built_ configuration for ASD's _Blueprint for Secure Cloud_ (the Blueprint) for the Microsoft Purview portal at the following URL:
 
 <https://purview.microsoft.com/informationprotection/labelpolicies>
 
@@ -25,7 +24,7 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 
 | Item                          |                         Value |
 | ----------------------------- | ----------------------------: |
-| Sensitivity labels to publish | *Select all PROTECTED labels* |
+| Sensitivity labels to publish | _Select all PROTECTED labels_ |
 
 ### Admin units
 
@@ -98,14 +97,14 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 
 ### Related information
 
-#### Security & Governance
+#### Security and governance
 
 - None identified
-  
+
 #### Design
 
-- [Labelling and classification]({{<ref "design/shared-services/purview/labelling-and-classification">}})
-  
+- [Labelling and classification](/design/shared-services/purview/labelling-and-classification)
+
 #### Configuration
 
 - None identified

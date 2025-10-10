@@ -1,6 +1,5 @@
 ---
 title: "Entitlement management settings"
-linkTitle: "Entitlement management settings"
 weight: 10
 type: docs
 description: "This page describes the configuration of entitlement management settings within Microsoft Entra ID associated with systems built according to the guidance provided by ASD's Blueprint for Secure Cloud."
@@ -8,7 +7,7 @@ description: "This page describes the configuration of entitlement management se
 
 {{% alert title="Instruction" color="dark" %}}
 
-The below tables outline the *as built* configuration for ASD's *Blueprint for Secure Cloud* (the Blueprint) for the Microsoft Entra admin portal at the following URL:
+The below tables outline the _as built_ configuration for ASD's _Blueprint for Secure Cloud_ (the Blueprint) for the Microsoft Entra admin portal at the following URL:
 
 <https://entra.microsoft.com/#view/Microsoft_AAD_ERM/DashboardBlade/~/elmSetting>
 
@@ -30,21 +29,20 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 
 ### Related information
 
-#### Security & Governance
+#### Security and governance
 
-* [Security Documentation]({{<ref "security-and-governance/system-security-plan/security-documentation.md">}})
-* [Essential Eight - Restrict Administrative Privileges]({{<ref "security-and-governance/essential-eight/restrict-administrative-privileges.md">}})
-  
+- [Security documentation](/security-and-governance/system-security-plan/security-documentation)
+- [Essential Eight - Restrict administrative privileges](/security-and-governance/essential-eight/restrict-administrative-privileges)
+
 #### Design
 
-* [Identity Governance]({{<ref "governance">}})
-* [Conditional Access]({{<ref "design/platform/identity/conditional-access.md">}})
-  
+- [Identity governance](/design/platform/identity/governance)
+- [Conditional access](/design/platform/identity/conditional-access)
+
 #### Configuration
 
-* [Microsoft Intune - Profile Configurations]({{<ref "configuration/intune/devices/configuration-policies">}})
+- [Configuration policies](/configuration/intune/devices/configuration-policies)
 
 #### References
 
-* None identified
-  
+- None identified

@@ -1,5 +1,5 @@
 ---
-title: Application Management
+title: Application management
 weight: 1
 description: "This section describes the design decisions associated with the management of Applications deployed to endpoints for system(s) built using ASD's Blueprint for Secure Cloud."
 ---
@@ -25,8 +25,8 @@ When deploying a hybrid solution, the management of Windows devices should be co
 
 {{% alert title="Design decisions" color="warning" %}}
 
-| Decision point                       | Design decision                                                                                                                                                                        | Justification                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
-| ------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Decision point                       | Design decision                                                                                                                                                                        | Justification                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| ------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Mobile Application Management Method | Windows 10 – Not Configured<br>iOS - Intune                                                                                                                                            | Organisations operating in hybrid environments can elect to have Windows 10 applications managed by an existing management solution, such as MECM and Group Policy, or to manage Windows 10 applications via Intune. The Blueprint offers an example of using MECM as the Windows 10 management tool for illustrative purposes. However, organisations can elect to have Intune as the primary MAM method for both platforms without affecting cyber security postures.<br>Mobile applications (iOS) will be deployed via Intune. |
 | Applications Managed                 | Microsoft Purview Information Protection<br>Microsoft Corporate Portal<br>Adobe Reader<br>Microsoft Suite - <br>Outlook<br>Word<br>Excel<br>Teams<br>PowerPoint<br>OneNote<br>OneDrive | organisations operating in hybrid environments can elect to have Windows 10 applications managed by an existing management solution, such as MECM and Group Policy, or to manage Windows 10 applications via Intune. The Blueprint offers an example of using MECM as the Windows 10 management tool for illustrative purposes, however organisations can elect to have Intune as the primary MAM method for both platforms without affecting cyber security postures.<br>Mobile applications (iOS) will be deployed via Intune.  |
 
@@ -36,22 +36,22 @@ When deploying a hybrid solution, the management of Windows devices should be co
 
 The lifecycle of applications can be managed using Microsoft Intune, which enables deployment, configuration, patching, and removal of applications. Microsoft Intune can provision managed applications to the following platforms:
 
-* Android & Android Enterprise
-* iOS & iPadOS
-* macOS
-* Windows 10 / 11
+- Android & Android Enterprise
+- iOS & iPadOS
+- macOS
+- Windows 10 / 11
 
 Application types that can be managed include:
 
-* Store Apps (Android, iOS, Windows Phone, Microsoft Store, and Google Play)
-* The Microsoft Office suite
-* Microsoft Edge
-* Microsoft Defender ATP
-* Web links
-* Built-In applications
-* Line-of-Business applications
-* Win32 applications
-* Android Enterprise system applications
+- Store Apps (Android, iOS, Windows Phone, Microsoft Store, and Google Play)
+- The Microsoft Office suite
+- Microsoft Edge
+- Microsoft Defender ATP
+- Web links
+- Built-In applications
+- Line-of-Business applications
+- Win32 applications
+- Android Enterprise system applications
 
 Applications can also be deployed via PowerShell Scripts or similarly through Detect / Remediation PowerShell Scripts.
 
@@ -61,16 +61,16 @@ See [App management capabilities by platform](https://learn.microsoft.com/mem/in
 
 ### Application deployment
 
-ASD's *Blueprint for Secure Cloud* details a range of methods to deploy different applications:
+ASD's _Blueprint for Secure Cloud_ details a range of methods to deploy different applications:
 
-* [**Windows Package Manager**](https://learn.microsoft.com/windows/package-manager/) - This is the successor technology to [Microsoft Store for Business](https://learn.microsoft.com/mem/intune/apps/windows-store-for-business). Leveraging the command line tool WinGet, it enables Platform Administrators with the relevant assigned rights to add applications.
-* [**Windows (MSI) line-of-business app**](https://docs.microsoft.com/mem/intune/apps/lob-apps-windows) - This app packaging method uses .MSI files to publish the application. The main disadvantage is that the ability to update the app by using Win32 app supersedence is unable to be controlled, unless it is being used as a required deployment to a group. If the application has a high application update cadence, it is best to use the Windows app (Win32) method that enables application updates.
-* [**Win 32**](https://docs.microsoft.com/mem/intune/apps/apps-win32-app-management) - This method involves sourcing the application executable directly from the vendor and packaging it using the [Intune Win App Utility](https://github.com/microsoft/Microsoft-Win32-Content-Prep-Tool) to deploy as a Intune application.
-* [**Powershell Scripts**](https://docs.microsoft.com/mem/intune/apps/intune-management-extension) - scripts are used to do advanced application configuration and deployment where they cannot be packaged using the methods above.
+- [**Windows Package Manager**](https://learn.microsoft.com/windows/package-manager) - This is the successor technology to [Microsoft Store for Business](https://learn.microsoft.com/mem/intune/apps/windows-store-for-business). Leveraging the command line tool WinGet, it enables Platform Administrators with the relevant assigned rights to add applications.
+- [**Windows (MSI) line-of-business app**](https://docs.microsoft.com/mem/intune/apps/lob-apps-windows) - This app packaging method uses .MSI files to publish the application. The main disadvantage is that the ability to update the app by using Win32 app supersedence is unable to be controlled, unless it is being used as a required deployment to a group. If the application has a high application update cadence, it is best to use the Windows app (Win32) method that enables application updates.
+- [**Win 32**](https://docs.microsoft.com/mem/intune/apps/apps-win32-app-management) - This method involves sourcing the application executable directly from the vendor and packaging it using the [Intune Win App Utility](https://github.com/microsoft/Microsoft-Win32-Content-Prep-Tool) to deploy as a Intune application.
+- [**Powershell Scripts**](https://docs.microsoft.com/mem/intune/apps/intune-management-extension) - scripts are used to do advanced application configuration and deployment where they cannot be packaged using the methods above.
 
 ### Application patching
 
-The configuration recommended by the Blueprint assumes a patching policy in line with ASD's recommendations for [*Patching Applications and Operating Systems*](https://www.cyber.gov.au/resources-business-and-government/maintaining-devices-and-systems/system-hardening-and-administration/system-administration/patching-applications-and-operating-systems), which states that application updates are to be deployed with 48 hours for patching Zero Day or Extreme Vulnerabilities, and within two weeks for other updates.
+The configuration recommended by the Blueprint assumes a patching policy in line with ASD's recommendations for [_Patching Applications and Operating Systems_](https://www.cyber.gov.au/resources-business-and-government/maintaining-devices-and-systems/system-hardening-and-administration/system-administration/patching-applications-and-operating-systems), which states that application updates are to be deployed with 48 hours for patching Zero Day or Extreme Vulnerabilities, and within two weeks for other updates.
 
 The following three methods are recommended within the Blueprint to meet this requirement for application updates:
 
@@ -110,30 +110,30 @@ Windows Defender for Application Control (WDAC) is used to restricts the applica
 
 ### Related information
 
-#### Security & Governance
+#### Security and governance
 
-* [User application hardening]({{<ref "security-and-governance/system-security-plan/system-hardening-user-apps.md">}})
-* [Enterprise Mobility]({{<ref "security-and-governance/system-security-plan/enterprise-mobility.md">}})
+- [User application hardening](/security-and-governance/system-security-plan/system-hardening-user-apps)
+- [Enterprise mobility](/security-and-governance/system-security-plan/enterprise-mobility)
 
 #### Design
 
-* [Windows Desktop Applications]({{<ref "/design/endpoints/windows/configuration/enterprise-applications">}})
-* [Windows Universal Applications]({{<ref "universal-platform-applications">}})
+- [Enterprise applications](/design/endpoints/windows/configuration/enterprise-applications)
+- [Universal Platform applications](/design/endpoints/windows/configuration/universal-platform-applications)
 
 #### Configuration
 
-* [iOS and iPadOS]({{<ref "configuration/intune/apps/by-platform/ios-ipados.md">}})
-* [Windows]({{< ref "configuration/intune/apps/by-platform/windows.md">}})
+- [iOS and iPadOS](/configuration/intune/apps/by-platform/ios-ipados)
+- [Windows](/configuration/intune/apps/by-platform/windows)
 
 #### References
 
-* [What is Microsoft Intune app management?](https://learn.microsoft.com/mem/intune/apps/app-management)
-* [Proactive Remediations](https://docs.microsoft.com/mem/analytics/proactive-remediations)
-* [Microsoft Enterprise App Management](https://learn.microsoft.com/windows/client-management/enterprise-app-management)
-* [App management capabilities by platform](https://learn.microsoft.com/mem/intune/fundamentals/supported-devices-browsers)
-* [Windows Package Manager](https://learn.microsoft.com/windows/package-manager/)
-* [Microsoft Store for Business](https://learn.microsoft.com/mem/intune/apps/windows-store-for-business)
-* [Windows (MSI) line-of-business app](https://docs.microsoft.com/mem/intune/apps/lob-apps-windows)
-* [Win 32 App Management](https://docs.microsoft.com/mem/intune/apps/apps-win32-app-management)
-* [Win 32 Content Prep Tool](https://github.com/microsoft/Microsoft-Win32-Content-Prep-Tool)
-* [Intune Management Extension Powershell Scripts](https://docs.microsoft.com/mem/intune/apps/intune-management-extension)
+- [What is Microsoft Intune app management?](https://learn.microsoft.com/mem/intune/apps/app-management)
+- [Proactive Remediations](https://docs.microsoft.com/mem/analytics/proactive-remediations)
+- [Microsoft Enterprise App Management](https://learn.microsoft.com/windows/client-management/enterprise-app-management)
+- [App management capabilities by platform](https://learn.microsoft.com/mem/intune/fundamentals/supported-devices-browsers)
+- [Windows Package Manager](https://learn.microsoft.com/windows/package-manager)
+- [Microsoft Store for Business](https://learn.microsoft.com/mem/intune/apps/windows-store-for-business)
+- [Windows (MSI) line-of-business app](https://docs.microsoft.com/mem/intune/apps/lob-apps-windows)
+- [Win 32 App Management](https://docs.microsoft.com/mem/intune/apps/apps-win32-app-management)
+- [Win 32 Content Prep Tool](https://github.com/microsoft/Microsoft-Win32-Content-Prep-Tool)
+- [Intune Management Extension Powershell Scripts](https://docs.microsoft.com/mem/intune/apps/intune-management-extension)

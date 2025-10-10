@@ -4,7 +4,7 @@ weight: 15
 description: "This section describes the design decisions associated with remote wiping iOS endpoints configured according to guidance in ASD's Blueprint for Secure Cloud."
 ---
 
-iOS devices can be used to access information while away from the office. The device is used to access the organisations intranet, documents and for collaboration purpose. 
+iOS devices can be used to access information while away from the office. The device is used to access the organisations intranet, documents and for collaboration purpose.
 
 Intune provides the ability to reset the device (factory reset) or remove managed application data from the device. The Factory reset option remotely wipes and resets the iOS device. The Intune manage application wipe does not clear the device of non-managed application data that may create potential security issues.
 
@@ -12,27 +12,27 @@ The organisation has indicated that the device must be able to be remotely wipe 
 
 {{% alert title="Design decisions" color="warning" %}}
 
-| Decision point     | Design decision                                                | Justification                                                                                                                                                                                                                            |
-|--------------------|----------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Device Lost Mode   | Enabled                                                        | Lost mode sends notification to the device's lock screen.                                                                                                                                                                                |
+| Decision point     | Design decision                                               | Justification                                                                                                                                                                                                                                             |
+| ------------------ | ------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Device Lost Mode   | Enabled                                                       | Lost mode sends notification to the device's lock screen.                                                                                                                                                                                                 |
 | Device remote wipe | Device will be remote wiped of corporate data (Factory Reset) | To minimise the security risks if the device is lost or not returned to the organisation.<br>Intune remotely wipes and resets the iOS device when a user is off-boarded. This also allows the device to be reassigned to other users in the organisation. |
 
 {{% /alert %}}
 
 ### Related information
 
-#### Security & Governance
+#### Security and governance
 
-* [Enterprise Mobility]({{<ref "security-and-governance/system-security-plan/enterprise-mobility.md">}})
+- [Enterprise mobility](/security-and-governance/system-security-plan/enterprise-mobility)
 
 #### Design
 
-* None identified
+- None identified
 
 #### Configuration
 
-* None identified
+- None identified
 
 #### References
 
-* None identified
+- None identified

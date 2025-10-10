@@ -1,5 +1,5 @@
 ---
-title: "Mailbox Archive"
+title: "Mailbox archive"
 weight: 35
 description: "This section describes the design decisions associated with Exchange Online for system(s) built using ASD's Blueprint for Secure Cloud."
 ---
@@ -9,7 +9,7 @@ Office 365 Mailbox Archives provide an unlimited email storage space for users. 
 {{% alert title="Design decisions" color="warning" %}}
 
 | Decision point         | Design decision | Justification                                                                                                                     |
-|------------------------|-----------------|-----------------------------------------------------------------------------------------------------------------------------------|
+| ---------------------- | --------------- | --------------------------------------------------------------------------------------------------------------------------------- |
 | Mailbox Archive        | Enabled         | The archive mailbox is required to control primary mailbox cache sizes.                                                           |
 | Mailbox Archive Policy | Enabled         | The use of automated archive mailbox policies improves the user experience and ensures that primary mailbox sizes are controlled. |
 
@@ -17,18 +17,18 @@ Office 365 Mailbox Archives provide an unlimited email storage space for users. 
 
 ### Related information
 
-#### Security & Governance
+#### Security and governance
 
-* None identified
+- None identified
 
 #### Design
 
-* None identified
+- None identified
 
 #### Configuration
 
-* None identified
+- None identified
 
 #### References
 
-* None identified
+- None identified

@@ -1,6 +1,5 @@
 ---
 title: "Account lockout"
-linkTitle: "Account lockout"
 weight: 10
 type: docs
 description: "This page describes the configuration of multifactor authentication within Microsoft Entra ID associated with systems built according to the guidance provided by ASD's Blueprint for Secure Cloud."
@@ -8,7 +7,7 @@ description: "This page describes the configuration of multifactor authenticatio
 
 {{% alert title="Instruction" color="dark" %}}
 
-The below tables outline the *as built* configuration for ASD's *Blueprint for Secure Cloud* (the Blueprint) for the Microsoft Entra admin portal at the following URL:
+The below tables outline the _as built_ configuration for ASD's _Blueprint for Secure Cloud_ (the Blueprint) for the Microsoft Entra admin portal at the following URL:
 
 <https://entra.microsoft.com/#view/Microsoft_AAD_IAM/MultifactorAuthenticationMenuBlade/~/AccountLockout>
 
@@ -28,23 +27,23 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 
 ### Related information
 
-#### Security & Governance
+#### Security and governance
 
-* [Authentication Hardening]({{<ref "system-hardening-authentication">}})
-* [Multi-factor Authentication]({{<ref "multi-factor-authentication">}})
-* [Essential Eight - Restrict Administrative Privileges]({{<ref "security-and-governance/essential-eight/restrict-administrative-privileges.md">}})
+- [Authentication hardening](/security-and-governance/system-security-plan/system-hardening-authentication)
+- [Multi-factor authentication](/security-and-governance/essential-eight/multi-factor-authentication)
+- [Essential Eight - Restrict administrative privileges](/security-and-governance/essential-eight/restrict-administrative-privileges)
 
 #### Design
 
-* [Authentication]({{<ref "authentication">}})
-* [Identity]({{<ref "design/platform/identity">}})
-* [Identity security]({{<ref "identity-security">}})
+- [Authentication](/design/platform/identity/authentication)
+- [Identity](/design/platform/identity)
+- [Identity security](/design/platform/security/identity-security)
 
 #### Configuration
 
-* [Sign-in risk policy]({{<ref "sign-in-risk-policy.md">}})
-* [MFA for Risky Sign-ins]({{<ref "configuration/entra-id/protection/conditional-access/policies/reauthentication-for-risky-sign-ins.md">}})
+- [Sign-in risk policy](/configuration/entra-id/protection/identity-protection/sign-in-risk-policy)
+- [MFA for Risky Sign-ins](/configuration/entra-id/protection/conditional-access/policies/reauthentication-for-risky-sign-ins)
 
 #### References
 
-* [Password and account lockout policies](https://learn.microsoft.com/entra/identity/domain-services/password-policy)
+- [Password and account lockout policies](https://learn.microsoft.com/entra/identity/domain-services/password-policy)

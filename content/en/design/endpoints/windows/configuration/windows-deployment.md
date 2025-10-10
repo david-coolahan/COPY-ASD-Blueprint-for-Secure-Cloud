@@ -1,5 +1,5 @@
 ---
-title: "Windows Deployment"
+title: "Windows deployment"
 weight: 5
 description: "This section describes the design decisions associated with deployment of Windows 10 and 11 endpoints configured according to guidance in ASD's Blueprint for Secure Cloud."
 ---
@@ -12,15 +12,15 @@ Windows 10 and 11 can be deployed via Intune or MECM, or a combination of both. 
 
 Windows deployments will be based on either a deployment which is cloud native or hybrid.
 
-* **Cloud native** – Image on the workstation will be modified using Windows Autopilot and Intune. The Original Equipment Manufacturers (OEMs) image in use should be from a trusted vendor or custom-built by the organisation and provided to the OEM vendor for implementation prior to being dispatched to the organisation. Alternatively, an offline image will need to be created by the organisation and applied to the workstation prior to Windows Autopilot and Intune. The offline image should be light weight consisting of the base Windows image and required base drivers only.
-* **Hybrid** – OEM image or MECM task sequence should be used as the base for Windows 10, with Intune and Windows Autopilot applied over the top of the image for further customisation. The OEM image in use should be from a trusted vendor or custom built by the organisation and provided to the OEM vendor for implementation prior to being dispatched to the organisation. Alternatively, an organisation specific MECM task sequence including the Windows image and base drivers. This image will then be further customised with Intune and Windows Autopilot.
+- **Cloud native** – Image on the workstation will be modified using Windows Autopilot and Intune. The Original Equipment Manufacturers (OEMs) image in use should be from a trusted vendor or custom-built by the organisation and provided to the OEM vendor for implementation prior to being dispatched to the organisation. Alternatively, an offline image will need to be created by the organisation and applied to the workstation prior to Windows Autopilot and Intune. The offline image should be light weight consisting of the base Windows image and required base drivers only.
+- **Hybrid** – OEM image or MECM task sequence should be used as the base for Windows 10, with Intune and Windows Autopilot applied over the top of the image for further customisation. The OEM image in use should be from a trusted vendor or custom built by the organisation and provided to the OEM vendor for implementation prior to being dispatched to the organisation. Alternatively, an organisation specific MECM task sequence including the Windows image and base drivers. This image will then be further customised with Intune and Windows Autopilot.
 
 ### Cloud native deployments
 
 {{% alert title="Design decisions" color="warning" %}}
 
 | Decision point    | Design decision                                                                                                | Justification                                                                                                                                                                                   |
-|-------------------|----------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| ----------------- | -------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Deployment method | Organisation light weight base image with Windows Autopilot and Intune deployments applied as during enrolment | An organisation specific light weight base image provides the benefit of removing all OEM applications and firmware prior to onboarding to the organisation through Intune & Windows Autopilot. |
 
 {{% /alert %}}
@@ -30,25 +30,25 @@ Windows deployments will be based on either a deployment which is cloud native o
 {{% alert title="Design decisions" color="warning" %}}
 
 | Decision point    | Design decision                                                   | Justification                                                                                                                                                             |
-|-------------------|-------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| ----------------- | ----------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Deployment method | Organisation light-weight base image with MECM deployment applied | An organisation specific light weight base image provides the benefit of removing all OEM applications and firmware prior to onboarding to the organisation through MECM. |
 
 {{% /alert %}}
 
 ### Related information
 
-#### Security & Governance
+#### Security and governance
 
-* None identified
+- None identified
 
 #### Design
 
-* None identified
+- None identified
 
 #### Configuration
 
-* None identified
+- None identified
 
 #### References
 
-* None identified
+- None identified

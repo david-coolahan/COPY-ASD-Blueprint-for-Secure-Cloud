@@ -1,13 +1,12 @@
 ---
 title: "Configuration"
-linkTitle: "Configuration"
 type: docs
 weight: 41
 ---
 
 {{% alert title="Instruction" color="dark" %}}
 
-These pages provide the *as built* configuration for ASD's *Blueprint for Secure Cloud* (the Blueprint).
+These pages provide the _as built_ configuration for ASD's _Blueprint for Secure Cloud_ (the Blueprint).
 
 The settings described on these pages provide a baseline implementation for a system configured using the Blueprint. Any implementation implied by these pages should not be considered as prescriptive as to how an organisation must scope, build, document, or assess a system.
 

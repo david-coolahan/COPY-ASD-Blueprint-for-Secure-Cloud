@@ -1,10 +1,10 @@
 ---
-title: Identity and Access Management
+title: Identity and access management
 weight: 10
 description: "This section describes the design decisions associated with Microsoft Entra ID which is the cloud based Authentication and Authorisation service for system(s) built using ASD's Blueprint for Secure Cloud."
 ---
 
-Identity and access management (IAM) is arguably the cornerstone of security within ASD's *Blueprint for Secure Cloud* (the Blueprint). It is the framework upon which user, device, and resource identities are managed. At its core, there are two IAM elements:
+Identity and access management (IAM) is arguably the cornerstone of security within ASD's _Blueprint for Secure Cloud_ (the Blueprint). It is the framework upon which user, device, and resource identities are managed. At its core, there are two IAM elements:
 
 1. **Authentication**: the process of a system verifying the identity of a user or workload
 2. **Authorisation**: the process of a system determining whether an identity should have access to an object or service.
@@ -19,7 +19,7 @@ Microsoft Entra ID, previously named Azure Active Directory (AAD), is the multi-
 
 #### Cloud-only identities
 
-As the name implies, cloud-only identities exist only within the Entra ID cloud environment. A user may also have an account within an on-premises Active Directory in addition to an account within the organisation's Entra ID tenant effectively isolating the identities into two standalone instances. The two instances of the accounts may have the same username and password, and possess the same attributes. They would involve different underlying unique identifiers and be managed independently, which doubles administration effort and introduces risks associated with conflicting attributes or maintenance errors. Organisations can use standalone identities for users who do not require an account within an on-premises Active Directory instance such as third-party vendors or emergency access, or Break Glass Accounts. 
+As the name implies, cloud-only identities exist only within the Entra ID cloud environment. A user may also have an account within an on-premises Active Directory in addition to an account within the organisation's Entra ID tenant effectively isolating the identities into two standalone instances. The two instances of the accounts may have the same username and password, and possess the same attributes. They would involve different underlying unique identifiers and be managed independently, which doubles administration effort and introduces risks associated with conflicting attributes or maintenance errors. Organisations can use standalone identities for users who do not require an account within an on-premises Active Directory instance such as third-party vendors or emergency access, or Break Glass Accounts.
 
 In situations where organisations do not have an on-premises Active Directory environment and are implementing Microsoft 365 in isolation, all identities would be cloud-only.
 

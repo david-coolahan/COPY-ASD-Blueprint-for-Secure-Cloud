@@ -1,25 +1,25 @@
---- 
-title: "Desired State Configuration setup"
-linkTitle: "Desired State Configuration setup"
-weight: 10
-description: "This page describes the setup of Microsoft 365 Dynamic State Configuration (DSC)"
 ---
+title: "Desired State Configuration setup"
+weight: 10
+description: "This page describes the setup of Microsoft 365 Desired State Configuration (DSC)."
+---
+
 ### Overview
 
 Microsoft 365 Desired State Configuration (M365DSC) is a configuration-as-code tool developed by Microsoft to automate the configuration of Microsoft 365 services. It is the primary tool used to automate the deployment of the configuration guidance in the Blueprint.
 
-After following the steps below, please refer to the [automated deployment]({{<ref "tools/deployment-and-assessment/automated-deployment">}}) or [configuration assessment]({{<ref "tools/deployment-and-assessment/configuration-assessment">}}) pages for further instructions.
+After following the steps below, please refer to the [automated deployment](/tools/deployment-and-assessment/automated-deployment) or [configuration assessment](/tools/deployment-and-assessment/configuration-assessment) pages for further instructions.
 
 #### Prerequisites
 
 To deploy or assess an M365DSC configuration, the following prerequisites are required:
 
-* Knowledge of the [Microsoft M365DSC prerequisites](https://microsoft365dsc.com/user-guide/get-started/prerequisites/).
-* An admin account on a Windows host with connectivity to Entra ID and Microsoft 365, and with:
-  * Powershell 5.1 or 7.3+ with the M365DSC module and dependencies installed. Instructions can be found [here](https://microsoft365dsc.com/user-guide/get-started/how-to-install/).
-  * The WinRM service configured and running. Instructions can be found [here](https://learn.microsoft.com/en-au/windows/win32/winrm/installation-and-configuration-for-windows-remote-management/).
-* The DSC file for the targeted M365 service (discussed below).
-* A DSC configuration data file from a [configuration index](#configuration) page.
+- Knowledge of the [Microsoft M365DSC prerequisites](https://microsoft365dsc.com/user-guide/get-started/prerequisites).
+- An admin account on a Windows host with connectivity to Entra ID and Microsoft 365, and with:
+  - Powershell 5.1 or 7.3+ with the M365DSC module and dependencies installed. Instructions can be found [here](https://microsoft365dsc.com/user-guide/get-started/how-to-install).
+  - The WinRM service configured and running. Instructions can be found [here](https://learn.microsoft.com/en-au/windows/win32/winrm/installation-and-configuration-for-windows-remote-management).
+- The DSC file for the targeted M365 service (discussed below).
+- A DSC configuration data file from a [configuration index](#configuration) page.
 
 #### 1. Create certificates and keys for authentication
 
@@ -34,14 +34,14 @@ Export-PfxCertificate -Cert $cert -FilePath 'C:\<location>\M365DSC.pfx' -Passwor
 
 #### 2. Import the PFX file into the Local Computer certificate store
 
-* Double-click the ```M365DSC.pfx``` file to begin the import wizard.
-* Select *Local Machine* and accepting the defaults, follow the prompts to complete the wizard.
+- Double-click the `M365DSC.pfx` file to begin the import wizard.
+- Select _Local Machine_ and accepting the defaults, follow the prompts to complete the wizard.
 
 #### 3. Export the leaf certificate from the Local Computer certificate store
 
-* Open the Local Computer certificate store (*Start > Manage Computer certificates*) and navigate to *Personal\Certificates*.
-* Right-click the M365DSC certificate, then select *All Tasks > Export* to begin the export wizard.
-* Accepting the defaults, follow the prompts to complete the wizard, specifying ```C:\<location>\M365DSC.cer``` as the file name, substituting location with the name of your working folder.
+- Open the Local Computer certificate store (_Start > Manage Computer certificates_) and navigate to _Personal\Certificates_.
+- Right-click the M365DSC certificate, then select _All Tasks > Export_ to begin the export wizard.
+- Accepting the defaults, follow the prompts to complete the wizard, specifying `C:\<location>\M365DSC.cer` as the file name, substituting location with the name of your working folder.
 
 #### 4. Register an app and service principal in Entra
 
@@ -73,8 +73,8 @@ Permissions should always be removed after DSC operations.
 
 #### 5. Download and edit the configuration data file {#cdf}
 
-* Download the {{% download file="/content/files/automation/dsc/configuration-data.txt" %}} configuration data {{% /download %}} file, renaming the linked .txt file to .psd1.
-* Edit the configuration data file to suit, substituting your Entra tenant and M365DSC app configurations:
+- Download the {{% download file="/content/files/automation/dsc/ConfigurationData.txt" %}} configuration data {{% /download %}} file, renaming the linked .txt file to .psd1.
+- Edit the configuration data file to suit, substituting your Entra tenant and M365DSC app configurations:
 
 ```powershell
 # Your Entra tenant ID
@@ -91,31 +91,31 @@ ApplicationId = '<GUID>'
 CertificateThumbprint = '<thumbprint hash>'
 ```
 
-Refer to the [automated deployment]({{<ref "tools/deployment-and-assessment/automated-deployment">}}) or [configuration assessment]({{<ref "tools/deployment-and-assessment/configuration-assessment">}}) pages for further instructions.
+Refer to the [automated deployment](/tools/deployment-and-assessment/automated-deployment) or [configuration assessment](/tools/deployment-and-assessment/configuration-assessment) pages for further instructions.
 
 ### Related information
 
 #### Configuration
 
-* [Microsoft Defender]({{<ref "configuration/defender">}})
-* [Microsoft Entra ID]({{<ref "configuration/entra-id">}})
-* [Microsoft Exchange Online]({{<ref "configuration/exchange-online">}})
-* [Microsoft Intune]({{<ref "configuration/intune">}})
-* [Microsoft Purview]({{<ref "configuration/purview">}})
-* [Microsoft SharePoint Online]({{<ref "configuration/sharepoint-online">}})
-* [Microsoft Teams]({{<ref "configuration/microsoft-teams">}})
+- [Microsoft Defender](/configuration/defender)
+- [Microsoft Entra ID](/configuration/entra-id)
+- [Microsoft Exchange Online](/configuration/exchange-online)
+- [Microsoft Intune](/configuration/intune)
+- [Microsoft Purview](/configuration/purview)
+- [Microsoft SharePoint Online](/configuration/sharepoint-online)
+- [Microsoft Teams](/configuration/teams)
 
 #### Tools
 
-* [Automated deployment]({{<ref "tools/deployment-and-assessment/automated-deployment">}})
-* [Configuration assessment]({{<ref "tools/deployment-and-assessment/configuration-assessment">}})
+- [Automated deployment](/tools/deployment-and-assessment/automated-deployment)
+- [Configuration assessment](/tools/deployment-and-assessment/configuration-assessment)
 
 #### References
 
-* [M365DSC authentication and permissions](https://microsoft365dsc.com/user-guide/get-started/authentication-and-permissions)
-* [M365DSC blueprints](https://microsoft365dsc.com/user-guide/advanced/create-blueprint)
-* [M365DSC export tool](https://export.microsoft365dsc.com)
-* [M365DSC prerequisites](https://microsoft365dsc.com/user-guide/get-started/prerequisites)
-* [M365DSC user guide](https://microsoft365dsc.com/user-guide/get-started/how-to-install)
-* [Understanding application-only access](https://learn.microsoft.com/en-au/entra/identity-platform/app-only-access-primer)
-* [WinRM setup](https://learn.microsoft.com/en-au/windows/win32/winrm/installation-and-configuration-for-windows-remote-management)
+- [M365DSC authentication and permissions](https://microsoft365dsc.com/user-guide/get-started/authentication-and-permissions)
+- [M365DSC blueprints](https://microsoft365dsc.com/user-guide/advanced/create-blueprint)
+- [M365DSC export tool](https://export.microsoft365dsc.com)
+- [M365DSC prerequisites](https://microsoft365dsc.com/user-guide/get-started/prerequisites)
+- [M365DSC user guide](https://microsoft365dsc.com/user-guide/get-started/how-to-install)
+- [Understanding application-only access](https://learn.microsoft.com/en-au/entra/identity-platform/app-only-access-primer)
+- [WinRM setup](https://learn.microsoft.com/en-au/windows/win32/winrm/installation-and-configuration-for-windows-remote-management)

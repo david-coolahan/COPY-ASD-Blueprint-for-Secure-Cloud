@@ -1,5 +1,5 @@
 ---
-title: "Windows Search and Cortana"
+title: "Windows search and Cortana"
 weight: 55
 description: "This section describes the design decisions associated with Windows search and Cortana on Windows 10 and 11 endpoints configured according to guidance in ASD's Blueprint for Secure Cloud."
 ---
@@ -16,27 +16,27 @@ Windows Search is text-based and is built into the local operating system.
 
 {{% alert title="Design decisions" color="warning" %}}
 
-| Decision point | Design decision                          | Justification                                                                                                   |
-|----------------|------------------------------------------|-----------------------------------------------------------------------------------------------------------------|
-| Cortana        | Disabled                                 | As per ASD's [*Hardening Microsoft Windows 10 version 21H1 Workstations*](https://www.cyber.gov.au/resources-business-and-government/maintaining-devices-and-systems/system-hardening-and-administration/system-hardening/hardening-microsoft-windows-10-version-21h1-workstations) guidance the Cortana feature will be disabled to comply with security requirements. |
-| Windows Search | Enabled and configured for local content | Windows search will be limited to local items only to prevent data leakage.                                     |
+| Decision point | Design decision                          | Justification                                                                                                                                                                                                                                                                                                                                                           |
+| -------------- | ---------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Cortana        | Disabled                                 | As per ASD's [_Hardening Microsoft Windows 10 version 21H1 Workstations_](https://www.cyber.gov.au/resources-business-and-government/maintaining-devices-and-systems/system-hardening-and-administration/system-hardening/hardening-microsoft-windows-10-version-21h1-workstations) guidance the Cortana feature will be disabled to comply with security requirements. |
+| Windows Search | Enabled and configured for local content | Windows search will be limited to local items only to prevent data leakage.                                                                                                                                                                                                                                                                                             |
 
 {{% /alert %}}
 
 ### Related information
 
-#### Security & Governance
+#### Security and governance
 
-* None identified
+- None identified
 
 #### Design
 
-* None identified
+- None identified
 
 #### Configuration
 
-* [ASD Windows Hardening Guidelines]({{<ref "configuration/intune/devices/configuration-policies/asd-windows-hardening-guidelines.md">}})
+- [ASD Windows hardening guidelines](/configuration/intune/devices/configuration-policies/asd-windows-hardening-guidelines)
 
 #### References
 
-* None identified
+- None identified

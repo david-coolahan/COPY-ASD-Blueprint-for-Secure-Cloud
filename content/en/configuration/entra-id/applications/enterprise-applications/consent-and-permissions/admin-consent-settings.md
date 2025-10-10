@@ -1,6 +1,5 @@
 ---
 title: "Admin consent settings"
-linkTitle: "Admin consent settings"
 weight: 20
 type: docs
 description: "This page describes the configuration of admin consent settings within Microsoft Entra ID associated with systems built according to the guidance provided by ASD's Blueprint for Secure Cloud."
@@ -8,7 +7,7 @@ description: "This page describes the configuration of admin consent settings wi
 
 {{% alert title="Instruction" color="dark" %}}
 
-The below tables outline the *as built* configuration for ASD's *Blueprint for Secure Cloud* (the Blueprint) for the Microsoft Entra admin portal at the following URL:
+The below tables outline the _as built_ configuration for ASD's _Blueprint for Secure Cloud_ (the Blueprint) for the Microsoft Entra admin portal at the following URL:
 
 <https://entra.microsoft.com/#view/Microsoft_AAD_IAM/ConsentPoliciesMenuBlade/~/AdminConsentSettings>
 
@@ -34,23 +33,22 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 
 ### Related information
 
-#### Security & Governance
+#### Security and governance
 
-* [Application Control]({{<ref "security-and-governance/essential-eight/application-control.md">}})
-* [User Application Hardening]({{<ref "system-hardening-user-apps.md">}})
-* [Essential Eight: Patch Applications]({{< ref "patch-applications.md">}})
-* [System Monitoring]({{<ref "system-monitoring.md">}})
-  
+- [Essential Eight - Application control](/security-and-governance/essential-eight/application-control)
+- [User application hardening](/security-and-governance/system-security-plan/system-hardening-user-apps)
+- [Essential Eight - Patch applications](/security-and-governance/essential-eight/patch-applications)
+- [System monitoring](/security-and-governance/system-security-plan/system-monitoring)
+
 #### Design
 
-* None identified
-  
+- None identified
+
 #### Configuration
 
-* [Consent Settings]({{<ref "user-consent-settings.md">}})
-* [Permissions]({{<ref "configuration/defender/settings/endpoints/permissions.md">}})
+- [User consent settings](/configuration/entra-id/applications/enterprise-applications/consent-and-permissions/user-consent-settings)
+- [Permissions](/configuration/defender/settings/endpoints/permissions)
 
 #### References
 
-* [Application management documentation](https://learn.microsoft.com/entra/identity/enterprise-apps/)
-  
+- [Application management documentation](https://learn.microsoft.com/entra/identity/enterprise-apps)

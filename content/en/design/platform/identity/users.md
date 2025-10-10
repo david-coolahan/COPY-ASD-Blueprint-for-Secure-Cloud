@@ -1,5 +1,5 @@
 ---
-title: Enterprise Users
+title: Enterprise users
 weight: 15
 description: "This section describes the design decisions associated with user identities, emergency access, and service accounts for system(s) built using ASD's Blueprint for Secure Cloud."
 ---
@@ -30,18 +30,18 @@ ISM Security Control 1404 lists that inactive user accounts need to be in a disa
 
 This can be achieved via a custom script set to run on a scheduled basis. Below is the recommended logic that the script should use to determine if an account is inactive or not:
 
-* If user account is not disabled
-* If user has logged on
-* If user is not Break Glass Account
-* If last login is greater than 45 days
-* If all above are _True_ disable account
+- If user account is not disabled
+- If user has logged on
+- If user is not Break Glass Account
+- If last login is greater than 45 days
+- If all above are _True_ disable account
 
 #### Cloud-native implementation
 
 {{% alert title="Design decisions" color="warning" %}}
 
 | Decision point  | Design decision                     | Justification                                                                                                                                                                                                                                                                                    |
-|-----------------|-------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| --------------- | ----------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | Identity Source | Microsoft Entra ID                  | As this is a cloud only implementation, Microsoft Entra ID will be the source of identity.                                                                                                                                                                                                       |
 | Password Reset  | Configured                          | For self-service password reset, users will need to provide an alternate email address, mobile app and phone number during registration. To reset their password, they will need to provide two methods of verification.                                                                         |
 | Identity Format | firstname.lastname{sequence number} | Provides consistency throughout Microsoft 365 applications and services, and aligns the UPN to a users email address for easier administration                                                                                                                                                   |
@@ -60,7 +60,7 @@ Administrator accounts and Break Glass Accounts should be excluded from these ru
 {{% alert title="Design decisions" color="warning" %}}
 
 | Decision point  | Design decision    | Justification                                                                                                                                                                                                                                                                                    |
-|-----------------|--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| --------------- | ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | Identity Source | Active Directory   | As this is a hybrid implementation, Active Directory will be the source of identity.                                                                                                                                                                                                             |
 | Password Reset  | Configured         | For self-service password reset, users will need to provide an alternate email address, mobile app and phone number during registration. To reset their password, they will need to provide two methods of verification.                                                                         |
 | Identity Format | Inherited          | Usernames will be synchronised from the on-premises Active Directory and will inherit naming convention.                                                                                                                                                                                         |
@@ -85,7 +85,7 @@ User based service accounts are standard user accounts where the password and MF
 {{% alert title="Design decisions" color="warning" %}}
 
 | Decision point   | Design decision                                         | Justification                                      |
-| ---------------- | --------------------------------------------------------| -------------------------------------------------- |
+| ---------------- | ------------------------------------------------------- | -------------------------------------------------- |
 | Service Accounts | Managed Identities / Service Principals only (see note) | Alignment to Microsoft and security best practice. |
 
 {{% /alert %}}
@@ -102,15 +102,15 @@ Emergency access or 'break glass' accounts are accounts used to restore access t
 
 [Microsoft best practice](https://learn.microsoft.com/entra/identity/role-based-access-control/security-emergency-access) recommends configuration of two Break Glass Accounts. Organisations should store these accounts according to Emergency Account/break glass procedures. Best practice is for these accounts to meet the following minimum requirements:
 
-* They are not to be associated with any individual user.
-* They will use a different authorisation mechanism than standard administrative accounts.
-* They are cloud only accounts that use the `*.onmicrosoft.com` domain.
-* The passwords to these accounts are set to never expire or be cleaned up or removed due to inactivity.
-* The accounts are to be given the Global Administrator role assigned permanently.
-* At least one of the accounts is to be excluded from Multi-factor Authentication (MFA).
-* At least one of the accounts is to be completely excluded from all Conditional Access policies.
-* The accounts should be stored on paper, in two or three separate parts, in secure, fireproof safes that are in disparate locations.
-* Use of these accounts is monitored and only used in genuine emergencies.
+- They are not to be associated with any individual user.
+- They will use a different authorisation mechanism than standard administrative accounts.
+- They are cloud only accounts that use the `*.onmicrosoft.com` domain.
+- The passwords to these accounts are set to never expire or be cleaned up or removed due to inactivity.
+- The accounts are to be given the Global Administrator role assigned permanently.
+- At least one of the accounts is to be excluded from Multi-factor Authentication (MFA).
+- At least one of the accounts is to be completely excluded from all Conditional Access policies.
+- The accounts should be stored on paper, in two or three separate parts, in secure, fireproof safes that are in disparate locations.
+- Use of these accounts is monitored and only used in genuine emergencies.
 
 {{% alert title="Design decisions" color="warning" %}}
 
@@ -135,23 +135,22 @@ Emergency access or 'break glass' accounts are accounts used to restore access t
 
 ### Related information
 
-#### Security & Governance
+#### Security and governance
 
-* [Essential Eight]({{<ref "essential-eight">}})
+- [Essential Eight](/security-and-governance/essential-eight)
 
 #### Design
 
-
-* [Entra ID Custom Domains]({{<ref "tenant/#custom-domain">}})
-* [Microsoft 365 - Accepted Domains]({{<ref "accepted-domains">}})
-* [Exchange - User Mailbox Configuration]({{<ref "user-mailbox-configuration">}})
+- [Entra ID Custom Domains](/design/platform/identity/tenant/#custom-domain)
+- [Microsoft 365 - Accepted Domains](/design/shared-services/microsoft-365/accepted-domains)
+- [Exchange - User Mailbox Configuration](/design/shared-services/exchange-online/user-mailbox-configuration)
 
 #### Configuration
 
-* None identified
+- None identified
 
 #### References
 
-* [Service Account Overview](https://learn.microsoft.com/entra/architecture/secure-service-accounts)
-* [Service Account Governance](https://learn.microsoft.com/entra/architecture/govern-service-accounts)
-* [Azure Roles Types](https://learn.microsoft.com/en-au/azure/role-based-access-control/rbac-and-directory-admin-roles)
+- [Service Account Overview](https://learn.microsoft.com/entra/architecture/secure-service-accounts)
+- [Service Account Governance](https://learn.microsoft.com/entra/architecture/govern-service-accounts)
+- [Azure Roles Types](https://learn.microsoft.com/en-au/azure/role-based-access-control/rbac-and-directory-admin-roles)

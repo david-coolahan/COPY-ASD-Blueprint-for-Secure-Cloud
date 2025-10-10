@@ -1,21 +1,20 @@
 ---
 title: "Platform security"
-linkTitle: "Platform security"
 weight: 30
 description: "This section describes the design decisions associated with platform security for system(s) built using ASD's Blueprint for Secure Cloud."
---- 
+---
 
 While many services and configurations contribute to the overall security posture of the Microsoft 365 platform, the primary technical capability comes from the [Microsoft Defender XDR](https://learn.microsoft.com/en-au/defender-xdr/microsoft-365-defender) suite of products. Defender XDR includes:
 
-* **Microsoft Defender for Endpoint** for endpoint security
-* **Microsoft Defender for Office 365** for email and collaboration security
-* **Microsoft Defender for Identity** for identity security
-* **Microsoft Defender for Cloud Apps** for SaaS application security
-* **Microsoft Defender Vulnerability Management** for operating system and software vulnerability management
-* **Microsoft Defender for Cloud** for hybrid and multi-cloud workload security
-* **Microsoft Entra ID Protection** for identity risk detection and remediation
-* **Microsoft Purview Data Loss Prevention** for preventing data loss across endpoint, apps and services
-* **App Governance** for SaaS application risk detection and remediation
+- **Microsoft Defender for Endpoint** for endpoint security
+- **Microsoft Defender for Office 365** for email and collaboration security
+- **Microsoft Defender for Identity** for identity security
+- **Microsoft Defender for Cloud Apps** for SaaS application security
+- **Microsoft Defender Vulnerability Management** for operating system and software vulnerability management
+- **Microsoft Defender for Cloud** for hybrid and multi-cloud workload security
+- **Microsoft Entra ID Protection** for identity risk detection and remediation
+- **Microsoft Purview Data Loss Prevention** for preventing data loss across endpoint, apps and services
+- **App Governance** for SaaS application risk detection and remediation
 
 ### Microsoft Defender XDR
 
@@ -78,7 +77,7 @@ Further information on Defender XDR's data location and retention can be found i
 | Decision point              | Design decision           | Justification                                                                                                                                                                |
 | --------------------------- | ------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Defender XDR data location  | Australia, where possible | Help ensure data is under and jurisdiction of the Australian Government, help ensure confidentiality, and help minimise potential impacts from international service outages |
-| Defender XDR data retention | 12 months                 | Align with *Information Security Manual* requirements to retain events in a searchable format                                                                                |
+| Defender XDR data retention | 12 months                 | Align with _Information Security Manual_ requirements to retain events in a searchable format                                                                                |
 
 {{% /alert %}}
 
@@ -132,28 +131,28 @@ Organisations intending to use Security Copilot should be aware of the data, pri
 
 ### Related information
 
-#### Security & Governance
+#### Security and governance
 
-* None identified
+- None identified
 
 #### Design
 
-* None identified
+- None identified
 
 #### Configuration
 
-* None identified
+- None identified
 
 #### References
 
-* [Data security and retention in Microsoft Defender XDR](https://learn.microsoft.com/en-au/defender-xdr/data-privacy)
-* [Microsoft Defender multitenant management](https://learn.microsoft.com/en-au/unified-secops-platform/mto-overview)
-* [Microsoft Defender XDR integration with Microsoft Sentinel](https://learn.microsoft.com/en-au/azure/sentinel/microsoft-365-defender-sentinel-integration)
-* [Microsoft Defender XDR Unified role-based access control (RBAC)](https://learn.microsoft.com/en-au/defender-xdr/manage-rbac)
-* [Microsoft Secure Score](https://learn.microsoft.com/en-au/defender-xdr/microsoft-secure-score)
-* [Microsoft Security Copilot experiences](https://learn.microsoft.com/en-au/copilot/security/experiences-security-copilot)
-* [Microsoft Sentinel in the Microsoft Defender portal](https://learn.microsoft.com/en-au/azure/sentinel/microsoft-sentinel-defender-portal)
-* [Overview of Microsoft Defender XDR APIs](https://learn.microsoft.com/en-au/defender-xdr/api-overview)
-* [Privacy and data security in Microsoft Security Copilot](https://learn.microsoft.com/en-au/copilot/security/privacy-data-security)
-* [What is Microsoft Defender XDR?](https://learn.microsoft.com/en-au/defender-xdr/microsoft-365-defender)
-* [What is Microsoft Security Copilot?](https://learn.microsoft.com/en-au/copilot/security/microsoft-security-copilot)
+- [Data security and retention in Microsoft Defender XDR](https://learn.microsoft.com/en-au/defender-xdr/data-privacy)
+- [Microsoft Defender multitenant management](https://learn.microsoft.com/en-au/unified-secops-platform/mto-overview)
+- [Microsoft Defender XDR integration with Microsoft Sentinel](https://learn.microsoft.com/en-au/azure/sentinel/microsoft-365-defender-sentinel-integration)
+- [Microsoft Defender XDR Unified role-based access control (RBAC)](https://learn.microsoft.com/en-au/defender-xdr/manage-rbac)
+- [Microsoft Secure Score](https://learn.microsoft.com/en-au/defender-xdr/microsoft-secure-score)
+- [Microsoft Security Copilot experiences](https://learn.microsoft.com/en-au/copilot/security/experiences-security-copilot)
+- [Microsoft Sentinel in the Microsoft Defender portal](https://learn.microsoft.com/en-au/azure/sentinel/microsoft-sentinel-defender-portal)
+- [Overview of Microsoft Defender XDR APIs](https://learn.microsoft.com/en-au/defender-xdr/api-overview)
+- [Privacy and data security in Microsoft Security Copilot](https://learn.microsoft.com/en-au/copilot/security/privacy-data-security)
+- [What is Microsoft Defender XDR?](https://learn.microsoft.com/en-au/defender-xdr/microsoft-365-defender)
+- [What is Microsoft Security Copilot?](https://learn.microsoft.com/en-au/copilot/security/microsoft-security-copilot)

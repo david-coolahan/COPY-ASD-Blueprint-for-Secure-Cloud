@@ -1,5 +1,5 @@
 ---
-title: "Anti-Phishing"
+title: "Anti-phishing"
 weight: 60
 description: "This section describes the design decisions associated with Anti-Phishing Microsoft 365 security features for system(s) built using ASD's Blueprint for Secure Cloud."
 ---
@@ -30,18 +30,18 @@ Anti-spoof specifically analyses the senders address to determine if it is legit
 
 ### Related information
 
-#### Security & Governance
+#### Security and governance
 
-* None identified
+- None identified
 
 #### Design
 
-* None identified
+- None identified
 
 #### Configuration
 
-* None identified
+- None identified
 
 #### References
 
-* [Anti-phishing policies in Microsoft 365 - Microsoft Defender for Office 365 | Microsoft Learn](https://learn.microsoft.com/en-au/defender-office-365/anti-phishing-policies-about)
+- [Anti-phishing policies in Microsoft 365 - Microsoft Defender for Office 365 | Microsoft Learn](https://learn.microsoft.com/en-au/defender-office-365/anti-phishing-policies-about)

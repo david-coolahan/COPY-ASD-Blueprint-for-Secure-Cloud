@@ -1,13 +1,12 @@
 ---
-title: "Cloud app Settings"
-linkTitle: "Cloud app Settings"
+title: "Cloud apps settings"
 weight: 10
-description: "This section describes the configuration of cloud apps settings within Microsoft Defender associated with systems built according to the guidance provided by ASD's Blueprint for Secure Cloud."
+description: "This section describes the configuration of Defender for Cloud Apps settings within Microsoft Defender associated with systems built according to the guidance provided by ASD's Blueprint for Secure Cloud."
 ---
 
 {{% alert title="Instruction" color="dark" %}}
 
-The below tables outline the *as built* configuration for ASD's *Blueprint for Secure Cloud* (the Blueprint) for the Microsoft Defender portal at the following URL:
+The below tables outline the _as built_ configuration for ASD's _Blueprint for Secure Cloud_ (the Blueprint) for the Microsoft Defender portal at the following URL:
 
 <https://security.microsoft.com/cloudapps/settings>
 
@@ -21,41 +20,41 @@ Placeholders such as ‘organisation.gov.au’, ‘blueprint.gov.au’ and ‘te
 
 ### Organization details
 
-| Item                      | Value                                                 |
-| ------------------------- | -----------------------------------------------------:|
-| Organization display name | *Organisation name*                                   |
-| Environment name          | *Organisation environment name*                       |
+| Item                      |                                                 Value |
+| ------------------------- | ----------------------------------------------------: |
+| Organization display name |                                   _Organisation name_ |
+| Environment name          |                       _Organisation environment name_ |
 | Managed domains           | `organisation.onmicrosoft.com`, `organisation.gov.au` |
 
-### General Settings
+### Default behavior
 
-| Item                                                             | Value        |
-| ---------------------------------------------------------------- | ------------:|
-| Default behavior during system downtime                          | Allow access |
+| Item                                    |        Value |
+| --------------------------------------- | -----------: |
+| Default behavior during system downtime | Allow access |
 
 ### User monitoring
 
-| Item                                                             | Value               |
-| ---------------------------------------------------------------- | -------------------:|
-| Notify users that their activity is being monitored              | Use default message |
+| Item                                                |               Value |
+| --------------------------------------------------- | ------------------: |
+| Notify users that their activity is being monitored | Use default message |
 
 ### Related information
 
-#### Security & Governance
+#### Security and governance
 
-* [Application Control]({{<ref "security-and-governance/essential-eight/application-control.md">}})
-* [System Management]({{<ref "system-management.md">}})
-  
+- [Essential Eight - Application control](/security-and-governance/essential-eight/application-control)
+- [System management](/security-and-governance/system-security-plan/system-management)
+
 #### Design
 
-* [Authentication]({{<ref "design/platform/identity/authentication.md" >}})
-* [Entra ID Protection]({{< ref "design/platform/identity/protection.md" >}})
-  
+- [Authentication](/design/platform/identity/authentication)
+- [Entra ID Protection](/design/platform/identity/protection)
+
 #### Configuration
 
-* [Entra ID Protection]({{<ref "configuration/entra-id/protection">}})
-* [Intune Endpoint Security]({{<ref "configuration/intune/endpoint-security">}})
+- [Entra ID Protection](/configuration/entra-id/protection)
+- [Endpoint security](/configuration/intune/endpoint-security)
 
 #### References
 
-* [Defender for Cloud apps](https://learn.microsoft.com/azure/defender-for-cloud/)
+- [Defender for Cloud apps](https://learn.microsoft.com/azure/defender-for-cloud)

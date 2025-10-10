@@ -1,13 +1,12 @@
 ---
 title: "Microsoft Purview"
-linkTitle: "Microsoft Purview"
 weight: 050
 description: "This section describes the configuration of Microsoft Purview associated with systems built according to the guidance provided by ASD's Blueprint for Secure Cloud."
 ---
 
 {{% alert title="Instruction" color="dark" %}}
 
-The below pages outline the *as built* configuration for ASD's *Blueprint for Secure Cloud* (the Blueprint) for the Microsoft Purview portal at the following URL:
+The below pages outline the _as built_ configuration for ASD's _Blueprint for Secure Cloud_ (the Blueprint) for the Microsoft Purview portal at the following URL:
 
 <https://purview.microsoft.com>
 
@@ -23,7 +22,7 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 
 {{% alert title="Purview regex" color="warning" %}}
 
-Throughout the Purview configuration guidance there are regular expressions used to match Protective Security Policy Framework (PSPF) markings, these regular expressions do not cater for the concurrent use of multiple Information Management Markers (IMM). Organisations that use multiple IMMs in the same marking should create additional configurations to suit their specific use-cases.
+Throughout the Purview configuration guidance there are regular expressions used to match _Protective Security Policy Framework_ (PSPF) markings, these regular expressions do not cater for the concurrent use of multiple Information Management Markers (IMM). Organisations that use multiple IMMs in the same marking should create additional configurations to suit their specific use-cases.
 
 {{% /alert %}}
 
@@ -50,7 +49,7 @@ Some of the Purview configurations cannot be assessed using a DSC blueprint. Ple
 
 1: Retention policies are deployed by the DSC Blueprint in a disabled stated and must be manually enabled.
 
-2: The *Teams private channel messages 7 year hold* policy must be created manually.
+2: The _Teams private channel messages 7 year hold_ policy must be created manually.
 
 3: Policy rules must be configured manually.
 
@@ -58,20 +57,20 @@ Some of the Purview configurations cannot be assessed using a DSC blueprint. Ple
 
 5: The following sensitivity label configurations must be set manually:
 
-* *apply a label to channel meetings*, and
-* *use Microsoft Entra Conditional Access to protect labeled SharePoint sites* [authentication context]({{<ref "configuration/entra-id/protection/conditional-access/authentication-contexts">}}) for each PROTECTED label.
+- _apply a label to channel meetings_, and
+- _use Microsoft Entra Conditional Access to protect labeled SharePoint sites_ [authentication context](/configuration/entra-id/protection/conditional-access/authentication-contexts) for each PROTECTED label.
 
-6: The *users and groups* setting for the *users up to PROTECTED* policy must be set to the specific groups of users permitted access to PROTECTED information.
+6: The _users and groups_ setting for the _users up to PROTECTED_ policy must be set to the specific groups of users permitted access to PROTECTED information.
 
 #### Desired State Configuration
 
-Before using the below DSC file, please refer to the [setup]({{<ref "tools/deployment-and-assessment/desired-state-configuration-setup">}}) and [automated deployment]({{<ref "tools/deployment-and-assessment/automated-deployment">}}) pages for instructions.
+Before using the below DSC file, please refer to the [setup](/tools/deployment-and-assessment/desired-state-configuration-setup) and [automated deployment](/tools/deployment-and-assessment/automated-deployment) pages for instructions.
 
 Do not proceed with the automated deployment instructions until you've familiarised yourself with the [addition configuration](#additional-configuration) required below.
 
-**Desired State Configuration file**<br>Download the {{% download file="/content/files/automation/dsc/asdbpsc-dsc-purview.txt" %}} Purview DSC file {{% /download %}} and rename the linked .txt file to .ps1.
+**Desired State Configuration file**<br>Download the {{% download file="/content/files/automation/dsc/BlueprintPurviewDsc.txt" %}} Purview DSC file {{% /download %}} and rename the linked .txt file to .ps1.
 
-**Configuration data file**<br>Download the {{% download file="/content/files/automation/dsc/configuration-data.txt" %}} configuration data file {{% /download %}} and rename the linked .txt file to .psd1.
+**Configuration data file**<br>Download the {{% download file="/content/files/automation/dsc/ConfigurationData.txt" %}} configuration data file {{% /download %}} and rename the linked .txt file to .psd1.
 
 {{% alert title="Extra parameters" color="info"%}}
 
@@ -97,7 +96,7 @@ Any existing settings in a tenancy that match the name or UID of any settings in
 
 ##### Additional configuration
 
-The following instructions replace *step 4 Determine the required permissions for the targeted M365 service*, on the [automated deployment]({{<ref "tools/deployment-and-assessment/automated-deployment">}}) page, and use configurations from the M365DSC app created during the initial setup:
+The following instructions replace _step 4 Determine the required permissions for the targeted M365 service_, on the [automated deployment](/tools/deployment-and-assessment/automated-deployment) page, and use configurations from the M365DSC app created during the initial setup:
 
 1. On the Windows host used for deployment, in an elevated PowerShell prompt, install the Exchange Online PowerShell module if not already installed:
 
@@ -135,7 +134,7 @@ Add-eDiscoveryCaseAdmin -User '<Object ID GUID>'
 $creds = Get-Credential
 ```
 
-7. Update the M365DSC app with the *Exchange ManageAsApp* permission, substituting location with the name of your working folder used in the DSC setup:
+7. Update the M365DSC app with the _Exchange ManageAsApp_ permission, substituting location with the name of your working folder used in the DSC setup:
 
 ```powershell
 Update-M365DSCAzureAdApplication -ApplicationName 'M365DSC' -Type Certificate -CertificatePath 'C:\<location>\M365DSC.cer' -Permissions @( @{Api='Exchange';PermissionName='Exchange.ManageAsApp'} ) -AdminConsent -Credential $creds
@@ -143,9 +142,9 @@ Update-M365DSCAzureAdApplication -ApplicationName 'M365DSC' -Type Certificate -C
 
 {{% alert title="Grant admin consent" color="info" %}}
 
-You will be required to manually grant admin consent to provide the M365DSC app with the required permissions which can be done in the Entra portal under the API permissions section. The *Graph ReadAll* permission used in the DSC setup is not required and can be removed if prompted.
+You will be required to manually grant admin consent to provide the M365DSC app with the required permissions which can be done in the Entra portal under the API permissions section. The _Graph ReadAll_ permission used in the DSC setup is not required and can be removed if prompted.
 
-There may also be a delay in updating the permissions via Powershell and  them appearing in the Entra portal.
+There may also be a delay in updating the permissions via Powershell and them appearing in the Entra portal.
 
 {{% /alert %}}
 

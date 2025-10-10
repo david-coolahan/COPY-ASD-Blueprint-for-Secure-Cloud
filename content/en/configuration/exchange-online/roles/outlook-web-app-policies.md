@@ -1,13 +1,12 @@
 ---
 title: "Outlook web app policies"
-linkTitle: "Outlook web app policies"
 weight: 30
 description: "This section describes the configuration of Outlook web app policies within Exchange Online associated with systems built according to guidance in ASD's Blueprint for Secure Cloud."
 ---
 
 {{% alert title="Instruction" color="dark" %}}
 
-The below tables outline the *as built* configuration for ASD's *Blueprint for Secure Cloud* (the Blueprint) for the Microsoft Exchange admin portal at the following URL:
+The below tables outline the _as built_ configuration for ASD's _Blueprint for Secure Cloud_ (the Blueprint) for the Microsoft Exchange admin portal at the following URL:
 
 <https://admin.exchange.microsoft.com/#/owapolicies>
 
@@ -86,20 +85,20 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 
 ### Related information
 
-#### Security & Governance
+#### Security and governance
 
-* [System Management]({{<ref "system-management.md">}})
-* [System Monitoring]({{<ref "system-monitoring.md">}})
-  
+- [System management](/security-and-governance/system-security-plan/system-management)
+- [System monitoring](/security-and-governance/system-security-plan/system-monitoring)
+
 #### Design
 
-* [Policy Filtering]({{<ref "design/shared-services/defender/policy-filtering.md">}})
-* [Microsoft 365 Connectivity]({{<ref "design/shared-services/microsoft-365/microsoft365-connectivity.md">}})
-  
+- [Policy filtering](/design/shared-services/defender/policy-filtering)
+- [Microsoft 365 connectivity](/design/shared-services/microsoft-365/microsoft365-connectivity)
+
 #### Configuration
 
-* [Microsoft Intune - profile configurations]({{<ref "configuration/intune/devices/configuration-policies">}})
+- [Microsoft Intune - profile configurations](/configuration/intune/devices/configuration-policies)
 
 #### References
 
-* None identified
+- None identified

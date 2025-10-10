@@ -1,15 +1,14 @@
 ---
 title: "Settings"
-linkTitle: "Settings"
 weight: 040
 description: "This section describes the configuration of SharePoint associated with systems built according to guidance in ASD's Blueprint for Secure Cloud."
 ---
 
 {{% alert title="Instruction" color="dark" %}}
 
-The below tables outline the *as built* configuration for ASD's *Blueprint for Secure Cloud* (the Blueprint) for the SharePoint admin portal at the following URL:
+The below tables outline the _as built_ configuration for ASD's _Blueprint for Secure Cloud_ (the Blueprint) for the SharePoint admin portal at the following URL:
 
-<https://`<TENANT-NAME>`-admin.sharepoint.com/>
+https://`<TENANT-NAME>`-admin.sharepoint.com/
 
 `Home` > `Settings`
 
@@ -81,21 +80,21 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 
 ### Related information
 
-#### Security & Governance
+#### Security and governance
 
-* None identified
-  
+- None identified
+
 #### Design
 
-* [SharePoint]({{<ref "design/shared-services/sharepoint-online">}})
-* [Entra ID Protection]({{<ref "design/platform/identity/protection.md">}})
-* [Notifications]({{<ref "design/shared-services/onedrive/notifications">}})
-* [Storage and Synchronisation]({{<ref "design/shared-services/onedrive/storage-and-synchronisation">}})
-  
+- [SharePoint](/design/shared-services/sharepoint-online)
+- [Entra ID Protection](/design/platform/identity/protection)
+- [Notifications](/design/shared-services/onedrive/notifications)
+- [Storage and synchronisation](/design/shared-services/onedrive/storage-and-synchronisation)
+
 #### Configuration
 
-* [Microsoft Intune - profile configurations]({{<ref "configuration/intune/devices/configuration-policies">}})
+- [Microsoft Intune - profile configurations](/configuration/intune/devices/configuration-policies)
 
 #### References
 
-* None identified
+- None identified

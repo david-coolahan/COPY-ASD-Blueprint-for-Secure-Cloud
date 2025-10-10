@@ -1,13 +1,12 @@
 ---
 title: "Label incoming OFFICIAL: Sensitive email"
-linkTitle: "Label incoming OFFICIAL: Sensitive email"
 weight: 015
 description: "This section describes the configuration of auto-labeling policies within Microsoft Purview associated with systems built according to guidance in ASD's Blueprint for Secure Cloud."
 ---
 
 {{% alert title="Instruction" color="dark" %}}
 
-The below tables outline the *as built* configuration for ASD's *Blueprint for Secure Cloud* (the Blueprint) for the Microsoft Purview portal at the following URL:
+The below tables outline the _as built_ configuration for ASD's _Blueprint for Secure Cloud_ (the Blueprint) for the Microsoft Purview portal at the following URL:
 
 <https://purview.microsoft.com/informationprotection/autolabeling>
 
@@ -19,11 +18,11 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 
 {{% /alert %}}
 
-[//]: # (                                         * * * * * Note * * * * *                                                           )
-[//]: # (                                                                                                                            )
-[//]: # ( Regular expressions in tables include extra escape characters for formatting, do not copy and paste them from raw markdown )
-[//]: # (                                                                                                                            )
-[//]: # (                                         * * * * * Note * * * * *                                                           )
+[//]: # "                                         * * * * * Note * * * * *                                                           "
+[//]: # "                                                                                                                            "
+[//]: # " Regular expressions in tables include extra escape characters for formatting, do not copy and paste them from raw markdown "
+[//]: # "                                                                                                                            "
+[//]: # "                                         * * * * * Note * * * * *                                                           "
 
 {{% alert title="Turning on auto-labeling policies" color="info" %}}
 
@@ -63,8 +62,8 @@ Auto-labeling polices are in simulation mode by default and must be individually
 | Item              |                Value |
 | ----------------- | -------------------: |
 | Exchange email    | All users and groups |
-| SharePoint sites  |               *None* |
-| OneDrive accounts |               *None* |
+| SharePoint sites  |               _None_ |
+| OneDrive accounts |               _None_ |
 
 ### Policy rules
 
@@ -79,7 +78,7 @@ Auto-labeling polices are in simulation mode by default and must be individually
 | Item               |                                                         Value |
 | ------------------ | ------------------------------------------------------------: |
 | Name               |                        Check for OFFICIAL: Sensitive X-header |
-| Description        |                                                        *None* |
+| Description        |                                                        _None_ |
 | Conditions         |                                       Header matches patterns |
 | Header name        |                                          X-Protective-Marking |
 | Regular expression | `SEC=OFFICIAL:Sensitive(?!, CAVEAT=\|[a-zA-Z,= /]*, ACCESS=)` |
@@ -87,7 +86,7 @@ Auto-labeling polices are in simulation mode by default and must be individually
 | Item               |                                                             Value |
 | ------------------ | ----------------------------------------------------------------: |
 | Name               |                             Check for OFFICIAL: Sensitive subject |
-| Description        |                                                            *None* |
+| Description        |                                                            _None_ |
 | Conditions         |                                          Subject matches patterns |
 | Regular expression | `\[SEC=OFFICIAL:Sensitive(?!, CAVEAT=\|[a-zA-Z,= /]*, ACCESS=)\]` |
 
@@ -106,16 +105,16 @@ Auto-labeling polices are in simulation mode by default and must be individually
 
 ### Related information
 
-#### Security & Governance
+#### Security and governance
 
 - None identified
-  
+
 #### Design
 
-- [Azure Rights Management]({{<ref "design/shared-services/purview/azure-rights-management">}})
-- [Email flow]({{<ref "design/shared-services/purview/email-handling">}})
-- [Labelling and classification]({{<ref "design/shared-services/purview/labelling-and-classification">}})
-  
+- [Azure Rights Management](/design/shared-services/purview/azure-rights-management)
+- [Email flow](/design/shared-services/purview/email-handling)
+- [Labelling and classification](/design/shared-services/purview/labelling-and-classification)
+
 #### Configuration
 
 - None identified

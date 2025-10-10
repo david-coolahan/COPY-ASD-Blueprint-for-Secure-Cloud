@@ -1,6 +1,5 @@
 ---
 title: "Essential Eight"
-linkTitle: "Essential Eight"
 weight: 10
 type: docs
 description: This page provides a template and guidance to assist organisations in documenting the Essential Eight Maturity levels associated with implementation of system(s) built on ASD's Blueprint for Secure Cloud.
@@ -20,7 +19,7 @@ When completing the below template, organisations should insert and update infor
 
 {{% alert title="Blueprint guidance" color="info" %}}
 
-As with implementation of ISM controls, the Blueprint does not itself *achieve* any particular Essential Eight Maturity levels, but rather assists organisations in designing and building systems to achieve their desired maturity level based on their own operating context.
+As with implementation of ISM controls, the Blueprint does not itself _achieve_ any particular Essential Eight Maturity levels, but rather assists organisations in designing and building systems to achieve their desired maturity level based on their own operating context.
 
 {{% /alert %}}
 
