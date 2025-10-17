@@ -1,5 +1,5 @@
 ---
-title: "Phone settings"
+title: "Device settings"
 weight: 10
 type: docs
 description: "This page describes the configuration of device settings within Microsoft Entra ID associated with systems built according to the guidance provided by ASD's Blueprint for Secure Cloud."
@@ -19,7 +19,7 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 
 {{% /alert %}}
 
-### Phone Microsoft Entra join and registration settings
+### Microsoft Entra join and registration settings
 
 | Item                                                                                |     Value |
 | ----------------------------------------------------------------------------------- | --------: |
@@ -28,7 +28,7 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 | Require Multifactor Authentication to register or join devices with Microsoft Entra |        No |
 | Maximum number of devices per user                                                  | Unlimited |
 
-### Phone Local administrator settings
+### Local administrator settings
 
 | Item                                                                                                          | Value |
 | ------------------------------------------------------------------------------------------------------------- | ----: |
@@ -36,7 +36,7 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 | Registering user is added as local administrator on the device during Microsoft Entra join (Preview)          |  None |
 | Enable Microsoft Entra Local Administrator Password Solution (LAPS)                                           |   Yes |
 
-### Phone Other settings
+### Other settings
 
 | Item                                                                        | Value |
 | --------------------------------------------------------------------------- | ----: |
