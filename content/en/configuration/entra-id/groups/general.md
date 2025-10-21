@@ -23,14 +23,14 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 
 | Item                                                                                                                                                   | Value |
 | ------------------------------------------------------------------------------------------------------------------------------------------------------ | ----: |
-| Owners can manage group membership requests in My Groups                                                                                               |    No |
+| Owners can manage group membership requests in My Groups                                                                                               |    Yes |
 | Restrict user ability to access groups features in My Groups. Group and User Admin will have read-only access when the value of this setting is 'Yes'. |    No |
 
 ### Security Groups
 
 | Item                                                                 | Value |
 | -------------------------------------------------------------------- | ----: |
-| Users can create security groups in Azure portals, API or PowerShell |    No |
+| Users can create security groups in Azure portals, API or PowerShell |    Yes |
 
 ### Microsoft 365 Groups
 
