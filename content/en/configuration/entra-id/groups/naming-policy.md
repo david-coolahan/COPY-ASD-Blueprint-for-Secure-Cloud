@@ -23,7 +23,7 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 
 | Item            |          Value |
 | --------------- | -------------: |
-| Block word list | Not configured |
+| Block word list | Configured |
 
 ### Group naming policy
 
