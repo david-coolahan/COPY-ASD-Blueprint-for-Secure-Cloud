@@ -22,7 +22,7 @@ Placeholders such as `<ORGANISATION.GOV.AU>`, `<BLUEPRINT.GOV.AU>` and `<TENANT-
 | Item                               | Value                                                                                            |
 | ---------------------------------- | ------------------------------------------------------------------------------------------------ |
 | **Phishing-resistant MFA and TAP** |                                                                                                  |
-| Name                               | Phishing-resistant MFA and TAP                                                                   |
+| Name                               | TAP                                                                 |
 | Phishing-resistant MFA             | Windows Hello For Business<br>Passkeys (FIDO2)<br>Certificate-based Authentication (Multifactor) |
 | Multifactor authentication         | Temporary Access Pass (One-time use)<br>Temporary Access Pass (Multi-use)                        |
 
